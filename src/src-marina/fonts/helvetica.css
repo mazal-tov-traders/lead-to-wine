@@ -1,0 +1,59 @@
+@font-face {
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: 300;
+	src:
+		url(Helvetica/helvetica_light.otf) format("opentype"),
+		url(Helvetica/helvetica_light.ttf) format("ttf"),
+		url(Helvetica/helvetica_light.woff2) format("woff2");
+}
+
+@font-face {
+	font-family: Helvetica;
+	font-style: italic;
+	font-weight: 300;
+	src:
+		url(Helvetica/helvetica_light_italic.otf) format("opentype"),
+		url(Helvetica/helvetica_light_italic.ttf) format("ttf"),
+		url(Helvetica/helvetica_light_italic.woff2) format("woff2");
+}
+
+@font-face {
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: 400;
+	src:
+		url(Helvetica/helvetica_regular.otf) format("opentype"),
+		url(Helvetica/helvetica_regular.ttf) format("ttf"),
+		url(Helvetica/helvetica_regular.woff2) format("woff2");
+}
+
+@font-face {
+	font-family: Helvetica;
+	font-style: italic;
+	font-weight: 400;
+	src:
+		url(Helvetica/helvetica_regular_italic.otf) format("opentype"),
+		url(Helvetica/helvetica_regular_italic.ttf) format("ttf"),
+		url(Helvetica/helvetica_regular_italic.woff2) format("woff2");
+}
+
+@font-face {
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: 700;
+	src:
+		url(Helvetica/helvetica_bold.otf) format("opentype"),
+		url(Helvetica/helvetica_bold.ttf) format("ttf"),
+		url(Helvetica/helvetica_bold.woff2) format("woff2");
+}
+
+@font-face {
+	font-family: Helvetica;
+	font-style: italic;
+	font-weight: 700;
+	src:
+		url(Helvetica/helvetica_bold_italic.otf) format("opentype"),
+		url(Helvetica/helvetica_bold_italic.ttf) format("ttf"),
+		url(Helvetica/helvetica_bold_italic.woff2) format("woff2");
+}

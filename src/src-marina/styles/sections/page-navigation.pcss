@@ -1,0 +1,38 @@
+@import "../variables-and-mixins.pcss";
+
+.page-navigation {
+	padding: 36px 0;
+	background: $color-bg-custom;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 20px 40px;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		@media (--sm) {
+			column-gap: 60px;
+		}
+	}
+
+	&__item {
+		@include text-style-text-text-3;
+	}
+
+	&__link {
+		color: $color-text-light-grey;
+		text-transform: uppercase;
+		transition: color 0.3s, text-shadow 0.3s;
+
+		&:--enter {
+			color: $color-colors-white;
+			text-shadow: 0 0 0;
+			text-decoration: none;
+		}
+	}
+}

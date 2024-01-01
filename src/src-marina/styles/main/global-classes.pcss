@@ -1,0 +1,79 @@
+@import "./../variables-and-mixins.pcss";
+
+.inner {
+	margin: 0 auto;
+	padding: 0 35px;
+	width: 100%;
+	max-width: $max-width-main-inner;
+
+	@media (--lg) {
+		padding: 0 15px;
+	}
+}
+
+.title {
+	@include text-style-text-headline-2;
+
+	&_main {
+		@include text-style-text-headline-1;
+	}
+}
+
+.btn {
+	@include btn;
+}
+
+.link {
+	@include link;
+}
+
+.screen-reader-text,
+.visually-hidden {
+	@include screen-reader-text;
+}
+
+.object-fit {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	object-position: center top;
+
+	~ *:not(.object-fit) {
+		position: relative;
+	}
+
+	&-cover {
+		object-fit: cover;
+		height: 100%;
+	}
+
+	&-contain {
+		object-fit: contain;
+		height: auto;
+	}
+}
+
+.italic {
+	font-style: italic;
+}
+
+.round-stroke {
+	display: inline-block;
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: -10%;
+		left: -3%;
+		width: 106%;
+		height: 100%;
+		border-radius: 100%;
+		border: 1px solid;
+
+		@media (--md) {
+			border: 2px solid;
+		}
+	}
+}

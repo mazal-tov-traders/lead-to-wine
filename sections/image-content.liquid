@@ -1,0 +1,139 @@
+<section class="image-content image-content_bg-white image-content_vertical-center-align">
+  <div class="inner">
+    <div class="image-content__wrapper">
+      <div class="image-content__image">
+        <img src="{{root}}assets/images/about-1.jpg" alt="">
+      </div>
+      <div class="image-content__content">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'link' %}
+              {%- if block.settings.title != blank -%}
+                <h2 class="title">{{ block.settings.button_link }}<span class="italic">{{ block.settings.button_link }}t</span></h2>
+              {%- endif -%}
+              <p class="image-content__description">
+                Lead to win exists to gather, coach, and equip leaders<br>
+                to win in the areas that matter most.
+              </p>
+
+            {% when 'link' %}
+              {%- if block.settings.button_label != blank -%}
+                <div class="image-content__wrapper-link">
+                  {% render 'icon-pdf' %}
+                  <a
+                    {% if block.settings.button_link == blank %}
+                      role="link" aria-disabled="true"
+                    {% else %}
+                      href="{{ block.settings.button_link }}"
+                    {% endif %}
+
+                    class="image-content__wrapper-link_link"
+                  >
+                    {{- block.settings.button_label | escape -}}
+                  </a>
+                </div>
+              {%- endif -%}
+          {% endcase %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "image-content",
+  "tag": "section",
+  "class": "section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "title",
+      "name": "title",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "color",
+          "id": "color_title_label",
+          "label": "Color Title Label",
+          "default": "#1D2228"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "label": "Title Italic"
+        },
+        {
+          "type": "color",
+          "id": "color_title_label_ital",
+          "label": "Color Title Label",
+          "default": "#1D2228"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "name": "Heading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "color",
+          "id": "color_heading_label",
+          "label": "Color Heading Label",
+          "default": "#1D2228"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "name": "Content",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "content",
+          "label": "Content"
+        },
+        {
+          "type": "color",
+          "id": "color_content_label",
+          "label": "Color Content Label",
+          "default": "#1D2228"
+        }
+      ]
+    },
+    {
+      "type": "link",
+      "name": "Link",
+      "limit": 5,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "File label"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "File Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image Content"
+    }
+  ]
+}
+{% endschema %}

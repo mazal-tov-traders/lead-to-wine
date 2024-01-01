@@ -1,7 +1,20 @@
-@import 'base/base-custom.scss';
-@import 'typography/typography.scss';
-@import 'buttons/buttons.scss';
+// @import "./base/normalize.scss";
+// @import "./base/sanitize.scss";
+// @import "./base/global-classes.scss";
+// @import "./base/common.scss";
+// @import "./base/header.scss";
 
+@import 'sections/banner.scss';
+@import 'sections/home-page-banner.scss';
+@import 'sections/image-content.scss';
+@import 'sections/image-text.scss';
+@import 'sections/leaders-gathering.scss';
+@import 'sections/page-navigation.scss';
+@import 'sections/quote.scss';
+@import 'sections/section-faq.scss';
+@import 'sections/services.scss';
+@import 'sections/single-review.scss';
+@import 'sections/speaking-request.scss';
 
 
 

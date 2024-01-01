@@ -1,5 +1,3 @@
-@custom-selector :--enter :hover, :focus, :focus-within;
-
 @mixin disabled {
 	cursor: not-allowed;
 	pointer-events: none;
@@ -53,20 +51,17 @@
 		z-index: 100000; /* Above WP toolbar. */
 	}
 }
+$xxl: 'min-width: 1280px';
+$xl: 'min-width: 1152px';
+$lg: 'min-width: 1024px';
+$lg-990: 'min-width: 990px';
+$md: 'min-width: 768px';
+$sm: 'min-width: 568px';
+$xs: 'min-width: 430px';
 
-/* Media queries desktop first (breakpoints). */
-@custom-media --less-xxl all and (width < 1280px);
-@custom-media --less-xl all and (width < 1152px);
-@custom-media --less-lg all and (width < 1024px);
-@custom-media --less-md all and (width < 768px);
-@custom-media --less-sm all and (width < 568px);
-@custom-media --less-xs all and (width < 430px);
-
-/* Media queries mobile first (breakpoints). */
-@custom-media --xxl all and (width >= 1280px);
-@custom-media --xl all and (width >= 1152px);
-@custom-media --lg all and (width >= 1024px);
-@custom-media --990 all and (width >= 990px);
-@custom-media --md all and (width >= 768px);
-@custom-media --sm all and (width >= 568px);
-@custom-media --xs all and (width >= 430px);
+$less-xxl: 'max-width: 1280px';
+$less-xl: 'max-width: 1152px';
+$less-lg: 'max-width: 1024px';
+$less-md: 'max-width: 768px';
+$less-sm: 'max-width: 568px';
+$less-xs: 'max-width: 430px';

@@ -2,20 +2,37 @@
   <div class="inner">
     <div class="image-content__wrapper">
       <div class="image-content__image">
-        <img src="{{root}}assets/images/about-1.jpg" alt="">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'media' %}
+              {%- if block.settings.image != blank -%}
+                <img
+                  src="{{ block.settings.image | img_url:  'original'}}"
+                  alt="page_image"
+                  class="image"
+                >
+              {% endif %}
+          {% endcase %}
+        {% endfor %}
       </div>
       <div class="image-content__content">
         {% for block in section.blocks %}
           {% case block.type %}
-            {% when 'link' %}
+            {% when 'title' %}
               {%- if block.settings.title != blank -%}
-                <h2 class="title">{{ block.settings.button_link }}<span class="italic">{{ block.settings.button_link }}t</span></h2>
+                <h2 class="title" style=" color: {{ block.settings.color_title_label }};">
+                  {{ block.settings.title -}}
+                  <span class="italic" style=" color:{{ block.settings.color_title_label_it }};">
+                    {{- block.settings.title_it -}}
+                  </span>
+                </h2>
               {%- endif -%}
-              <p class="image-content__description">
-                Lead to win exists to gather, coach, and equip leaders<br>
-                to win in the areas that matter most.
-              </p>
-
+            {% when 'description' %}
+              {%- if block.settings.description != blank -%}
+                <div class="image-content__description" style=" color:{{ block.settings.color_description_label }};">
+                  {{ block.settings.description }}
+                </div>
+              {%- endif -%}
             {% when 'link' %}
               {%- if block.settings.button_label != blank -%}
                 <div class="image-content__wrapper-link">
@@ -65,14 +82,32 @@
         },
         {
           "type": "inline_richtext",
-          "id": "title",
+          "id": "title_it",
           "label": "Title Italic"
         },
         {
           "type": "color",
-          "id": "color_title_label_ital",
-          "label": "Color Title Label",
+          "id": "color_title_label_it",
+          "label": "Color Title italic Label",
           "default": "#1D2228"
+        }
+      ]
+    },
+    {
+      "type": "description",
+      "name": "Description",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "color",
+          "id": "color_description_label",
+          "label": "Color Description Label",
+          "default": "#918677"
         }
       ]
     },
@@ -126,6 +161,18 @@
           "type": "url",
           "id": "button_link",
           "label": "File Link"
+        }
+      ]
+    },
+    {
+      "type": "media",
+      "name": "Image",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
         }
       ]
     }

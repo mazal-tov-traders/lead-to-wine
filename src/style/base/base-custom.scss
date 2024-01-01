@@ -1,17 +1,12 @@
 @import "../mixins/media.scss";
 
 body {
-  color: rgb(var(--color-foreground));
+
   min-width: 320px;
 }
 
 .page-width {
   padding: 0 2rem;
-
-  @include sm {
-    max-width: calc(var(--page-width) + 3rem * 2);
-    padding: 0 2.9rem;
-  }
 }
 
 .screen-reader-text {

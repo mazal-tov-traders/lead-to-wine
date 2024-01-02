@@ -1,11 +1,11 @@
-<section class="image-content{{ section.settings.position_image }} image-content{{ section.settings.background }} image-content_vertical-center-align {{ section.settings.align_content }}">
+<section class="image-text{{ section.settings.position_image }}">
   <div class="inner">
-    <div class="image-content__wrapper">
+    <div class="image-text__wrapper">
       {% for block in section.blocks %}
         {% case block.type %}
           {% when 'media' %}
             {%- if block.settings.image != blank -%}
-              <div class="image-content__image">
+              <div class="image-text__image">
                 <img
                   src="{{ block.settings.image | img_url:  'original'}}"
                   alt="page_image"
@@ -14,8 +14,7 @@
             {% endif %}
         {% endcase %}
       {% endfor %}
-
-      <div class="image-content__content">
+      <div class="image-text__content">
         {% for block in section.blocks %}
           {% case block.type %}
             {% when 'title' %}
@@ -24,28 +23,44 @@
                   {{ block.settings.title -}}
                 </h2>
               {%- endif -%}
+            {% when 'heading' %}
+              {%- if block.settings.heading != blank -%}
+                <h2 class="heading" style=" color: {{ block.settings.color_title_label }};">
+                  {{ block.settings.heading -}}
+                </h2>
+              {%- endif -%}
+            {% when 'text' %}
+              {%- if block.settings.text != blank -%}
+                <div class="text" style=" color: {{ block.settings.color_title_label }};">
+                  {{ block.settings.text -}}
+                </div>
+              {%- endif -%}
             {% when 'description' %}
               {%- if block.settings.description != blank -%}
-                <div class="image-content__description" style=" color:{{ block.settings.color_description_label }};">
-                  {{ block.settings.description }}
+                <div class="description" style=" color: {{ block.settings.color_title_label }};">
+                  {{ block.settings.description -}}
+                </div>
+              {%- endif -%}
+            {% when 'content' %}
+              {%- if block.settings.content != blank -%}
+                <div class="content" style=" color: {{ block.settings.color_title_label }};">
+                  {{ block.settings.content -}}
                 </div>
               {%- endif -%}
             {% when 'link' %}
-              {%- if block.settings.link_label != blank -%}
-                <div class="image-content__wrapper-link">
-                  {% render 'icon-pdf' %}
-                  <a
-                    {% if block.settings.link == blank %}
-                      role="link" aria-disabled="true"
-                    {% else %}
-                      href="{{ block.settings.link }}"
-                    {% endif %}
+              {%- if block.settings.label_link != blank -%}
+                <a
+                  {% if block.settings.link == blank %}
+                    role="link" aria-disabled="true"
+                  {% else %}
+                    href="{{ block.settings.link }}"
+                  {% endif %}
 
-                    class="link"
-                  >
-                    {{- block.settings.link_label | escape -}}
-                  </a>
-                </div>
+                  class="link"
+                >
+                  {{- block.settings.label_link | escape -}}
+                  {% render 'icon-arrow-right' %}
+                </a>
               {%- endif -%}
           {% endcase %}
         {% endfor %}
@@ -56,46 +71,10 @@
 
 {% schema %}
 {
-  "name": "image-content",
+  "name": "image-text",
   "tag": "section",
   "class": "section",
   "settings": [
-    {
-      "type": "select",
-      "id": "background",
-      "options": [
-        {
-          "value": "_bg-white",
-          "label": "White"
-        },
-        {
-          "value": "base",
-          "label": "Base"
-        }
-      ],
-      "default": "_bg-white",
-      "label": "background"
-    },
-    {
-      "type": "select",
-      "id": "align_content",
-      "options": [
-        {
-          "value": "left",
-          "label": "left"
-        },
-        {
-          "value": "right",
-          "label": "right"
-        },
-        {
-          "value": "center",
-          "label": "center"
-        }
-      ],
-      "default": "left",
-      "label": "align content"
-    },
     {
       "type": "select",
       "id": "position_image",
@@ -129,6 +108,24 @@
           "id": "color_title_label",
           "label": "Color Title Label",
           "default": "#1D2228"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "color",
+          "id": "color_description_label",
+          "label": "Color Description Label",
+          "default": "#918677"
         }
       ]
     },
@@ -193,8 +190,8 @@
       "settings": [
         {
           "type": "text",
-          "id": "link_label",
-          "label": "link label"
+          "id": "label_link",
+          "label": "label Link"
         },
         {
           "type": "url",
@@ -218,7 +215,7 @@
   ],
   "presets": [
     {
-      "name": "Image Content"
+      "name": "Image Text"
     }
   ]
 }

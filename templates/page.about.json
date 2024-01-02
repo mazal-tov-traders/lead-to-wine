@@ -14,16 +14,14 @@
         "3d88a375-0757-4530-a793-39b589d0e9b6": {
           "type": "media",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_4133725_1.jpg"
+            "image": "shopify:\/\/shop_images\/c1e3486467ed980fcf5583dfcb4d831b.png"
           }
         },
         "6c7a5d48-fd4f-4d5a-9d6b-1757a3c1bdaa": {
           "type": "title",
           "settings": {
-            "title": "Why",
-            "color_title_label": "#383633",
-            "title_it": "We Exist",
-            "color_title_label_it": "#383633"
+            "title": "Why <em>We Exist<\/em>",
+            "color_title_label": "#383633"
           }
         },
         "332f1000-a6a6-4789-9df3-c2fd49c45486": {
@@ -40,11 +38,82 @@
         "332f1000-a6a6-4789-9df3-c2fd49c45486"
       ],
       "settings": {
+        "background": "_bg-white",
+        "align_content": "left",
+        "position_image": ""
+      }
+    },
+    "97839e8e-9fec-4dc0-9bbb-4ba179e45dd6": {
+      "type": "image-text",
+      "blocks": {
+        "33b5d700-da39-4b78-8ebf-dacf83174de8": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cc4fbafa4877cc736fc2a5e2efc4e297.png"
+          }
+        },
+        "c3fe2493-3ddf-4a41-86a4-299c3964fe61": {
+          "type": "title",
+          "settings": {
+            "title": "About <em>Jeff<\/em>  Little",
+            "color_title_label": "#1D2228"
+          }
+        },
+        "542ffbaf-922f-4acf-b0df-4b5b48f08541": {
+          "type": "description",
+          "settings": {
+            "description": "<p>I was raised in Northeast Texas by wonderful parents who modeled a strong faith and character that is the foundation of my life today. After completing high school, I attended Baylor University and graduated in 1996 with a Bachelor of Arts in Religion. I completed my master’s degree at Southwestern Baptist Theological Seminary in 2006 and earned a doctorate from Southeastern University in 2022. <\/p><p>After pastoring several established congregations, God began to stir my heart with the dream of planting a life-giving, spirit-filled, community church, but I was not sure where! Through much prayer and consultation, the Lord spoke to me clearly that I was to go to Keller, TX to start a church.<\/p>",
+            "color_description_label": "#918677"
+          }
+        }
+      },
+      "block_order": [
+        "33b5d700-da39-4b78-8ebf-dacf83174de8",
+        "c3fe2493-3ddf-4a41-86a4-299c3964fe61",
+        "542ffbaf-922f-4acf-b0df-4b5b48f08541"
+      ],
+      "settings": {
+        "position_image": ""
+      }
+    },
+    "b0cb6db7-941b-479d-b722-91cf66ff45f8": {
+      "type": "speaking-request",
+      "blocks": {
+        "81a79616-d6f8-4fd9-a860-21db42be65a2": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/about-2.jpg"
+          }
+        },
+        "ed4b297e-0a98-490a-9123-af6466b60723": {
+          "type": "title",
+          "settings": {
+            "title": "Speaking Request",
+            "color_title_label": "#1D2228"
+          }
+        },
+        "bf762bf4-74b4-491b-9646-a55523768528": {
+          "type": "form",
+          "settings": {
+            "form": "form"
+          }
+        }
+      },
+      "block_order": [
+        "81a79616-d6f8-4fd9-a860-21db42be65a2",
+        "ed4b297e-0a98-490a-9123-af6466b60723",
+        "bf762bf4-74b4-491b-9646-a55523768528"
+      ],
+      "settings": {
+        "background": "_bg-white",
+        "position_image": ""
       }
     }
   },
   "order": [
     "main",
-    "a5b2ee29-1f27-42c1-beb4-6b654b669a90"
+    "a5b2ee29-1f27-42c1-beb4-6b654b669a90",
+    "97839e8e-9fec-4dc0-9bbb-4ba179e45dd6",
+    "b0cb6db7-941b-479d-b722-91cf66ff45f8"
   ]
 }

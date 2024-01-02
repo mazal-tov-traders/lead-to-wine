@@ -32,7 +32,9 @@ figure,
 blockquote {
   @include removed-top-button-margins;
 }
-
+h2{
+  margin-top: 0 !important;
+}
 a {
   color: $color-text-link;
   text-decoration: none;

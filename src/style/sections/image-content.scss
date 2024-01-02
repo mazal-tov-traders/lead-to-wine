@@ -3,7 +3,6 @@
 .page-navigation + .image-content {
   padding-top: 60px;
 }
-
 .image-content {
   padding: 80px 0;
 
@@ -80,15 +79,12 @@
     margin-bottom: 20px;
   }
 
-  &__description {
+  &__description,
+  &__description p {
     @include text-style-text-headline-3;
 
     color: $color-text-second;
     max-width: 600px;
-
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
 
     @media ($less-xl) {
       br {
@@ -96,8 +92,15 @@
       }
     }
   }
-
-  p:not(&__description) {
+  &__description {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    p{
+      margin: 0;
+    }
+  }
+  p:not(&__description p) {
     @include text-style-text-text-main;
 
     &:not(:last-child) {

@@ -3,6 +3,7 @@
 .page-navigation + .image-content {
   padding-top: 60px;
 }
+
 .image-content {
   padding: 80px 0;
 
@@ -53,7 +54,15 @@
       flex: 1 0 0;
     }
   }
-
+  &__wrapper-link {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  
+    svg {
+       margin-top: 1px;
+    }
+  }
   .title {
     text-transform: uppercase;
     margin-bottom: 20px;

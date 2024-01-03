@@ -40,8 +40,9 @@
                     {% else %}
                       href="{{ block.settings.link }}"
                     {% endif %}
-
-                    class="link"
+                    style=" color:{{ block.settings.color_link_label }};"
+                    
+                    class="image-content__link"
                   >
                     {{- block.settings.link_label | escape -}}
                   </a>
@@ -164,7 +165,7 @@
           "type": "color",
           "id": "color_heading_label",
           "label": "Color Heading Label",
-          "default": "#1D2228"
+          "default": "#383633"
         }
       ]
     },
@@ -182,7 +183,7 @@
           "type": "color",
           "id": "color_content_label",
           "label": "Color Content Label",
-          "default": "#1D2228"
+          "default": "#383633"
         }
       ]
     },
@@ -200,6 +201,12 @@
           "type": "url",
           "id": "link",
           "label": "Link"
+        },
+        {
+          "type": "color",
+          "id": "color_link_label",
+          "label": "Color Link Label",
+          "default": "#383633"
         }
       ]
     },

@@ -1,0 +1,40 @@
+@import "../variables-and-mixins.scss";
+
+.feedback {
+	padding: 40px 0 80px;
+
+	@media ($lg) {
+		padding: 50px 0 100px;
+	}
+
+	.title {
+		text-align: center;
+		max-width: 520px;
+		margin: 0 auto 50px;
+	}
+
+	&__wrapper {
+		background: $color-colors-white;
+		border-radius: 10px;
+		padding: 50px 30px;
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+	&__sub-title {
+		font-family: $font-family-Awesome-Serif;
+		font-weight: 500;
+		font-size: 26px;
+		font-style: italic;
+		line-height: 30px;
+		color: $color-colors-main;
+		text-align: center;
+		max-width: 376px;
+		margin: 0 auto 40px;
+	}
+
+	&__form {
+		max-width: 570px;
+		margin: 0 auto;
+	}
+}

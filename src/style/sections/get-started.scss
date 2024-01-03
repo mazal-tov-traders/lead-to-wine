@@ -1,0 +1,181 @@
+@import "../variables-and-mixins.scss";
+
+.get-started {
+	padding: 40px 0;
+
+	@media ($lg) {
+		padding: 50px 0;
+	}
+
+	&:last-child {
+		padding-bottom: 80px;
+
+		@media ($lg) {
+			padding-bottom: 100px;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		gap: 50px 60px;
+		background: $color-colors-white;
+		border-radius: 10px;
+		padding: 40px 30px;
+
+		@media ($md) {
+			padding: 50px;
+		}
+
+		@media ($lg) {
+			justify-content: space-between;
+		}
+
+		@media ($xl) {
+			padding: 50px 80px;
+		}
+	}
+
+	&__left {
+		width: 100%;
+
+		@media ($lg) {
+			width: 45%;
+			max-width: 500px;
+			position: sticky;
+			top: 100px;
+		}
+
+		ol {
+			color: $color-colors-main;
+			padding-left: 20px;
+			max-width: 650px;
+
+			li {
+				@include text-style-text-text-main;
+
+				font-weight: 400;
+
+				&:not(:last-child) {
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+
+	&__right {
+		width: 100%;
+
+		@media ($lg) {
+			flex: 1 0 0;
+			max-width: 520px;
+		}
+	}
+
+	.title {
+		text-transform: uppercase;
+
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__sub-title {
+		font-family: $font-family-Awesome-Serif;
+		font-weight: 700;
+		font-size: 30px;
+		font-style: italic;
+		line-height: 41px;
+		color: $color-colors-main;
+		margin-bottom: 30px;
+	}
+
+	&__item {
+		background: $color-colors-element;
+		box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.05);
+		padding: 20px;
+
+		@media ($sm) {
+			padding: 20px 50px;
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+
+		&-title {
+			font-family: $font-family-Awesome-Serif;
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 18px;
+			color: $color-colors-white;
+			text-transform: uppercase;
+			background: $color-colors-main;
+			padding: 10px 20px;
+			display: inline-block;
+			margin-bottom: 20px;
+		}
+
+		p {
+			@include text-style-text-text-main;
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+
+			li {
+				@include text-style-text-text-main;
+
+				font-weight: 400;
+				padding-left: 18px;
+				position: relative;
+
+				&:not(:last-child) {
+					margin-bottom: 10px;
+				}
+
+				&::before {
+					content: "";
+					position: absolute;
+					top: 12px;
+					left: 0;
+					width: 8px;
+					height: 8px;
+					background: $color-text-main;
+					border-radius: 50%;
+				}
+			}
+		}
+	}
+
+	&_wide-items {
+		.get-started {
+			&__left {
+				@media ($lg) {
+					width: 36%;
+					max-width: 400px;
+				}
+			}
+
+			&__right {
+				@media ($lg) {
+					flex: 1 0 0;
+					max-width: 670px;
+				}
+			}
+
+			&__item {
+				@media ($sm) {
+					padding: 30px 50px;
+				}
+			}
+		}
+	}
+}

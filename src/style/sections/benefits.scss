@@ -1,0 +1,84 @@
+@import "../variables-and-mixins.scss";
+
+.benefits {
+	padding: 80px 0;
+
+	@media ($lg) {
+		padding: 100px 0;
+	}
+
+	.title {
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 50px;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+		margin-bottom: 50px;
+	}
+
+	&__item {
+		width: 100%;
+		display: flex;
+		align-items: flex-start;
+		gap: 30px;
+		background: $color-colors-white;
+		border-radius: 10px;
+		padding: 40px 30px;
+		min-height: 194px;
+
+		@media ($md) {
+			flex: 1 0 0;
+			padding: 40px;
+		}
+
+		@media ($lg) {
+			padding: 40px 60px;
+		}
+
+		h3 {
+			font-family: $font-family-Awesome-Serif;
+			font-weight: 700;
+			font-size: 22px;
+			font-style: normal;
+			line-height: 30px;
+			margin-bottom: 20px;
+		}
+
+		p {
+			@include text-style-text-text-main;
+
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	&__image {
+		flex-shrink: 0;
+
+		img {
+			display: block;
+		}
+	}
+
+	&__content {
+		flex: 1 0 0;
+	}
+
+	&__btn {
+		text-align: center;
+
+		.btn {
+			background: $color-colors-second;
+
+			&:hover,
+			&:focus {
+				background: $color-colors-main;
+			}
+		}
+	}
+}

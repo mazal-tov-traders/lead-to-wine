@@ -134,38 +134,42 @@
 
   &__ul {
     max-width: 548px;
-    margin: 0 0 5px;
-
+    margin: 0;
+ 
+    &:not(:last-child) {
+       margin-bottom: 25px;
+    }
+ 
     &_two-columns {
-      @media ($sm) {
-        columns: 2;
-        gap: 40px;
-      }
+       @media (--sm) {
+          columns: 2;
+          gap: 40px;
+       }
     }
-
+ 
     li {
-      @include text-style-text-text-main;
-
-      font-size: 18px;
-      padding-left: 14px;
-      position: relative;
-
-      &:not(:last-child) {
-        margin-bottom: 5px;
-      }
-
-      &::before {
-        content: "";
-        position: absolute;
-        top: 14px;
-        left: 0;
-        width: 4px;
-        height: 4px;
-        background: $color-colors-second;
-        border-radius: 50%;
-      }
+       @include text-style-text-text-main;
+ 
+       font-weight: 400;
+       padding-left: 18px;
+       position: relative;
+ 
+       &:not(:last-child) {
+          margin-bottom: 10px;
+       }
+ 
+       &::before {
+          content: "";
+          position: absolute;
+          top: 12px;
+          left: 0;
+          width: 8px;
+          height: 8px;
+          background: $color-text-main;
+          border-radius: 50%;
+       }
     }
-  }
+ }
 
   &__links {
     margin: 30px 0 0;

@@ -1,0 +1,85 @@
+<section class="banner">
+  {%- if section.settings.image != blank -%}
+      <img
+        src="{{ section.settings.image | img_url:  'original'}}"
+        alt=""
+        class="object-fit object-fit-cover"
+      >
+  {% endif %}
+  <div class="inner">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'title' %}
+          {%- if block.settings.title != blank -%}
+            <h1 class="banner__title" style=" color: {{ block.settings.color_title_label }};">
+              {{ block.settings.title -}}
+            </h1>
+          {% endif %}
+          {% when 'description' %}
+            {%- if block.settings.description != blank -%}
+              <div class="banner__description" style=" color:{{ block.settings.color_description_label }};">
+                {{ block.settings.description }}
+              </div>
+            {%- endif -%}
+      {% endcase %}
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Banner",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "title",
+      "name": "title",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "color",
+          "id": "color_title_label",
+          "label": "Color Title Label",
+          "default": "#383633"
+        }
+      ]
+    },
+    {
+      "type": "description",
+      "name": "Description",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "color",
+          "id": "color_description_label",
+          "label": "Color Description Label",
+          "default": "#383633"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,10 @@
+.btn {
+  background-color: var(--color-button-background);
+  color: var(--color-color-button-label);
+  border: 1px solid var(--color-color-button-border);
+}
+.btn:hover {
+  background-color: var(--hover-color-button-background);
+  border: 1px solid var(--hover-color-button-border);
+  color: var(--hover-color-button-label);
+}

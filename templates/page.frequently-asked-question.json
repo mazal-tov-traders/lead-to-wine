@@ -8,6 +8,24 @@
         "padding_bottom": 28
       }
     },
+    "0c58090c-ef64-46df-b291-ce5b34b0fbe1": {
+      "type": "banner",
+      "blocks": {
+        "fec1dd78-c9ff-422f-9eae-8141d2eab5cc": {
+          "type": "title",
+          "settings": {
+            "title": "Frequently Asked Questions",
+            "color_title_label": "#fff"
+          }
+        }
+      },
+      "block_order": [
+        "fec1dd78-c9ff-422f-9eae-8141d2eab5cc"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/faq-banner.jpg"
+      }
+    },
     "fb1b45e0-80bb-4fcc-bdeb-85f2b2cf4953": {
       "type": "collapsible-content",
       "blocks": {
@@ -66,22 +84,28 @@
       ],
       "settings": {
         "caption": "",
+        "color_caption_label": "#1D2228",
         "heading": "",
+        "color_heading_label": "#1D2228",
         "heading_size": "h1",
+        "secon_class": "",
         "heading_alignment": "center",
         "layout": "none",
-        "color_scheme": "",
         "container_color_scheme": "",
         "open_first_collapsible_row": true,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "padding_top": 72,
-        "padding_bottom": 100
+        "padding_bottom": 100,
+        "color_question_heading_label": "#342663",
+        "color_open_question_heading_label": "#383633",
+        "color_row_content_label": "#383633"
       }
     }
   },
   "order": [
     "main",
+    "0c58090c-ef64-46df-b291-ce5b34b0fbe1",
     "fb1b45e0-80bb-4fcc-bdeb-85f2b2cf4953"
   ]
 }

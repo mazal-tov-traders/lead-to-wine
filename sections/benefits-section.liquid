@@ -1,0 +1,198 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'buttons' -%}
+      --color-button-background: {{ block.settings.color_button_backgroun }};
+      --color-color-button-label: {{ block.settings.color_button_label }};
+      --color-color-button-border: {{ block.settings.color_button_border }};
+      --hover-color-button-background: {{ block.settings.hover_color_button_backgroun }};
+      --hover-color-button-border: {{ block.settings.hover_color_button_border }};
+      --hover-color-button-label: {{ block.settings.hover_color_button_label }};
+      {%- endcase -%}
+    {%- endfor -%}
+  }
+{%- endstyle -%}
+{{ 'custom-style-buttons.css' | asset_url | stylesheet_tag }}
+<section class="benefits">
+  <div class="page-width">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'title' %}
+          {%- if block.settings.title != blank -%}
+            <h2 class="title" style=" color: {{ block.settings.color_title_label }};">
+              {{ block.settings.title -}}
+            </h2>
+          {%- endif -%}
+      {% endcase %}
+    {% endfor %}
+    <div class="benefits__wrapper">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'benefits-item' %}
+            <div class="benefits__item">
+              {%- if block.settings.image != blank -%}
+                <div class="benefits__image">
+                  <img
+                    src="{{ block.settings.image | img_url:  'original'}}"
+                    alt=""
+                  >
+                </div>
+              {%- endif -%}
+              <div class="benefits__content">
+                {%- if block.settings.heading != blank -%}
+                  <h3 style=" color: {{ block.settings.color_heading_label }};">{{ block.settings.heading }}</h3>
+                {%- endif -%}
+                {%- if block.settings.content != blank -%}
+                  <div style=" color: {{ block.settings.color_content_label }};">{{ block.settings.content }}</div>
+                {%- endif -%}
+              </div>
+            </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {%- when 'buttons' -%}
+          {%- if block.settings.button_label != blank -%}
+            <div
+              class="benefits__btn"
+            >
+              <a
+                {% if block.settings.button_link == blank %}
+                  role="link" aria-disabled="true"
+                {% else %}
+                  href="{{ block.settings.button_link }}"
+                {% endif %}
+                class="btn"
+              >
+                {{- block.settings.button_label | escape -}}
+              </a>
+            </div>
+          {%- endif -%}
+      {%- endcase -%}
+    {%- endfor -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "benefits-section",
+  "tag": "section",
+  "class": "section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "title",
+      "name": "title",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "color",
+          "id": "color_title_label",
+          "label": "Color Title Label",
+          "default": "#383633"
+        }
+      ]
+    },
+    {
+      "type": "benefits-item",
+      "name": "Benefits Item",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "richtext",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "color",
+          "id": "color_heading_label",
+          "label": "Color Heading Label",
+          "default": "#383633"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content"
+        },
+        {
+          "type": "color",
+          "id": "color_content_label",
+          "label": "Color Content Label",
+          "default": "#383633"
+        }
+      ]
+    },
+    {
+      "type": "buttons",
+      "name": "Buttons",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label",
+          "default": "Button label",
+          "label": "Button label"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        },
+        {
+          "type": "color",
+          "id": "color_button_backgroun",
+          "label": "Button Background Color",
+          "default": "#383633"
+        },
+        {
+          "type": "color",
+          "id": "color_button_label",
+          "label": "Button Color Label",
+          "default": "#fff"
+        },
+        {
+          "type": "color",
+          "id": "color_button_border",
+          "label": "Button Color Border",
+          "default": "#383633"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_backgroun",
+          "label": "Hover Button Background Color",
+          "default": "#342663"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_border",
+          "label": "Hover Button Color Border",
+          "default": "#342663"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_label",
+          "label": "Hover Button Color Label",
+          "default": "#fff"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "benefits Section"
+    }
+  ]
+}
+{% endschema %}

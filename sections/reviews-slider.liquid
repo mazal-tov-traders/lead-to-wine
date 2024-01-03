@@ -1,0 +1,159 @@
+<section class="reviews-slider">
+  <div class="page-width">
+    <h2 class="title" style=" color:{{ section.settings.color_title_label }};">{{ section.settings.title }}</h2>
+    <div class="splide" id="reviews-slider">
+      <div class="splide__track">
+        <ul class="splide__list">
+          {% for block in section.blocks %}
+            {% case block.type %}
+              {% when 'splide-slide' %}
+                <li class="splide__slide">
+                  <div class="review">
+                    <div class="review__wrapper">
+                      <div class="review__avatar">
+                        {%- if block.settings.image != blank -%}
+                          <img
+                            src="{{ block.settings.image | img_url:  'original'}}"
+                            alt=""
+                          >
+                        {%- endif -%}
+                      </div>
+                      <div class="review__content">
+                        {%- if block.settings.name != blank -%}
+                          <h3 class="review__name" style=" color:{{ block.settings.color_name_label }};">
+                            {{ block.settings.name }}
+                          </h3>
+                        {% endif %}
+                        {%- if block.settings.position != blank -%}
+                          <h4 class="review__position" style=" color:{{ block.settings.color_position_label }};">
+                            {{ block.settings.position }}
+                          </h4>
+                        {% endif %}
+                        {%- if block.settings.content != blank -%}
+                          <p style=" color:{{ block.settings.color_content_label }};">
+                            {{ block.settings.content }}
+                          </p>
+                        {% endif %}
+                        <div class="review__quote">
+                          {%- if block.settings.icon != blank -%}
+                            <img
+                              src="{{ block.settings.icon | img_url:  'original'}}"
+                              alt=""
+                            >
+                          {%- endif -%}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+            {% endcase %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<script
+  src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+></script>
+<link
+  href="    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+  rel="stylesheet"
+>
+<script>
+  const reviewsSlider = document.querySelector('#reviews-slider');
+
+  if (reviewsSlider) {
+    reviewsSlider.classList.add('splide_ready');
+
+    new Splide('#reviews-slider', {
+      type: 'loop',
+      perPage: 1,
+      gap: 30,
+      autoplay: true,
+      interval: 7000,
+      speed: 3000,
+      easing: 'ease-out',
+      arrows: true,
+      pauseOnHover: true,
+      pagination: true,
+    }).mount();
+  }
+</script>
+
+{% schema %}
+{
+  "name": "reviews-slider",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "color",
+      "id": "color_title_label",
+      "label": "Color Title Label",
+      "default": "#383633"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "splide-slide",
+      "name": "Splide Slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name"
+        },
+        {
+          "type": "color",
+          "id": "color_name_label",
+          "label": "Color Name Label",
+          "default": "#383633"
+        },
+        {
+          "type": "text",
+          "id": "position",
+          "label": "position"
+        },
+        {
+          "type": "color",
+          "id": "color_position_label",
+          "label": "Color Position Label",
+          "default": "#383633"
+        },
+        {
+          "type": "text",
+          "id": "content",
+          "label": "Content"
+        },
+        {
+          "type": "color",
+          "id": "color_content_label",
+          "label": "Color Content Label",
+          "default": "#383633"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "icon"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Reviews Slider"
+    }
+  ]
+}
+{% endschema %}

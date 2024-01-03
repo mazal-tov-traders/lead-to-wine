@@ -1,26 +1,35 @@
 <section class="banner">
   {%- if section.settings.image != blank -%}
-      <img
-        src="{{ section.settings.image | img_url:  'original'}}"
-        alt=""
-        class="object-fit object-fit-cover"
-      >
+    <img
+      src="{{ section.settings.image | img_url:  'original'}}"
+      alt=""
+      class="object-fit object-fit-cover"
+    >
   {% endif %}
-  <div class="inner">
+  <div class="page-width">
     {% for block in section.blocks %}
       {% case block.type %}
+        {% when 'media' %}
+          {%- if block.settings.image != blank -%}
+            <div class="banner__logo">
+              <img
+                src="{{ section.settings.image | img_url:  'original'}}"
+                alt=""
+              >
+            </div>
+          {%- endif -%}
         {% when 'title' %}
           {%- if block.settings.title != blank -%}
             <h1 class="banner__title" style=" color: {{ block.settings.color_title_label }};">
               {{ block.settings.title -}}
             </h1>
           {% endif %}
-          {% when 'description' %}
-            {%- if block.settings.description != blank -%}
-              <div class="banner__description" style=" color:{{ block.settings.color_description_label }};">
-                {{ block.settings.description }}
-              </div>
-            {%- endif -%}
+        {% when 'description' %}
+          {%- if block.settings.description != blank -%}
+            <div class="banner__description" style=" color:{{ block.settings.color_description_label }};">
+              {{ block.settings.description }}
+            </div>
+          {%- endif -%}
       {% endcase %}
     {% endfor %}
   </div>
@@ -72,6 +81,18 @@
           "id": "color_description_label",
           "label": "Color Description Label",
           "default": "#383633"
+        }
+      ]
+    },
+    {
+      "type": "media",
+      "name": "Image",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
         }
       ]
     }

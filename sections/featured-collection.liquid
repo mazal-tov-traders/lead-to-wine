@@ -47,8 +47,7 @@
     assign show_desktop_slider = true
   endif
 -%}
-
-<div class="color-{{ section.settings.color_scheme }} isolate gradient">
+<div class="color-{{ section.settings.color_scheme }} isolate gradient collection__backgroun-fon {{ section.settings.class }} my-styles-for-collection">
   <div class="collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
     <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
       {%- if section.settings.title != blank -%}
@@ -73,14 +72,15 @@
     <slider-component class="slider-mobile-gutter{% if section.settings.full_width %} slider-component-full-width{% endif %}{% if show_mobile_slider == false %} page-width{% endif %}{% if show_desktop_slider == false and section.settings.full_width == false %} page-width-desktop{% endif %}{% if show_desktop_slider %} slider-component-desktop{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       <ul
         id="Slider-{{ section.id }}"
-        class="grid product-grid contains-card contains-card--product{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid--{{ section.settings.columns_desktop }}-col-desktop{% if section.settings.collection == blank %} grid--2-col-tablet-down{% else %} grid--{{ section.settings.columns_mobile }}-col-tablet-down{% endif %}{% if show_mobile_slider or show_desktop_slider %} slider{% if show_desktop_slider %} slider--desktop{% endif %}{% if show_mobile_slider %} slider--tablet grid--peek{% endif %}{% endif %}"
+        class="products grid product-grid contains-card contains-card--product{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid--{{ section.settings.columns_desktop }}-col-desktop{% if section.settings.collection == blank %} grid--2-col-tablet-down{% else %} grid--{{ section.settings.columns_mobile }}-col-tablet-down{% endif %}{% if show_mobile_slider or show_desktop_slider %} slider{% if show_desktop_slider %} slider--desktop{% endif %}{% if show_mobile_slider %} slider--tablet grid--peek{% endif %}{% endif %}"
         role="list"
         aria-label="{{ 'general.slider.name' | t }}"
       >
         {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
           <li
             id="Slide-{{ section.id }}-{{ forloop.index }}"
-            class="grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            {% comment %} grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %} {% endcomment %}
+            class="product{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
               style="--animation-order: {{ forloop.index }};"
@@ -100,7 +100,8 @@
         {%- else -%}
           {%- for i in (1..4) -%}
             <li
-              class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+              {% comment %} grid__item {% endcomment %}
+              class="product {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
               {% if settings.animations_reveal_on_scroll %}
                 data-cascade
                 style="--animation-order: {{ forloop.index }};"
@@ -112,6 +113,102 @@
                 placeholder_image: placeholder_image
               %}
             </li>
+
+            <li class="product">
+           
+              <div class="card-wrapper product-card-wrapper underline-links-hover">
+                <div class="card card--card card--media color-background-1 gradient">
+                  <div class="card__inner ratio">
+                    <div class="card__media">
+                      <div class="media media--transparent media--hover-effect">
+                        <img class="motion-reduce" src="{{root}}assets/images/product-1.jpg" alt="">
+                        <img class="motion-reduce" src="{{root}}assets/images/product-1.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="card__content">
+                      <div class="card__information">
+                        <h3 class="card__heading">
+                          <a href="#" class="full-unstyled-link">Closer</a>
+                        </h3>
+                      </div>
+                      <div class="card__badge bottom right"></div>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__information">
+                      <h3 class="card__heading h5">
+                        <a href="#" class="full-unstyled-link">Closer</a>
+                      </h3>
+                      <div class="card__description truncate_description">
+                        Lorem ipsum dolor sit amet consectetur.
+                      </div>
+                    </div>
+                    <div class="card-wrapper__pric-button">
+                      <div class="card-information"><span class="caption-large light"></span>
+                        <div class="price">
+                          <div class="price__container">
+                            <div class="price__regular">
+                              <span class="visually-hidden visually-hidden--inline">Regular price</span>
+                              <span class="price-item price-item--regular">$14.<span class="price-cent">99</span>
+                              </span>
+                            </div>
+                            <small class="unit-price caption hidden">
+                              <span class="visually-hidden">Unit price</span>
+                              <span class="price-item price-item--last">
+                                <span></span>
+                                <span aria-hidden="true">/</span>
+                                <span class="visually-hidden">&nbsp;per&nbsp;</span>
+                                <span></span>
+                              </span>
+                            </small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="quick-add no-js-hidden">
+                        <product-form>
+                          <form class="form">
+                            <input type="hidden" name="form_type" value="product">
+                            <input type="hidden" name="utf8" value="✓">
+                            <input type="hidden" name="id" value="45793244872980" class="product-variant-id">
+                            <button
+                              id="quick-add-template--21727730336020__featured_collection8457118843156-submit"
+                              type="submit" name="add"
+                              class="quick-add__submit button button--full-width button--secondary"
+                              aria-haspopup="dialog"
+                              aria-labelledby="quick-add-template--21727730336020__featured_collection8457118843156-submit title-template--21727730336020__featured_collection-8457118843156"
+                              aria-live="polite" data-sold-out-message="true">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M12.1183 11.8962C11.0907 11.8952 10.2569 12.7275 10.2559 13.755C10.2548 14.7826 11.0871 15.6165 12.1147 15.6175C13.1423 15.6185 13.9761 14.7863 13.9771 13.7587C13.9771 13.7581 13.9771 13.7575 13.9771 13.7569C13.9762 12.7304 13.1448 11.8982 12.1183 11.8962Z"/>
+                                <path d="M15.4185 2.98649C15.374 2.97787 15.3288 2.97348 15.2834 2.97341H3.95454L3.77511 1.77305C3.66332 0.975872 2.98144 0.382753 2.17644 0.382507H0.717701C0.321318 0.382507 0 0.703826 0 1.10021C0 1.49659 0.321318 1.81791 0.717701 1.81791H2.17823C2.26948 1.81724 2.34672 1.88519 2.35765 1.97582L3.46291 9.55114C3.61444 10.5137 4.44242 11.2239 5.41685 11.227H12.8827C13.8209 11.2282 14.6302 10.5688 14.8187 9.64982L15.9868 3.82747C16.0621 3.43831 15.8077 3.0618 15.4185 2.98649Z"/>
+                                <path d="M7.56101 13.6771C7.51731 12.6797 6.69413 11.8945 5.69569 11.898C4.66893 11.9395 3.87021 12.8055 3.9117 13.8322C3.95151 14.8174 4.75293 15.6005 5.73876 15.6175H5.78361C6.81023 15.5725 7.60597 14.7038 7.56101 13.6771Z"/>
+                              </svg>
+                              <span class="title-btn_add-cad">Add to cart</span>
+                              <span class="sold-out-message hidden">Sold out</span>
+                              <link href="//resources.milestonechurch.com/cdn/shop/t/2/assets/component-loading-spinner.css?v=116724955567955766481702562835" rel="stylesheet" type="text/css" media="all">
+                              <div class="loading__spinner hidden">
+                                <svg aria-hidden="true" focusable="false" class="spinner"
+                                     viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                                  <circle class="path" fill="none" stroke-width="6" cx="33"
+                                          cy="33" r="30"></circle>
+                                </svg>
+                              </div>
+                            </button>
+                            <input type="hidden" name="product-id" value="8457118843156"></form>
+                        </product-form>
+                      </div>
+                    </div>
+                    <div class="card__badge bottom right"></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+
+
+
+
+
+
           {%- endfor -%}
         {%- endfor -%}
       </ul>
@@ -159,14 +256,45 @@
     {% if section.settings.image_shape == 'arch' %}
       {% render 'mask-arch' %}
     {%- endif -%}
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+    {%- when 'buttons' -%}
+      <div
+        class="banner-innerr__box_button page-width"
+      >
+        {%- if block.settings.button_label_1 != blank -%}
+          <a
+            {% if block.settings.button_link_1 == blank %}
+              role="link" aria-disabled="true"
+            {% else %}
+              href="{{ block.settings.button_link_1 }}"
+            {% endif %}
+            class="buttonn"
+          >
+            {{- block.settings.button_label_1 | escape -}}
+          </a>
+        {%- endif -%}
+      </div>
+    {%- endcase -%}
+    {%- endfor -%}
   </div>
 </div>
+{% style %}
+    .collection__backgroun-fon.{{ section.settings.class }}{
+      background-image: url({{ section.settings.background | image_url: width: 3840 }});
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+{% endstyle %}
+
+
 
 {% schema %}
 {
   "name": "t:sections.featured-collection.name",
   "tag": "section",
-  "class": "section",
+  "class": "section-products",
   "disabled_on": {
     "groups": ["header", "footer"]
   },
@@ -176,6 +304,16 @@
       "id": "title",
       "default": "Featured collection",
       "label": "t:sections.featured-collection.settings.title.label"
+    },
+    {
+      "type": "text",
+      "id": "class",
+      "label": "Second class for backgroun"
+    },
+    {
+      "type": "image_picker",
+      "id": "background",
+      "label": "Background image"
     },
     {
       "type": "select",
@@ -421,7 +559,7 @@
       "id": "padding_top",
       "min": 0,
       "max": 100,
-      "step": 4,
+      "step": 1,
       "unit": "px",
       "label": "t:sections.all.padding.padding_top",
       "default": 36
@@ -431,10 +569,30 @@
       "id": "padding_bottom",
       "min": 0,
       "max": 100,
-      "step": 4,
+      "step": 1,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "buttons",
+      "name": "Buttons",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label_1",
+          "default": "Button label",
+          "label": "Button label"
+        },
+        {
+          "type": "url",
+          "id": "button_link_1",
+          "label": "Button link"
+        }
+      ]
     }
   ],
   "presets": [

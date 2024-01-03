@@ -186,3 +186,33 @@ $color-element-hover: #383633;
     border: 1px solid #f00;
   }
 }
+
+@mixin product-btn {
+  font-family: $font-family-global;
+  font-weight: 700;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 17px;
+  letter-spacing: -0.04em;
+  color: $color-colors-white;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 9px 17px;
+  background: $color-colors-second;
+  border: none;
+  transition: background 0.3s;
+
+  &:hover,
+  &:focus {
+     background: $color-colors-main;
+  }
+
+  svg {
+     flex-shrink: 0;
+     margin-bottom: 1px;
+  }
+}

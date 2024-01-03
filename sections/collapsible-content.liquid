@@ -1,5 +1,13 @@
 {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
 {{ 'collapsible-content.css' | asset_url | stylesheet_tag }}
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+          --color-heading-label: {{ section.settings.color_question_heading_label }};
+          --color-open-heading-label: {{ section.settings.color_open_question_heading_label }};
+          --color-row-content-label: {{ section.settings.color_row_content_label }};
+  }
+{%- endstyle -%}
+{{ 'custom-style-buttons.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -15,21 +23,24 @@
   }
 {%- endstyle -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient">
+<div class="color-{{ section.settings.color_scheme }} custom-collapsible {{ section.settings.secon_class }}">
   <div class="collapsible-content collapsible-{{ section.settings.layout }}-layout isolate{% if section.settings.layout == 'section' %} page-width{% elsif section.settings.layout == 'none' %} content-container content-container--full-width{% endif %}">
-    <div class="collapsible-content__wrapper section-{{ section.id }}-padding{% if section.settings.layout == 'section' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}">
+    <div class="collapsible-content__wrapper section-{{ section.id }}-padding{% if section.settings.layout == 'section' %} content-container color-{{ section.settings.container_color_scheme }}{% endif %}">
       <div class="{% if section.settings.image == blank %}collapsible-content-wrapper-narrow{% else %}page-width{% endif %}">
         <div
           class="collapsible-content__header{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
           style="text-align: {{ section.settings.heading_alignment }};"
         >
           {%- if section.settings.caption != blank -%}
-            <p class="caption-with-letter-spacing">
+            <p class="caption-with-letter-spacing" style=" color:{{ section.settings.color_caption_label }};">
               {{ section.settings.caption | escape }}
             </p>
           {% endif %}
           {%- if section.settings.heading != blank -%}
-            <h2 class="collapsible-content__heading inline-richtext {{ section.settings.heading_size }}">
+            <h2
+              class="collapsible-content__heading inline-richtext {{ section.settings.heading_size }}"
+              style=" color:{{ section.settings.color_heading_label }};"
+            >
               {{ section.settings.heading }}
             </h2>
           {%- else -%}
@@ -75,17 +86,19 @@
                 {{ block.shopify_attributes }}
               >
                 <details
+                  class="details-custom"
                   id="Details-{{ block.id }}-{{ section.id }}"
                   {% if section.settings.open_first_collapsible_row and forloop.first %}
                     open
                   {% endif %}
                 >
-                  <summary id="Summary-{{ block.id }}-{{ section.id }}">
+                  <summary id="Summary-{{ block.id }}-{{ section.id }}" class="summary-custom">
                     {% render 'icon-accordion', icon: block.settings.icon %}
                     <h3 class="accordion__title inline-richtext h4">
                       {{ block.settings.heading | default: block.settings.page.title }}
                     </h3>
-                    {% render 'icon-caret' %}
+                    {% render 'icon-plus-custom' %}
+                    {% render 'icon-minus-custom' %}
                   </summary>
                   <div
                     class="accordion__content rte"
@@ -106,6 +119,7 @@
   </div>
 </div>
 
+
 {% schema %}
 {
   "name": "t:sections.collapsible_content.name",
@@ -121,10 +135,22 @@
       "label": "t:sections.collapsible_content.settings.caption.label"
     },
     {
+      "type": "color",
+      "id": "color_caption_label",
+      "label": "Color Caption Label",
+      "default": "#1D2228"
+    },
+    {
       "type": "inline_richtext",
       "id": "heading",
       "label": "t:sections.collapsible_content.settings.heading.label",
       "default": "Collapsible content"
+    },
+    {
+      "type": "color",
+      "id": "color_heading_label",
+      "label": "Color Heading Label",
+      "default": "#1D2228"
     },
     {
       "type": "select",
@@ -145,6 +171,16 @@
       ],
       "default": "h1",
       "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "background",
+      "label": "Background image"
+    },
+    {
+      "type": "text",
+      "id": "secon_class",
+      "label": "class for image background"
     },
     {
       "type": "select",
@@ -185,12 +221,6 @@
         }
       ],
       "default": "none"
-    },
-    {
-      "type": "color_scheme",
-      "id": "color_scheme",
-      "label": "t:sections.all.colors.label",
-      "default": "background-1"
     },
     {
       "type": "color_scheme",
@@ -274,6 +304,24 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "color",
+      "id": "color_question_heading_label",
+      "label": "Color Question Heading Label",
+      "default": "#342663"
+    },
+    {
+      "type": "color",
+      "id": "color_open_question_heading_label",
+      "label": "Color Open Question Heading Label",
+      "default": "#383633"
+    },
+    {
+      "type": "color",
+      "id": "color_row_content_label",
+      "label": "Color Row Content Label",
+      "default": "#383633"
     }
   ],
   "blocks": [
@@ -477,6 +525,7 @@
           "id": "row_content",
           "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.row_content.label"
         },
+
         {
           "type": "page",
           "id": "page",

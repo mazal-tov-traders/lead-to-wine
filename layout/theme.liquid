@@ -451,7 +451,7 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-    {% if template == 'index' %}
+    {% comment %} {% if template == 'index' %}
  
 <style>
 .shopify-section-group-header-group.announcement-bar-section{
@@ -467,6 +467,6 @@ margin-top: 20px;
 }
 </style>
  
-{% endif %}
+{% endif %} {% endcomment %}
   </body>
 </html>

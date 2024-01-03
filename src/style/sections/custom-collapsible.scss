@@ -1,0 +1,101 @@
+.custom-collapsible {
+  .collapsible-content-wrapper-narrow {
+    max-width: 880px;
+    width: 100%;
+  }
+  .grid__item {
+    gap: 9px;
+    display: flex;
+    flex-direction: column;
+  }
+  .accordion {
+    background: #fff;
+    border-radius: 10px;
+  }
+  .collapsible-content__header {
+    .collapsible-content__heading {   
+      text-align: center;
+      margin-bottom: 50px;
+      text-transform: uppercase;
+      @media screen and (min-width: 500px) {
+
+      }
+    }
+  }
+  .details-custom {
+    border-radius: 2px 2px 0px 0px;
+    max-width: 850px;
+    width: 100%;
+    .summary-custom {
+      min-height: 70px;
+      padding: 0 40px 0px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .accordion__title {
+        @include text-style-text-text-main;
+        text-align: left;
+        color: var(--color-heading-label);
+      }
+    }
+
+    .accordion__content.rte {
+      border-top: 1px solid rgba(58, 57, 58, 0.3);
+      padding: 25px 40px;
+      display: flex;
+      align-items: center;
+      p {
+        color: var(--color-row-content-label);
+        @include text-style-text-text-main;
+        max-width: 770px;
+        width: 100%;
+      }
+    }
+  }
+  .icon-minuss {
+    display: none;
+  }
+  .accordion details[open] > summary .icon-minuss {
+    display: block;
+  }
+  .icon-pluss {
+    display: block;
+  }
+  .accordion details[open] > summary .icon-pluss {
+    display: none;
+  }
+  .accordion details[open] > summary .accordion__title {
+    color: var(--color-open-heading-label);
+  }
+}
+.custom-collapsible {
+  .details-custom {
+    .accordion__content.rte {
+      flex-direction: column;
+      ul {
+        width: 100%;
+        padding-left: 5px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .color-background-1.custom-collapsible .details-custom .summary-custom {
+    min-height: 78.5px;
+    padding: 5px 15px 5px 20px;
+  }
+  .color-background-1.custom-collapsible
+    .details-custom
+    .accordion__content.rte {
+    padding: 20px 20px;
+  }
+  .color-background-1.custom-collapsible
+    .accordion
+    details[open]
+    > summary
+    .accordion__title {
+    font-size: 18px !important;
+    line-height: 25px !important;
+  }
+}

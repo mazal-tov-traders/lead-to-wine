@@ -1,0 +1,323 @@
+{
+  "sections": {
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "disabled": true,
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "background-1",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "8279b562-6061-47fc-b2f8-d488bff073b8": {
+      "type": "banner",
+      "blocks": {
+        "3c0e835e-eec1-4b82-928e-cb77d982518d": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1212113.png"
+          }
+        }
+      },
+      "block_order": [
+        "3c0e835e-eec1-4b82-928e-cb77d982518d"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_4133714_6_24d1ad5e-bfea-423c-a5b5-e876f2ed3544.jpg"
+      }
+    },
+    "6b490e88-fda5-41d3-90d9-06844f871f85": {
+      "type": "text-section",
+      "blocks": {
+        "c38cf43e-d59d-4a74-b033-c79363efc310": {
+          "type": "title",
+          "settings": {
+            "title": "Build Men Who Build Your Church",
+            "color_title_label": "#383633"
+          }
+        },
+        "fdd8eaca-c11a-4730-9b56-e03f97d4b880": {
+          "type": "description",
+          "settings": {
+            "description": "<p>When you disciple the men in your church, you create higher buy-in, and what follows is their influence, leadership & finances.<\/p>",
+            "color_description_label": "#918677"
+          }
+        }
+      },
+      "block_order": [
+        "c38cf43e-d59d-4a74-b033-c79363efc310",
+        "fdd8eaca-c11a-4730-9b56-e03f97d4b880"
+      ],
+      "settings": {
+      }
+    },
+    "61808cc4-c819-46f2-995d-b6016654a45a": {
+      "type": "benefits-section",
+      "blocks": {
+        "1a0a4b18-31f1-4ea0-baff-774de2a2d5e3": {
+          "type": "title",
+          "settings": {
+            "title": "Build Men Who Build Your Church",
+            "color_title_label": "#383633"
+          }
+        },
+        "9884d006-0d87-4b86-99de-0756660e84ac": {
+          "type": "benefits-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/22_Literacy_day.png",
+            "heading": "<p>Discipleship takes time<\/p>",
+            "color_heading_label": "#383633",
+            "content": "<p>A 38-week process that provides the environment men need to grow spiritually and build meaningful relationships.<\/p>",
+            "color_content_label": "#383633"
+          }
+        },
+        "1dcf7486-cee6-4069-81fb-934a06c0e677": {
+          "type": "benefits-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fi_7588400.png",
+            "heading": "<p>Content is key<\/p>",
+            "color_heading_label": "#383633",
+            "content": "<p>Concise chapters intentionally desired to ad same to my eving.<\/p>",
+            "color_content_label": "#383633"
+          }
+        },
+        "5f7f463f-4d41-4032-b30b-e975cc0748ef": {
+          "type": "buttons",
+          "settings": {
+            "button_label": "Purchase Now",
+            "button_link": "shopify:\/\/pages\/about",
+            "color_button_backgroun": "#383633",
+            "color_button_label": "#ffffff",
+            "color_button_border": "#383633",
+            "hover_color_button_backgroun": "#342663",
+            "hover_color_button_border": "#342663",
+            "hover_color_button_label": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "1a0a4b18-31f1-4ea0-baff-774de2a2d5e3",
+        "9884d006-0d87-4b86-99de-0756660e84ac",
+        "1dcf7486-cee6-4069-81fb-934a06c0e677",
+        "5f7f463f-4d41-4032-b30b-e975cc0748ef"
+      ],
+      "settings": {
+      }
+    },
+    "509810c7-eb06-440c-8b14-3bc4c6394713": {
+      "type": "custom-featured-product",
+      "blocks": {
+        "template--17147660108006__509810c7-eb06-440c-8b14-3bc4c6394713-title-1": {
+          "type": "title",
+          "settings": {
+            "color_title_label": "#1D2228",
+            "heading_size": "h1"
+          }
+        },
+        "fc9cd3f1-3a4b-4170-8e0f-c1edfdb8671b": {
+          "type": "description",
+          "settings": {
+            "description": "<p>Your online course includes:<\/p><ul><li>8 training videos that cover the development group vision, process & content structure<\/li><li>Email & text templates<\/li><li>Weekly leader guide<\/li><li>Protips & frequently asked questions<\/li><li>12 copies of The Way to Win book for your first group<\/li><\/ul>",
+            "color_description_label": "#1D2228"
+          }
+        },
+        "template--17147660108006__509810c7-eb06-440c-8b14-3bc4c6394713-price-1": {
+          "type": "price",
+          "settings": {
+            "color_price_label": "#1D2228"
+          }
+        },
+        "template--17147660108006__509810c7-eb06-440c-8b14-3bc4c6394713-quantity_selector-1": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--17147660108006__509810c7-eb06-440c-8b14-3bc4c6394713-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "color_button_backgroun": "#5491D6",
+            "color_button_label": "#fff",
+            "color_button_border": "#5491D6",
+            "hover_color_button_backgroun": "#5491D6",
+            "hover_color_button_border": "#5491D6",
+            "hover_color_button_label": "#fff"
+          }
+        },
+        "55515fd3-6cb8-4a42-b37b-e6faeafc42f3": {
+          "type": "text",
+          "settings": {
+            "text": "25% discount when you buy 10 or more books",
+            "color_text_label": "#1D2228"
+          }
+        },
+        "11363e71-38e8-4e53-8cf9-7567c55939d6": {
+          "type": "text-second",
+          "settings": {
+            "text_second": "other ways to buy",
+            "color_text_second_label": "#1D2228"
+          }
+        },
+        "cb1bd4cc-f916-4694-b5f5-4d1bd130c872": {
+          "type": "media",
+          "settings": {
+            "text": "Free sample",
+            "image_video": "shopify:\/\/shop_images\/Rectangle_4133735.png",
+            "image_youtube": "shopify:\/\/shop_images\/fi_1384060.png",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        }
+      },
+      "block_order": [
+        "template--17147660108006__509810c7-eb06-440c-8b14-3bc4c6394713-title-1",
+        "fc9cd3f1-3a4b-4170-8e0f-c1edfdb8671b",
+        "template--17147660108006__509810c7-eb06-440c-8b14-3bc4c6394713-price-1",
+        "template--17147660108006__509810c7-eb06-440c-8b14-3bc4c6394713-quantity_selector-1",
+        "template--17147660108006__509810c7-eb06-440c-8b14-3bc4c6394713-buy_buttons-1",
+        "55515fd3-6cb8-4a42-b37b-e6faeafc42f3",
+        "11363e71-38e8-4e53-8cf9-7567c55939d6",
+        "cb1bd4cc-f916-4694-b5f5-4d1bd130c872"
+      ],
+      "settings": {
+        "product": "the-way-to-win-intensive-1",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "right",
+        "nubmer_navigat": "",
+        "hide_variants": false
+      }
+    },
+    "932a13fe-1cda-4d5f-bddb-d40497dfa703": {
+      "type": "reviews-slider",
+      "blocks": {
+        "98e52d9c-467c-4b03-9b78-9cda33f81385": {
+          "type": "splide-slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_4.png",
+            "name": "Jacob Williamson",
+            "color_name_label": "#383633",
+            "position": "Celebration Church",
+            "color_position_label": "#383633",
+            "content": "\"We believe a Way to Win Development Group will be the most important thing we do in 2024\"",
+            "color_content_label": "#383633",
+            "icon": "shopify:\/\/shop_images\/fi_107076_1.png"
+          }
+        },
+        "5ffa5172-7fb4-4a2f-a921-6ecc2b08daca": {
+          "type": "splide-slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_4.png",
+            "name": "Jacob Williamson",
+            "color_name_label": "#383633",
+            "position": "Jacob Williamson",
+            "color_position_label": "#383633",
+            "content": "\"We believe a Way to Win Development Group will be the most important thing we do in 2024\"",
+            "color_content_label": "#383633",
+            "icon": "shopify:\/\/shop_images\/fi_107076_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "98e52d9c-467c-4b03-9b78-9cda33f81385",
+        "5ffa5172-7fb4-4a2f-a921-6ecc2b08daca"
+      ],
+      "settings": {
+        "title": "Don't Just Take Our Word For It",
+        "color_title_label": "#383633"
+      }
+    },
+    "e89d5d04-466f-416d-a29a-50f9bda7e658": {
+      "type": "custom-featured-product",
+      "blocks": {
+        "template--17147660108006__e89d5d04-466f-416d-a29a-50f9bda7e658-title-1": {
+          "type": "title",
+          "settings": {
+            "color_title_label": "#1D2228",
+            "heading_size": "h1"
+          }
+        },
+        "template--17147660108006__e89d5d04-466f-416d-a29a-50f9bda7e658-price-1": {
+          "type": "price",
+          "settings": {
+            "color_price_label": "#1D2228"
+          }
+        },
+        "template--17147660108006__e89d5d04-466f-416d-a29a-50f9bda7e658-quantity_selector-1": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--17147660108006__e89d5d04-466f-416d-a29a-50f9bda7e658-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "color_button_backgroun": "#5491D6",
+            "color_button_label": "#fff",
+            "color_button_border": "#5491D6",
+            "hover_color_button_backgroun": "#5491D6",
+            "hover_color_button_border": "#5491D6",
+            "hover_color_button_label": "#fff"
+          }
+        },
+        "0e674e8d-6f69-4400-8da7-60803ea0c4f3": {
+          "type": "image-product",
+          "settings": {
+            "image_product": "shopify:\/\/shop_images\/Rectangle_4133735.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--17147660108006__e89d5d04-466f-416d-a29a-50f9bda7e658-title-1",
+        "template--17147660108006__e89d5d04-466f-416d-a29a-50f9bda7e658-price-1",
+        "template--17147660108006__e89d5d04-466f-416d-a29a-50f9bda7e658-quantity_selector-1",
+        "template--17147660108006__e89d5d04-466f-416d-a29a-50f9bda7e658-buy_buttons-1",
+        "0e674e8d-6f69-4400-8da7-60803ea0c4f3"
+      ],
+      "settings": {
+        "product": "the-way-to-win-intensive-1",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "nubmer_navigat": "",
+        "hide_variants": false
+      }
+    }
+  },
+  "order": [
+    "related-products",
+    "main",
+    "8279b562-6061-47fc-b2f8-d488bff073b8",
+    "6b490e88-fda5-41d3-90d9-06844f871f85",
+    "61808cc4-c819-46f2-995d-b6016654a45a",
+    "509810c7-eb06-440c-8b14-3bc4c6394713",
+    "932a13fe-1cda-4d5f-bddb-d40497dfa703",
+    "e89d5d04-466f-416d-a29a-50f9bda7e658"
+  ]
+}

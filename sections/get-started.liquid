@@ -1,0 +1,161 @@
+<section class="get-started">
+  <div class="page-width">
+    <div class="get-started__wrapper">
+      <div class="get-started__left">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'heading' %}
+              {%- if block.settings.heading != blank -%}
+                <h2 class="title" style=" color: {{ block.settings.color_heading_label }};">
+                  {{ block.settings.heading -}}
+                </h2>
+              {%- endif -%}
+            {% when 'description' %}
+              {%- if block.settings.description != blank -%}
+                <ol class="description" style=" color: {{ block.settings.color_title_label }};">
+                  {{ block.settings.description -}}
+                </ol>
+              {%- endif -%}
+          {% endcase %}
+        {% endfor %}
+      </div>
+      <div class="get-started__right">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'content' %}
+              {%- if block.settings.content != blank -%}
+                <h3 class="get-started__sub-title" style=" color: {{ block.settings.color_content_label }};">
+                  {{ block.settings.content -}}
+                </h3>
+              {%- endif -%}
+            {% when 'section' %}
+              {%- if block.settings.label != blank -%}
+                <div class="get-started__item" style=" background: {{ block.settings.background_block }};">
+                  <h4
+                    class="get-started__item-title"
+                    style=" color: {{ block.settings.color_label }}; background: {{ block.settings.background-label }};"
+                  >
+                    {{ block.settings.label }}
+                  </h4>
+                  <div style=" color: {{ block.settings.color_content_label }};">
+                    {{ block.settings.content }}
+                  </div>
+                </div>
+              {% endif %}
+          {% endcase %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "get-started",
+  "tag": "section",
+  "class": "section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "Heading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "color",
+          "id": "color_heading_label",
+          "label": "Color Heading Label",
+          "default": "#383633"
+        }
+      ]
+    },
+
+    {
+      "type": "description",
+      "name": "Description",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "color",
+          "id": "color_description_label",
+          "label": "Color Description Label",
+          "default": "#383633"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "name": "Content",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "content",
+          "label": "Content"
+        },
+        {
+          "type": "color",
+          "id": "color_content_label",
+          "label": "Color Content Label",
+          "default": "#383633"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "name": "Section",
+      "settings": [
+        {
+          "type": "color",
+          "id": "background_block",
+          "label": "Background block",
+          "default": "#EAE9E5"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "label",
+          "label": "Label"
+        },
+        {
+          "type": "color",
+          "id": "color_label",
+          "label": "Color Label",
+          "default": "#fff"
+        },
+        {
+          "type": "color",
+          "id": "background-label",
+          "label": "Background Label",
+          "default": "#342663"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content"
+        },
+        {
+          "type": "color",
+          "id": "color_content_label",
+          "label": "Color Content Label",
+          "default": "#342663"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Get Started"
+    }
+  ]
+}
+{% endschema %}

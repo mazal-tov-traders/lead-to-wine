@@ -1,38 +1,40 @@
 @import "../variables-and-mixins.scss";
 
 .quote {
-  padding: 80px 0 40px;
+	padding: 80px 0 40px;
 
-  @media ($lg) {
-    padding: 100px 0 50px;
-  }
+	@media ($lg) {
+		padding: 100px 0 50px;
+	}
 
-  &__title {
-    font-family: $font-family-Awesome-Serif;
-    font-weight: 600;
-    font-style: italic;
-    font-size: 44px;
-    line-height: 50px;
-    text-align: center;
-    margin: 0;
+	&__title {
+		font-family: $font-family-Awesome-Serif;
+		font-weight: 600;
+		font-style: italic;
+		font-size: 44px;
+		line-height: 50px;
+		text-align: center;
+		margin: 0;
 
-    @media ($lg) {
-      font-size: 94px;
-      line-height: 100px;
-    }
+		@media ($lg) {
+			font-size: 94px;
+			line-height: 100px;
+		}
 
-    .round-stroke {
-      font-weight: 700;
-      line-height: 41px;
-      font-style: normal;
+		strong {
+			@include round-stroke;
 
-      @media ($lg) {
-        line-height: 84px;
-      }
+			font-weight: 700;
+			line-height: 41px;
+			font-style: normal;
 
-      &::after {
-        bottom: -18%;
-      }
-    }
-  }
+			@media ($lg) {
+				line-height: 84px;
+			}
+
+			&::after {
+				bottom: -18%;
+			}
+		}
+	}
 }

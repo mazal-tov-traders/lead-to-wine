@@ -1,0 +1,73 @@
+{
+  "sections": {
+    "7ab22397-c0ce-419d-805b-048388f513b8": {
+      "type": "icons-and-text",
+      "blocks": {
+        "559525fe-0d69-4ae7-a2fd-8c0b99c0afa8": {
+          "type": "banner-text",
+          "settings": {
+            "year": "2024",
+            "row": "shopify:\/\/shop_images\/Artwork_1.svg",
+            "image-top": "shopify:\/\/shop_images\/2025_Leaders_gathering_1.png",
+            "date": "Tuesday, January 9",
+            "text": "Milestone Church",
+            "color_title_label": "#1D2228"
+          }
+        },
+        "template--17141571944678__7ab22397-c0ce-419d-805b-048388f513b8-icon-title-1": {
+          "type": "icon-title",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fi_2065223.svg",
+            "title": "Campaigns",
+            "color_title_label": "#1d2228"
+          }
+        },
+        "template--17141571944678__7ab22397-c0ce-419d-805b-048388f513b8-icon-title-2": {
+          "type": "icon-title",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fi_7773333.svg",
+            "title": "Breakout Session Slide Decks & Free Resources",
+            "color_title_label": "#1d2228"
+          }
+        },
+        "template--17141571944678__7ab22397-c0ce-419d-805b-048388f513b8-icon-title-3": {
+          "type": "icon-title",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fi_3532930.svg",
+            "title": "Books & Study Guides",
+            "color_title_label": "#1d2228"
+          }
+        },
+        "4076a1ec-d4ad-4fea-99d7-34d3026bfd68": {
+          "type": "custom-banner",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/111_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "559525fe-0d69-4ae7-a2fd-8c0b99c0afa8",
+        "template--17141571944678__7ab22397-c0ce-419d-805b-048388f513b8-icon-title-1",
+        "template--17141571944678__7ab22397-c0ce-419d-805b-048388f513b8-icon-title-2",
+        "template--17141571944678__7ab22397-c0ce-419d-805b-048388f513b8-icon-title-3",
+        "4076a1ec-d4ad-4fea-99d7-34d3026bfd68"
+      ],
+      "settings": {
+        "include_margins": true,
+        "background": "shopify:\/\/shop_images\/Rectangle_4133714_5.jpg"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "7ab22397-c0ce-419d-805b-048388f513b8",
+    "main"
+  ]
+}

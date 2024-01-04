@@ -1,0 +1,70 @@
+<link rel="stylesheet" href="{{root}}assets/css/home-page-banner.css">
+<section class="home-page-banner">
+	<img class="object-fit object-fit-cover" src="{{ section.settings.background | img_url: 'original'}}" alt="">
+	<img class="object-fit object-fit-cover mobile" src="{{ section.settings.background-mob | img_url: 'original' }}" alt="">
+	<div class="page-width">
+        {% for block in section.blocks %}
+            {% if block.type == "banner-text" %}
+              <h1 style="color: {{ block.settings.color_title_label }};" class="home-page-banner__title">
+                {% if block.settings.title-one %}
+                  {{ block.settings.title-one }}
+                {% endif %}
+              </h1>
+            {% endif %}
+          {% endfor %}
+	</div>
+</section>
+  {% schema %}
+  {
+    "name": "home page",
+    "tag": "section",
+    "class": "section home page",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "include_margins",
+        "default": true,
+        "label": "t:sections.apps.settings.include_margins.label"
+      },
+      {
+          "type": "image_picker",
+          "id": "background",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "background-mob",
+          "label": "Image"
+        }
+    ],
+    "blocks": [
+        {
+      "type": "banner-text",
+      "name": "banner text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "title-one",
+          "label": "title"
+        },
+        {
+          "type": "color",
+          "id": "color_title_label",
+          "label": "Color Title Label",
+          "default": "#EAE9E5"
+        }
+      ]
+    }
+    ],
+    "presets": [
+      {
+        "name": "home page banner",
+        "blocks": [
+       
+        ]
+      }
+    ]
+  }
+  {% endschema %}
+  

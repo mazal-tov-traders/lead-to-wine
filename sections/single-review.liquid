@@ -1,0 +1,101 @@
+<section class="single-review">
+	<div class="inner">
+        {% for block in section.blocks %}
+            {% if block.type == "single-review" %}
+		<div class="single-review__wrapper">
+                <div class="single-review__avatar">
+                    <img src="{{ block.settings.photo |  image_url  }}" alt="photo">
+                </div>
+                <div class="single-review__content">
+                    <h2 style="color:{{ block.settings.color_name }}" class="single-review__name">{{ block.settings.title-one }}</h2>
+                    <h3 style="color:{{ block.settings.color_text }}" class="single-review__position">{{ block.settings.title-two }}</h3>
+                    <p style="color:{{ block.settings.color_text_1 }}">{{ block.settings.title-three}} </p>
+                    <p style="color:{{ block.settings.color_title_label }}">{{ block.settings.title-4 }} </p>
+                </div>
+		</div>
+    {% endif %}
+{% endfor %}
+	</div>
+</section>
+{% schema %}
+    {
+      "name": "single-review",
+      "tag": "section",
+      "class": "section single-review",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "include_margins",
+          "default": true,
+          "label": "t:sections.apps.settings.include_margins.label"
+        }
+      ],
+      "blocks": [
+          {
+        "type": "single-review",
+        "name": "single review",
+        "limit": 1,
+        "settings": [
+            {
+            "type": "image_picker",
+            "id": "photo",
+            "label": "Image"
+          },
+          {
+            "type": "inline_richtext",
+            "id": "title-one",
+            "label": "name"
+          },
+          {
+            "type": "color",
+            "id": "color_name",
+            "label": "review name color",
+            "default": "#383633"
+          },
+       
+          {
+            "type": "inline_richtext",
+            "id": "title-two",
+            "label": "review"
+          },
+          {
+            "type": "color",
+            "id": "color_text",
+            "label": "review Label",
+            "default": "#918677"
+          },
+          {
+            "type": "inline_richtext",
+            "id": "title-three",
+            "label": "text"
+          },
+          {
+            "type": "color",
+            "id": "color_text_1",
+            "label": "review text",
+            "default": "#383633"
+          },
+          {
+            "type": "inline_richtext",
+            "id": "title-4",
+            "label": "text"
+          },
+          {
+            "type": "color",
+            "id": "color_title_label",
+            "label": "review text",
+            "default": "#383633"
+          }
+        ]
+      }
+      ],
+      "presets": [
+        {
+          "name": "single-review",
+          "blocks": [
+    
+          ]
+        }
+      ]
+    }
+    {% endschema %}

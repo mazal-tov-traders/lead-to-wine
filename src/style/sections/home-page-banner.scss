@@ -74,7 +74,8 @@
 
 		strong {
 			@include round-stroke;
-
+			
+			display: block;
 			width: 100%;
 
 			&::after {

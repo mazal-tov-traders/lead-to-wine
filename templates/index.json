@@ -2,6 +2,7 @@
   "sections": {
     "43894067-f286-4c70-9545-a8752bfd2abe": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured collection",
         "class": "",
@@ -28,9 +29,177 @@
         "padding_top": 52,
         "padding_bottom": 100
       }
+    },
+    "83b9d9c3-5754-4632-b554-7498973a8822": {
+      "type": "home-page-banner",
+      "blocks": {
+        "b91e93fb-82a3-43d6-8733-36518f6ab40f": {
+          "type": "banner-text",
+          "settings": {
+            "title-one": "<p>Coaching &<br\/><strong>Development<br\/><\/strong>in Life & Faith<\/p>",
+            "color_title_label": "#eae9e5"
+          }
+        }
+      },
+      "block_order": [
+        "b91e93fb-82a3-43d6-8733-36518f6ab40f"
+      ],
+      "settings": {
+        "include_margins": true,
+        "background": "shopify:\/\/shop_images\/Rectangle_3_1.jpg"
+      }
+    },
+    "2354a153-96f9-4a91-a1cc-cdbb319d67d4": {
+      "type": "quote",
+      "settings": {
+        "include_margins": true,
+        "title-one": "<strong>Lead to Win<\/strong> exists to equip and challenge you in the areas that matter most.",
+        "color_title_label": "#383633"
+      }
+    },
+    "cffa4dce-b708-40de-a035-cf7a78b97a83": {
+      "type": "single-review",
+      "blocks": {
+        "71291754-f50f-4388-835f-a7cb9737039b": {
+          "type": "single-review",
+          "settings": {
+            "photo": "shopify:\/\/shop_images\/Ellipse_4.jpg",
+            "title-one": "Chris Hodges",
+            "color_name": "#383633",
+            "title-two": "Church of the Highlands",
+            "color_text": "#918677",
+            "title-three": "Lorem ipsum dolor sit amet consectetur. Odio volutpat massa id neque et. Facilisi et in lobortis facilisi. Sed elementum pharetra nisl ultrices tristique nulla eu.",
+            "color_text_1": "#383633",
+            "title-4": "Odio volutpat massa id neque et. Facilisi et in lobortis facilisi. Sed elementum pharetra nisl ultrices tristique nulla eu.",
+            "color_title_label": "#383633"
+          }
+        }
+      },
+      "block_order": [
+        "71291754-f50f-4388-835f-a7cb9737039b"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "9cd67dd3-24ec-4a6c-932b-1b8cf7511904": {
+      "type": "services",
+      "blocks": {
+        "template--17127585513702__9cd67dd3-24ec-4a6c-932b-1b8cf7511904-services-card-1": {
+          "type": "services-card",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Vector_Smart_Object-2.png",
+            "title": "Gatherings",
+            "texxt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+            "color_title_label": "#383633",
+            "color_text": "#383633",
+            "texxt-btn": "Learn More",
+            "button_link": "shopify:\/\/products\/seeds-kids-curriculum",
+            "color_text-lb": "#383633",
+            "color_text_btn": "#383633"
+          }
+        },
+        "template--17127585513702__9cd67dd3-24ec-4a6c-932b-1b8cf7511904-services-card-2": {
+          "type": "services-card",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Vector_Smart_Object-2_e78dd317-e967-4760-9d4e-f8b7b9ee8b68.png",
+            "title": "Coaching",
+            "texxt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+            "color_title_label": "#383633",
+            "color_text": "#383633",
+            "texxt-btn": "leadrn more",
+            "button_link": "shopify:\/\/products\/seeds-kids-curriculum",
+            "color_text-lb": "#383633",
+            "color_text_btn": "#383633"
+          }
+        },
+        "template--17127585513702__9cd67dd3-24ec-4a6c-932b-1b8cf7511904-services-card-3": {
+          "type": "services-card",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Vector_Smart_Object_bbe40eb1-226e-4ecc-969c-4bca63821a0a.svg",
+            "title": "Resources",
+            "texxt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+            "color_title_label": "#383633",
+            "color_text": "#383633",
+            "texxt-btn": "learn more",
+            "button_link": "shopify:\/\/products\/promises-series-kit",
+            "color_text-lb": "#383633",
+            "color_text_btn": "#383633"
+          }
+        },
+        "template--17127585513702__9cd67dd3-24ec-4a6c-932b-1b8cf7511904-services-card-4": {
+          "type": "services-card",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Vector_Smart_Object_1.svg",
+            "title": "Resources",
+            "texxt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+            "color_title_label": "#383633",
+            "color_text": "#383633",
+            "texxt-btn": "learn more",
+            "button_link": "shopify:\/\/pages\/contact",
+            "color_text-lb": "#383633",
+            "color_text_btn": "#383633"
+          }
+        }
+      },
+      "block_order": [
+        "template--17127585513702__9cd67dd3-24ec-4a6c-932b-1b8cf7511904-services-card-1",
+        "template--17127585513702__9cd67dd3-24ec-4a6c-932b-1b8cf7511904-services-card-2",
+        "template--17127585513702__9cd67dd3-24ec-4a6c-932b-1b8cf7511904-services-card-3",
+        "template--17127585513702__9cd67dd3-24ec-4a6c-932b-1b8cf7511904-services-card-4"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "dc3ddbd5-59ca-45d9-aaf4-b83b99d70a0d": {
+      "type": "image-text",
+      "blocks": {
+        "4aba3ce6-5d62-4c77-9e2a-1bff9e4f7992": {
+          "type": "title",
+          "settings": {
+            "title": "About <em>Jeff <\/em> <em> <\/em>Little",
+            "color_title_label": "#383633"
+          }
+        },
+        "30e9acd3-f407-4789-8280-0c682be5bec8": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4133726.jpg"
+          }
+        },
+        "e3684287-fde5-44a4-82a7-59aad424d878": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. <\/p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.<\/p>",
+            "color_description_label": "#383633"
+          }
+        },
+        "a5475cd8-a97d-414d-a455-801907e0b395": {
+          "type": "link",
+          "settings": {
+            "label_link": "read more",
+            "link": "shopify:\/\/blogs\/news"
+          }
+        }
+      },
+      "block_order": [
+        "4aba3ce6-5d62-4c77-9e2a-1bff9e4f7992",
+        "30e9acd3-f407-4789-8280-0c682be5bec8",
+        "e3684287-fde5-44a4-82a7-59aad424d878",
+        "a5475cd8-a97d-414d-a455-801907e0b395"
+      ],
+      "settings": {
+        "position_image": ""
+      }
     }
   },
   "order": [
-    "43894067-f286-4c70-9545-a8752bfd2abe"
+    "43894067-f286-4c70-9545-a8752bfd2abe",
+    "83b9d9c3-5754-4632-b554-7498973a8822",
+    "2354a153-96f9-4a91-a1cc-cdbb319d67d4",
+    "cffa4dce-b708-40de-a035-cf7a78b97a83",
+    "9cd67dd3-24ec-4a6c-932b-1b8cf7511904",
+    "dc3ddbd5-59ca-45d9-aaf4-b83b99d70a0d"
   ]
 }

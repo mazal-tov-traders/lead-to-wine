@@ -1,0 +1,129 @@
+<section class="quote-with-avatar">
+  <div class="page-width">
+    <div class="quote-with-avatar__wrapper">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'avatar' %}
+            <div class="quote-with-avatar__avatar">
+              {%- if block.settings.avatar != blank -%}
+                <img
+                  src="{{ block.settings.avatar | img_url:  'original'}}"
+                  alt=""
+                >
+              {% endif %}
+              <span class="quote-with-avatar__quotes">
+                {%- if block.settings.quotes != blank -%}
+                  <img
+                    src="{{ block.settings.quotes | img_url:  'original'}}"
+                    alt=""
+                  >
+                {% endif %}
+              </span>
+            </div>
+          {% when 'name' %}
+            {%- if block.settings.name != blank -%}
+              <p class="quote-with-avatar__author" style=" color: {{ block.settings.color_name_label }};">
+                {{ block.settings.name }}
+              </p>
+            {% endif %}
+          {% when 'text' %}
+            {%- if block.settings.text != blank -%}
+              <p class="quote-with-avatar__text">
+                {{ block.settings.text }}
+              </p>
+            {% endif %}
+          {% when 'quote-with-avatar' %}
+            {%- if block.settings.quote-with-avatar!= blank -%}
+              <div class="quote-with-avatar__logo">
+                <img
+                  src="{{ block.settings.quote-with-avatar | img_url:  'original'}}"
+                  alt=""
+                >
+              </div>
+            {% endif %}
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "quote-with-avatar",
+  "tag": "section",
+  "class": "section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "avatar",
+      "name": "Avatar",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "avatar",
+          "label": "Avatar"
+        },
+        {
+          "type": "image_picker",
+          "id": "quotes",
+          "label": "Quotes"
+        }
+      ]
+    },
+    {
+      "type": "name",
+      "name": "Name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "name",
+          "label": "name"
+        },
+        {
+          "type": "color",
+          "id": "color_name_label",
+          "label": "Color Name Label",
+          "default": "#342663"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "text"
+        },
+        {
+          "type": "color",
+          "id": "color_text_label",
+          "label": "Color Text Label",
+          "default": "#383633"
+        }
+      ]
+    },
+    {
+      "type": "quote-with-avatar",
+      "name": "Quote With Avatar",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "quote-with-avatar",
+          "label": "Quote With Avatar"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Quote With Avatar"
+    }
+  ]
+}
+{% endschema %}

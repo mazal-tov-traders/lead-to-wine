@@ -2,7 +2,7 @@
   #shopify-section-{{ section.id }} {
     {%- for block in section.blocks -%}
       {%- case block.type -%}
-        {%- when 'buy_button' -%}
+        {%- when 'button' -%}
       --color-button-background: {{ block.settings.color_button_backgroun }};
       --color-color-button-label: {{ block.settings.color_button_label }};
       --color-color-button-border: {{ block.settings.color_button_border }};
@@ -150,7 +150,7 @@
           "type": "color",
           "id": "color_button_backgroun",
           "label": "Button Background Color",
-          "default": "#5491D6"
+          "default": "rgba(255, 0, 0, 0.5)"
         },
         {
           "type": "color",
@@ -168,19 +168,19 @@
           "type": "color",
           "id": "hover_color_button_backgroun",
           "label": "Hover Button Background Color",
-          "default": "#5491D6"
+          "default": "#fff"
         },
         {
           "type": "color",
           "id": "hover_color_button_border",
           "label": "Hover Button Color Border",
-          "default": "#5491D6"
+          "default": "#fff"
         },
         {
           "type": "color",
           "id": "hover_color_button_label",
           "label": "Hover Button Color Label",
-          "default": "#fff"
+          "default": "#5491D6"
         }
       ]
     }

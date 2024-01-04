@@ -5,9 +5,9 @@
                 {% if block.type == "services-card" %}
                     <div class="services__item">
                         <img src="{{ block.settings.icon |  image_url  }}" alt="">
-                        <h2 style="color:{{ block.settings.color_title_label }}" class="services__title">{{ block.settings.title }}</h2>
+                        <h2 tyle="color:{{ block.settings.color_title_label }}"  class="services__title">{{ block.settings.title }}</h2>
                         <p style="color:{{ block.settings.color_text }}">{{ block.settings.texxt }}</p>
-                        <p><a style="color:{{ block.settings.color_text-lb }}" href="{{ block.settings.button_link | url }}" class="btn">{{ block.settings.texxt-btn }}</a></p>
+                        <p><a  href="{{ block.settings.button_link | url }}" class="btn">{{ block.settings.texxt-btn }}</a></p>
                     </div>
                 {% endif %}
             {% endfor %}

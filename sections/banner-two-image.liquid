@@ -1,0 +1,146 @@
+<section class="download-preview">
+  {%- if section.settings.banner != blank -%}
+      <img
+        src="{{ section.settings.banner | img_url:  'original'}}"
+        alt=""
+        class="object-fit object-fit-cove"
+      >
+  {% endif %}
+  <div class="page-width">
+    <div class="download-preview__wrapper">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'image' %}
+            {%- if block.settings.image != blank -%}
+              <div class="download-preview__left">
+                <img
+                  src="{{ block.settings.image | img_url:  'original'}}"
+                  alt=""
+                >
+              </div>
+            {% endif %}
+          {% when 'img-btn' %}
+            <div class="download-preview__right">
+              {%- if block.settings.img != blank -%}
+                <img
+                  src="{{ block.settings.img | img_url:  'original'}}"
+                  alt=""
+                >
+              {% endif %}
+              {%- if block.settings.button_label != blank -%}
+                <div
+                  class="download-preview__btn"
+                >
+                  <a
+                    {% if block.settings.button_link == blank %}
+                      role="link" aria-disabled="true"
+                    {% else %}
+                      href="{{ block.settings.button_link }}"
+                    {% endif %}
+
+                    class="btn"
+                  >
+                    {{- block.settings.button_label | escape -}}
+                  </a>
+                </div>
+              {%- endif -%}
+            </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "banner-two-image",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "banner",
+      "label": "Banner"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    },
+
+    {
+      "type": "img-btn",
+      "name": "image and button",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "img",
+          "label": "image"
+        },
+        {
+            "type": "text",
+            "id": "button_label",
+            "default": "Button label",
+            "label": "Button label"
+          },
+          {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button link"
+          },
+          {
+            "type": "color",
+            "id": "color_button_backgroun",
+            "label": "Button Background Color",
+            "default": "#fff"
+          },
+          {
+            "type": "color",
+            "id": "color_button_label",
+            "label": "Button Color Label",
+            "default": "#342663"
+          },
+          {
+            "type": "color",
+            "id": "color_button_border",
+            "label": "Button Color Border",
+            "default": "#fff"
+          },
+          {
+            "type": "color",
+            "id": "hover_color_button_backgroun",
+            "label": "Hover Button Background Color",
+            "default": "#342663"
+          },
+          {
+            "type": "color",
+            "id": "hover_color_button_border",
+            "label": "Hover Button Color Border",
+            "default": "#342663"
+          },
+          {
+            "type": "color",
+            "id": "hover_color_button_label",
+            "label": "Hover Button Color Label",
+            "default": "#fff"
+          }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner Two Image"
+    }
+  ]
+}
+{% endschema %}

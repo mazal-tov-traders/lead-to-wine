@@ -1,0 +1,45 @@
+@import "../variables-and-mixins.scss";
+
+.you-may-enjoy {
+	padding: 80px 0;
+	background: rgba(248, 247, 245, 0.3);
+
+	@media ($lg) {
+		padding: 100px 0 110px;
+	}
+
+	&__top-title {
+		@include top-title;
+
+		text-align: center;
+		margin-bottom: 10px;
+
+		&::after {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	.title {
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 50px;
+	}
+
+	&__btn {
+		text-align: center;
+		margin-top: 50px;
+
+		.btn {
+			color: $color-colors-main;
+			background: transparent;
+			border-color: $color-colors-main;
+
+			&:hover,
+			&:focus {
+				color: $color-colors-white;
+				background: $color-colors-main;
+			}
+		}
+	}
+}

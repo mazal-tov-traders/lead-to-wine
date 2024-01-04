@@ -1,63 +1,73 @@
 @import "../variables-and-mixins.scss";
 
 .image-text {
-  padding: 80px 0;
+	padding: 80px 0;
 
-  @media ($lg) {
-    padding: 100px 0;
-  }
+	@media ($lg) {
+		padding: 100px 0;
+	}
 
-  &_reverse &__wrapper {
-    flex-direction: row-reverse;
-  }
+	&_bg-white {
+		background: $color-colors-white;
+	}
 
-  &__wrapper {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 40px 60px;
-  }
+	&_reverse &__wrapper {
+		flex-direction: row-reverse;
+	}
 
-  &__image {
-    width: 100%;
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 40px 60px;
+	}
 
-    @media ($lg) {
-      width: 40.3%;
-    }
+	&__image {
+		width: 100%;
 
-    img {
-      display: block;
-      border-radius: 10px;
-    }
-  }
+		@media ($lg) {
+			width: 40.3%;
+		}
 
-  &__content {
-    width: 100%;
+		img {
+			display: block;
+			border-radius: 10px;
+		}
+	}
 
-    @media ($lg) {
-      flex: 1 0 0;
-    }
-  }
+	&__content {
+		width: 100%;
 
-  .title {
-    margin-bottom: 20px;
-  }
+		@media ($lg) {
+			flex: 1 0 0;
+		}
+	}
 
-  p {
-    @include text-style-text-text-main;
+	.title {
+		margin-bottom: 20px;
+	}
 
-    max-width: 680px;
+	&__top-title {
+		@include top-title;
 
-    &:not(:last-child) {
-      margin-bottom: 15px;
-    }
-  }
+		margin-bottom: 10px;
+	}
 
-  .link {
-    margin-top: 20px;
+	p {
+		@include text-style-text-text-main;
 
-    @media ($lg) {
-      margin-top: 50px;
-    }
-  }
+		max-width: 680px;
+
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
+	}
+
+	.link {
+		margin-top: 20px;
+
+		@media ($lg) {
+			margin-top: 50px;
+		}
+	}
 }

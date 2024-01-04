@@ -117,9 +117,9 @@ $color-element-hover: #383633;
   line-height: 51px;
   padding: 0 33px;
   color: $color-colors-white;
-  background: $color-colors-main;
+  background: $color-colors-second;
   border-radius: 30px;
-  border: 1px solid $color-colors-main;
+  border: 1px solid $color-colors-second;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -127,18 +127,18 @@ $color-element-hover: #383633;
 
   &:hover,
   &:focus {
-    background: $color-element-hover;
-    border: 1px solid $color-element-hover;
-    text-decoration: none;
+     background: $color-colors-main;
+     border: 1px solid $color-colors-main;
+     text-decoration: none;
   }
 
   &[disabled] {
-    background: $color-colors-light-gray;
-    border: 1px solid $color-colors-light-gray;
-    color: $color-colors-89;
-    pointer-events: none;
-    outline: none;
-    opacity: 1;
+     background: $color-colors-light-gray;
+     border: 1px solid $color-colors-light-gray;
+     color: $color-colors-89;
+     pointer-events: none;
+     outline: none;
+     opacity: 1;
   }
 }
 
@@ -214,5 +214,27 @@ $color-element-hover: #383633;
   svg {
      flex-shrink: 0;
      margin-bottom: 1px;
+  }
+}
+
+@mixin top-title {
+  display: block;
+  font-family: $font-family-Awesome-Serif;
+  font-weight: 400;
+  font-size: 24px;
+  font-style: italic;
+  line-height: 30px;
+  color: $color-colors-main;
+  padding-bottom: 16px;
+  position: relative;
+
+  &::after {
+     content: "";
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 20px;
+     height: 1px;
+     border-bottom: 1px solid;
   }
 }

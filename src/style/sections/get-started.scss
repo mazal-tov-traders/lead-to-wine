@@ -15,6 +15,14 @@
 		}
 	}
 
+	&_bg-white {
+		background: $color-colors-white;
+
+		@media ($lg) {
+			padding: 100px 0;
+		}
+	}
+
 	&__wrapper {
 		display: flex;
 		align-items: flex-start;
@@ -35,6 +43,12 @@
 		@media ($xl) {
 			padding: 50px 80px;
 		}
+	}
+
+	&_bg-white &__wrapper {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 0;
 	}
 
 	&__left {
@@ -75,6 +89,18 @@
 
 	.title {
 		text-transform: uppercase;
+
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__title {
+		font-family: $font-family-Awesome-Serif;
+		font-weight: 700;
+		font-size: 30px;
+		font-style: italic;
+		line-height: 41px;
 
 		&:not(:last-child) {
 			margin-bottom: 30px;

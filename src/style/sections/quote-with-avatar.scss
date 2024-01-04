@@ -1,0 +1,98 @@
+@import "../variables-and-mixins.scss";
+
+.quote-with-avatar {
+	padding: 60px 0;
+	background: $color-colors-white;
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 20px 30px;
+		position: relative;
+
+		@media ($lg) {
+			padding: 42px 0 22px;
+			max-width: 1270px;
+			margin: 0 auto;
+		}
+	}
+
+	&__avatar {
+		width: 80px;
+		height: 80px;
+		position: relative;
+
+		img {
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			object-fit: cover;
+			object-position: top center;
+		}
+	}
+
+	&__quotes {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: 24px;
+		height: 24px;
+	}
+
+	&__author {
+		@include text-style-text-text-main;
+
+		font-weight: 700;
+		color: $color-colors-main;
+		text-transform: uppercase;
+		margin: 0;
+		flex: 1 0 0;
+
+		@media ($lg) {
+			width: fit-content;
+			max-width: 220px;
+			flex: unset;
+			padding-right: 50px;
+			position: relative;
+
+			&::after {
+				content: "";
+				position: absolute;
+				top: 50%;
+				right: 0;
+				width: 20px;
+				height: 1px;
+				background: $color-colors-main;
+			}
+		}
+	}
+
+	&__text {
+		@include text-style-text-text-main;
+
+		margin: 0;
+
+		@media ($lg) {
+			flex: 1 0 0;
+			margin-left: 10px;
+		}
+	}
+
+	&__logo {
+		position: absolute;
+		top: 80px;
+		right: 50%;
+		transform: translateX(50%);
+		width: 237px;
+
+		@media ($sm) {
+			transform: translateX(0);
+			right: 9.85%;
+		}
+
+		@media ($lg) {
+			top: 0;
+		}
+	}
+}

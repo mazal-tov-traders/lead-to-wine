@@ -10,7 +10,7 @@
 
 	.product {
 		display: flex;
-		flex-wrap: wrap;
+		flex-wrap: wrap-reverse;
 		gap: 50px 70px;
 
 		@media ($lg) {
@@ -33,6 +33,11 @@
 				flex: 1 0 0;
 				max-width: 550px;
 			}
+
+			.image-product {
+				display: block;
+				border-radius: 10px;
+			}
 		}
 
 		h2 {
@@ -40,6 +45,10 @@
 
 			text-transform: uppercase;
 			margin-bottom: 30px;
+
+			strong {
+				font-weight: 600;
+			}
 		}
 
 		h3 {
@@ -106,6 +115,10 @@
 
 				text-transform: uppercase;
 				margin-bottom: 30px;
+
+				strong {
+					font-weight: 600;
+				}
 			}
 
 			&__content {
@@ -187,9 +200,9 @@
 				min-height: 50px;
 				font-weight: 500;
 				color: $color-colors-white;
-				background: $color-colors-main;
+				background: $color-colors-second;
 				border-radius: 30px;
-				border: 1px solid $color-colors-main;
+				border: 1px solid $color-colors-second;
 				text-align: center;
 				text-decoration: none;
 				cursor: pointer;
@@ -197,8 +210,8 @@
 
 				&:hover,
 				&:focus {
-					background: $color-element-hover;
-					border: 1px solid $color-element-hover;
+					background: $color-colors-main;
+					border: 1px solid $color-colors-main;
 					text-decoration: none;
 				}
 

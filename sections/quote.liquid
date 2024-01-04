@@ -1,0 +1,40 @@
+<section class="quote">
+	<div class="page-width inner">
+		<h2 style="color:{{ section.settings.color_title_label }}" class="quote__title">{{ section.settings.title-one }}</h2>
+	</div>
+</section>
+  {% schema %}
+  {
+    "name": "quote",
+    "tag": "section",
+    "class": "section home page",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "include_margins",
+        "default": true,
+        "label": "t:sections.apps.settings.include_margins.label"
+      },
+      {
+          "type": "inline_richtext",
+          "id": "title-one",
+          "label": "title"
+        },
+        {
+          "type": "color",
+          "id": "color_title_label",
+          "label": "Color Title Label",
+          "default": "#383633"
+        }
+    ],
+    "presets": [
+      {
+        "name": "quote",
+        "blocks": [
+       
+        ]
+      }
+    ]
+  }
+  {% endschema %}
+  

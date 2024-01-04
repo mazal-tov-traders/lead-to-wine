@@ -3511,3 +3511,10 @@ details-disclosure > details {
     --border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */
   }
 }
+
+
+:root {
+  --color-heading-label: var(--color-heading-label); 
+  --color-open-heading-label: var(--color-open-heading-label);
+  --color-row-content-label: var(--color-row-content-label);
+}

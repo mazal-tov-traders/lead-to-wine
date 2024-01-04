@@ -1,0 +1,167 @@
+<section class="leaders-gathering">
+  <div class="inner page-width">
+  {% for block in section.blocks %}
+      {% if block.type == "banner-text" %}
+        {% if block.settings.year %}
+          <div class="leaders-gathering__legend">
+            <p>{{ block.settings.year }}</p>
+            <span class="line"></span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M17.4935 0.0160499C17.9506 2.75026 18.4065 5.86164 18.8624 8.50758H13.3117C13.7709 5.85591 14.2268 2.7365 14.6849 0C6.46377 0.706194 0 7.95844 0 16.7996C0 23.4959 3.70524 29.2795 9.0743 32C9.50957 29.698 9.94593 28.0173 10.3812 25.4906H21.794C22.2227 27.9852 22.6537 29.6579 23.0846 31.9175C28.3677 29.1649 32 23.4294 32 16.7996C32.0011 8.02149 25.6298 0.810518 17.4935 0.0160499ZM11.0929 21.3681C11.5956 18.4539 12.0994 15.5432 12.6011 12.629H19.5752C20.0769 15.5432 20.5785 18.4562 21.0812 21.3681H11.0929Z" fill="#383633"/>
+            </svg>
+          </div>
+        {% endif %}
+        <h1 class="leaders-gathering__title">
+          {% if block.settings.image-top %}
+            <img src="{{ block.settings.image-top | image_url }}" alt="">
+          {% endif %}
+          <span class="screen-reader-text">Leaders Gathering</span>
+        </h1>
+        <div class="leaders-gathering__text">
+          {% if block.settings.year %}
+            <p>{{ block.settings.year }}</p>
+          {% endif %}
+          {% if block.settings.text %}
+            <p>{{ block.settings.text }}</p>
+          {% endif %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  <div class="leaders-gathering__wrapper">
+    {% for block in section.blocks %}
+      {% if block.type == "icon-title" %}
+        <div class="leaders-gathering__item">
+          {% if block.settings.image %}
+            <img src="{{ block.settings.image | image_url }}" alt="">
+          {% endif %}
+          <h3>
+            {% if block.settings.title %}
+              <a href="#">{{ block.settings.title }}</a>
+            {% endif %}
+          </h3>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  </div>
+</section>
+<section>
+  {% for block in section.blocks %}
+    {% if block.type == "custom-banner" %}
+      {% if block.settings.image %}
+        <div class="page-width inner"><img src="{{ block.settings.image | image_url }}" alt=""></div>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</section>
+  {% schema %}
+  {
+    "name": "icon with text",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "include_margins",
+        "default": true,
+        "label": "t:sections.apps.settings.include_margins.label"
+      },
+      {
+          "type": "image_picker",
+          "id": "background",
+          "label": "Image"
+        }
+    ],
+    "blocks": [
+        {
+      "type": "banner-text",
+      "name": "banner text",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "year",
+          "label": "year"
+        },
+        {
+          "type": "image_picker",
+          "id": "row",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image-top",
+          "label": "Image"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "date",
+          "label": "Date"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "text",
+          "label": "text"
+        },
+        {
+          "type": "color",
+          "id": "color_title_label",
+          "label": "Color Title Label",
+          "default": "#1D2228"
+        }
+      ]
+    },
+     {
+      "type": "icon-title",
+      "name": "title",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "color",
+          "id": "color_title_label",
+          "label": "Color Title Label",
+          "default": "#1D2228"
+        },
+        {
+          "type": "image_picker",
+          "id": "image-bottom",
+          "label": "Image"
+        }
+      ]
+    },
+    {
+      "type": "custom-banner",
+      "name": "banner",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+    ],
+    "presets": [
+      {
+        "name": "icon with-text",
+        "blocks": [
+          {"type": "icon-title"},
+          {"type": "icon-title"},
+          {"type": "icon-title"}
+        ]
+      }
+    ]
+  }
+  {% endschema %}
+  

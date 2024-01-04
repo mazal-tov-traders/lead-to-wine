@@ -8,7 +8,7 @@ $max-width-main-inner: 1320px;
 $color-bg-custom: #10131c;
 $height-element: 53px;
 
-$color-text-main: #4e4e4e;
+$color-text-main: #383633;
 $color-text-light-grey: #eae9e5;
 $color-text-second: #918677;
 $color-text-link: #342663;
@@ -20,7 +20,25 @@ $color-colors-light-gray: #dbdbdb;
 $color-colors-89: #898989;
 
 $color-element-hover: #383633;
+@mixin round-stroke {
+  display: inline-block;
+  position: relative;
 
+  &::after {
+     content: "";
+     position: absolute;
+     bottom: -10%;
+     left: -3%;
+     width: 106%;
+     height: 100%;
+     border-radius: 100%;
+     border: 1px solid;
+
+     @media ($md) {
+        border: 2px solid;
+     }
+  }
+}
 @mixin text-style-text-headline-1 {
   font-family: $font-family-Awesome-Serif;
   font-weight: 700;
@@ -29,6 +47,10 @@ $color-element-hover: #383633;
   line-height: 60px;
   text-decoration: none;
   text-transform: uppercase;
+
+  strong {
+     @include round-stroke;
+  }
 }
 
 @mixin text-style-text-headline-2 {
@@ -40,16 +62,21 @@ $color-element-hover: #383633;
   text-decoration: none;
   text-transform: none;
 
-  .italic {
-    font-weight: 400;
+  @media ($sm) {
+     font-size: 50px;
+     line-height: 69px;
   }
 
-  @media ($sm) {
-    font-size: 50px;
-    line-height: 69px;
+  .italic,
+  i,
+  em {
+     font-weight: 400;
+  }
+
+  strong {
+     @include round-stroke;
   }
 }
-
 @mixin text-style-text-headline-3 {
   font-family: $font-family-Awesome-Serif;
   font-weight: 400;

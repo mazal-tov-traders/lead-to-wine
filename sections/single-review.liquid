@@ -1,0 +1,119 @@
+<section class="single-review">
+    <div class="inner">
+        {% for block in section.blocks %}
+            {% if block.type == "single-review" %}
+                <div class="single-review__wrapper">
+                    <div class="single-review__avatar">
+                        {% if block.settings.photo %}
+                            <img src="{{ block.settings.photo | image_url }}" alt="photo">
+                        {% endif %}
+                    </div>
+                    <div class="single-review__content">
+                        <h2 style="color:{{ block.settings.color_name }}" class="single-review__name">
+                            {% if block.settings.title-one and block.settings.title-one != "" %}
+                                {{ block.settings.title-one }}
+                            {% endif %}
+                        </h2>
+                        <h3 style="color:{{ block.settings.color_text }}" class="single-review__position">
+                            {% if block.settings.title-two and block.settings.title-two != "" %}
+                                {{ block.settings.title-two }}
+                            {% endif %}
+                        </h3>
+                        <p style="color:{{ block.settings.color_text_1 }}">
+                            {% if block.settings.title-three and block.settings.title-three != "" %}
+                                {{ block.settings.title-three }}
+                            {% endif %}
+                        </p>
+                        <p style="color:{{ block.settings.color_title_label }}">
+                            {% if block.settings.title-4 and block.settings.title-4 != "" %}
+                                {{ block.settings.title-4 }}
+                            {% endif %}
+                        </p>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</section>
+{% schema %}
+    {
+      "name": "single-review",
+      "tag": "section",
+      "class": "section single-review",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "include_margins",
+          "default": true,
+          "label": "t:sections.apps.settings.include_margins.label"
+        }
+      ],
+      "blocks": [
+          {
+        "type": "single-review",
+        "name": "single review",
+        "limit": 1,
+        "settings": [
+            {
+            "type": "image_picker",
+            "id": "photo",
+            "label": "Image"
+          },
+          {
+            "type": "inline_richtext",
+            "id": "title-one",
+            "label": "name"
+          },
+          {
+            "type": "color",
+            "id": "color_name",
+            "label": "review name color",
+            "default": "#383633"
+          },
+       
+          {
+            "type": "inline_richtext",
+            "id": "title-two",
+            "label": "review"
+          },
+          {
+            "type": "color",
+            "id": "color_text",
+            "label": "review Label",
+            "default": "#918677"
+          },
+          {
+            "type": "inline_richtext",
+            "id": "title-three",
+            "label": "text"
+          },
+          {
+            "type": "color",
+            "id": "color_text_1",
+            "label": "review text",
+            "default": "#383633"
+          },
+          {
+            "type": "inline_richtext",
+            "id": "title-4",
+            "label": "text"
+          },
+          {
+            "type": "color",
+            "id": "color_title_label",
+            "label": "review text",
+            "default": "#383633"
+          }
+        ]
+      }
+      ],
+      "presets": [
+        {
+          "name": "single-review",
+          "blocks": [
+    
+          ]
+        }
+      ]
+    }
+    {% endschema %}

@@ -280,11 +280,111 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
+    <style>
+      @font-face {
+        font-family: "Awesome Serif";
+        font-style: normal;
+        font-weight: 300;
+        src: url('{{ "awesomeserif-lighttall.ttf" | asset_url }}') format("truetype");
+      }
+      @font-face {
+        font-family: "Awesome Serif";
+        font-style: italic;
+        font-weight: 300;
+        src: url('{{ "awesomeserifItalic-lighttall.ttf" | asset_url }}') format("truetype");
+      }
+      @font-face {
+        font-family: "Awesome Serif";
+        font-style: normal;
+        font-weight: 400;
+        src: url('{{ "awesomeserif-regular.ttf" | asset_url }}') format("truetype");
+      }
+      @font-face {
+        font-family: "Awesome Serif";
+        font-style: italic;
+        font-weight: 400;
+        src: url('{{ "awesomeserifItalic-regular.ttf" | asset_url }}') format("truetype");
+      }
+      @font-face {
+        font-family: "Awesome Serif";
+        font-style: normal;
+        font-weight: 500;
+        src: url('{{ "awesomeserif-mediumtall.ttf" | asset_url }}') format("truetype");
+      }
+      @font-face {
+        font-family: "Awesome Serif";
+        font-style: italic;
+        font-weight: 500;
+        src: url('{{ "awesomeserifItalic-mediumtall.ttf" | asset_url }}') format("truetype");
+      }
+      
+      @font-face {
+        font-family: "Awesome Serif";
+        font-style: normal;
+        font-weight: 600;
+        src: url('{{ "awesomeserif-semiboldtall.ttf" | asset_url }}') format("truetype");
+      }
+      @font-face {
+        font-family: "Awesome Serif";
+        font-style: italic;
+        font-weight: 600;
+        src: url('{{ "awesomeserifItalic-sembdtall.ttf" | asset_url }}') format("truetype");
+      }
+      @font-face {
+        font-family: "Awesome Serif";
+        font-style: normal;
+        font-weight: 700;
+        src: url('{{ "awesomeserif-boldtall.ttf" | asset_url }}') format("truetype");
+      }
+      @font-face {
+        font-family: "Awesome Serif";
+        font-style: italic;
+        font-weight: 700;
+        src: url('{{ "awesomeserifItalic-boldtall.ttf" | asset_url }}') format("truetype");
+      }   
+      
+      
+      @font-face {
+        font-family: "Helvetica";
+        font-style: italic;
+        font-weight: 700;
+        src: url('{{ "helvetica-bold-italic.ttf" | asset_url }}') format("truetype");
+      } 
+      @font-face {
+        font-family: "Helvetica";
+        font-style: normal;
+        font-weight: 700;
+        src: url('{{ "helvetica-bold.ttf" | asset_url }}') format("truetype");
+      }
+      @font-face {
+        font-family: "Helvetica";
+        font-style: italic;
+        font-weight: 300;
+        src: url('{{ "helvetica-light-italic.ttf" | asset_url }}') format("truetype");
+      }
+      @font-face {
+        font-family: "Helvetica";
+        font-style: normal;
+        font-weight: 300;
+        src: url('{{ "helvetica-light.ttf" | asset_url }}') format("truetype");
+      }
+      @font-face {
+        font-family: "Helvetica";
+        font-style: italic;
+        font-weight: 400;
+        src: url('{{ "helvetica-regular-italic.ttf" | asset_url }}') format("truetype");
+      }
+      @font-face {
+        font-family: "Helvetica";
+        font-style: normal;
+        font-weight: 400;
+        src: url('{{ "helvetica-regular.ttf" | asset_url }}') format("truetype");
+      }
+    </style>
     {{ 'main.css' | asset_url | stylesheet_tag }}
-    {{ 'awesome.css' | asset_url | stylesheet_tag }}
   </head>
 
-  <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
+  <body class="home-page gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
@@ -296,6 +396,7 @@
     {% sections 'header-group' %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+      {%- render 'breadcrumb-navigation' -%}
       {{ content_for_layout }}
     </main>
 
@@ -350,7 +451,7 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-    {% if template == 'index' %}
+    {% comment %} {% if template == 'index' %}
  
 <style>
 .shopify-section-group-header-group.announcement-bar-section{
@@ -366,6 +467,6 @@ margin-top: 20px;
 }
 </style>
  
-{% endif %}
+{% endif %} {% endcomment %}
   </body>
 </html>

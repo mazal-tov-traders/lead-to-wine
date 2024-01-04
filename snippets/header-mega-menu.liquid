@@ -16,13 +16,18 @@
                 id="HeaderMenu-{{ link.handle }}"
                 class="header__menu-item list-menu__item link focus-inset"
               >
-                <span
+                {% comment %} german {% endcomment %}
+                <a
+                  href="{{ link.url }}"
                   {%- if link.child_active %}
                     class="header__active-menu-item"
                   {% endif %}
+                  {% if grandchildlink.current %}
+                    aria-current="page"
+                  {% endif %}
                 >
                   {{- link.title | escape -}}
-                </span>
+                </a>
                 {% render 'icon-caret' %}
               </summary>
               <div

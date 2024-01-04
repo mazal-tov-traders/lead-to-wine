@@ -1,14 +1,14 @@
 <section class="feedback">
   <div class="page-width">
     {% if section.settings.title != blank %}
-      <h2 class="title" style=" color:{{ block.settings.color_title_label }};">{{ section.settings.title }}</h2>
+      <h2 class="title" style=" color:{{ section.settings.color_title_label }};">{{ section.settings.title }}</h2>
     {% endif %}
     {% for block in section.blocks %}
       {% case block.type %}
         {% when 'section' %}
           {% if block.settings.title != blank %}
             <div class="feedback__wrapper">
-              <h3 class="feedback__sub-title" style=" color:{{ block.settings.color_title_label }};">{{ block.settings.title }}</h3>
+              <h3 class="feedback__sub-title" style=" color:{{ block.settings.color_title-label }};">{{ block.settings.title }}</h3>
               <div class="feedback__form">
                 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
                 <script>
@@ -41,7 +41,7 @@
       "type": "color",
       "id": "color_title-label",
       "label": "Color Title Label",
-      "default": "#fff"
+      "default": "#383633"
     }
   ],
   "blocks": [
@@ -58,7 +58,7 @@
           "type": "color",
           "id": "color_title-label",
           "label": "Color Title Label",
-          "default": "#fff"
+          "default": "#342663"
         }
       ]
     }

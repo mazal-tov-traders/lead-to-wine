@@ -139,7 +139,7 @@
         "template--17147660108006__509810c7-eb06-440c-8b14-3bc4c6394713-title-1": {
           "type": "title",
           "settings": {
-            "color_title_label": "#1D2228",
+            "color_title_label": "#1d2228",
             "heading_size": "h1"
           }
         },
@@ -147,13 +147,13 @@
           "type": "description",
           "settings": {
             "description": "<p>Your online course includes:<\/p><ul><li>8 training videos that cover the development group vision, process & content structure<\/li><li>Email & text templates<\/li><li>Weekly leader guide<\/li><li>Protips & frequently asked questions<\/li><li>12 copies of The Way to Win book for your first group<\/li><\/ul>",
-            "color_description_label": "#1D2228"
+            "color_description_label": "#1d2228"
           }
         },
         "template--17147660108006__509810c7-eb06-440c-8b14-3bc4c6394713-price-1": {
           "type": "price",
           "settings": {
-            "color_price_label": "#1D2228"
+            "color_price_label": "#1d2228"
           }
         },
         "template--17147660108006__509810c7-eb06-440c-8b14-3bc4c6394713-quantity_selector-1": {
@@ -164,26 +164,26 @@
         "template--17147660108006__509810c7-eb06-440c-8b14-3bc4c6394713-buy_buttons-1": {
           "type": "buy_buttons",
           "settings": {
-            "color_button_backgroun": "#5491D6",
-            "color_button_label": "#fff",
-            "color_button_border": "#5491D6",
-            "hover_color_button_backgroun": "#5491D6",
-            "hover_color_button_border": "#5491D6",
-            "hover_color_button_label": "#fff"
+            "color_button_backgroun": "#5491d6",
+            "color_button_label": "#ffffff",
+            "color_button_border": "#5491d6",
+            "hover_color_button_backgroun": "#5491d6",
+            "hover_color_button_border": "#5491d6",
+            "hover_color_button_label": "#ffffff"
           }
         },
         "55515fd3-6cb8-4a42-b37b-e6faeafc42f3": {
           "type": "text",
           "settings": {
             "text": "25% discount when you buy 10 or more books",
-            "color_text_label": "#1D2228"
+            "color_text_label": "#1d2228"
           }
         },
         "11363e71-38e8-4e53-8cf9-7567c55939d6": {
           "type": "text-second",
           "settings": {
             "text_second": "other ways to buy",
-            "color_text_second_label": "#1D2228"
+            "color_text_second_label": "#1d2228"
           }
         },
         "cb1bd4cc-f916-4694-b5f5-4d1bd130c872": {
@@ -254,59 +254,116 @@
         "color_title_label": "#383633"
       }
     },
-    "e89d5d04-466f-416d-a29a-50f9bda7e658": {
-      "type": "custom-featured-product",
+    "bf30d2cd-21e2-4d05-a08b-4bdd01908887": {
+      "type": "get-started",
       "blocks": {
-        "template--17147660108006__e89d5d04-466f-416d-a29a-50f9bda7e658-title-1": {
-          "type": "title",
+        "b74a307a-1222-41a7-a5d4-5f00b0434d4f": {
+          "type": "heading",
           "settings": {
-            "color_title_label": "#1D2228",
-            "heading_size": "h1"
+            "heading": "HOW TO GET STARTED",
+            "color_heading_label": "#383633"
           }
         },
-        "template--17147660108006__e89d5d04-466f-416d-a29a-50f9bda7e658-price-1": {
-          "type": "price",
+        "d17c4254-5892-4038-ae52-17dd16a4e1bf": {
+          "type": "description",
           "settings": {
-            "color_price_label": "#1D2228"
+            "description": "<ol><li>Get the Way to Win Intensive<\/li><li>Carve out 1.5 hours to watch the self-paced training videos directly from Pastor Jeff and the Milestone team<\/li><li>Launch your Development Group utilizing the resources, templates, and samples provided<\/li><\/ol>",
+            "color_description_label": "#383633"
           }
         },
-        "template--17147660108006__e89d5d04-466f-416d-a29a-50f9bda7e658-quantity_selector-1": {
-          "type": "quantity_selector",
+        "b4306e6e-7205-4ef5-9bb0-c66531f2e661": {
+          "type": "content",
           "settings": {
+            "content": "CONTENT OVERVIEW",
+            "color_content_label": "#342663"
           }
         },
-        "template--17147660108006__e89d5d04-466f-416d-a29a-50f9bda7e658-buy_buttons-1": {
-          "type": "buy_buttons",
+        "67894b9b-5b3b-4a15-9955-395a1277fc26": {
+          "type": "section",
           "settings": {
-            "color_button_backgroun": "#5491D6",
-            "color_button_label": "#fff",
-            "color_button_border": "#5491D6",
-            "hover_color_button_backgroun": "#5491D6",
-            "hover_color_button_border": "#5491D6",
-            "hover_color_button_label": "#fff"
+            "background_block": "#EAE9E5",
+            "label": "Section 1",
+            "color_label": "#fff",
+            "background-label": "#342663",
+            "content": "<p>Create confidence that them men in your group will get real value out of prioritizing this time each week.<\/p>",
+            "color_content_label": "#342663"
           }
         },
-        "0e674e8d-6f69-4400-8da7-60803ea0c4f3": {
-          "type": "image-product",
+        "50a1e340-711e-4ff3-9781-eb5931d6bdc0": {
+          "type": "section",
           "settings": {
-            "image_product": "shopify:\/\/shop_images\/Rectangle_4133735.jpg"
+            "background_block": "#EAE9E5",
+            "label": "Section 2",
+            "color_label": "#fff",
+            "background-label": "#342663",
+            "content": "<p>Build spiritual foundations & show how it benefits their daily life.<\/p>",
+            "color_content_label": "#342663"
+          }
+        },
+        "6f6ccabf-b667-4320-a091-ad80cbc5a75f": {
+          "type": "section",
+          "settings": {
+            "background_block": "#EAE9E5",
+            "label": "Section 3",
+            "color_label": "#fff",
+            "background-label": "#342663",
+            "content": "<p>Identify what it means to have integrity in relationships and to lead your family well.<\/p>",
+            "color_content_label": "#342663"
+          }
+        },
+        "0abf5adc-37a3-4742-9439-1fde542e0e21": {
+          "type": "section",
+          "settings": {
+            "background_block": "#EAE9E5",
+            "label": "Section 4",
+            "color_label": "#fff",
+            "background-label": "#342663",
+            "content": "<p>Understand the difference in actual values vs. aspirational values, and the importance of not just attending church, but engaging.<\/p>",
+            "color_content_label": "#342663"
+          }
+        },
+        "352062cc-dcf6-4c35-ac40-a9d582cb0e27": {
+          "type": "section",
+          "settings": {
+            "background_block": "#EAE9E5",
+            "label": "Section 5",
+            "color_label": "#fff",
+            "background-label": "#342663",
+            "content": "<p>Equip the men in your group to help those around them grow in their walk with God.<\/p>",
+            "color_content_label": "#342663"
           }
         }
       },
       "block_order": [
-        "template--17147660108006__e89d5d04-466f-416d-a29a-50f9bda7e658-title-1",
-        "template--17147660108006__e89d5d04-466f-416d-a29a-50f9bda7e658-price-1",
-        "template--17147660108006__e89d5d04-466f-416d-a29a-50f9bda7e658-quantity_selector-1",
-        "template--17147660108006__e89d5d04-466f-416d-a29a-50f9bda7e658-buy_buttons-1",
-        "0e674e8d-6f69-4400-8da7-60803ea0c4f3"
+        "b74a307a-1222-41a7-a5d4-5f00b0434d4f",
+        "d17c4254-5892-4038-ae52-17dd16a4e1bf",
+        "b4306e6e-7205-4ef5-9bb0-c66531f2e661",
+        "67894b9b-5b3b-4a15-9955-395a1277fc26",
+        "50a1e340-711e-4ff3-9781-eb5931d6bdc0",
+        "6f6ccabf-b667-4320-a091-ad80cbc5a75f",
+        "0abf5adc-37a3-4742-9439-1fde542e0e21",
+        "352062cc-dcf6-4c35-ac40-a9d582cb0e27"
       ],
       "settings": {
-        "product": "the-way-to-win-intensive-1",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "left",
-        "nubmer_navigat": "",
-        "hide_variants": false
+      }
+    },
+    "d0cdfef5-0cb9-487d-98f9-2ed3f790aa43": {
+      "type": "feedback",
+      "blocks": {
+        "7b0125ea-84ba-4631-be99-03212774914c": {
+          "type": "section",
+          "settings": {
+            "title": "Let us know and one of our team members will be in touch.",
+            "color_title-label": "#fff"
+          }
+        }
+      },
+      "block_order": [
+        "7b0125ea-84ba-4631-be99-03212774914c"
+      ],
+      "settings": {
+        "title": "Want to know more about The Way to Win Intensive?",
+        "color_title-label": "#fff"
       }
     }
   },
@@ -318,6 +375,7 @@
     "61808cc4-c819-46f2-995d-b6016654a45a",
     "509810c7-eb06-440c-8b14-3bc4c6394713",
     "932a13fe-1cda-4d5f-bddb-d40497dfa703",
-    "e89d5d04-466f-416d-a29a-50f9bda7e658"
+    "bf30d2cd-21e2-4d05-a08b-4bdd01908887",
+    "d0cdfef5-0cb9-487d-98f9-2ed3f790aa43"
   ]
 }

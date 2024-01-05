@@ -1,6 +1,7 @@
 @import "../variables-and-mixins.scss";
 
 .home-page-banner {
+	--headerHeight: 0;
 	color: $color-text-light-grey;
 	background-color: $color-colors-element;
 	padding: 50px 0 334px;
@@ -19,7 +20,7 @@
 
 	@media ($lg-990) {
 		max-width: 1920px;
-		margin: -129px auto 0;
+		margin: var(--headerHeight) auto 0;
 	}
 
 	.object-fit {
@@ -74,7 +75,7 @@
 
 		strong {
 			@include round-stroke;
-			
+
 			display: block;
 			width: 100%;
 

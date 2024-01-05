@@ -36,7 +36,7 @@
         "b91e93fb-82a3-43d6-8733-36518f6ab40f": {
           "type": "banner-text",
           "settings": {
-            "title-one": "<p>Coaching &<br\/><strong>Development<br\/><\/strong>in Life & Faith<\/p>",
+            "title-one": "",
             "color_title_label": "#eae9e5"
           }
         }
@@ -53,7 +53,7 @@
       "type": "quote",
       "settings": {
         "include_margins": true,
-        "title-one": "<strong>Lead to Win<\/strong> exists to equip and challenge you in the areas that matter most.",
+        "title-one": "<strong>Lead to Win<\/strong> exists to gather, coach, and resource leaders to win at what matters most.",
         "color_title_label": "#383633"
       }
     },
@@ -90,11 +90,11 @@
           "settings": {
             "icon": "shopify:\/\/shop_images\/Vector_Smart_Object-2.png",
             "title": "Gatherings",
-            "texxt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+            "texxt": "Opportunities throughout the year designed to connect and equip pastors & church leaders.",
             "color_title_label": "#383633",
             "color_text": "#383633",
             "texxt-btn": "Learn More",
-            "button_link": "shopify:\/\/products\/seeds-kids-curriculum",
+            "button_link": "shopify:\/\/pages\/leaders-gathering",
             "color_text-lb": "#383633",
             "color_text_btn": "#383633"
           }
@@ -104,10 +104,10 @@
           "settings": {
             "icon": "shopify:\/\/shop_images\/Vector_Smart_Object-2_e78dd317-e967-4760-9d4e-f8b7b9ee8b68.png",
             "title": "Coaching",
-            "texxt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+            "texxt": "Training modules designed to give you a more in depth look at processes that can build your church.",
             "color_title_label": "#383633",
             "color_text": "#383633",
-            "texxt-btn": "leadrn more",
+            "texxt-btn": "learn more",
             "button_link": "shopify:\/\/products\/seeds-kids-curriculum",
             "color_text-lb": "#383633",
             "color_text_btn": "#383633"
@@ -118,7 +118,7 @@
           "settings": {
             "icon": "shopify:\/\/shop_images\/Vector_Smart_Object_bbe40eb1-226e-4ecc-969c-4bca63821a0a.svg",
             "title": "Resources",
-            "texxt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+            "texxt": "Books, Study Guides, Campaigns, Message Series, and Kids Curriculum.",
             "color_title_label": "#383633",
             "color_text": "#383633",
             "texxt-btn": "learn more",
@@ -129,6 +129,7 @@
         },
         "template--17127585513702__9cd67dd3-24ec-4a6c-932b-1b8cf7511904-services-card-4": {
           "type": "services-card",
+          "disabled": true,
           "settings": {
             "icon": "shopify:\/\/shop_images\/Vector_Smart_Object_1.svg",
             "title": "Resources",
@@ -148,8 +149,68 @@
         "template--17127585513702__9cd67dd3-24ec-4a6c-932b-1b8cf7511904-services-card-3",
         "template--17127585513702__9cd67dd3-24ec-4a6c-932b-1b8cf7511904-services-card-4"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "include_margins": true
+      }
+    },
+    "8f032fcb-57b3-44e5-90df-9413b8b71624": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--17127585513702__8f032fcb-57b3-44e5-90df-9413b8b71624-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vector_Smart_Object-2.svg",
+            "title": "Gatherings",
+            "text": "<h3>Opportunities throughout the year designed to connect and equip pastors & church leaders.<\/h3>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17127585513702__8f032fcb-57b3-44e5-90df-9413b8b71624-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vector_Smart_Object-2.png",
+            "title": "Coaching",
+            "text": "<p>Training modules designed to give you a more in depth look at processes that can build your church.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17127585513702__8f032fcb-57b3-44e5-90df-9413b8b71624-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vector_Smart_Object_bbe40eb1-226e-4ecc-969c-4bca63821a0a.svg",
+            "title": "Resources",
+            "text": "<p>Books, Study Guides, Message Series, Campaigns, and Kids Curriculum<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17127585513702__8f032fcb-57b3-44e5-90df-9413b8b71624-column-1",
+        "template--17127585513702__8f032fcb-57b3-44e5-90df-9413b8b71624-column-2",
+        "template--17127585513702__8f032fcb-57b3-44e5-90df-9413b8b71624-column-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "dc3ddbd5-59ca-45d9-aaf4-b83b99d70a0d": {
@@ -158,7 +219,7 @@
         "4aba3ce6-5d62-4c77-9e2a-1bff9e4f7992": {
           "type": "title",
           "settings": {
-            "title": "About <em>Jeff <\/em> <em> <\/em>Little",
+            "title": "About Jeff Little",
             "color_title_label": "#383633"
           }
         },
@@ -179,7 +240,7 @@
           "type": "link",
           "settings": {
             "label_link": "read more",
-            "link": "shopify:\/\/blogs\/news"
+            "link": "shopify:\/\/pages\/about"
           }
         }
       },
@@ -200,6 +261,7 @@
     "2354a153-96f9-4a91-a1cc-cdbb319d67d4",
     "cffa4dce-b708-40de-a035-cf7a78b97a83",
     "9cd67dd3-24ec-4a6c-932b-1b8cf7511904",
+    "8f032fcb-57b3-44e5-90df-9413b8b71624",
     "dc3ddbd5-59ca-45d9-aaf4-b83b99d70a0d"
   ]
 }

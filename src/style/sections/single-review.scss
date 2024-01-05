@@ -1,78 +1,85 @@
 @import "../variables-and-mixins.scss";
 
 .single-review {
-  padding: 40px 0 20px;
+	padding: 40px 0 20px;
 
-  @media ($lg) {
-    padding: 50px 0 40px;
-  }
+	@media ($lg) {
+		padding: 50px 0 40px;
+	}
 
-  &__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    background: $color-colors-white;
-    border-radius: 10px;
-    padding: 40px 30px;
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 40px;
+		background: $color-colors-white;
+		border-radius: 10px;
+		padding: 40px 30px;
+		position: relative;
+		z-index: 1;
 
-    @media ($md) {
-      padding: 71px 50px;
-      justify-content: center;
-      background: $color-colors-white;
-    }
-  }
+		@media ($md) {
+			padding: 71px 50px;
+			justify-content: center;
+		}
+	}
 
-  &__avatar {
-    width: 200px;
+	&__quotes {
+		position: absolute;
+		top: 181px;
+		right: 30px;
+		width: 73px;
+		height: 60px;
+		z-index: -1;
 
-    @media ($xxl) {
-      margin-left: 1px;
-    }
-  }
+		@media ($md) {
+			top: 61px;
+			right: 50%;
+			transform: translateX(50%);
+			width: 100%;
+			max-width: 1129px;
+			text-align: right;
+			padding: 0 40px;
+		}
+	}
 
-  &__content {
-    width: 100%;
+	&__avatar {
+		width: 200px;
 
-    @media ($md) {
-      flex: 1 0 0;
-      max-width: 740px;
-    }
-  }
+		@media ($xxl) {
+			margin-left: 1px;
+		}
+	}
 
-  &__name {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 30px;
-    margin-bottom: 10px;
+	&__content {
+		width: 100%;
 
-    @media ($md) {
-      position: relative;
+		@media ($md) {
+			flex: 1 0 0;
+			max-width: 740px;
+		}
+	}
 
-      &::after {
-        content: "";
-        position: absolute;
-        top: -11px;
-        right: -34.5px;
-        width: 73px;
-        height: 60px;
-      }
-    }
-  }
+	&__name {
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 30px;
+		margin-bottom: 10px;
+	}
 
-  &__position {
-    font-family: $font-family-Awesome-Serif;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 30px;
-    color: $color-text-second;
-    margin-bottom: 20px;
-  }
+	&__position {
+		font-family: $font-family-Awesome-Serif;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 30px;
+		color: $color-text-second;
+		margin-bottom: 20px;
+	}
 
-  p {
-    @include text-style-text-text-main;
+	p {
+		@include text-style-text-text-main;
 
-    &:not(:last-child) {
-      margin-bottom: 10px;
-    }
-  }
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
 }

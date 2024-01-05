@@ -1,11 +1,8 @@
 <section class="single-review">
-	<div class="page-width">
+	<div class="inner">
         {% for block in section.blocks %}
             {% if block.type == "single-review" %}
 		<div class="single-review__wrapper">
-                <div class="single-review__quotes">
-                 <img src="{{ block.settings.quotes | image_url }}" alt="">
-              </div>
                 <div class="single-review__avatar">
                     <img src="{{ block.settings.photo |  image_url  }}" alt="photo">
                 </div>
@@ -39,11 +36,6 @@
         "name": "single review",
         "limit": 1,
         "settings": [
-          {
-            "type": "image_picker",
-            "id": "quotes",
-            "label": "quotes"
-          },
             {
             "type": "image_picker",
             "id": "photo",

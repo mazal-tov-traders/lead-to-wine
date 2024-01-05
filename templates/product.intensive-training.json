@@ -86,7 +86,7 @@
         "1a0a4b18-31f1-4ea0-baff-774de2a2d5e3": {
           "type": "title",
           "settings": {
-            "title": "",
+            "title": "Development groups are a simple, proven model",
             "color_title_label": "#383633"
           }
         },
@@ -106,7 +106,7 @@
             "image": "shopify:\/\/shop_images\/fi_7588400.png",
             "heading": "<p>Content is key<\/p>",
             "color_heading_label": "#383633",
-            "content": "<p>Concise chapters intentionally desired to ad same to my eving.<\/p>",
+            "content": "<p>Concise chapters intentionally designed for easy reading...<\/p>",
             "color_content_label": "#383633"
           }
         },
@@ -158,7 +158,6 @@
         },
         "template--17147660108006__509810c7-eb06-440c-8b14-3bc4c6394713-quantity_selector-1": {
           "type": "quantity_selector",
-          "disabled": true,
           "settings": {
           }
         },
@@ -175,7 +174,6 @@
         },
         "55515fd3-6cb8-4a42-b37b-e6faeafc42f3": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "text": "25% discount when you buy 10 or more books",
             "color_text_label": "#1d2228"
@@ -184,14 +182,14 @@
         "11363e71-38e8-4e53-8cf9-7567c55939d6": {
           "type": "text-second",
           "settings": {
-            "text_second": "",
+            "text_second": "other ways to buy",
             "color_text_second_label": "#1d2228"
           }
         },
         "cb1bd4cc-f916-4694-b5f5-4d1bd130c872": {
           "type": "media",
           "settings": {
-            "text": "Sneak Peek",
+            "text": "Free sample",
             "image_video": "shopify:\/\/shop_images\/Rectangle_4133735.png",
             "image_youtube": "shopify:\/\/shop_images\/fi_1384060.png",
             "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
@@ -355,7 +353,7 @@
         "7b0125ea-84ba-4631-be99-03212774914c": {
           "type": "section",
           "settings": {
-            "title": "",
+            "title": "Let us know and one of our team members will be in touch.",
             "color_title-label": "#ffffff"
           }
         }

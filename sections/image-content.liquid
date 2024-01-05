@@ -30,6 +30,12 @@
                   {{ block.settings.description }}
                 </div>
               {%- endif -%}
+              {% when 'description-list' %}
+                {%- if block.settings.description-list != blank -%}
+                  <div class="image-content__list" style=" color:{{ block.settings.color_list }};">
+                    {{ block.settings.description-list }}
+                  </div>
+                {%- endif -%}
             {% when 'link' %}
               {%- if block.settings.link_label != blank -%}
                 <div class="image-content__wrapper-link">
@@ -148,6 +154,24 @@
           "id": "color_description_label",
           "label": "Color Description Label",
           "default": "#918677"
+        }
+      ]
+    },
+    {
+      "type": "description-list",
+      "name": "Description list",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "description-list",
+          "label": "Description"
+        },
+        {
+          "type": "color",
+          "id": "color_list",
+          "label": "Color Description Label",
+          "default": "#383633"
         }
       ]
     },

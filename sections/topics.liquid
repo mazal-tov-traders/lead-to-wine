@@ -1,0 +1,137 @@
+<div class="page-width">
+    <h2 class="title">{{ section.settings.section-title }}</h2>
+    <div class="topics__wrapper">
+        {% for block in section.blocks %}
+            <div class="topics__item">
+                <div class="topics__image">
+                    <img src="{{ block.settings.icon |  image_url }}" alt="image">
+                    <span style="background-color: {{ block.settings.color_category_back }}; color:{{ block.settings.color_category_label }}" class="topics__category">{{ block.settings.categoty }}</span>
+                </div>
+                <div class="topics__content">
+                    <h3 style="color:{{ block.settings.color_title_label }}" class="topics__sub-title">{{ block.settings.title }}</h3>
+                    <div class="topics__description">
+                        <p style="color:{{ block.settings.color_text_label }}">{{ block.settings.text }}</p>
+                    </div>
+                    <div class="topics__btn-wrap">
+                        <a class="topics__btn" href="#">{{ block.settings.button-label }}</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% schema %}
+    {
+      "name": "topics",
+      "tag": "section",
+      "class": "section topics",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "include_margins",
+          "default": true,
+          "label": "t:sections.apps.settings.include_margins.label"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "section-title",
+          "label": "section title"
+        },
+        {
+          "type": "color",
+          "id": "color_title_label",
+          "label": "Color Title Label",
+          "default": "#383633"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "card",
+          "name": "card",
+          "limit": 25,
+          "settings": [
+            {
+              "type": "image_picker",
+              "id": "icon",
+              "label": "Image"
+            },
+            {
+              "type": "inline_richtext",
+              "id": "categoty",
+              "label": "category"
+            },
+            {
+              "type": "color",
+              "id": "color_category_label",
+              "label": "Color category label",
+              "default": "#fff"
+            },
+            {
+              "type": "color",
+              "id": "color_category_back",
+              "label": "category background color",
+              "default": "#342663"
+            },
+            {
+              "type": "inline_richtext",
+              "id": "title",
+              "label": "title"
+            },
+            {
+              "type": "color",
+              "id": "color_title_label",
+              "label": "Color Title Label",
+              "default": "#383633"
+            },
+            {
+              "type": "inline_richtext",
+              "id": "text",
+              "label": "text"
+            },
+            
+            {
+              "type": "color",
+              "id": "color_text_label",
+              "label": "Color Text Label",
+              "default": "#383633"
+            },
+            {
+              "type": "inline_richtext",
+              "id": "button-label",
+              "label": "button label"
+            },
+            {
+              "type": "color",
+              "id": "color_hover_btn",
+              "label": "Color button Label",
+              "default": "#383633"
+            },
+            {
+              "type": "color",
+              "id": "color_link_back",
+              "label": "category link background",
+              "default": "#342663"
+            },
+            {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button link"
+            }
+          ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "topics",
+          "blocks": [
+            {"type": "card"},
+            {"type": "card"},
+            {"type": "card"},
+            {"type": "card"},
+            {"type": "card"}       
+          ]
+        }
+      ]
+    }
+{% endschema %}

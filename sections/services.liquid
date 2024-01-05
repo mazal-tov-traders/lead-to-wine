@@ -1,0 +1,105 @@
+<section class="services">
+	<div class="page-width inner">
+		<div class="services__wrapper">
+            {% for block in section.blocks %}
+                {% if block.type == "services-card" %}
+                    <div class="services__item">
+                        <img src="{{ block.settings.icon |  image_url  }}" alt="">
+                        <h2 tyle="color:{{ block.settings.color_title_label }}"  class="services__title">{{ block.settings.title }}</h2>
+                        <p style="color:{{ block.settings.color_text }}">{{ block.settings.texxt }}</p>
+                        <p><a  href="{{ block.settings.button_link | url }}" class="btn">{{ block.settings.texxt-btn }}</a></p>
+                    </div>
+                {% endif %}
+            {% endfor %}
+		</div>
+	</div>
+</section>
+{% schema %}
+    {
+      "name": "services",
+      "tag": "section",
+      "class": "section services",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "include_margins",
+          "default": true,
+          "label": "t:sections.apps.settings.include_margins.label"
+        }
+      ],
+      "blocks": [
+          {
+        "type": "services-card",
+        "name": "services",
+        "limit": 25,
+        "settings": [
+            {
+            "type": "image_picker",
+            "id": "icon",
+            "label": "Image"
+          },
+          {
+            "type": "inline_richtext",
+            "id": "title",
+            "label": "title"
+          },
+          {
+            "type": "inline_richtext",
+            "id": "texxt",
+            "label": "text"
+          },
+          {
+            "type": "color",
+            "id": "color_title_label",
+            "label": "Color Title Label",
+            "default": "#383633"
+          },
+          {
+            "type": "color",
+            "id": "color_text",
+            "label": "Color Text Label",
+            "default": "#383633"
+          },
+          {
+            "type": "inline_richtext",
+            "id": "texxt-btn",
+            "label": "button label"
+          },
+          {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button link"
+        },
+        {
+            "type": "color",
+            "id": "color_text-lb",
+            "label": "button label color",
+            "default": "#383633"
+          },
+          {
+            "type": "color",
+            "id": "color_text_btn",
+            "label": "button color",
+            "default": "#383633"
+          }
+        ]
+      }
+      ],
+      "presets": [
+        {
+          "name": "services",
+          "blocks": [
+            {"type": "services-card"},
+            {"type": "services-card"},
+            {"type": "services-card"},
+            {"type": "services-card"},
+            {"type": "services-card"},
+            {"type": "services-card"},
+            {"type": "services-card"},
+            {"type": "services-card"},
+            {"type": "services-card"}         
+          ]
+        }
+      ]
+    }
+    {% endschema %}

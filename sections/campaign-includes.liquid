@@ -1,0 +1,80 @@
+<div class="page-width">
+    <h2 style="color:{{ section.settings.color_title_label }}" class="title">{{ section.settings.section-title }}</h2>
+    <div class="campaign-includes__wrapper">
+        {% for block in section.blocks %}
+            {% if block.type == "card" %}
+                {% if block.settings.icon and block.settings.title %}
+                    <div class="campaign-includes__item">
+                        <div class="campaign-includes__image">
+                            <img src="{{ block.settings.icon |  image_url }}" alt="">
+                        </div>
+                        <h3 style="color:{{ block.settings.color_title_label }}" class="campaign-includes__sub-title">{{ block.settings.title }}</h3>
+                    </div>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+{% schema %}
+    {
+      "name": "campaign-includes",
+      "tag": "section",
+      "class": "section campaign-includes",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "include_margins",
+          "default": true,
+          "label": "t:sections.apps.settings.include_margins.label"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "section-title",
+          "label": "section title"
+        },
+        {
+          "type": "color",
+          "id": "color_title_label",
+          "label": "Color Title Label",
+          "default": "#383633"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "card",
+          "name": "services",
+          "limit": 25,
+          "settings": [
+            {
+              "type": "image_picker",
+              "id": "icon",
+              "label": "Image"
+            },
+            {
+              "type": "inline_richtext",
+              "id": "title",
+              "label": "title"
+            },
+            {
+              "type": "color",
+              "id": "color_title_label",
+              "label": "Color Title Label",
+              "default": "#383633"
+            }
+          ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "campaign-includes",
+          "blocks": [
+            {"type": "card"},
+            {"type": "card"},
+            {"type": "card"},
+            {"type": "card"},
+            {"type": "card"}       
+          ]
+        }
+      ]
+    }
+    {% endschema %}

@@ -143,10 +143,17 @@
             "heading_size": "h1"
           }
         },
+        "bc44d6b5-3f34-4aa2-a90c-6283619344d1": {
+          "type": "headline",
+          "settings": {
+            "headline": "Your online course includes:",
+            "color_headline_label": "#1D2228"
+          }
+        },
         "fc9cd3f1-3a4b-4170-8e0f-c1edfdb8671b": {
           "type": "description",
           "settings": {
-            "description": "<p>Your online course includes:<\/p><ul><li>8 training videos that cover the development group vision, process & content structure<\/li><li>Email & text templates<\/li><li>Weekly leader guide<\/li><li>Protips & frequently asked questions<\/li><li>12 copies of The Way to Win book for your first group<\/li><\/ul>",
+            "description": "<ul><li>8 training videos that cover the development group vision, process & content structure<\/li><li>Email & text templates<\/li><li>Weekly leader guide<\/li><li>Protips & frequently asked questions<\/li><li>12 copies of The Way to Win book for your first group<\/li><\/ul>",
             "color_description_label": "#1d2228"
           }
         },
@@ -200,6 +207,7 @@
       },
       "block_order": [
         "template--17147660108006__509810c7-eb06-440c-8b14-3bc4c6394713-title-1",
+        "bc44d6b5-3f34-4aa2-a90c-6283619344d1",
         "fc9cd3f1-3a4b-4170-8e0f-c1edfdb8671b",
         "template--17147660108006__509810c7-eb06-440c-8b14-3bc4c6394713-price-1",
         "template--17147660108006__509810c7-eb06-440c-8b14-3bc4c6394713-quantity_selector-1",

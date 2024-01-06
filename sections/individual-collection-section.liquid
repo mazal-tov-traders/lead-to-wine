@@ -1,0 +1,106 @@
+<script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'price-per-item.js' | asset_url }}" defer="defer"></script>
+
+{% assign collection = section.settings.section_collection %}
+{{ collection }}
+<div class="page-width">
+  {% for product in collection.products %}
+    {% render 'card-product-new', card_product: product %}
+  {% endfor %}
+</div>
+
+{%- if request.design_mode -%}
+  <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    function updatePrice(element, dataPrice, elementSum) {
+      let quantityInput = Number(element.querySelector('.quantity__input').value);
+      let unitPrice = dataPrice;
+
+      if (quantityInput >= 10) {
+        unitPrice *= 0.75;
+      }
+
+      const formattedNumber = (unitPrice / 100).toFixed(2);
+      const [integerPart, decimalPart] = formattedNumber.split('.');
+
+      elementSum.innerHTML = `
+            <span class="product-form__price_rcp">     
+              $${integerPart}.<sup class="price-cent">${decimalPart}</sup>
+            </span>
+          `;
+    }
+
+    const buttonsWrapper = document.querySelectorAll('.wrapper-baton-and-quantity');
+
+    buttonsWrapper.forEach((element) => {
+      const addToCartButton = element.querySelector('.product-form__submit');
+      let dataPrice = parseFloat(element.querySelector('.product-form__price').getAttribute('data-price'));
+      let quantityButtons = element.querySelectorAll('.quantity__button');
+      let dataVariantId = element.querySelector('.product-form__price').getAttribute('data-variant');
+      let elementSum = element.querySelector('.product-form__price_rcp');
+      let quantityInputElement = element.querySelector('.quantity__input');
+      addToCartButton.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        let formData = {
+          items: [
+            {
+              id: dataVariantId,
+              quantity: quantityInputElement.value,
+            },
+          ],
+        };
+        fetch(window.Shopify.routes.root + 'cart/add.js', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        })
+          .then((response) => {
+            return response.json();
+          })
+          .catch((error) => {
+            console.error('Error:', error);
+          });
+      });
+
+      quantityInputElement.addEventListener('change', () => {
+       
+        updatePrice(element, dataPrice, elementSum);
+      });
+
+      quantityButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          updatePrice(element, dataPrice, elementSum);
+        });
+      });
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Individual Collection",
+  "settings": [
+    {
+      "type": "collection",
+      "id": "section_collection",
+      "label": "Collection"
+    },
+    {
+      "type": "text",
+      "id": "section_header",
+      "label": "Section Header"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Individual Collection"
+    }
+  ]
+}
+{% endschema %}

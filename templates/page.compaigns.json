@@ -23,21 +23,11 @@
             "description": "<p>A campaign provides a unique experience that equips and inspires spiritual growth in your church and provides tangible ways for everyone – from kids to adults – to connect with God’s Word.<\/p>",
             "color_description_label": "#918677"
           }
-        },
-        "da4b19b0-3557-4e94-b1ca-14be611a471d": {
-          "type": "description-list",
-          "settings": {
-            "description-list-item-1": "<p>Increase weekend attendance<\/p>",
-            "description-list-item-2": "<p>Connect parents to what their kids are learning<\/p>",
-            "description-list-item-3": "<p>Energize the culture of your small groups<\/p>",
-            "color_list": "#383633"
-          }
         }
       },
       "block_order": [
         "73d2ec4f-cc21-4b0e-aab0-1318869d815f",
-        "4a6bb457-33d6-4084-b023-d01268fd63eb",
-        "da4b19b0-3557-4e94-b1ca-14be611a471d"
+        "4a6bb457-33d6-4084-b023-d01268fd63eb"
       ],
       "settings": {
         "background": "_bg-white",

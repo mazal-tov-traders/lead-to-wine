@@ -22,7 +22,17 @@
               </div>
             {%- endif %}
           {% when 'description-list' %}
- 
+              <ul class="image-content__ul" style="color:{{block.settings.color_list}}">
+                {%- if block.settings.description-list-item-1 != blank -%}
+                  <li>{{block.settings.description-list-item-1}}</li>
+                {%- endif %}
+                {%- if block.settings.description-list-item-2 != blank -%}
+                  <li>{{block.settings.description-list-item-2}}</li>
+                {%- endif %}
+                {%- if block.settings.description-list-item-3 != blank -%}
+                  <li>{{block.settings.description-list-item-3}}</li>
+                {%- endif %}
+              </ul>
           {% when 'link' %}
             {%- if block.settings.link_label != blank -%}
               <div class="image-content__wrapper-link">

@@ -109,7 +109,7 @@
       margin: 0;
     }
   }
-  p:not(&__description p) {
+  & p:not(&__description p) {
     @include text-style-text-text-main;
 
     &:not(:last-child) {

@@ -1,0 +1,148 @@
+<section class="content-overview">
+  <div class="page-width">
+    <div class="content-overview__wrapper">
+      <div class="content-overview__left">
+        {%- if section.settings.title != blank -%}
+          <h2 class="title" style=" color: {{ section.settings.color_label }};">
+            {{ section.settings.title -}}
+          </h2>
+        {%- endif -%}
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'sub-title' %}
+              {%- if block.settings.sub_title != blank -%}
+                <p class="content-overview__sub-title" style=" color: {{ block.settings.color_label }};">
+                  {{ block.settings.sub_title }}
+                </p>
+              {%- endif -%}
+          {% endcase %}
+        {% endfor %}
+      </div>
+      <div class="content-overview__right">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'overview-item' %}
+              <div class="content-overview__item">
+                {%- if block.settings.label != blank -%}
+                  <div
+                    class="content-overview__label"
+                    style=" color: {{ block.settings.color_label }}; background: {{ block.settings.background_color_label }};"
+                  >
+                    {{ block.settings.label }}
+                  </div>
+                {%- endif -%}
+                <div class="content-overview__item-content">
+                  {%- if block.settings.item_title != blank -%}
+                    <h3
+                      class="content-overview__item-title"
+                      style=" color: {{ block.settings.color_item_title }}; background: {{ block.settings.background_color_item_title }};"
+                    >
+                      {{ block.settings.item_title }}
+                    </h3>
+                  {%- endif -%}
+                  {%- if block.settings.text != blank -%}
+                    <p style=" color: {{ block.settings.color_text }};">{{ block.settings.text }}</p>
+                  {%- endif -%}
+                </div>
+              </div>
+          {% endcase %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "content-overview",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "color",
+      "id": "color_label",
+      "label": "Color Label",
+      "default": "#383633"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "sub-title",
+      "name": "Sub Title",
+      "settings": [
+        {
+          "type": "text",
+          "id": "sub_title",
+          "label": "Sub Title"
+        },
+        {
+          "type": "color",
+          "id": "color_label",
+          "label": "Color Label",
+          "default": "#342663"
+        }
+      ]
+    },
+    {
+      "type": "overview-item",
+      "name": "Overview Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "label"
+        },
+        {
+          "type": "color",
+          "id": "color_label",
+          "label": "Color Label",
+          "default": "#fff"
+        },
+        {
+          "type": "color",
+          "id": "background_color_label",
+          "label": "Background Color Label",
+          "default": "#595035"
+        },
+        {
+          "type": "text",
+          "id": "item_title",
+          "label": "Item Title"
+        },
+        {
+          "type": "color",
+          "id": "color_item_title",
+          "label": "Color Item Title",
+          "default": "#595035"
+        },
+        {
+          "type": "color",
+          "id": "background_color_item_title",
+          "label": "Background Color Item Title",
+          "default": "#EAE9E5"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "color",
+          "id": "color_text",
+          "label": "Color Text",
+          "default": "#383633"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Content Overview"
+    }
+  ]
+}
+{% endschema %}

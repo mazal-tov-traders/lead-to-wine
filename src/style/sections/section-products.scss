@@ -13,7 +13,55 @@
 		text-transform: uppercase;
 	}
 
+	&__btn {
+		text-align: center;
+		margin-top: 50px;
+
+		.btn {
+			color: $color-colors-main;
+			background: transparent;
+			border-color: $color-colors-main;
+
+			&:hover,
+			&:focus {
+				color: $color-colors-white;
+				background: $color-colors-main;
+			}
+		}
+	}
+
+	.banner-innerr {
+		&__box_button {
+			text-align: center;
+			margin-top: 50px;
+
+			.buttonn {
+				@include btn;
+
+				color: $color-colors-main;
+				background: transparent;
+				border-color: $color-colors-main;
+
+				&:hover,
+				&:focus {
+					color: $color-colors-white;
+					background: $color-colors-main;
+				}
+			}
+		}
+	}
+
 	.collection {
 		padding: 0;
+	}
+
+	.page-width .page-width {
+		padding: 0;
+	}
+
+	@media screen and (min-width: 749px) and (max-width: 990px) {
+		slider-component.page-width {
+			padding: 0 35px;
+		}
 	}
 }

@@ -3,6 +3,8 @@
 .single-product {
 	padding: 80px 0;
 	background: $color-colors-white;
+	position: relative;
+	z-index: 2;
 
 	@media ($lg) {
 		padding: 100px 0;
@@ -11,7 +13,19 @@
 	.product {
 		display: flex;
 		flex-wrap: wrap-reverse;
-		gap: 50px 70px;
+		gap: 50px;
+
+		@media ($xxl) {
+			gap: 50px 70px;
+		}
+
+		&.grid {
+			gap: 50px;
+
+			@media ($xxl) {
+				gap: 50px 70px;
+			}
+		}
 
 		@media ($lg) {
 			justify-content: space-between;
@@ -19,6 +33,7 @@
 
 		&__info-wrapper {
 			width: 100%;
+			padding: 0 !important;
 
 			@media ($lg) {
 				width: 51%;
@@ -105,7 +120,12 @@
 					line-height: 1;
 					color: inherit;
 					vertical-align: super;
+					display: flex;
 				}
+			}
+
+			.price-item {
+				display: flex;
 			}
 		}
 
@@ -121,8 +141,9 @@
 				}
 			}
 
-			&__content {
+			&__text {
 				margin-bottom: 30px;
+				margin-top: 0;
 
 				p {
 					font-weight: 400;
@@ -132,20 +153,18 @@
 				}
 			}
 
-			&__text {
-				font-weight: 700;
-				font-size: 16px;
-				line-height: 18px;
-				letter-spacing: -0.04em;
-				margin-bottom: 35px;
+			&__discription {
+				margin-top: 0;
 			}
 		}
 
-		.wrapper-button-and-quantity {
+		.wrapper-button-and-quantity,
+		.wrapper-baton-and-quantity {
 			display: flex;
 			flex-wrap: wrap;
 			gap: 10px 20px;
 			margin-bottom: 35px;
+			margin-top: 0;
 		}
 
 		.buttons-link-box {
@@ -189,13 +208,23 @@
 
 		.product-form {
 			flex-shrink: 0;
+			margin: 0;
+
+			&__buttons {
+				max-width: unset;
+			}
+
+			&__input {
+				flex: unset;
+				margin: 0;
+			}
 
 			&__submit {
 				@include text-style-text-links;
 
 				display: flex;
 				align-items: center;
-				gap: 10px;
+				gap: 5px;
 				padding: 13px 26px;
 				min-height: 50px;
 				font-weight: 500;
@@ -207,6 +236,7 @@
 				text-decoration: none;
 				cursor: pointer;
 				transition: background 0.3s, border 0.3s, color 0.3s;
+				margin: 0;
 
 				&:hover,
 				&:focus {
@@ -219,6 +249,10 @@
 					display: flex;
 					align-items: center;
 					gap: 5px;
+				}
+
+				svg {
+					margin-right: 5px;
 				}
 			}
 
@@ -273,6 +307,7 @@
 				padding: 0;
 				color: $color-text-main;
 				outline-offset: 0;
+				z-index: 1;
 
 				&[name="minus"] {
 					left: 0;
@@ -285,11 +320,29 @@
 					padding-right: 10px;
 					border-radius: 0 20px 20px 0;
 				}
+
+				svg {
+					width: auto;
+				}
 			}
 
 			&__label {
 				@include screen-reader-text;
 			}
+
+			&::before,
+			&::after,
+			&__rules {
+				display: none;
+			}
+		}
+
+		&__text-second {
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 18px;
+			letter-spacing: -0.04em;
+			margin-bottom: 35px;
 		}
 
 		.shopify-payment-button {
@@ -298,6 +351,10 @@
 
 		.hidden {
 			display: none!important;
+		}
+
+		.no-js-hidden {
+			margin: 0;
 		}
 
 		&__caption {

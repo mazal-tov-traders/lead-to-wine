@@ -57,6 +57,11 @@
 		&:focus {
 			color: $color-colors-white;
 			background: transparent;
+			border: 1px solid $color-colors-white;
 		}
+	}
+
+	.object-fit-cove {
+		height: 100%;
 	}
 }

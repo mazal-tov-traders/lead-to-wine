@@ -24,17 +24,12 @@
             "color_description_label": "#918677"
           }
         },
-        "57f8583a-4ac9-44e3-96c6-2194732628ea": {
-          "type": "content",
-          "settings": {
-            "content": "",
-            "color_content_label": "#383633"
-          }
-        },
         "da4b19b0-3557-4e94-b1ca-14be611a471d": {
           "type": "description-list",
           "settings": {
-            "description-list": "<ul><li>Increase weekend attendance<\/li><li>Connect parents to what their kids are learning<\/li><li>Energize the culture of your small groups<\/li><\/ul>",
+            "description-list-item-1": "<p>Increase weekend attendance<\/p>",
+            "description-list-item-2": "<p>Connect parents to what their kids are learning<\/p>",
+            "description-list-item-3": "<p>Energize the culture of your small groups<\/p>",
             "color_list": "#383633"
           }
         }
@@ -42,7 +37,6 @@
       "block_order": [
         "73d2ec4f-cc21-4b0e-aab0-1318869d815f",
         "4a6bb457-33d6-4084-b023-d01268fd63eb",
-        "57f8583a-4ac9-44e3-96c6-2194732628ea",
         "da4b19b0-3557-4e94-b1ca-14be611a471d"
       ],
       "settings": {

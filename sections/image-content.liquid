@@ -1,4 +1,4 @@
-<section class="image-content{{ section.settings.position_image }} image-content{{ section.settings.background }} image-content_vertical-center-align {{ section.settings.align_content }}">
+<section class="image-content{{section.settings.position_image}} image-content{{section.settings.background}} image-content_vertical-center-align {{section.settings.align_content}}">
   <div class="page-width">
     <div class="image-content__wrapper">
       {% for block in section.blocks %}
@@ -6,57 +6,36 @@
           {% when 'media' %}
             {%- if block.settings.image != blank -%}
               <div class="image-content__image">
-                <img
-                  src="{{ block.settings.image | img_url:  'original'}}"
-                  alt="page_image"
-                >
+                <img src="{{block.settings.image | img_url: 'original' }}" alt="page_image">
               </div>
             {% endif %}
+          {% when 'title' %}
+            {%- if block.settings.title != blank -%}
+              <h2 class="title" style="color:{{block.settings.color_title_label}}">
+                {{block.settings.title -}}
+              </h2>
+            {%- endif %}
+          {% when 'description' %}
+            {%- if block.settings.description != blank -%}
+              <div class="image-content__description" style="color:{{block.settings.color_description_label}}">
+                {{block.settings.description}}
+              </div>
+            {%- endif %}
+          {% when 'description-list' %}
+ 
+          {% when 'link' %}
+            {%- if block.settings.link_label != blank -%}
+              <div class="image-content__wrapper-link">
+                {% render 'icon-pdf' %}
+                <a {% if block.settings.link == blank %} role="link" aria-disabled="true" {% else %} href="{{block.settings.link}}" {% endif %}
+                   style="color:{{block.settings.color_link_label}}"
+                   class="image-content__link">
+                  {{block.settings.link_label | escape -}}
+                </a>
+              </div>
+            {%- endif %}
         {% endcase %}
       {% endfor %}
-
-      <div class="image-content__content">
-        {% for block in section.blocks %}
-          {% case block.type %}
-            {% when 'title' %}
-              {%- if block.settings.title != blank -%}
-                <h2 class="title" style=" color: {{ block.settings.color_title_label }};">
-                  {{ block.settings.title -}}
-                </h2>
-              {%- endif -%}
-            {% when 'description' %}
-              {%- if block.settings.description != blank -%}
-                <div class="image-content__description" style=" color:{{ block.settings.color_description_label }};">
-                  {{ block.settings.description }}
-                </div>
-              {%- endif -%}
-              {% when 'description-list' %}
-                {%- if block.settings.description-list != blank -%}
-                  <div class="image-content__list" style=" color:{{ block.settings.color_list }};">
-                    {{ block.settings.description-list }}
-                  </div>
-                {%- endif -%}
-            {% when 'link' %}
-              {%- if block.settings.link_label != blank -%}
-                <div class="image-content__wrapper-link">
-                  {% render 'icon-pdf' %}
-                  <a
-                    {% if block.settings.link == blank %}
-                      role="link" aria-disabled="true"
-                    {% else %}
-                      href="{{ block.settings.link }}"
-                    {% endif %}
-                    style=" color:{{ block.settings.color_link_label }};"
-                    
-                    class="image-content__link"
-                  >
-                    {{- block.settings.link_label | escape -}}
-                  </a>
-                </div>
-              {%- endif -%}
-          {% endcase %}
-        {% endfor %}
-      </div>
     </div>
   </div>
 </section>
@@ -164,8 +143,18 @@
       "settings": [
         {
           "type": "richtext",
-          "id": "description-list",
-          "label": "Description"
+          "id": "description-list-item-1",
+          "label": "item"
+        },
+        {
+          "type": "richtext",
+          "id": "description-list-item-2",
+          "label": "item"
+        },
+        {
+          "type": "richtext",
+          "id": "description-list-item-3",
+          "label": "item"
         },
         {
           "type": "color",

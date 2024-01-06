@@ -1,30 +1,65 @@
-.popup-video {
-  height: 86%;
-  transform: translate(-50%, -44%);
-  width: 81%;
+@import "../variables-and-mixins.scss";
+
+.video-wrapper {
+	&_box {
+		width: fit-content;
+		position: relative;
+	}
+
+	.image-video {
+		display: block;
+		border-radius: 10px;
+	}
+
+	.image-youtube {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		transition: transform 0.5s ease-out;
+		transform-origin: top left;
+		cursor: pointer;
+
+		&:hover {
+			transform: scale(1.1) translate(-50%, -50%);
+		}
+	}
 }
 
 .popup-video {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  background-color: #fff;
-  padding: 30px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  z-index: 100;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -44%);
+	width: calc(100% - 30px);
+	max-width: 1000px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	padding: 30px;
+	display: none;
+	z-index: 100;
 
-  .js-youtube {
-    width: 100%;
-    height: 100%;
-  }
-}
-.popup-video.popup-on {
-  display: block;
-}
-.popup-video .close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
+	&.popup-on {
+		display: block;
+	}
+
+	.js-youtube {
+		width: 100%;
+		aspect-ratio: 16/9;
+		background: #000;
+	}
+
+	.close {
+		cursor: pointer;
+		position: absolute;
+		right: 8px;
+		top: 8px;
+		line-height: 1;
+		opacity: 0.7;
+		transition: opacity 0.3s;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
 }

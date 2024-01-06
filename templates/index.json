@@ -36,7 +36,7 @@
         "b91e93fb-82a3-43d6-8733-36518f6ab40f": {
           "type": "banner-text",
           "settings": {
-            "title-one": "",
+            "title-one": "<p>Coaching & <strong>Development <\/strong>in Life & Faith<\/p>",
             "color_title_label": "#eae9e5"
           }
         }
@@ -46,7 +46,8 @@
       ],
       "settings": {
         "include_margins": true,
-        "background": "shopify:\/\/shop_images\/Rectangle_3_1.jpg"
+        "background": "shopify:\/\/shop_images\/Rectangle_3_1.jpg",
+        "background-mob": "shopify:\/\/shop_images\/Rectangle_4133714_7_f907e7b0-8b09-4ac0-a49f-1b0167601f6e.jpg"
       }
     },
     "2354a153-96f9-4a91-a1cc-cdbb319d67d4": {
@@ -63,6 +64,7 @@
         "71291754-f50f-4388-835f-a7cb9737039b": {
           "type": "single-review",
           "settings": {
+            "quotes": "shopify:\/\/shop_images\/fi_107076_1.svg",
             "photo": "shopify:\/\/shop_images\/Ellipse_4.jpg",
             "title-one": "Chris Hodges",
             "color_name": "#383633",
@@ -213,6 +215,69 @@
         "padding_bottom": 36
       }
     },
+    "7d43acf7-e204-45ea-b598-a020006b59ae": {
+      "type": "slider",
+      "blocks": {
+        "template--17140783972582__7d43acf7-e204-45ea-b598-a020006b59ae-card-1": {
+          "type": "card",
+          "settings": {
+            "slider-background": "#e2e2e2",
+            "logo": "shopify:\/\/shop_images\/review-seeds-logo.png",
+            "slide-title": "Lorem ipsum dolor sit amet consectetur.",
+            "slider-title-color": "#383633",
+            "slide-text": "Lorem ipsum dolor sit amet consectetur. Odio volutpat massa id neque et. Facilisi et in lobortis facilisi. Sed elementum pharetra nisl ultrices tristique nulla eu.",
+            "slide-text-color": "#383633",
+            "avatar": "shopify:\/\/shop_images\/Ellipse_6_1.png",
+            "rev-name": "Jabin Chavez",
+            "name-color": "#383633",
+            "location": "City Light Church, Las Vegas",
+            "location-color": "#918677"
+          }
+        },
+        "template--17140783972582__7d43acf7-e204-45ea-b598-a020006b59ae-card-2": {
+          "type": "card",
+          "settings": {
+            "slider-background": "#e2e2e2",
+            "logo": "shopify:\/\/shop_images\/review-seeds-logo.png",
+            "slide-title": "Lorem ipsum dolor sit amet consectetur.",
+            "slider-title-color": "#383633",
+            "slide-text": "Lorem ipsum dolor sit amet consectetur. Odio volutpat massa id neque et. Facilisi et in lobortis facilisi. Sed elementum pharetra nisl ultrices tristique nulla eu.",
+            "slide-text-color": "#383633",
+            "avatar": "shopify:\/\/shop_images\/Ellipse_6_1.png",
+            "rev-name": "Jabin Chavez",
+            "name-color": "#383633",
+            "location": "City Light Church, Las Vegas",
+            "location-color": "#918677"
+          }
+        },
+        "template--17140783972582__7d43acf7-e204-45ea-b598-a020006b59ae-card-3": {
+          "type": "card",
+          "settings": {
+            "slider-background": "#e2e2e2",
+            "logo": "shopify:\/\/shop_images\/review-seeds-logo.png",
+            "slide-title": "",
+            "slider-title-color": "#383633",
+            "slide-text": "Lorem ipsum dolor sit amet consectetur.",
+            "slide-text-color": "#383633",
+            "avatar": "shopify:\/\/shop_images\/Ellipse_6_1.png",
+            "rev-name": "Jabin Chavez",
+            "name-color": "#383633",
+            "location": "City Light Church, Las Vegas",
+            "location-color": "#918677"
+          }
+        }
+      },
+      "block_order": [
+        "template--17140783972582__7d43acf7-e204-45ea-b598-a020006b59ae-card-1",
+        "template--17140783972582__7d43acf7-e204-45ea-b598-a020006b59ae-card-2",
+        "template--17140783972582__7d43acf7-e204-45ea-b598-a020006b59ae-card-3"
+      ],
+      "settings": {
+        "include_margins": true,
+        "section-title": "",
+        "color_title_label": "#383633"
+      }
+    },
     "dc3ddbd5-59ca-45d9-aaf4-b83b99d70a0d": {
       "type": "image-text",
       "blocks": {
@@ -262,6 +327,7 @@
     "cffa4dce-b708-40de-a035-cf7a78b97a83",
     "9cd67dd3-24ec-4a6c-932b-1b8cf7511904",
     "8f032fcb-57b3-44e5-90df-9413b8b71624",
+    "7d43acf7-e204-45ea-b598-a020006b59ae",
     "dc3ddbd5-59ca-45d9-aaf4-b83b99d70a0d"
   ]
 }

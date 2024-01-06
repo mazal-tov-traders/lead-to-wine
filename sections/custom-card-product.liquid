@@ -1,0 +1,187 @@
+{% comment %} {{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{{ 'template-collection.css' | asset_url | stylesheet_tag }} {% endcomment %}
+
+{%- if section.settings.enable_quick_add -%}
+  {{ 'quick-add.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
+
+
+{% comment %} {%- liquid
+  assign products_to_display = section.settings.collection.all_products_count
+-%} {% endcomment %}
+
+<div class="color isolate gradient collection__backgroun-fon my-styles-for-collection">
+  <div class="collection page-width">
+   
+      <ul
+        class="products grid product-grid contains-card contains-card--product"
+        role="list"  
+      >
+        {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
+          <li
+            class="product"
+          >
+            {% render 'card-product',
+              card_product: product,
+              show_quick_add: section.settings.enable_quick_add,
+              section_id: section.id
+            %}
+          </li>
+        {%- else -%}
+          {%- for i in (1..4) -%}
+            <li
+              class="product"
+            >
+              {% render 'card-product' %}
+            </li>
+
+            <li class="product">
+              <div class="card-wrapper product-card-wrapper underline-links-hover">
+                <div class="card card--card card--media color-background-1 gradient">
+                  {% comment %} <div class="card__inner ratio">
+                    <div class="card__content">
+                      <div class="card__information">
+                        <h3 class="card__heading">
+                          <a href="#" class="full-unstyled-link">Closer</a>
+                        </h3>
+                      </div>
+                      <div class="card__badge bottom right"></div>
+                    </div>
+                  </div> {% endcomment %}
+                  <div class="card__content">
+                    <div class="card__information">
+                      <h3 class="card__heading h5">
+                        <a href="#" class="full-unstyled-link">Closer</a>
+                      </h3>
+                      
+                    </div>
+                    <div class="card-wrapper__pric-button">
+                      <div class="card-information">
+                        <span class="caption-large light"></span>
+                        <div class="price">
+                          <div class="price__container">
+                            <div class="price__regular">
+                              <span class="visually-hidden visually-hidden--inline">Regular price</span>
+                              <span class="price-item price-item--regular"
+                                >$14.<span class="price-cent">99</span>
+                              </span>
+                            </div>
+                            <small class="unit-price caption hidden">
+                              <span class="visually-hidden">Unit price</span>
+                              <span class="price-item price-item--last">
+                                <span></span>
+                                <span aria-hidden="true">/</span>
+                                <span class="visually-hidden">&nbsp;per&nbsp;</span>
+                                <span></span>
+                              </span>
+                            </small>
+                          </div>
+                        </div>
+                      </div>
+                      {% comment %} <div class="quick-add no-js-hidden">
+                        <product-form>
+                          <form class="form">
+                            <input type="hidden" name="form_type" value="product">
+                            <input type="hidden" name="utf8" value="✓">
+                            <input type="hidden" name="id" value="45793244872980" class="product-variant-id">
+                            <button
+                              id="quick-add-template--21727730336020__featured_collection8457118843156-submit"
+                              type="submit"
+                              name="add"
+                              class="quick-add__submit button button--full-width button--secondary"
+                              aria-haspopup="dialog"
+                              aria-labelledby="quick-add-template--21727730336020__featured_collection8457118843156-submit title-template--21727730336020__featured_collection-8457118843156"
+                              aria-live="polite"
+                              data-sold-out-message="true"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                viewBox="0 0 16 16"
+                                fill="currentColor"
+                              >
+                                <path d="M12.1183 11.8962C11.0907 11.8952 10.2569 12.7275 10.2559 13.755C10.2548 14.7826 11.0871 15.6165 12.1147 15.6175C13.1423 15.6185 13.9761 14.7863 13.9771 13.7587C13.9771 13.7581 13.9771 13.7575 13.9771 13.7569C13.9762 12.7304 13.1448 11.8982 12.1183 11.8962Z"/>
+                                <path d="M15.4185 2.98649C15.374 2.97787 15.3288 2.97348 15.2834 2.97341H3.95454L3.77511 1.77305C3.66332 0.975872 2.98144 0.382753 2.17644 0.382507H0.717701C0.321318 0.382507 0 0.703826 0 1.10021C0 1.49659 0.321318 1.81791 0.717701 1.81791H2.17823C2.26948 1.81724 2.34672 1.88519 2.35765 1.97582L3.46291 9.55114C3.61444 10.5137 4.44242 11.2239 5.41685 11.227H12.8827C13.8209 11.2282 14.6302 10.5688 14.8187 9.64982L15.9868 3.82747C16.0621 3.43831 15.8077 3.0618 15.4185 2.98649Z"/>
+                                <path d="M7.56101 13.6771C7.51731 12.6797 6.69413 11.8945 5.69569 11.898C4.66893 11.9395 3.87021 12.8055 3.9117 13.8322C3.95151 14.8174 4.75293 15.6005 5.73876 15.6175H5.78361C6.81023 15.5725 7.60597 14.7038 7.56101 13.6771Z"/>
+                              </svg>
+                              <span class="title-btn_add-cad">Add to cart</span>
+                              <span class="sold-out-message hidden">Sold out</span>
+                              <link
+                                href="//resources.milestonechurch.com/cdn/shop/t/2/assets/component-loading-spinner.css?v=116724955567955766481702562835"
+                                rel="stylesheet"
+                                type="text/css"
+                                media="all"
+                              >
+                              <div class="loading__spinner hidden">
+                                <svg
+                                  aria-hidden="true"
+                                  focusable="false"
+                                  class="spinner"
+                                  viewBox="0 0 66 66"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <circle class="path" fill="none" stroke-width="6" cx="33"
+                                          cy="33" r="30"></circle>
+                                </svg>
+                              </div>
+                            </button>
+                            <input type="hidden" name="product-id" value="8457118843156">
+                          </form>
+                        </product-form>
+                      </div> {% endcomment %}
+                    </div>
+                    <div class="card__badge bottom right"></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          {%- endfor -%}
+        {%- endfor -%}
+      </ul>
+  
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "card-product",
+  "tag": "section",
+  "class": "section-products",
+  "settings": [
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "collection"
+    },
+    {
+      "type": "range",
+      "id": "products_to_show",
+      "min": 2,
+      "max": 25,
+      "step": 1,
+      "default": 4,
+      "label": "product to show"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_quick_add",
+      "default": false,
+      "label": "add to button quick add"
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "card product"
+    }
+  ]
+}
+{% endschema %}

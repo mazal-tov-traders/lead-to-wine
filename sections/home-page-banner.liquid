@@ -1,7 +1,11 @@
 <link rel="stylesheet" href="{{root}}assets/css/home-page-banner.css">
 <section class="home-page-banner">
-	<img class="object-fit object-fit-cover" src="{{ section.settings.background | img_url: 'original'}}" alt="">
-	<img class="object-fit object-fit-cover mobile" src="{{ section.settings.background-mob | img_url: 'original' }}" alt="">
+  {% if section.settings.background  != blank %}
+    	<img class="object-fit object-fit-cover" src="{{ section.settings.background | img_url: 'original'}}" alt="">
+  {% endif %}
+   {% if section.settings.background-mob  != blank %}
+    <img class="object-fit object-fit-cover mobile" src="{{ section.settings.background-mob | img_url: 'original' }}" alt="">
+   {% endif %}
 	<div class="page-width inner">
         {% for block in section.blocks %}
             {% if block.type == "banner-text" %}

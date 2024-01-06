@@ -2,9 +2,7 @@
   assign product = card_product
 -%}
 
-{% comment %} TODO: assign `product.selected_or_first_available_variant` to variable and replace usage to reduce verbosity {% endcomment %}
 
-{% comment %} {%- assign first_3d_model = product.media | where: 'media_type', 'model' | first -%} {% endcomment %}
 {%- if first_3d_model -%}
   {{ 'component-product-model.css' | asset_url | stylesheet_tag }}
   <link
@@ -25,14 +23,8 @@
 <div
   class="single-product custom-featured-product"
 >
-  <div>
-    {% for object in product.metafields.custom.discription_list.value %}
-      <div class="wrapper-meta"><img src="{{ object.image.value | img_url : 'master' }}">
-      <p>{{ object.text }}</p>
-    </div>
-    {% endfor %}
-  </div>
-  <div class="page-width">
+  
+  <div class="card-item__wrapper">
     <product-info
       id="ProductInfo-{{ section.id }}"
       class="product__info-container"
@@ -52,6 +44,14 @@
           {{ 'onboarding.product_title' | t }}
         {%- endif -%}
       </h2>
+
+      <div>
+        {% for object in product.metafields.custom.discription_list.value %}
+          <div class="card-item__metafields-inner"><img class='image' src="{{ object.image.value | img_url : 'master' }}">
+          <p class="description">{{ object.text }}</p>
+        </div>
+        {% endfor %}
+      </div>
 
       <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
         {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
@@ -77,7 +77,7 @@
           class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
           {{ block.shopify_attributes }}
         >
-          {% comment %} TODO: enable theme-check once `item_count_for_variant` is accepted as valid filter {% endcomment %}
+         
           {% # theme-check-disable %}
           {%- assign cart_qty = cart | item_count_for_variant: product.selected_or_first_available_variant.id -%}
           {% # theme-check-enable %}

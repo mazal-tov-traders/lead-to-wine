@@ -2,12 +2,13 @@
 <script src="{{ 'price-per-item.js' | asset_url }}" defer="defer"></script>
 
 {% assign collection = section.settings.section_collection %}
-{{ collection }}
+<section>
 <div class="page-width">
   {% for product in collection.products %}
     {% render 'card-product-new', card_product: product %}
   {% endfor %}
 </div>
+</section>
 
 {%- if request.design_mode -%}
   <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>

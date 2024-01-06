@@ -3,23 +3,34 @@
     "cc01a5c9-92fb-416b-a914-ea2ef23e205e": {
       "type": "banner",
       "blocks": {
+        "4231754f-c541-4e29-9606-2265f6a0e684": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "title": "seeds",
+            "color_title_label": "#ffffff"
+          }
+        },
         "02834856-42b6-4955-9dc8-61d90b75ef11": {
           "type": "media",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/way-to-win-logo.png"
           }
         },
         "fe42e3fd-1bbd-4a42-ae51-f957516aded8": {
           "type": "description",
+          "disabled": true,
           "settings": {
-            "description": "<p>Coaching & Developing MEN<br\/>IN MATTERS OF Life & Faith<\/p>",
+            "description": "<p>Tomorrow Starts Today<\/p>",
             "color_description_label": "#ffffff"
           }
         },
         "eb6f4c67-8dc0-416b-bead-6cab94fedeee": {
           "type": "button",
+          "disabled": true,
           "settings": {
-            "button_label": "Buy The Book",
+            "button_label": "Buy The Study Guide",
             "button_link": "",
             "color_button_backgroun": "#ff0000",
             "color_button_label": "#ffffff",
@@ -31,12 +42,13 @@
         }
       },
       "block_order": [
+        "4231754f-c541-4e29-9606-2265f6a0e684",
         "02834856-42b6-4955-9dc8-61d90b75ef11",
         "fe42e3fd-1bbd-4a42-ae51-f957516aded8",
         "eb6f4c67-8dc0-416b-bead-6cab94fedeee"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Rectangle_4133714_7.jpg"
+        "image": "shopify:\/\/shop_images\/Screenshot_2024-01-05_at_4.58.24_PM.png"
       }
     },
     "599530d0-8352-441b-92cc-3db587f9d17e": {
@@ -76,6 +88,7 @@
         "60cfe272-5097-4546-8a4c-f7d0bd716fd9",
         "ab063952-226d-4403-8344-4ac88ef3c83f"
       ],
+      "disabled": true,
       "settings": {
       }
     },
@@ -123,14 +136,14 @@
         "486e114f-33c6-4ba4-b61d-056c12ba1dd0": {
           "type": "heading",
           "settings": {
-            "heading": "GROWTH AND DEVELOPMENT GUIDE FOR MEN",
+            "heading": "We all face challenges and obstacles.",
             "color_heading_label": "#1d2228"
           }
         },
         "631378ed-1c98-4d64-b696-d5b4065b5032": {
           "type": "description",
           "settings": {
-            "description": "<ul><li>Coaching for personal, spiritual, and professional areas of life<\/li><li>Concise and practical chapters<\/li><li>Helpful questions and leadership challenges<\/li><li>Great for groups or the individual reader<\/li><\/ul>",
+            "description": "<p>Even the daily responsibilities and pressures of life can feel overwhelming when we trust in our own efforts. The good news is, we have a Savior in Jesus, who is the King of a different Kingdom and worthy of our trust. When we live according to His Kingdom and its principles, we’ll find that our lives in Him are unshakable.<\/p><p>Unshakable provides practical concepts, illustrations, context, bible verses, and questions. The Unshakable study also includes perforated memory cards that you can tear out and take with you through the week so you can learn God’s Word in a practical way.<\/p>",
             "color_description_label": "#1d2228"
           }
         },
@@ -159,11 +172,12 @@
         "2e67b85d-a844-41be-9f38-51091714bcd3": {
           "type": "image-product",
           "settings": {
-            "image_product": "shopify:\/\/shop_images\/Screenshot_2024-01-05_at_4.11.42_PM.png"
+            "image_product": "shopify:\/\/shop_images\/Screenshot_2024-01-05_at_5.06.11_PM.png"
           }
         },
         "cfe9650a-4e66-4478-b780-08f0e19b2a22": {
           "type": "text-second",
+          "disabled": true,
           "settings": {
             "text_second": "other ways to buy",
             "color_text_second_label": "#1d2228"
@@ -178,6 +192,7 @@
         },
         "2faee0c0-67ee-49e2-baec-4d1b7274d6a8": {
           "type": "button-link",
+          "disabled": true,
           "settings": {
             "button_link1": "shopify:\/\/products\/the-way-to-win-intensive-1",
             "icon_button1": "shopify:\/\/shop_images\/image_8.svg",
@@ -198,7 +213,7 @@
         "2faee0c0-67ee-49e2-baec-4d1b7274d6a8"
       ],
       "settings": {
-        "product": "the-way-to-win",
+        "product": "unshakable",
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "media_position": "right",
@@ -292,6 +307,7 @@
         "0dfb0884-3faf-4f6c-8616-84bde47fe7af",
         "966e258c-ce7d-4491-b82b-b6540a8dcd51"
       ],
+      "disabled": true,
       "settings": {
       }
     },
@@ -323,6 +339,7 @@
         "b6104457-ca6f-4c4b-aa0b-aee019220432",
         "4d4841fa-46d2-49fe-8e26-522cad0c105b"
       ],
+      "disabled": true,
       "settings": {
         "banner": "shopify:\/\/shop_images\/Rectangle_4133714_7.jpg"
       }
@@ -356,6 +373,7 @@
         "1f3670eb-88ad-496a-a023-add186c6c536",
         "4a112e2b-53b4-4e06-8d29-0373e175870f"
       ],
+      "disabled": true,
       "settings": {
         "position_image": ""
       }
@@ -374,6 +392,7 @@
       "block_order": [
         "c76acc11-c4f6-46f3-9734-fed588c4111b"
       ],
+      "disabled": true,
       "settings": {
         "title": "You May Enjoy",
         "class": "",

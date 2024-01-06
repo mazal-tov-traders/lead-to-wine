@@ -30,12 +30,20 @@
             "content": "",
             "color_content_label": "#383633"
           }
+        },
+        "da4b19b0-3557-4e94-b1ca-14be611a471d": {
+          "type": "description-list",
+          "settings": {
+            "description-list": "<ul><li>Increase weekend attendance<\/li><li>Connect parents to what their kids are learning<\/li><li>Energize the culture of your small groups<\/li><\/ul>",
+            "color_list": "#383633"
+          }
         }
       },
       "block_order": [
         "73d2ec4f-cc21-4b0e-aab0-1318869d815f",
         "4a6bb457-33d6-4084-b023-d01268fd63eb",
-        "57f8583a-4ac9-44e3-96c6-2194732628ea"
+        "57f8583a-4ac9-44e3-96c6-2194732628ea",
+        "da4b19b0-3557-4e94-b1ca-14be611a471d"
       ],
       "settings": {
         "background": "_bg-white",
@@ -222,9 +230,9 @@
         "ba7eb273-10a8-4172-a892-2be82b8ac4a0": {
           "type": "section",
           "settings": {
-            "background_block": "#EAE9E5",
+            "background_block": "#eae9e5",
             "label": "1. Purchase a bundle",
-            "color_label": "#fff",
+            "color_label": "#ffffff",
             "background-label": "#342663",
             "content": "<ul><li>Message content on topics your church cares about.<\/li><li>Kids curriculum that fosters genuine excitement in God’s word.<\/li><\/ul>",
             "color_content_label": "#383633"
@@ -233,9 +241,9 @@
         "41bddb88-f25d-486d-9484-9572d99e99bf": {
           "type": "section",
           "settings": {
-            "background_block": "#EAE9E5",
+            "background_block": "#eae9e5",
             "label": "2. Prep & Promote",
-            "color_label": "#fff",
+            "color_label": "#ffffff",
             "background-label": "#342663",
             "content": "<ul><li>Web, social, and email graphics ready for your team to use.<\/li><li>Trailer video to generate series anticipation.<\/li><\/ul>",
             "color_content_label": "#383633"
@@ -244,9 +252,9 @@
         "e50afccc-3b3c-41b2-b883-bdaf2d6f58bf": {
           "type": "section",
           "settings": {
-            "background_block": "#EAE9E5",
+            "background_block": "#eae9e5",
             "label": "3. Launch",
-            "color_label": "#fff",
+            "color_label": "#ffffff",
             "background-label": "#342663",
             "content": "<ul><li>Provide participants with a study guide that makes it simple and fun to engage in God’s word<\/li><li>Equip your small group leaders with content and discussion questions for their group<\/li><\/ul>",
             "color_content_label": "#383633"

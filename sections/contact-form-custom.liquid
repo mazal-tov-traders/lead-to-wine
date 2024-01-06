@@ -2,7 +2,7 @@
     {% for block in section.blocks %}
         {% if block.settings.title != blank %}
                 <h3 style="color:{{ block.settings.color_title_label }}" class="title">{{ block.settings.title }}</h3>
-      <div class="custom-contact-form">
+      <div class="contact-us__wrapper">
       <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
       <script>
         hbspt.forms.create({
@@ -15,13 +15,14 @@
         {% endif %}
      
     {% endfor %}
+
 </div>
 
 {% schema %}
     {
       "name": "contact-form-custom",
       "tag": "section",
-      "class": "section contact-form-custom",
+      "class": "section contact-us",
       "settings": [
         {
           "type": "checkbox",

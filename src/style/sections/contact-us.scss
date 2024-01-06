@@ -1,0 +1,21 @@
+@import "../variables-and-mixins.scss";
+
+.contact-us {
+	padding: 80px 0;
+	background: $color-colors-white;
+
+	@media ($lg) {
+		padding: 100px 0;
+	}
+
+	.title {
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+	}
+
+	&__wrapper {
+		max-width: 570px;
+		margin: 0 auto;
+	}
+}

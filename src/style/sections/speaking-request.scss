@@ -13,6 +13,10 @@
     flex-wrap: wrap;
     gap: 40px 90px;
   }
+  &__wrapper_reverse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 
   &__image {
     width: 100%;

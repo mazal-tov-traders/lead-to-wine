@@ -21,10 +21,142 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "e1fed952-e66e-462c-b3d6-d4469cbb7762": {
+      "type": "content-overview",
+      "blocks": {
+        "524b7136-f35c-408a-8fa1-0e93a1ac5362": {
+          "type": "sub-title",
+          "settings": {
+            "sub_title": "This 8 week campaign includes two intro weeks to generate excitement about the series and provide time for people to join a small group.",
+            "color_label": "#342663"
+          }
+        },
+        "b27e31eb-f51f-4cb8-af4f-6b85664d1640": {
+          "type": "overview-item",
+          "settings": {
+            "label": "INTRO one",
+            "color_label": "#fff",
+            "background_color_label": "#595035",
+            "item_title": "POTENTIAL",
+            "color_item_title": "#595035",
+            "background_color_item_title": "#EAE9E5",
+            "text": "Realizing our potential",
+            "color_text": "#383633"
+          }
+        },
+        "e403c9e3-6814-4938-b157-1435ef924132": {
+          "type": "overview-item",
+          "settings": {
+            "label": "INTRO two",
+            "color_label": "#fff",
+            "background_color_label": "#595035",
+            "item_title": "PROCESS",
+            "color_item_title": "#595035",
+            "background_color_item_title": "#EAE9E5",
+            "text": "Creating a healthy environment to hear from God",
+            "color_text": "#383633"
+          }
+        },
+        "9705c0bd-5ceb-4036-9645-6bac29de792b": {
+          "type": "overview-item",
+          "settings": {
+            "label": "WEEK ONE",
+            "color_label": "#fff",
+            "background_color_label": "#595035",
+            "item_title": "RESISTANCE",
+            "color_item_title": "#595035",
+            "background_color_item_title": "#EAE9E5",
+            "text": "Handling adversity",
+            "color_text": "#383633"
+          }
+        },
+        "f312287a-0496-4b20-9811-330816e52b3c": {
+          "type": "overview-item",
+          "settings": {
+            "label": "WEEK two",
+            "color_label": "#fff",
+            "background_color_label": "#595035",
+            "item_title": "FAITH",
+            "color_item_title": "#595035",
+            "background_color_item_title": "#EAE9E5",
+            "text": "Growing in faith",
+            "color_text": "#383633"
+          }
+        },
+        "46cb10c1-09c3-44b5-8ad5-5fc1ab4c61bf": {
+          "type": "overview-item",
+          "settings": {
+            "label": "WEEK two",
+            "color_label": "#fff",
+            "background_color_label": "#595035",
+            "item_title": "MOMENTUM",
+            "color_item_title": "#595035",
+            "background_color_item_title": "#EAE9E5",
+            "text": "Three questions to ask about sowing and reaping",
+            "color_text": "#383633"
+          }
+        },
+        "fd50fec1-5af1-4957-9630-3423c547c47c": {
+          "type": "overview-item",
+          "settings": {
+            "label": "WEEK FOUR",
+            "color_label": "#fff",
+            "background_color_label": "#595035",
+            "item_title": "TRANSFORMATION",
+            "color_item_title": "#595035",
+            "background_color_item_title": "#EAE9E5",
+            "text": "Walking in your new nature",
+            "color_text": "#383633"
+          }
+        },
+        "43f36cdd-51e5-4cda-8950-8b702d7e1662": {
+          "type": "overview-item",
+          "settings": {
+            "label": "WEEK FIVE",
+            "color_label": "#fff",
+            "background_color_label": "#595035",
+            "item_title": "MULTIPLICATION",
+            "color_item_title": "#595035",
+            "background_color_item_title": "#EAE9E5",
+            "text": "Generosity and multiplication",
+            "color_text": "#383633"
+          }
+        },
+        "b0a0a2f7-ef66-4c8f-abf8-24e82cc7c01a": {
+          "type": "overview-item",
+          "settings": {
+            "label": "WEEksix",
+            "color_label": "#fff",
+            "background_color_label": "#595035",
+            "item_title": "LEGACY",
+            "color_item_title": "#595035",
+            "background_color_item_title": "#EAE9E5",
+            "text": "Leaving a legacy",
+            "color_text": "#383633"
+          }
+        }
+      },
+      "block_order": [
+        "524b7136-f35c-408a-8fa1-0e93a1ac5362",
+        "b27e31eb-f51f-4cb8-af4f-6b85664d1640",
+        "e403c9e3-6814-4938-b157-1435ef924132",
+        "9705c0bd-5ceb-4036-9645-6bac29de792b",
+        "f312287a-0496-4b20-9811-330816e52b3c",
+        "46cb10c1-09c3-44b5-8ad5-5fc1ab4c61bf",
+        "fd50fec1-5af1-4957-9630-3423c547c47c",
+        "43f36cdd-51e5-4cda-8950-8b702d7e1662",
+        "b0a0a2f7-ef66-4c8f-abf8-24e82cc7c01a"
+      ],
+      "settings": {
+        "title": "Message content overview",
+        "color_label": "#383633"
+      }
     }
   },
   "order": [
     "main",
-    "bc004a06-4f99-4dd2-ab5f-1c502b5bae37"
+    "bc004a06-4f99-4dd2-ab5f-1c502b5bae37",
+    "e1fed952-e66e-462c-b3d6-d4469cbb7762"
   ]
 }

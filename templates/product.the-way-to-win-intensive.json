@@ -94,17 +94,17 @@
           "type": "benefits-item",
           "settings": {
             "image": "shopify:\/\/shop_images\/22_Literacy_day.png",
-            "heading": "<p>Discipleship takes time<\/p>",
+            "heading": "<h2><strong>Discipleship takes time<\/strong><\/h2>",
             "color_heading_label": "#383633",
             "content": "<p>A 38-week process that provides the environment men need to grow spiritually and build meaningful relationships.<\/p>",
-            "color_content_label": "#383633"
+            "color_content_label": "#383334"
           }
         },
         "1dcf7486-cee6-4069-81fb-934a06c0e677": {
           "type": "benefits-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/fi_7588400.png",
-            "heading": "<p>Content is key<\/p>",
+            "image": "shopify:\/\/shop_images\/icons8-open-book-100.png",
+            "heading": "<h2><strong>Content is key<\/strong><\/h2>",
             "color_heading_label": "#383633",
             "content": "<p>Concise chapters intentionally desired to ad same to my eving.<\/p>",
             "color_content_label": "#383633"
@@ -147,7 +147,7 @@
           "type": "headline",
           "settings": {
             "headline": "Your online course includes:",
-            "color_headline_label": "#1D2228"
+            "color_headline_label": "#383334"
           }
         },
         "fc9cd3f1-3a4b-4170-8e0f-c1edfdb8671b": {
@@ -198,7 +198,7 @@
         "cb1bd4cc-f916-4694-b5f5-4d1bd130c872": {
           "type": "media",
           "settings": {
-            "text": "Sneak Peek",
+            "text": "Sneak Peak",
             "image_video": "shopify:\/\/shop_images\/Rectangle_4133735.png",
             "image_youtube": "shopify:\/\/shop_images\/fi_1384060.png",
             "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
@@ -278,14 +278,14 @@
           "type": "description",
           "settings": {
             "description": "<ol><li>Get the Way to Win Intensive<\/li><li>Carve out 1.5 hours to watch the self-paced training videos directly from Pastor Jeff and the Milestone team<\/li><li>Launch your Development Group utilizing the resources, templates, and samples provided<\/li><\/ol>",
-            "color_description_label": "#383633"
+            "color_description_label": "#383334"
           }
         },
         "b4306e6e-7205-4ef5-9bb0-c66531f2e661": {
           "type": "content",
           "settings": {
             "content": "CONTENT OVERVIEW",
-            "color_content_label": "#342663"
+            "color_content_label": "#383334"
           }
         },
         "67894b9b-5b3b-4a15-9955-395a1277fc26": {
@@ -294,9 +294,9 @@
             "background_block": "#eae9e5",
             "label": "Section 1",
             "color_label": "#ffffff",
-            "background-label": "#342663",
+            "background-label": "#383334",
             "content": "<p>Create confidence that them men in your group will get real value out of prioritizing this time each week.<\/p>",
-            "color_content_label": "#342663"
+            "color_content_label": "#383334"
           }
         },
         "50a1e340-711e-4ff3-9781-eb5931d6bdc0": {
@@ -305,9 +305,9 @@
             "background_block": "#eae9e5",
             "label": "Section 2",
             "color_label": "#ffffff",
-            "background-label": "#342663",
+            "background-label": "#383334",
             "content": "<p>Build spiritual foundations & show how it benefits their daily life.<\/p>",
-            "color_content_label": "#342663"
+            "color_content_label": "#383334"
           }
         },
         "6f6ccabf-b667-4320-a091-ad80cbc5a75f": {
@@ -316,9 +316,9 @@
             "background_block": "#eae9e5",
             "label": "Section 3",
             "color_label": "#ffffff",
-            "background-label": "#342663",
+            "background-label": "#383334",
             "content": "<p>Identify what it means to have integrity in relationships and to lead your family well.<\/p>",
-            "color_content_label": "#342663"
+            "color_content_label": "#383334"
           }
         },
         "0abf5adc-37a3-4742-9439-1fde542e0e21": {
@@ -327,9 +327,9 @@
             "background_block": "#eae9e5",
             "label": "Section 4",
             "color_label": "#ffffff",
-            "background-label": "#342663",
+            "background-label": "#383334",
             "content": "<p>Understand the difference in actual values vs. aspirational values, and the importance of not just attending church, but engaging.<\/p>",
-            "color_content_label": "#342663"
+            "color_content_label": "#383334"
           }
         },
         "352062cc-dcf6-4c35-ac40-a9d582cb0e27": {
@@ -338,9 +338,9 @@
             "background_block": "#eae9e5",
             "label": "Section 5",
             "color_label": "#ffffff",
-            "background-label": "#342663",
+            "background-label": "#383334",
             "content": "<p>Equip the men in your group to help those around them grow in their walk with God.<\/p>",
-            "color_content_label": "#342663"
+            "color_content_label": "#383334"
           }
         }
       },

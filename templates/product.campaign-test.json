@@ -19,17 +19,15 @@
         },
         "fe42e3fd-1bbd-4a42-ae51-f957516aded8": {
           "type": "description",
-          "disabled": true,
           "settings": {
-            "description": "<p>RECOGNIZING HIS VOICE IN A WORLD FULL OF NOISE<\/p>",
+            "description": "<p><strong>Your Campaign Includes: Message Content, Promo Material, Kids Curriculum, and 50 Study Guides.<\/strong><\/p>",
             "color_description_label": "#ffffff"
           }
         },
         "eb6f4c67-8dc0-416b-bead-6cab94fedeee": {
           "type": "button",
-          "disabled": true,
           "settings": {
-            "button_label": "Buy The Study Guide",
+            "button_label": "",
             "button_link": "",
             "color_button_backgroun": "#ff0000",
             "color_button_label": "#ffffff",
@@ -135,14 +133,14 @@
         "486e114f-33c6-4ba4-b61d-056c12ba1dd0": {
           "type": "heading",
           "settings": {
-            "heading": "Does God See me? How do I know what he is saying?",
+            "heading": "Our most popular series on one of God’s primary building blocks, the seed.",
             "color_heading_label": "#1d2228"
           }
         },
         "631378ed-1c98-4d64-b696-d5b4065b5032": {
           "type": "description",
           "settings": {
-            "description": "<p>If you’ve ever thought about these questions, you aren’t alone. The good news is, God cares about you and He wants to speak to you right where you are.<\/p>",
+            "description": "<h4>Growth doesn’t happen overnight – our Seeds series is focused on topics like potential, momentum, multiplication, and legacy so your church can grow in the areas of life they need it most<\/h4>",
             "color_description_label": "#1d2228"
           }
         },
@@ -171,7 +169,7 @@
         "2e67b85d-a844-41be-9f38-51091714bcd3": {
           "type": "image-product",
           "settings": {
-            "image_product": "shopify:\/\/shop_images\/Screenshot_2024-01-05_at_3.10.19_PM.png"
+            "image_product": "shopify:\/\/shop_images\/Screenshot_2024-01-06_at_1.43.25_PM.png"
           }
         },
         "cfe9650a-4e66-4478-b780-08f0e19b2a22": {
@@ -184,6 +182,7 @@
         },
         "9205ad00-fcd9-4297-a7e0-8d637296564e": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "25% discount when you buy 10 or more books",
             "color_text_label": "#1d2228"
@@ -212,102 +211,12 @@
         "2faee0c0-67ee-49e2-baec-4d1b7274d6a8"
       ],
       "settings": {
-        "product": "seeds-series-kit",
+        "product": "seeds-kids-curriculum",
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "media_position": "right",
         "nubmer_navigat": "",
         "hide_variants": false
-      }
-    },
-    "61bc9bbb-ef59-4877-9cb1-a9e41368938a": {
-      "type": "get-started",
-      "blocks": {
-        "c0047b56-9fb3-41aa-9921-2ed5de0f92d1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Each section of The Way to Win builds on the next to create meaningful discussion around topics men actually care about.",
-            "color_heading_label": "#383633"
-          }
-        },
-        "0707f1da-8a94-460d-b491-74e8dd76a136": {
-          "type": "section",
-          "settings": {
-            "background_block": "#eae9e5",
-            "label": "Section 1",
-            "color_label": "#ffffff",
-            "background-label": "#342663",
-            "content": "<p>Provides immediate value that the tools in this book with add value to your daily life.<\/p>",
-            "color_content_label": "#383633"
-          }
-        },
-        "f58783fb-63ab-44ae-89c5-be9de240ddee": {
-          "type": "section",
-          "settings": {
-            "background_block": "#eae9e5",
-            "label": "Section 2",
-            "color_label": "#ffffff",
-            "background-label": "#342663",
-            "content": "<p>Builds spiritual foundations & show how it benefits all aspects of you life.<\/p>",
-            "color_content_label": "#383633"
-          }
-        },
-        "8c9fa32b-6a8c-4875-9d12-e9b21b3a5fd9": {
-          "type": "section",
-          "settings": {
-            "background_block": "#eae9e5",
-            "label": "",
-            "color_label": "#ffffff",
-            "background-label": "#342663",
-            "content": "",
-            "color_content_label": "#383633"
-          }
-        },
-        "f187f553-663e-4f03-9112-d736b8da325f": {
-          "type": "section",
-          "settings": {
-            "background_block": "#eae9e5",
-            "label": "Section 3",
-            "color_label": "#ffffff",
-            "background-label": "#342663",
-            "content": "<p>Identifies what it means to have integrity in relationships and to lead your family well.<\/p>",
-            "color_content_label": "#383633"
-          }
-        },
-        "0dfb0884-3faf-4f6c-8616-84bde47fe7af": {
-          "type": "section",
-          "settings": {
-            "background_block": "#eae9e5",
-            "label": "Section 4",
-            "color_label": "#ffffff",
-            "background-label": "#342663",
-            "content": "<p>Understanding the difference in actual values vs. aspirational values, and the importance of not just attending church, but engaging.<\/p>",
-            "color_content_label": "#383633"
-          }
-        },
-        "966e258c-ce7d-4491-b82b-b6540a8dcd51": {
-          "type": "section",
-          "settings": {
-            "background_block": "#eae9e5",
-            "label": "Section 5",
-            "color_label": "#ffffff",
-            "background-label": "#342663",
-            "content": "<p>Equips you to walk with other men in their walk with God.<\/p>",
-            "color_content_label": "#383633"
-          }
-        }
-      },
-      "block_order": [
-        "c0047b56-9fb3-41aa-9921-2ed5de0f92d1",
-        "0707f1da-8a94-460d-b491-74e8dd76a136",
-        "f58783fb-63ab-44ae-89c5-be9de240ddee",
-        "8c9fa32b-6a8c-4875-9d12-e9b21b3a5fd9",
-        "f187f553-663e-4f03-9112-d736b8da325f",
-        "0dfb0884-3faf-4f6c-8616-84bde47fe7af",
-        "966e258c-ce7d-4491-b82b-b6540a8dcd51"
-      ],
-      "disabled": true,
-      "settings": {
       }
     },
     "1c9cda69-1c2d-44b4-b583-8229396d2b0d": {
@@ -418,6 +327,172 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "f6465514-9c89-4439-830e-4dc71a730b07": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--17158045106406__f6465514-9c89-4439-830e-4dc71a730b07-column-1": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Message Series<\/strong>",
+            "text": "<ul><li>Comprehensive message notes<\/li><li>Message Bumper<\/li><li>Presentation Slides<\/li><li>Trailer Video<\/li><li>Social, Web, and Email Graphics<\/li><li>Small Group Leader Guide<\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17158045106406__f6465514-9c89-4439-830e-4dc71a730b07-column-2": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Kids Curriculum<\/strong>",
+            "text": "<ul><li>Original Song & Lyric Video<\/li><li>Weekly Message Videos<\/li><li>Small Group Discussion Guides<\/li><li>Coloring & Activity Sheets<\/li><li>Family Discussion Guides<\/li><li>Brand Images<\/li><li>Message Bumper Video<\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17158045106406__f6465514-9c89-4439-830e-4dc71a730b07-column-3": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Study Guide<\/strong>",
+            "text": "<ul><li>Corresponding Chapters to Weekly Messages<\/li><li>Personal Application<\/li><li>Practical concepts<\/li><li>Biblical Context<\/li><li>Discussion Questions<\/li><li>Perforated Scripture Cards<\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17158045106406__f6465514-9c89-4439-830e-4dc71a730b07-column-1",
+        "template--17158045106406__f6465514-9c89-4439-830e-4dc71a730b07-column-2",
+        "template--17158045106406__f6465514-9c89-4439-830e-4dc71a730b07-column-3"
+      ],
+      "settings": {
+        "title": "Campaign Contents",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "61bc9bbb-ef59-4877-9cb1-a9e41368938a": {
+      "type": "get-started",
+      "blocks": {
+        "c0047b56-9fb3-41aa-9921-2ed5de0f92d1": {
+          "type": "heading",
+          "settings": {
+            "heading": "This 8 week campaign includes two intro weeks to generate excitement about the series and provide time for people to join a small group.",
+            "color_heading_label": "#383633"
+          }
+        },
+        "0707f1da-8a94-460d-b491-74e8dd76a136": {
+          "type": "section",
+          "settings": {
+            "background_block": "#eae9e5",
+            "label": "Intro Week 1",
+            "color_label": "#ffffff",
+            "background-label": "#342663",
+            "content": "<p>How Do We Realize Our Potential?<\/p>",
+            "color_content_label": "#383633"
+          }
+        },
+        "f58783fb-63ab-44ae-89c5-be9de240ddee": {
+          "type": "section",
+          "settings": {
+            "background_block": "#eae9e5",
+            "label": "Intro Week 2",
+            "color_label": "#ffffff",
+            "background-label": "#342663",
+            "content": "<p>How To Create A Healthy Environment To Hear From God<\/p>",
+            "color_content_label": "#383633"
+          }
+        },
+        "8c9fa32b-6a8c-4875-9d12-e9b21b3a5fd9": {
+          "type": "section",
+          "settings": {
+            "background_block": "#eae9e5",
+            "label": "Week 1",
+            "color_label": "#ffffff",
+            "background-label": "#342663",
+            "content": "<p>Handling Adversity <\/p>",
+            "color_content_label": "#383633"
+          }
+        },
+        "f187f553-663e-4f03-9112-d736b8da325f": {
+          "type": "section",
+          "settings": {
+            "background_block": "#eae9e5",
+            "label": "Week 2",
+            "color_label": "#ffffff",
+            "background-label": "#342663",
+            "content": "<p>How Do We Grow In Faith?<\/p>",
+            "color_content_label": "#383633"
+          }
+        },
+        "0dfb0884-3faf-4f6c-8616-84bde47fe7af": {
+          "type": "section",
+          "settings": {
+            "background_block": "#eae9e5",
+            "label": "Week 3",
+            "color_label": "#ffffff",
+            "background-label": "#342663",
+            "content": "<p>Creating Momentum <\/p>",
+            "color_content_label": "#383633"
+          }
+        },
+        "966e258c-ce7d-4491-b82b-b6540a8dcd51": {
+          "type": "section",
+          "settings": {
+            "background_block": "#eae9e5",
+            "label": "Week 4",
+            "color_label": "#ffffff",
+            "background-label": "#342663",
+            "content": "<p>Transformation<\/p>",
+            "color_content_label": "#383633"
+          }
+        },
+        "52c29632-1305-48ef-a273-730bb65ee0da": {
+          "type": "section",
+          "settings": {
+            "background_block": "#eae9e5",
+            "label": "Week 5",
+            "color_label": "#ffffff",
+            "background-label": "#342663",
+            "content": "<p>Generosity & Multiplication<\/p>",
+            "color_content_label": "#383633"
+          }
+        },
+        "5dd96e9e-b100-4f30-98ef-83934ffa5629": {
+          "type": "section",
+          "settings": {
+            "background_block": "#eae9e5",
+            "label": "Week 8",
+            "color_label": "#ffffff",
+            "background-label": "#342663",
+            "content": "<p>Leaving A Legacy<\/p>",
+            "color_content_label": "#383633"
+          }
+        }
+      },
+      "block_order": [
+        "c0047b56-9fb3-41aa-9921-2ed5de0f92d1",
+        "0707f1da-8a94-460d-b491-74e8dd76a136",
+        "f58783fb-63ab-44ae-89c5-be9de240ddee",
+        "8c9fa32b-6a8c-4875-9d12-e9b21b3a5fd9",
+        "f187f553-663e-4f03-9112-d736b8da325f",
+        "0dfb0884-3faf-4f6c-8616-84bde47fe7af",
+        "966e258c-ce7d-4491-b82b-b6540a8dcd51",
+        "52c29632-1305-48ef-a273-730bb65ee0da",
+        "5dd96e9e-b100-4f30-98ef-83934ffa5629"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -426,9 +501,10 @@
     "main",
     "related-products",
     "79c3192d-f71e-4ef0-bfad-ba58506b1890",
-    "61bc9bbb-ef59-4877-9cb1-a9e41368938a",
     "1c9cda69-1c2d-44b4-b583-8229396d2b0d",
     "9f4c2d6a-79bc-470b-9efb-204ad8eec149",
-    "17838819-eb1b-4670-8ad5-3a0f1b01e15c"
+    "17838819-eb1b-4670-8ad5-3a0f1b01e15c",
+    "f6465514-9c89-4439-830e-4dc71a730b07",
+    "61bc9bbb-ef59-4877-9cb1-a9e41368938a"
   ]
 }

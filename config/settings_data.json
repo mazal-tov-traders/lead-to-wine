@@ -161,7 +161,7 @@
           "background_gradient": "",
           "text": "#121212",
           "button": "#121212",
-          "button_label": "#f3f3f3",
+          "button_label": "#eae9e9",
           "secondary_button_label": "#121212",
           "shadow": "#121212"
         }
@@ -179,7 +179,7 @@
       },
       "accent-1": {
         "settings": {
-          "background": "#121212",
+          "background": "#4d4d4e",
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#ffffff",

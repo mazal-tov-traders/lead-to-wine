@@ -21,14 +21,14 @@
           "type": "title",
           "settings": {
             "title": "Why<em>We Exist<\/em>",
-            "color_title_label": "#383633"
+            "color_title_label": "#4d4d4e"
           }
         },
         "332f1000-a6a6-4789-9df3-c2fd49c45486": {
           "type": "description",
           "settings": {
-            "description": "<p>Lead to win exists to gather, coach, and equip leaders to win in the areas that matter most.<\/p>",
-            "color_description_label": "#918677"
+            "description": "<p><em>Lead to win exists to gather, coach, and equip leaders to win in the areas that matter most.<\/em><\/p>",
+            "color_description_label": "#d5cfc4"
           }
         }
       },
@@ -56,14 +56,14 @@
           "type": "title",
           "settings": {
             "title": "About Jeff  Little",
-            "color_title_label": "#1d2228"
+            "color_title_label": "#4d4d4e"
           }
         },
         "542ffbaf-922f-4acf-b0df-4b5b48f08541": {
           "type": "description",
           "settings": {
             "description": "<p>I was raised in Northeast Texas by wonderful parents who modeled a strong faith and character that is the foundation of my life today. After completing high school, I attended Baylor University and graduated in 1996 with a Bachelor of Arts in Religion. I completed my master’s degree at Southwestern Baptist Theological Seminary in 2006 and earned a doctorate from Southeastern University in 2022. <\/p><p>After pastoring several established congregations, God began to stir my heart with the dream of planting a life-giving, spirit-filled, community church, but I was not sure where! Through much prayer and consultation, the Lord spoke to me clearly that I was to go to Keller, TX to start a church.<\/p>",
-            "color_description_label": "#918677"
+            "color_description_label": "#4d4d4e"
           }
         }
       },

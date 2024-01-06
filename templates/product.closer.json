@@ -34,7 +34,7 @@
             "color_button_border": "#ffffff",
             "hover_color_button_backgroun": "#ffffff",
             "hover_color_button_border": "#ffffff",
-            "hover_color_button_label": "#5491d6"
+            "hover_color_button_label": "#4d4d4e"
           }
         }
       },
@@ -140,7 +140,7 @@
         "631378ed-1c98-4d64-b696-d5b4065b5032": {
           "type": "description",
           "settings": {
-            "description": "<p>WE INVITE YOU TO GO ON A JOURNEY WITH JESUS – FROM HIS LIFE TO YOURS.<\/p><p>We believe the closer you get to Jesus, the more authentic and life-changing He will become<\/p>",
+            "description": "<p>We invite you to go on a journey with Jesus - from his life to yours We believe the closer you get to Jesus, the more authentic and life-changing He will become<\/p>",
             "color_description_label": "#1d2228"
           }
         },

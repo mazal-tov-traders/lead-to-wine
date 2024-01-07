@@ -1,0 +1,142 @@
+@import "../variables-and-mixins.scss";
+
+.topics {
+	padding: 40px 0;
+
+	@media ($lg) {
+		padding: 50px 0;
+	}
+
+	.title {
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 50px;
+	}
+
+	&__wrapper {
+		display: grid;
+		grid-template-columns: minmax(200px, 350px);
+		justify-content: center;
+		gap: 30px;
+
+		@media ($sm) {
+			grid-template-columns: repeat(2, minmax(200px, 300px));
+		}
+
+		@media ($md) {
+			grid-template-columns: repeat(3, minmax(200px, 300px));
+		}
+
+		@media ($lg) {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+
+	&__item {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		background: $color-colors-white;
+		border-radius: 10px;
+		box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.05);
+		padding: 20px 20px 30px;
+		position: relative;
+
+		&:hover {
+			img {
+				transform: scale(1.1);
+			}
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		flex: 1 0 0;
+	}
+
+	&__image {
+		overflow: hidden;
+		position: relative;
+
+		img {
+			display: block;
+			width: 100%;
+			aspect-ratio: 260/200;
+			object-fit: cover;
+			background: $color-colors-element;
+			transition: transform 0.5s ease-out;
+		}
+	}
+
+	&__category {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		font-weight: 400;
+		font-size: 10px;
+		line-height: 12px;
+		letter-spacing: -0.04em;
+		color: $color-colors-white;
+		text-transform: uppercase;
+		background: $color-colors-main;
+		padding: 4.5px 10px;
+	}
+
+	&__sub-title {
+		font-family: $font-family-Awesome-Serif;
+		font-weight: 700;
+		font-size: 22px;
+		line-height: 30px;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+
+	&__description {
+		@include text-style-text-text-main;
+
+		font-size: 18px;
+		margin-bottom: 25px;
+
+		@media ($sm) {
+			height: 100%;
+			min-height: 160px;
+		}
+	}
+
+	&__btn {
+		display: inline-block;
+		width: 100%;
+		background: $color-colors-second;
+		border: 1px solid $color-colors-second;
+		padding: 8px 15px;
+		font-family: $font-family-global;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: -0.05em;
+		color: $color-colors-white;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		cursor: pointer;
+		transition: background 0.3s, border 0.3s, color 0.3s;
+
+		&:hover,
+		&:focus {
+			background: $color-colors-main;
+			border: 1px solid $color-colors-main;
+			text-decoration: none;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

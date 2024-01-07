@@ -2,12 +2,14 @@
 <script src="{{ 'price-per-item.js' | asset_url }}" defer="defer"></script>
 
 {% assign collection = section.settings.section_collection %}
-<section>
-<div class="page-width">
-  {% for product in collection.products %}
-    {% render 'card-product-new', card_product: product %}
-  {% endfor %}
-</div>
+<section class="product-collection">
+  <div class="page-width">
+    <div class="product-collection__wrapper">
+      {% for product in collection.products %}
+        {% render 'card-product-new', card_product: product %}
+      {% endfor %}
+    </div>
+  </div>
 </section>
 
 {%- if request.design_mode -%}
@@ -70,7 +72,6 @@
       });
 
       quantityInputElement.addEventListener('change', () => {
-       
         updatePrice(element, dataPrice, elementSum);
       });
 
@@ -97,6 +98,12 @@
       "id": "section_header",
       "label": "Section Header"
     }
+    {
+      "type": "color",
+      "id": "color_title_label",
+      "label": "Color Title Label",
+      "default": "#383633"
+    },
   ],
   "presets": [
     {

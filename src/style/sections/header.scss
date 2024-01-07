@@ -109,6 +109,11 @@
 			&-link {
 				padding: 0;
 				margin: 0;
+				flex: 1 0 0;
+
+				@media ($lg-990) {
+					flex: unset;
+				}
 			}
 		}
 
@@ -144,6 +149,7 @@
 						color: $color-text-light-grey;
 						letter-spacing: initial;
 						padding: 0;
+						text-decoration: none;
 						transition: text-shadow 0.3s, color 0.3s;
 
 						&:hover,
@@ -175,7 +181,12 @@
 
 			span {
 				text-decoration: inherit;
+				color: inherit;
 			}
+		}
+
+		&__active-menu-item {
+			color: inherit;
 		}
 
 		.mega-menu {
@@ -210,6 +221,7 @@
 					color: $color-text-main;
 					letter-spacing: initial;
 					text-transform: uppercase;
+					text-decoration: none;
 					padding: 0;
 
 					&:hover,
@@ -240,6 +252,7 @@
 							display: flex;
 							align-items: flex-end;
 							min-height: 36px;
+							text-decoration: none;
 						}
 					}
 
@@ -260,6 +273,7 @@
 							color: $color-text-main;
 							letter-spacing: initial;
 							text-transform: unset;
+							text-decoration: none;
 							padding: 0;
 							transition: text-shadow 0.3s, color 0.3s;
 
@@ -321,6 +335,8 @@
 
 				&.icon-close {
 					top: 18px;
+					width: 24px;
+					height: 24px;
 				}
 
 				&.icon-search {
@@ -353,6 +369,13 @@
 				width: 24px;
 			}
 		}
+
+		.modal {
+			&__close-button .icon {
+				width: 1.7rem;
+				height: 1.7rem;
+			}
+		}
 	}
 
 	summary {
@@ -360,13 +383,15 @@
 	}
 
 	.menu-drawer {
+		--color-background: #0c1117;
+		width: 100%;
 		height: calc(100vh - 60px);
 		background: rgba(0, 0, 0, 0.6);
 
 		&__inner-container {
 			height: auto;
 			max-height: calc(100vh - 61px);
-			background: #0c1117;
+			background: #0c1117 !important;
 			padding: 20px 34px 77px;
 			margin-top: 1px;
 			overflow-y: scroll;
@@ -378,7 +403,7 @@
 
 		&__menu {
 			li {
-				margin: 0;
+				margin: 0 !important;
 
 				&:not(:last-child) {
 					border-bottom: 1px solid rgba(213, 218, 221, 0.2);
@@ -389,10 +414,11 @@
 				padding-right: 30px !important;
 
 				.icon-caret {
-					display: block;
+					display: block !important;
 					width: 22px;
 					height: 22px;
 					transform: rotate(-90deg);
+					position: absolute;
 					right: 0;
 					top: 20px;
 				}
@@ -422,7 +448,9 @@
 		}
 
 		&__account {
+			width: 100%;
 			gap: 15px;
+			border-top: 1px solid rgba(213, 218, 221, 0.2);
 
 			.icon-account {
 				width: auto;
@@ -431,19 +459,19 @@
 			}
 		}
 
-		&__close-button {
+		&__close-button.link {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
 			font-family: $font-family-global;
 			font-weight: 400;
 			font-size: 16px;
-			line-height: 19px;
+			line-height: 21px;
 			text-transform: uppercase;
 			color: $color-colors-white;
-			padding: 32px 0;
-			background: none;
-			margin-top: 0;
+			padding: 30px 0;
+			background: none !important;
+			margin: 0 0 10px;
 			border-bottom: 1px solid #d5dadd;
 
 			.icon-arrow {
@@ -453,7 +481,7 @@
 
 		&__utility-links {
 			padding: 0 !important;
-			border-top: 1px solid rgba(213, 218, 221, 0.2);
+			background: none;
 		}
 
 		&__submenu {

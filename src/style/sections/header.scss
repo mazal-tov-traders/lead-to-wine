@@ -1,5 +1,10 @@
 @import "./../variables-and-mixins.scss";
 
+.section-header {
+	position: sticky;
+	top: 0 !important;
+}
+
 .home-page {
 	@media ($lg-990) {
 		.header-wrapper {
@@ -184,7 +189,7 @@
 				position: absolute;
 				top: unset;
 				left: 50%;
-				transform: translateX(-50%);
+				transform: translateX(-50%) !important;
 				background: $color-colors-element;
 				box-shadow: 0 11px 14px 0 rgba(0, 0, 0, 0.08);
 				border: none;
@@ -317,6 +322,11 @@
 				&.icon-close {
 					top: 18px;
 				}
+
+				&.icon-search {
+					width: 24px;
+					height: 24px;
+				}
 			}
 
 			&--menu {
@@ -336,113 +346,120 @@
 				display: block;
 			}
 		}
+
+		.search {
+			&__button .icon {
+				height: 24px;
+				width: 24px;
+			}
+		}
 	}
 
 	summary {
 		list-style: none;
 	}
-}
 
-.menu-drawer {
-	height: calc(100vh - 60px);
-	background: rgba(0, 0, 0, 0.6);
+	.menu-drawer {
+		height: calc(100vh - 60px);
+		background: rgba(0, 0, 0, 0.6);
 
-	&__inner-container {
-		height: auto;
-		max-height: calc(100vh - 61px);
-		background: #0c1117;
-		padding: 20px 34px 77px;
-		margin-top: 1px;
-		overflow-y: scroll;
-	}
+		&__inner-container {
+			height: auto;
+			max-height: calc(100vh - 61px);
+			background: #0c1117;
+			padding: 20px 34px 77px;
+			margin-top: 1px;
+			overflow-y: scroll;
+		}
 
-	&__navigation {
-		padding: 0;
-	}
+		&__navigation {
+			padding: 0;
+		}
 
-	&__menu {
-		li {
-			margin: 0;
+		&__menu {
+			li {
+				margin: 0;
 
-			&:not(:last-child) {
-				border-bottom: 1px solid rgba(213, 218, 221, 0.2);
+				&:not(:last-child) {
+					border-bottom: 1px solid rgba(213, 218, 221, 0.2);
+				}
+			}
+
+			&-item {
+				padding-right: 30px !important;
+
+				.icon-caret {
+					display: block;
+					width: 22px;
+					height: 22px;
+					transform: rotate(-90deg);
+					right: 0;
+					top: 20px;
+				}
+
+				.icon-arrow {
+					display: none;
+				}
 			}
 		}
 
-		&-item {
-			padding-right: 30px !important;
+		.link {
+			font-family: $font-family-global;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 19px;
+			text-transform: uppercase;
+			color: $color-colors-white;
+			letter-spacing: initial;
+			padding: 20px 0;
+			transition: text-shadow 0.3s;
 
-			.icon-caret {
-				display: block;
-				width: 22px;
-				height: 22px;
-				transform: rotate(-90deg);
-				right: 0;
-				top: 20px;
+			&:hover,
+			&:focus {
+				text-shadow: 0 0 0;
+				text-decoration: none;
 			}
+		}
+
+		&__account {
+			gap: 15px;
+
+			.icon-account {
+				width: auto;
+				height: auto;
+				margin: 0;
+			}
+		}
+
+		&__close-button {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			font-family: $font-family-global;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 19px;
+			text-transform: uppercase;
+			color: $color-colors-white;
+			padding: 32px 0;
+			background: none;
+			margin-top: 0;
+			border-bottom: 1px solid #d5dadd;
 
 			.icon-arrow {
-				display: none;
+				margin: 0;
 			}
 		}
-	}
 
-	.link {
-		font-family: $font-family-global;
-		font-weight: 400;
-		font-size: 16px;
-		line-height: 19px;
-		text-transform: uppercase;
-		color: $color-colors-white;
-		letter-spacing: initial;
-		padding: 20px 0;
-		transition: text-shadow 0.3s;
-
-		&:hover,
-		&:focus {
-			text-shadow: 0 0 0;
-			text-decoration: none;
+		&__utility-links {
+			padding: 0 !important;
+			border-top: 1px solid rgba(213, 218, 221, 0.2);
 		}
-	}
 
-	&__account {
-		gap: 15px;
-
-		.icon-account {
-			width: auto;
-			height: auto;
-			margin: 0;
+		&__submenu {
+			background: #0c1117;
+			padding: 10px 34px;
 		}
-	}
-
-	&__close-button {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		font-family: $font-family-global;
-		font-weight: 400;
-		font-size: 16px;
-		line-height: 19px;
-		text-transform: uppercase;
-		color: $color-colors-white;
-		padding: 32px 0;
-		background: none;
-		margin-top: 0;
-		border-bottom: 1px solid #d5dadd;
-
-		.icon-arrow {
-			margin: 0;
-		}
-	}
-
-	&__utility-links {
-		padding: 0 !important;
-		border-top: 1px solid rgba(213, 218, 221, 0.2);
-	}
-
-	&__submenu {
-		background: #0c1117;
-		padding: 10px 34px;
 	}
 }
 

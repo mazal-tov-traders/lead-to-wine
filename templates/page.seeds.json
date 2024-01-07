@@ -1,25 +1,18 @@
 {
   "sections": {
+    "2af4e7bc-7041-4030-bb56-69b216f7f6ac": {
+      "type": "individual-collection-section",
+      "settings": {
+        "section_collection": "frontpage",
+        "section_header": ""
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
-      }
-    },
-    "bc004a06-4f99-4dd2-ab5f-1c502b5bae37": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "e1fed952-e66e-462c-b3d6-d4469cbb7762": {
@@ -153,6 +146,16 @@
         "color_label": "#383633"
       }
     },
+    "bc004a06-4f99-4dd2-ab5f-1c502b5bae37": {
+      "type": "video",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/seeds-logo.png",
+        "screen-reader-text": "Seeds Tomorrow Starts Today",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "b14a2295-d2ef-410a-9000-7ed035ebdcf8": {
       "type": "video-and-content",
       "blocks": {
@@ -213,9 +216,10 @@
     }
   },
   "order": [
+    "2af4e7bc-7041-4030-bb56-69b216f7f6ac",
     "main",
-    "bc004a06-4f99-4dd2-ab5f-1c502b5bae37",
     "e1fed952-e66e-462c-b3d6-d4469cbb7762",
+    "bc004a06-4f99-4dd2-ab5f-1c502b5bae37",
     "b14a2295-d2ef-410a-9000-7ed035ebdcf8",
     "d94fc19a-e4c4-4c17-b1f9-c0cfc2e734a2"
   ]

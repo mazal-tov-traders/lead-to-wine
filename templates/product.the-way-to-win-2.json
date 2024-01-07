@@ -18,6 +18,7 @@
         },
         "eb6f4c67-8dc0-416b-bead-6cab94fedeee": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "Buy The Book",
             "button_link": "",
@@ -46,14 +47,14 @@
           "type": "avatar",
           "settings": {
             "avatar": "shopify:\/\/shop_images\/image.png",
-            "quotes": "shopify:\/\/shop_images\/fi_107076.svg"
+            "quotes": "shopify:\/\/shop_images\/fi_107076_1.svg"
           }
         },
         "198c77df-17b8-4e11-a73e-9eafc7c6a826": {
           "type": "name",
           "settings": {
             "name": "FOREWORD BY JOHN MAXWELL",
-            "color_name_label": "#342663"
+            "color_name_label": "#4d4d4e"
           }
         },
         "60cfe272-5097-4546-8a4c-f7d0bd716fd9": {
@@ -65,6 +66,7 @@
         },
         "ab063952-226d-4403-8344-4ac88ef3c83f": {
           "type": "quote-with-avatar",
+          "disabled": true,
           "settings": {
             "quote-with-avatar": "shopify:\/\/shop_images\/Vector.svg"
           }
@@ -159,7 +161,7 @@
         "2e67b85d-a844-41be-9f38-51091714bcd3": {
           "type": "image-product",
           "settings": {
-            "image_product": "shopify:\/\/shop_images\/Screenshot_2024-01-05_at_4.11.42_PM.png"
+            "image_product": "shopify:\/\/shop_images\/MSresources021.jpg"
           }
         },
         "cfe9650a-4e66-4478-b780-08f0e19b2a22": {
@@ -221,8 +223,8 @@
           "settings": {
             "background_block": "#eae9e5",
             "label": "Section 1",
-            "color_label": "#ffffff",
-            "background-label": "#342663",
+            "color_label": "#eae9e9",
+            "background-label": "#4d4d4e",
             "content": "<p>Provides immediate value that the tools in this book with add value to your daily life.<\/p>",
             "color_content_label": "#383633"
           }
@@ -232,21 +234,22 @@
           "settings": {
             "background_block": "#eae9e5",
             "label": "Section 2",
-            "color_label": "#ffffff",
-            "background-label": "#342663",
+            "color_label": "#eae9e9",
+            "background-label": "#4d4d4e",
             "content": "<p>Builds spiritual foundations & show how it benefits all aspects of you life.<\/p>",
             "color_content_label": "#383633"
           }
         },
         "8c9fa32b-6a8c-4875-9d12-e9b21b3a5fd9": {
           "type": "section",
+          "disabled": true,
           "settings": {
             "background_block": "#eae9e5",
             "label": "",
-            "color_label": "#ffffff",
-            "background-label": "#342663",
+            "color_label": "#eae9e9",
+            "background-label": "#4d4d4e",
             "content": "",
-            "color_content_label": "#383633"
+            "color_content_label": "#4d4d4e"
           }
         },
         "f187f553-663e-4f03-9112-d736b8da325f": {
@@ -254,8 +257,8 @@
           "settings": {
             "background_block": "#eae9e5",
             "label": "Section 3",
-            "color_label": "#ffffff",
-            "background-label": "#342663",
+            "color_label": "#eae9e9",
+            "background-label": "#4d4d4e",
             "content": "<p>Identifies what it means to have integrity in relationships and to lead your family well.<\/p>",
             "color_content_label": "#383633"
           }
@@ -265,8 +268,8 @@
           "settings": {
             "background_block": "#eae9e5",
             "label": "Section 4",
-            "color_label": "#ffffff",
-            "background-label": "#342663",
+            "color_label": "#eae9e9",
+            "background-label": "#4d4d4e",
             "content": "<p>Understanding the difference in actual values vs. aspirational values, and the importance of not just attending church, but engaging.<\/p>",
             "color_content_label": "#383633"
           }
@@ -276,8 +279,8 @@
           "settings": {
             "background_block": "#eae9e5",
             "label": "Section 5",
-            "color_label": "#ffffff",
-            "background-label": "#342663",
+            "color_label": "#eae9e9",
+            "background-label": "#4d4d4e",
             "content": "<p>Equips you to walk with other men in their walk with God.<\/p>",
             "color_content_label": "#383633"
           }
@@ -311,10 +314,10 @@
             "button_label": "Download A Preview",
             "button_link": "",
             "color_button_backgroun": "#ffffff",
-            "color_button_label": "#342663",
+            "color_button_label": "#4d4d4e",
             "color_button_border": "#ffffff",
-            "hover_color_button_backgroun": "#342663",
-            "hover_color_button_border": "#342663",
+            "hover_color_button_backgroun": "#4d4d4e",
+            "hover_color_button_border": "#4d4d4e",
             "hover_color_button_label": "#ffffff"
           }
         }
@@ -374,6 +377,7 @@
       "block_order": [
         "c76acc11-c4f6-46f3-9734-fed588c4111b"
       ],
+      "disabled": true,
       "settings": {
         "title": "You May Enjoy",
         "class": "",

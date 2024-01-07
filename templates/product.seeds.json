@@ -7,7 +7,7 @@
           "type": "title",
           "settings": {
             "title": "seeds",
-            "color_title_label": "#fff"
+            "color_title_label": "#ffffff"
           }
         },
         "02834856-42b6-4955-9dc8-61d90b75ef11": {
@@ -20,14 +20,14 @@
         "fe42e3fd-1bbd-4a42-ae51-f957516aded8": {
           "type": "description",
           "settings": {
-            "description": "<p>Tomorrow Starts Today<\/p>",
+            "description": "<p>Tomorrow Starts Today.<\/p>",
             "color_description_label": "#ffffff"
           }
         },
         "eb6f4c67-8dc0-416b-bead-6cab94fedeee": {
           "type": "button",
           "settings": {
-            "button_label": "Buy The Study Guide",
+            "button_label": "",
             "button_link": "",
             "color_button_backgroun": "#ff0000",
             "color_button_label": "#ffffff",
@@ -169,7 +169,7 @@
         "2e67b85d-a844-41be-9f38-51091714bcd3": {
           "type": "image-product",
           "settings": {
-            "image_product": "shopify:\/\/shop_images\/Screenshot_2024-01-05_at_1.13.42_PM.png"
+            "image_product": "shopify:\/\/shop_images\/MSresources031_944a2c8d-63d9-4812-984b-6bd95e07ea7a.jpg"
           }
         },
         "cfe9650a-4e66-4478-b780-08f0e19b2a22": {

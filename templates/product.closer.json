@@ -27,7 +27,7 @@
         "eb6f4c67-8dc0-416b-bead-6cab94fedeee": {
           "type": "button",
           "settings": {
-            "button_label": "Buy The Book",
+            "button_label": "",
             "button_link": "",
             "color_button_backgroun": "#ff0000",
             "color_button_label": "#ffffff",
@@ -169,7 +169,7 @@
         "2e67b85d-a844-41be-9f38-51091714bcd3": {
           "type": "image-product",
           "settings": {
-            "image_product": "shopify:\/\/shop_images\/Screenshot_2024-01-05_at_2.03.21_PM.png"
+            "image_product": "shopify:\/\/shop_images\/MSresources001.jpg"
           }
         },
         "cfe9650a-4e66-4478-b780-08f0e19b2a22": {
@@ -370,7 +370,6 @@
         "1f3670eb-88ad-496a-a023-add186c6c536",
         "4a112e2b-53b4-4e06-8d29-0373e175870f"
       ],
-      "disabled": true,
       "settings": {
         "position_image": ""
       }

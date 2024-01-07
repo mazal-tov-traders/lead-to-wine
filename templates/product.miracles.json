@@ -5,9 +5,8 @@
       "blocks": {
         "4231754f-c541-4e29-9606-2265f6a0e684": {
           "type": "title",
-          "disabled": true,
           "settings": {
-            "title": "seeds",
+            "title": "miracles",
             "color_title_label": "#ffffff"
           }
         },
@@ -20,9 +19,8 @@
         },
         "fe42e3fd-1bbd-4a42-ae51-f957516aded8": {
           "type": "description",
-          "disabled": true,
           "settings": {
-            "description": "<p>Tomorrow Starts Today<\/p>",
+            "description": "<p>A Journey With Jesus - From His Life to Yours.<\/p>",
             "color_description_label": "#ffffff"
           }
         },
@@ -48,7 +46,7 @@
         "eb6f4c67-8dc0-416b-bead-6cab94fedeee"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Screenshot_2024-01-05_at_1.31.35_PM.png"
+        "image": "shopify:\/\/shop_images\/faq-banner.jpg"
       }
     },
     "599530d0-8352-441b-92cc-3db587f9d17e": {
@@ -172,7 +170,7 @@
         "2e67b85d-a844-41be-9f38-51091714bcd3": {
           "type": "image-product",
           "settings": {
-            "image_product": "shopify:\/\/shop_images\/Screenshot_2024-01-05_at_1.27.21_PM.png"
+            "image_product": "shopify:\/\/shop_images\/MIracles002_c9e80efa-a5f2-4693-8ad1-ec6b035065f8.jpg"
           }
         },
         "cfe9650a-4e66-4478-b780-08f0e19b2a22": {
@@ -373,7 +371,6 @@
         "1f3670eb-88ad-496a-a023-add186c6c536",
         "4a112e2b-53b4-4e06-8d29-0373e175870f"
       ],
-      "disabled": true,
       "settings": {
         "position_image": ""
       }

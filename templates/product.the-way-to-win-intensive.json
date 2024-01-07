@@ -93,7 +93,7 @@
         "9884d006-0d87-4b86-99de-0756660e84ac": {
           "type": "benefits-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/22_Literacy_day.png",
+            "image": "shopify:\/\/shop_images\/icons8-clock-100.png",
             "heading": "<h2><strong>Discipleship takes time<\/strong><\/h2>",
             "color_heading_label": "#383633",
             "content": "<p>A 38-week process that provides the environment men need to grow spiritually and build meaningful relationships.<\/p>",
@@ -106,7 +106,7 @@
             "image": "shopify:\/\/shop_images\/icons8-open-book-100.png",
             "heading": "<h2><strong>Content is key<\/strong><\/h2>",
             "color_heading_label": "#383633",
-            "content": "<p>Concise chapters intentionally desired to ad same to my eving.<\/p>",
+            "content": "<p>Concise chapters intentionally designed to add immediate value to your daily life.<\/p>",
             "color_content_label": "#383633"
           }
         },
@@ -118,8 +118,8 @@
             "color_button_backgroun": "#383633",
             "color_button_label": "#ffffff",
             "color_button_border": "#383633",
-            "hover_color_button_backgroun": "#342663",
-            "hover_color_button_border": "#342663",
+            "hover_color_button_backgroun": "#4d4d4e",
+            "hover_color_button_border": "#4d4d4e",
             "hover_color_button_label": "#ffffff"
           }
         }
@@ -147,7 +147,7 @@
           "type": "headline",
           "settings": {
             "headline": "Your online course includes:",
-            "color_headline_label": "#383334"
+            "color_headline_label": "#4d4d4e"
           }
         },
         "fc9cd3f1-3a4b-4170-8e0f-c1edfdb8671b": {
@@ -231,12 +231,11 @@
         "98e52d9c-467c-4b03-9b78-9cda33f81385": {
           "type": "splide-slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Ellipse_4.png",
-            "name": "Jacob Williamson",
+            "name": "Jason Robinson",
             "color_name_label": "#383633",
-            "position": "Celebration Church",
+            "position": "Church of the King Katy",
             "color_position_label": "#383633",
-            "content": "\"We believe a Way to Win Development Group will be the most important thing we do in 2024\"",
+            "content": "\"64% of the total dollars raised in our last building campaign came from the men in my development group. Through this process I've learned that if you build the leaders, they will build the church.\"",
             "color_content_label": "#383633",
             "icon": "shopify:\/\/shop_images\/fi_107076_1.png"
           }
@@ -244,20 +243,32 @@
         "5ffa5172-7fb4-4a2f-a921-6ecc2b08daca": {
           "type": "splide-slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Ellipse_4.png",
-            "name": "Jacob Williamson",
+            "name": "Sean Doherty",
             "color_name_label": "#383633",
-            "position": "Jacob Williamson",
+            "position": "South Bay Church",
             "color_position_label": "#383633",
-            "content": "\"We believe a Way to Win Development Group will be the most important thing we do in 2024\"",
+            "content": "\"I can't recommend The Way to Win enough, if you're a pastor looking for a resource for men, I would for sure check this one out\"",
             "color_content_label": "#383633",
             "icon": "shopify:\/\/shop_images\/fi_107076_1.png"
+          }
+        },
+        "606a06a3-7b99-4633-a996-49faeb63e5d7": {
+          "type": "splide-slide",
+          "settings": {
+            "name": "Brandon Cormier",
+            "color_name_label": "#383633",
+            "position": "Zeal Church, Colorado Springs",
+            "color_position_label": "#383633",
+            "content": "\"I love the way The Way to Win sets me up to win as a lead pastor in discipling and mentoring the men in my church\"",
+            "color_content_label": "#383633",
+            "icon": "shopify:\/\/shop_images\/fi_107076_1.svg"
           }
         }
       },
       "block_order": [
         "98e52d9c-467c-4b03-9b78-9cda33f81385",
-        "5ffa5172-7fb4-4a2f-a921-6ecc2b08daca"
+        "5ffa5172-7fb4-4a2f-a921-6ecc2b08daca",
+        "606a06a3-7b99-4633-a996-49faeb63e5d7"
       ],
       "settings": {
         "title": "Don't Just Take Our Word For It",
@@ -277,8 +288,8 @@
         "d17c4254-5892-4038-ae52-17dd16a4e1bf": {
           "type": "description",
           "settings": {
-            "description": "<ol><li>Get the Way to Win Intensive<\/li><li>Carve out 1.5 hours to watch the self-paced training videos directly from Pastor Jeff and the Milestone team<\/li><li>Launch your Development Group utilizing the resources, templates, and samples provided<\/li><\/ol>",
-            "color_description_label": "#383334"
+            "description": "<ol><li>Get the Way to Win Intensive<\/li><li>Carve out 2 hours to watch the self-paced training videos directly from Pastor Jeff and the Milestone team<\/li><li>Launch your Development Group utilizing the resources, templates, and samples provided<\/li><\/ol>",
+            "color_description_label": "#4d4d4e"
           }
         },
         "b4306e6e-7205-4ef5-9bb0-c66531f2e661": {
@@ -294,9 +305,9 @@
             "background_block": "#eae9e5",
             "label": "Section 1",
             "color_label": "#ffffff",
-            "background-label": "#383334",
+            "background-label": "#4d4d4e",
             "content": "<p>Create confidence that them men in your group will get real value out of prioritizing this time each week.<\/p>",
-            "color_content_label": "#383334"
+            "color_content_label": "#4d4d4e"
           }
         },
         "50a1e340-711e-4ff3-9781-eb5931d6bdc0": {
@@ -305,9 +316,9 @@
             "background_block": "#eae9e5",
             "label": "Section 2",
             "color_label": "#ffffff",
-            "background-label": "#383334",
+            "background-label": "#4d4d4e",
             "content": "<p>Build spiritual foundations & show how it benefits their daily life.<\/p>",
-            "color_content_label": "#383334"
+            "color_content_label": "#4d4d4e"
           }
         },
         "6f6ccabf-b667-4320-a091-ad80cbc5a75f": {
@@ -316,9 +327,9 @@
             "background_block": "#eae9e5",
             "label": "Section 3",
             "color_label": "#ffffff",
-            "background-label": "#383334",
+            "background-label": "#4d4d4e",
             "content": "<p>Identify what it means to have integrity in relationships and to lead your family well.<\/p>",
-            "color_content_label": "#383334"
+            "color_content_label": "#4d4d4e"
           }
         },
         "0abf5adc-37a3-4742-9439-1fde542e0e21": {
@@ -327,9 +338,9 @@
             "background_block": "#eae9e5",
             "label": "Section 4",
             "color_label": "#ffffff",
-            "background-label": "#383334",
+            "background-label": "#4d4d4e",
             "content": "<p>Understand the difference in actual values vs. aspirational values, and the importance of not just attending church, but engaging.<\/p>",
-            "color_content_label": "#383334"
+            "color_content_label": "#4d4d4e"
           }
         },
         "352062cc-dcf6-4c35-ac40-a9d582cb0e27": {
@@ -338,9 +349,9 @@
             "background_block": "#eae9e5",
             "label": "Section 5",
             "color_label": "#ffffff",
-            "background-label": "#383334",
+            "background-label": "#4d4d4e",
             "content": "<p>Equip the men in your group to help those around them grow in their walk with God.<\/p>",
-            "color_content_label": "#383334"
+            "color_content_label": "#4d4d4e"
           }
         }
       },

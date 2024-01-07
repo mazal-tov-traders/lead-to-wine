@@ -117,7 +117,7 @@
             "icon": "shopify:\/\/shop_images\/Rectangle_4133724_6.jpg",
             "categoty": "Spiritual Growth",
             "color_category_label": "#ffffff",
-            "color_category_back": "#342663",
+            "color_category_back": "#4d4d4e",
             "title": "Seeds",
             "color_title_label": "#383633",
             "text": "Take your church on a spiritual growth journey utilizing the power and principles of the seed.",
@@ -134,7 +134,7 @@
             "icon": "shopify:\/\/shop_images\/Rectangle_4133724_1.jpg",
             "categoty": "lorem",
             "color_category_label": "#ffffff",
-            "color_category_back": "#342663",
+            "color_category_back": "#4d4d4e",
             "title": "Promises",
             "color_title_label": "#383633",
             "text": "Lorem ipsum dolor sit amet consectetur. Etiam cursus at arcu quisque fermentum aliquam vulputate purus commodo.",
@@ -151,7 +151,7 @@
             "icon": "shopify:\/\/shop_images\/Rectangle_4133724_2.jpg",
             "categoty": "lorem",
             "color_category_label": "#ffffff",
-            "color_category_back": "#342663",
+            "color_category_back": "#4d4d4e",
             "title": "Unshakable",
             "color_title_label": "#383633",
             "text": "Lorem ipsum dolor sit amet consectetur. Etiam cursus at arcu quisque fermentum aliquam vulputate purus commodo.",
@@ -168,7 +168,7 @@
             "icon": "shopify:\/\/shop_images\/Rectangle_4133724_3.jpg",
             "categoty": "lorem",
             "color_category_label": "#ffffff",
-            "color_category_back": "#342663",
+            "color_category_back": "#4d4d4e",
             "title": "Miracles",
             "color_title_label": "#383633",
             "text": "Lorem ipsum dolor sit amet consectetur. Etiam cursus at arcu quisque fermentum aliquam vulputate purus commodo.",
@@ -185,7 +185,7 @@
             "icon": "shopify:\/\/shop_images\/Rectangle_4133724_4.jpg",
             "categoty": "lorem",
             "color_category_label": "#ffffff",
-            "color_category_back": "#342663",
+            "color_category_back": "#4d4d4e",
             "title": "Miracles",
             "color_title_label": "#383633",
             "text": "Lorem ipsum dolor sit amet consectetur. Etiam cursus at arcu quisque fermentum aliquam vulputate purus commodo.",
@@ -232,10 +232,10 @@
           "settings": {
             "background_block": "#eae9e5",
             "label": "1. Purchase a bundle",
-            "color_label": "#ffffff",
-            "background-label": "#342663",
+            "color_label": "#eae9e9",
+            "background-label": "#4d4d4e",
             "content": "<ul><li>Message content on topics your church cares about.<\/li><li>Kids curriculum that fosters genuine excitement in God’s word.<\/li><\/ul>",
-            "color_content_label": "#383633"
+            "color_content_label": "#4d4d4e"
           }
         },
         "41bddb88-f25d-486d-9484-9572d99e99bf": {
@@ -243,10 +243,10 @@
           "settings": {
             "background_block": "#eae9e5",
             "label": "2. Prep & Promote",
-            "color_label": "#ffffff",
-            "background-label": "#342663",
+            "color_label": "#eae9e9",
+            "background-label": "#4d4d4e",
             "content": "<ul><li>Web, social, and email graphics ready for your team to use.<\/li><li>Trailer video to generate series anticipation.<\/li><\/ul>",
-            "color_content_label": "#383633"
+            "color_content_label": "#4d4d4e"
           }
         },
         "e50afccc-3b3c-41b2-b883-bdaf2d6f58bf": {
@@ -254,10 +254,10 @@
           "settings": {
             "background_block": "#eae9e5",
             "label": "3. Launch",
-            "color_label": "#ffffff",
-            "background-label": "#342663",
+            "color_label": "#eae9e9",
+            "background-label": "#4d4d4e",
             "content": "<ul><li>Provide participants with a study guide that makes it simple and fun to engage in God’s word<\/li><li>Equip your small group leaders with content and discussion questions for their group<\/li><\/ul>",
-            "color_content_label": "#383633"
+            "color_content_label": "#4d4d4e"
           }
         }
       },

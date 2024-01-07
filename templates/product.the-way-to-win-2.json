@@ -46,8 +46,7 @@
         "eee09b2e-275d-4424-a011-b63c4dffe9b8": {
           "type": "avatar",
           "settings": {
-            "avatar": "shopify:\/\/shop_images\/image.png",
-            "quotes": "shopify:\/\/shop_images\/fi_107076_1.svg"
+            "avatar": "shopify:\/\/shop_images\/image.png"
           }
         },
         "198c77df-17b8-4e11-a73e-9eafc7c6a826": {
@@ -342,7 +341,7 @@
         "1f3670eb-88ad-496a-a023-add186c6c536": {
           "type": "title",
           "settings": {
-            "title": "<em>Jeff  <\/em>Little",
+            "title": "Jeff<em> <\/em>Little",
             "color_title_label": "#383633"
           }
         },

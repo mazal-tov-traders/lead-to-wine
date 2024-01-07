@@ -60,17 +60,20 @@
     </div>
   </div>
 </section>
-<script>
+<script >
   
-document.addEventListener('DOMContentLoaded', function () {
-    const imageContentLists = document.querySelectorAll('image-content__list');
-    
-    imageContentLists.forEach(function (list) {
-        const ulElement = list.querySelector('ul');
-        if (ulElement) {
-            ulElement.classList.add('image-content__ul');
-        }
-    });
+  document.addEventListener('DOMContentLoaded', function () {
+    setTimeout(function () {
+        const imageContentLists = document.querySelectorAll('.image-content__list');
+
+        imageContentLists.forEach(function (list) {
+            const ulElement = list.querySelector('ul');
+            console.log(ulElement);
+            if (ulElement) {
+                ulElement.classList.add('image-content__ul');
+            }
+        });
+    }, 0);
 });
 
 </script>

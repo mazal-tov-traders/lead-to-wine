@@ -15,9 +15,8 @@
 {%- if request.design_mode -%}
   <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
-<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
-{% comment %} <script>
+<script>
   document.addEventListener('DOMContentLoaded', function () {
     function updatePrice(element, dataPrice, elementSum) {
       let quantityInput = Number(element.querySelector('.quantity__input').value);
@@ -83,7 +82,7 @@
       });
     });
   });
-</script> {% endcomment %}
+</script>
 
 {% schema %}
 {

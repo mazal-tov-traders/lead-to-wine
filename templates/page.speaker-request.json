@@ -21,7 +21,7 @@
         "e2191574-a64e-46ca-b370-1b9fd38b05af": {
           "type": "media",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_4133725_2.jpg"
+            "image": "shopify:\/\/shop_images\/Rectangle_4133725_3.jpg"
           }
         },
         "9f30ba02-6a5b-49fa-b6ab-1ca1b5db6a81": {
@@ -38,7 +38,7 @@
       ],
       "settings": {
         "background": "base",
-        "position_image": ""
+        "position_image": "_reverse"
       }
     }
   },

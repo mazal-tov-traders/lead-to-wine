@@ -27,7 +27,7 @@
         "eb6f4c67-8dc0-416b-bead-6cab94fedeee": {
           "type": "button",
           "settings": {
-            "button_label": "",
+            "button_label": "Buy The book",
             "button_link": "",
             "color_button_backgroun": "#ff0000",
             "color_button_label": "#ffffff",
@@ -169,7 +169,7 @@
         "2e67b85d-a844-41be-9f38-51091714bcd3": {
           "type": "image-product",
           "settings": {
-            "image_product": "shopify:\/\/shop_images\/Screenshot2024-01-06at3.06.41PM.png"
+            "image_product": "shopify:\/\/shop_images\/Screenshot_2024-01-05_at_3.23.50_PM.png"
           }
         },
         "cfe9650a-4e66-4478-b780-08f0e19b2a22": {

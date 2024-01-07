@@ -1,22 +1,35 @@
-<section class="single-review">
-	<div class="inner">
-        {% for block in section.blocks %}
-            {% if block.type == "single-review" %}
-		<div class="single-review__wrapper">
-                <div class="single-review__avatar">
-                    <img src="{{ block.settings.photo |  image_url  }}" alt="photo">
-                </div>
+<div class="page-width">
+    {% for block in section.blocks %}
+        {% if block.type == "single-review" %}
+            <div class="single-review__wrapper">
+                {% if block.settings.quotes %}
+                    <div class="single-review__quotes">
+                        <img src="{{ block.settings.quotes | image_url }}" alt="quotes">
+                    </div>
+                {% endif %}
+                {% if block.settings.photo %}
+                    <div class="single-review__avatar">
+                        <img src="{{ block.settings.photo | image_url }}" alt="photo">
+                    </div>
+                {% endif %}
                 <div class="single-review__content">
-                    <h2 style="color:{{ block.settings.color_name }}" class="single-review__name">{{ block.settings.title-one }}</h2>
-                    <h3 style="color:{{ block.settings.color_text }}" class="single-review__position">{{ block.settings.title-two }}</h3>
-                    <p style="color:{{ block.settings.color_text_1 }}">{{ block.settings.title-three}} </p>
-                    <p style="color:{{ block.settings.color_title_label }}">{{ block.settings.title-4 }} </p>
+                    {% if block.settings.title-one %}
+                        <h2 style="color:{{ block.settings.color_name }}" class="single-review__name">{{ block.settings.title-one }}</h2>
+                    {% endif %}
+                    {% if block.settings.title-two %}
+                        <h3 style="color:{{ block.settings.color_text }}" class="single-review__position">{{ block.settings.title-two }}</h3>
+                    {% endif %}
+                    {% if block.settings.title-three %}
+                        <p style="color:{{ block.settings.color_text_1 }}">{{ block.settings.title-three }}</p>
+                    {% endif %}
+                    {% if block.settings.title-4 %}
+                        <p style="color:{{ block.settings.color_title_label }}">{{ block.settings.title-4 }}</p>
+                    {% endif %}
                 </div>
-		</div>
-    {% endif %}
-{% endfor %}
-	</div>
-</section>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
 {% schema %}
     {
       "name": "single-review",
@@ -36,6 +49,11 @@
         "name": "single review",
         "limit": 1,
         "settings": [
+          {
+            "type": "image_picker",
+            "id": "quotes",
+            "label": "quotes image"
+          },
             {
             "type": "image_picker",
             "id": "photo",

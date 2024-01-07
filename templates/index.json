@@ -36,7 +36,7 @@
         "b91e93fb-82a3-43d6-8733-36518f6ab40f": {
           "type": "banner-text",
           "settings": {
-            "title-one": "",
+            "title-one": "<p>Coaching & <strong>Development <\/strong>in Life & Faith<\/p>",
             "color_title_label": "#eae9e5"
           }
         }
@@ -55,7 +55,7 @@
       "settings": {
         "include_margins": true,
         "title-one": "<strong>Lead to Win<\/strong> exists to gather, coach, and resource leaders to win at what matters most.",
-        "color_title_label": "#4d4d4e"
+        "color_title_label": "#383633"
       }
     },
     "cffa4dce-b708-40de-a035-cf7a78b97a83": {
@@ -64,15 +64,16 @@
         "71291754-f50f-4388-835f-a7cb9737039b": {
           "type": "single-review",
           "settings": {
+            "quotes": "shopify:\/\/shop_images\/fi_107076_1.svg",
             "photo": "shopify:\/\/shop_images\/Ellipse_4.jpg",
             "title-one": "Chris Hodges",
-            "color_name": "#4d4d4e",
+            "color_name": "#383633",
             "title-two": "Church of the Highlands",
             "color_text": "#918677",
-            "title-three": "\"Lorem ipsum dolor sit amet consectetur. Odio volutpat massa id neque et. Facilisi et in lobortis facilisi. Sed elementum pharetra nisl ultrices tristique nulla eu.\"",
-            "color_text_1": "#4d4d4e",
-            "title-4": "",
-            "color_title_label": "#4d4d4e"
+            "title-three": "Lorem ipsum dolor sit amet consectetur. Odio volutpat massa id neque et. Facilisi et in lobortis facilisi. Sed elementum pharetra nisl ultrices tristique nulla eu.",
+            "color_text_1": "#383633",
+            "title-4": "Odio volutpat massa id neque et. Facilisi et in lobortis facilisi. Sed elementum pharetra nisl ultrices tristique nulla eu.",
+            "color_title_label": "#383633"
           }
         }
       },
@@ -92,12 +93,12 @@
             "icon": "shopify:\/\/shop_images\/Vector_Smart_Object-2.png",
             "title": "Gatherings",
             "texxt": "Opportunities throughout the year designed to connect and equip pastors & church leaders.",
-            "color_title_label": "#4d4d4e",
-            "color_text": "#4d4d4e",
+            "color_title_label": "#383633",
+            "color_text": "#383633",
             "texxt-btn": "Learn More",
             "button_link": "shopify:\/\/pages\/leaders-gathering",
-            "color_text-lb": "#4d4d4e",
-            "color_text_btn": "#4d4d4e"
+            "color_text-lb": "#383633",
+            "color_text_btn": "#383633"
           }
         },
         "template--17127585513702__9cd67dd3-24ec-4a6c-932b-1b8cf7511904-services-card-2": {
@@ -173,7 +174,7 @@
         "template--17127585513702__8f032fcb-57b3-44e5-90df-9413b8b71624-column-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/icon.png",
+            "image": "shopify:\/\/shop_images\/Vector_Smart_Object-2.png",
             "title": "Coaching",
             "text": "<p>Training modules designed to give you a more in depth look at processes that can build your church.<\/p>",
             "link_label": "",
@@ -214,6 +215,69 @@
         "padding_bottom": 36
       }
     },
+    "7d43acf7-e204-45ea-b598-a020006b59ae": {
+      "type": "slider",
+      "blocks": {
+        "template--17140783972582__7d43acf7-e204-45ea-b598-a020006b59ae-card-1": {
+          "type": "card",
+          "settings": {
+            "slider-background": "#e2e2e2",
+            "logo": "shopify:\/\/shop_images\/review-seeds-logo.png",
+            "slide-title": "Lorem ipsum dolor sit amet consectetur.",
+            "slider-title-color": "#383633",
+            "slide-text": "Lorem ipsum dolor sit amet consectetur. Odio volutpat massa id neque et. Facilisi et in lobortis facilisi. Sed elementum pharetra nisl ultrices tristique nulla eu.",
+            "slide-text-color": "#383633",
+            "avatar": "shopify:\/\/shop_images\/Ellipse_6_1.png",
+            "rev-name": "Jabin Chavez",
+            "name-color": "#383633",
+            "location": "City Light Church, Las Vegas",
+            "location-color": "#918677"
+          }
+        },
+        "template--17140783972582__7d43acf7-e204-45ea-b598-a020006b59ae-card-2": {
+          "type": "card",
+          "settings": {
+            "slider-background": "#e2e2e2",
+            "logo": "shopify:\/\/shop_images\/review-seeds-logo.png",
+            "slide-title": "Lorem ipsum dolor sit amet consectetur.",
+            "slider-title-color": "#383633",
+            "slide-text": "Lorem ipsum dolor sit amet consectetur. Odio volutpat massa id neque et. Facilisi et in lobortis facilisi. Sed elementum pharetra nisl ultrices tristique nulla eu.",
+            "slide-text-color": "#383633",
+            "avatar": "shopify:\/\/shop_images\/Ellipse_6_1.png",
+            "rev-name": "Jabin Chavez",
+            "name-color": "#383633",
+            "location": "City Light Church, Las Vegas",
+            "location-color": "#918677"
+          }
+        },
+        "template--17140783972582__7d43acf7-e204-45ea-b598-a020006b59ae-card-3": {
+          "type": "card",
+          "settings": {
+            "slider-background": "#e2e2e2",
+            "logo": "shopify:\/\/shop_images\/review-seeds-logo.png",
+            "slide-title": "",
+            "slider-title-color": "#383633",
+            "slide-text": "Lorem ipsum dolor sit amet consectetur.",
+            "slide-text-color": "#383633",
+            "avatar": "shopify:\/\/shop_images\/Ellipse_6_1.png",
+            "rev-name": "Jabin Chavez",
+            "name-color": "#383633",
+            "location": "City Light Church, Las Vegas",
+            "location-color": "#918677"
+          }
+        }
+      },
+      "block_order": [
+        "template--17140783972582__7d43acf7-e204-45ea-b598-a020006b59ae-card-1",
+        "template--17140783972582__7d43acf7-e204-45ea-b598-a020006b59ae-card-2",
+        "template--17140783972582__7d43acf7-e204-45ea-b598-a020006b59ae-card-3"
+      ],
+      "settings": {
+        "include_margins": true,
+        "section-title": "",
+        "color_title_label": "#383633"
+      }
+    },
     "dc3ddbd5-59ca-45d9-aaf4-b83b99d70a0d": {
       "type": "image-text",
       "blocks": {
@@ -221,7 +285,7 @@
           "type": "title",
           "settings": {
             "title": "About Jeff Little",
-            "color_title_label": "#4d4d4e"
+            "color_title_label": "#383633"
           }
         },
         "30e9acd3-f407-4789-8280-0c682be5bec8": {
@@ -234,7 +298,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. <\/p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.<\/p>",
-            "color_description_label": "#4d4d4e"
+            "color_description_label": "#383633"
           }
         },
         "a5475cd8-a97d-414d-a455-801907e0b395": {
@@ -254,40 +318,6 @@
       "settings": {
         "position_image": ""
       }
-    },
-    "c73faacc-07df-4159-8940-60e3429be616": {
-      "type": "newsletter",
-      "blocks": {
-        "template--17127585513702__c73faacc-07df-4159-8940-60e3429be616-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Keep up with Lead to Win.",
-            "heading_size": "h2"
-          }
-        },
-        "template--17127585513702__c73faacc-07df-4159-8940-60e3429be616-paragraph-1": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Be the first to learn about new gathering, resources and, coaching material. <\/p>"
-          }
-        },
-        "template--17127585513702__c73faacc-07df-4159-8940-60e3429be616-email_form-1": {
-          "type": "email_form",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "template--17127585513702__c73faacc-07df-4159-8940-60e3429be616-heading-1",
-        "template--17127585513702__c73faacc-07df-4159-8940-60e3429be616-paragraph-1",
-        "template--17127585513702__c73faacc-07df-4159-8940-60e3429be616-email_form-1"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 52,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
@@ -297,7 +327,7 @@
     "cffa4dce-b708-40de-a035-cf7a78b97a83",
     "9cd67dd3-24ec-4a6c-932b-1b8cf7511904",
     "8f032fcb-57b3-44e5-90df-9413b8b71624",
-    "dc3ddbd5-59ca-45d9-aaf4-b83b99d70a0d",
-    "c73faacc-07df-4159-8940-60e3429be616"
+    "7d43acf7-e204-45ea-b598-a020006b59ae",
+    "dc3ddbd5-59ca-45d9-aaf4-b83b99d70a0d"
   ]
 }

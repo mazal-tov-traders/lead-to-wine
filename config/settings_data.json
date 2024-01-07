@@ -1,7 +1,7 @@
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/Lead_to_Win_1_1.png",
-    "logo_width": 220,
+    "logo": "shopify:\/\/shop_images\/LTW-light.png",
+    "logo_width": 150,
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
@@ -161,7 +161,7 @@
           "background_gradient": "",
           "text": "#121212",
           "button": "#121212",
-          "button_label": "#eae9e9",
+          "button_label": "#f3f3f3",
           "secondary_button_label": "#121212",
           "shadow": "#121212"
         }
@@ -179,7 +179,7 @@
       },
       "accent-1": {
         "settings": {
-          "background": "#4d4d4e",
+          "background": "#121212",
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#ffffff",

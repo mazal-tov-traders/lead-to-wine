@@ -1,6 +1,6 @@
-<section class="speaking-request{{ section.settings.position_image }} speaking-request{{ section.settings.background }}">
+<section class="speaking-request{{ section.settings.b }} speaking-request">
   <div class="page-width">
-    <div class="speaking-request__wrapper">
+    <div class="speaking-request__wrapper{{- section.settings.position_image -}}">
       {% for block in section.blocks %}
         {% case block.type %}
           {% when 'media' %}

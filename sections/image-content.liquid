@@ -60,7 +60,20 @@
     </div>
   </div>
 </section>
+<script>
+  
+document.addEventListener('DOMContentLoaded', function () {
+    const imageContentLists = document.querySelectorAll('.image-content__list');
+    
+    imageContentLists.forEach(function (list) {
+        const ulElement = list.querySelector('ul');
+        if (ulElement) {
+            ulElement.classList.add('.image-content__ul');
+        }
+    });
+});
 
+</script>
 {% schema %}
 {
   "name": "image-content",

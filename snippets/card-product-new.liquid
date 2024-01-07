@@ -51,7 +51,9 @@
             </div>
           {% endfor %}
         </div>
-        <div class="card-item__description">Most common way churches provide guides to their congregation is to purchase at a discount, then sell at retail price.</div>
+        <div class="card-item__description">{{ product.metafields.custom.text | escape }}</div>
+        <div class="card-item__text">{{ product.metafields.custom.proposal_product | escape }}</div>
+        <div class="card-item__text">{{ product.metafields.custom.offer | escape }}</div>
         <div class="card-item__wrap">
           <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
             {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
@@ -61,8 +63,6 @@
               <span>{{ 'products.product.volume_pricing.note' | t }}</span>
             </div>
           {%- endif -%}
-          <div class="card-item__text">25% discount when you buy 10 or more books</div>
-
           {%- if product != blank -%}
             <div {{ block.shopify_attributes }}>
               {%- form 'product', product -%}
@@ -73,7 +73,7 @@
           {%- endif -%}
 
           <div class="wrapper-baton-and-quantity">
-            <div
+            {% comment %} <div
               id="Quantity-Form-{{ section.id }}"
               class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
               {{ block.shopify_attributes }}
@@ -262,9 +262,9 @@
                   {%- endif -%}
                 </volume-pricing>
               {%- endif -%}
-            </div>
+            </div> {% endcomment %}
 
-            {%- render 'custom-buy-buttons',
+            {%- render 'custom-buy-buttons-no-price',
               block: block,
               product: product,
               product_form_id: product_form_id,

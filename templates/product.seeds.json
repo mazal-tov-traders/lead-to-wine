@@ -7,7 +7,7 @@
           "type": "title",
           "settings": {
             "title": "seeds",
-            "color_title_label": "#fff"
+            "color_title_label": "#ffffff"
           }
         },
         "02834856-42b6-4955-9dc8-61d90b75ef11": {
@@ -20,14 +20,14 @@
         "fe42e3fd-1bbd-4a42-ae51-f957516aded8": {
           "type": "description",
           "settings": {
-            "description": "<p>Tomorrow Starts Today<\/p>",
+            "description": "<p>Tomorrow Starts Today.<\/p>",
             "color_description_label": "#ffffff"
           }
         },
         "eb6f4c67-8dc0-416b-bead-6cab94fedeee": {
           "type": "button",
           "settings": {
-            "button_label": "Buy The Study Guide",
+            "button_label": "",
             "button_link": "",
             "color_button_backgroun": "#ff0000",
             "color_button_label": "#ffffff",
@@ -140,7 +140,7 @@
         "631378ed-1c98-4d64-b696-d5b4065b5032": {
           "type": "description",
           "settings": {
-            "description": "<p>There are seeds all throughout the Bible. God is a master builder, and one of His primary building blocks is the seed. Growth doesn’t just happen overnight. It takes time and careful attention—this is the power and principle of the seed.<\/p><p>Seeds provides you with practical concepts, illustrations, context, bible verses, and questions. The study also includes perforated memory cards that you can tear out and take with you through the week so you can learn God’s Word in a practical way.<\/p><p>Seeds can be read as an individual, but it is also available as a campaign bundle.<\/p>",
+            "description": "<p>There are seeds all throughout the Bible. God is a master builder, and one of His primary building blocks is the seed. Growth doesn’t just happen overnight. It takes time and careful attention—this is the power and principle of the seed.<\/p><p>Seeds provides you with practical concepts, illustrations, context, bible verses, and questions. The study also includes perforated memory cards that you can tear out and take with you through the week so you can learn God’s Word in a practical way.<\/p><p>Seeds can be read as an individual, but it is also available as a campaign.<\/p>",
             "color_description_label": "#1d2228"
           }
         },
@@ -169,7 +169,7 @@
         "2e67b85d-a844-41be-9f38-51091714bcd3": {
           "type": "image-product",
           "settings": {
-            "image_product": "shopify:\/\/shop_images\/Screenshot_2024-01-05_at_1.13.42_PM.png"
+            "image_product": "shopify:\/\/shop_images\/MSresources031_944a2c8d-63d9-4812-984b-6bd95e07ea7a.jpg"
           }
         },
         "cfe9650a-4e66-4478-b780-08f0e19b2a22": {
@@ -217,205 +217,6 @@
         "nubmer_navigat": "",
         "hide_variants": false
       }
-    },
-    "61bc9bbb-ef59-4877-9cb1-a9e41368938a": {
-      "type": "get-started",
-      "blocks": {
-        "c0047b56-9fb3-41aa-9921-2ed5de0f92d1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Each section of The Way to Win builds on the next to create meaningful discussion around topics men actually care about.",
-            "color_heading_label": "#383633"
-          }
-        },
-        "0707f1da-8a94-460d-b491-74e8dd76a136": {
-          "type": "section",
-          "settings": {
-            "background_block": "#eae9e5",
-            "label": "Section 1",
-            "color_label": "#ffffff",
-            "background-label": "#342663",
-            "content": "<p>Provides immediate value that the tools in this book with add value to your daily life.<\/p>",
-            "color_content_label": "#383633"
-          }
-        },
-        "f58783fb-63ab-44ae-89c5-be9de240ddee": {
-          "type": "section",
-          "settings": {
-            "background_block": "#eae9e5",
-            "label": "Section 2",
-            "color_label": "#ffffff",
-            "background-label": "#342663",
-            "content": "<p>Builds spiritual foundations & show how it benefits all aspects of you life.<\/p>",
-            "color_content_label": "#383633"
-          }
-        },
-        "8c9fa32b-6a8c-4875-9d12-e9b21b3a5fd9": {
-          "type": "section",
-          "settings": {
-            "background_block": "#eae9e5",
-            "label": "",
-            "color_label": "#ffffff",
-            "background-label": "#342663",
-            "content": "",
-            "color_content_label": "#383633"
-          }
-        },
-        "f187f553-663e-4f03-9112-d736b8da325f": {
-          "type": "section",
-          "settings": {
-            "background_block": "#eae9e5",
-            "label": "Section 3",
-            "color_label": "#ffffff",
-            "background-label": "#342663",
-            "content": "<p>Identifies what it means to have integrity in relationships and to lead your family well.<\/p>",
-            "color_content_label": "#383633"
-          }
-        },
-        "0dfb0884-3faf-4f6c-8616-84bde47fe7af": {
-          "type": "section",
-          "settings": {
-            "background_block": "#eae9e5",
-            "label": "Section 4",
-            "color_label": "#ffffff",
-            "background-label": "#342663",
-            "content": "<p>Understanding the difference in actual values vs. aspirational values, and the importance of not just attending church, but engaging.<\/p>",
-            "color_content_label": "#383633"
-          }
-        },
-        "966e258c-ce7d-4491-b82b-b6540a8dcd51": {
-          "type": "section",
-          "settings": {
-            "background_block": "#eae9e5",
-            "label": "Section 5",
-            "color_label": "#ffffff",
-            "background-label": "#342663",
-            "content": "<p>Equips you to walk with other men in their walk with God.<\/p>",
-            "color_content_label": "#383633"
-          }
-        }
-      },
-      "block_order": [
-        "c0047b56-9fb3-41aa-9921-2ed5de0f92d1",
-        "0707f1da-8a94-460d-b491-74e8dd76a136",
-        "f58783fb-63ab-44ae-89c5-be9de240ddee",
-        "8c9fa32b-6a8c-4875-9d12-e9b21b3a5fd9",
-        "f187f553-663e-4f03-9112-d736b8da325f",
-        "0dfb0884-3faf-4f6c-8616-84bde47fe7af",
-        "966e258c-ce7d-4491-b82b-b6540a8dcd51"
-      ],
-      "disabled": true,
-      "settings": {
-      }
-    },
-    "1c9cda69-1c2d-44b4-b583-8229396d2b0d": {
-      "type": "banner-two-image",
-      "blocks": {
-        "b6104457-ca6f-4c4b-aa0b-aee019220432": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/1_2.png"
-          }
-        },
-        "4d4841fa-46d2-49fe-8e26-522cad0c105b": {
-          "type": "img-btn",
-          "settings": {
-            "img": "shopify:\/\/shop_images\/25years_1.png",
-            "button_label": "Download A Preview",
-            "button_link": "",
-            "color_button_backgroun": "#ffffff",
-            "color_button_label": "#342663",
-            "color_button_border": "#ffffff",
-            "hover_color_button_backgroun": "#342663",
-            "hover_color_button_border": "#342663",
-            "hover_color_button_label": "#ffffff"
-          }
-        }
-      },
-      "block_order": [
-        "b6104457-ca6f-4c4b-aa0b-aee019220432",
-        "4d4841fa-46d2-49fe-8e26-522cad0c105b"
-      ],
-      "disabled": true,
-      "settings": {
-        "banner": "shopify:\/\/shop_images\/Rectangle_4133714_7.jpg"
-      }
-    },
-    "9f4c2d6a-79bc-470b-9efb-204ad8eec149": {
-      "type": "image-text",
-      "blocks": {
-        "d57ffd4a-435f-4586-961f-33cbb2d20dbd": {
-          "type": "media",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_4133725_3.png"
-          }
-        },
-        "1f3670eb-88ad-496a-a023-add186c6c536": {
-          "type": "title",
-          "settings": {
-            "title": "<em>Jeff  <\/em>Little",
-            "color_title_label": "#383633"
-          }
-        },
-        "4a112e2b-53b4-4e06-8d29-0373e175870f": {
-          "type": "description",
-          "settings": {
-            "description": "<p>Jeff Little has been in ministry for 30 years. He planted Milestone Church in the Dallas\/Fort Worth area with a few friends in 2002. Milestone is now a family of thousands that continues to reach people and build lives throughout the region. More than a passionate and dynamic communicator, Jeff is committed to developing people and training leaders to reach their God-given potential.<\/p><p>He earned a Bachelor’s in Religion from Baylor University, a Master’s in Missiology from Southwestern Baptist Theological Seminary, and a doctorate from Southeastern University. He and his wife, Brandy, have four children and reside in Keller, TX.<\/p>",
-            "color_description_label": "#383633"
-          }
-        }
-      },
-      "block_order": [
-        "d57ffd4a-435f-4586-961f-33cbb2d20dbd",
-        "1f3670eb-88ad-496a-a023-add186c6c536",
-        "4a112e2b-53b4-4e06-8d29-0373e175870f"
-      ],
-      "disabled": true,
-      "settings": {
-        "position_image": ""
-      }
-    },
-    "17838819-eb1b-4670-8ad5-3a0f1b01e15c": {
-      "type": "featured-collection",
-      "blocks": {
-        "c76acc11-c4f6-46f3-9734-fed588c4111b": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "View all Study Guides",
-            "button_link_1": "shopify:\/\/products\/promises-kids-curriculum"
-          }
-        }
-      },
-      "block_order": [
-        "c76acc11-c4f6-46f3-9734-fed588c4111b"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "You May Enjoy",
-        "class": "",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "frontpage",
-        "products_to_show": 3,
-        "columns_desktop": 3,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -423,10 +224,6 @@
     "599530d0-8352-441b-92cc-3db587f9d17e",
     "main",
     "related-products",
-    "79c3192d-f71e-4ef0-bfad-ba58506b1890",
-    "61bc9bbb-ef59-4877-9cb1-a9e41368938a",
-    "1c9cda69-1c2d-44b4-b583-8229396d2b0d",
-    "9f4c2d6a-79bc-470b-9efb-204ad8eec149",
-    "17838819-eb1b-4670-8ad5-3a0f1b01e15c"
+    "79c3192d-f71e-4ef0-bfad-ba58506b1890"
   ]
 }

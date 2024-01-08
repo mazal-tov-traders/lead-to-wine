@@ -5,9 +5,8 @@
       "blocks": {
         "4231754f-c541-4e29-9606-2265f6a0e684": {
           "type": "title",
-          "disabled": true,
           "settings": {
-            "title": "the power of connection in the church",
+            "title": "Who am i?",
             "color_title_label": "#ffffff"
           }
         },
@@ -20,9 +19,8 @@
         },
         "fe42e3fd-1bbd-4a42-ae51-f957516aded8": {
           "type": "description",
-          "disabled": true,
           "settings": {
-            "description": "<p>A Church Leader's Guide for Connecting Guests and Closing the Back Door.<\/p>",
+            "description": "<p>Discover Who God Created You to Be.<\/p>",
             "color_description_label": "#ffffff"
           }
         },
@@ -48,7 +46,7 @@
         "eb6f4c67-8dc0-416b-bead-6cab94fedeee"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Screenshot_2024-01-05_at_4.35.37_PM.png"
+        "image": "shopify:\/\/shop_images\/Screenshot_2024-01-07_at_6.33.37_PM.png"
       }
     },
     "599530d0-8352-441b-92cc-3db587f9d17e": {

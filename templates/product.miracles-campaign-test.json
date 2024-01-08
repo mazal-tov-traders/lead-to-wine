@@ -6,7 +6,7 @@
         "4231754f-c541-4e29-9606-2265f6a0e684": {
           "type": "title",
           "settings": {
-            "title": "promises",
+            "title": "miracles campaign",
             "color_title_label": "#ffffff"
           }
         },
@@ -19,15 +19,17 @@
         },
         "fe42e3fd-1bbd-4a42-ae51-f957516aded8": {
           "type": "description",
+          "disabled": true,
           "settings": {
-            "description": "<p>Confidence for today. A Guarantee for tomorrow.<\/p>",
+            "description": "<p>RECOGNIZING HIS VOICE IN A WORLD FULL OF NOISE<\/p>",
             "color_description_label": "#ffffff"
           }
         },
         "eb6f4c67-8dc0-416b-bead-6cab94fedeee": {
           "type": "button",
+          "disabled": true,
           "settings": {
-            "button_label": "",
+            "button_label": "Buy The Study Guide",
             "button_link": "",
             "color_button_backgroun": "#ff0000",
             "color_button_label": "#ffffff",
@@ -45,7 +47,7 @@
         "eb6f4c67-8dc0-416b-bead-6cab94fedeee"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Screenshot_2024-01-05_at_3.44.52_PM.png"
+        "image": "shopify:\/\/shop_images\/Web_Header.jpg"
       }
     },
     "599530d0-8352-441b-92cc-3db587f9d17e": {
@@ -133,14 +135,14 @@
         "486e114f-33c6-4ba4-b61d-056c12ba1dd0": {
           "type": "heading",
           "settings": {
-            "heading": "Grow closer to God as you understand and study His Word.",
+            "heading": "Does He see what I’m going through? Will He show up with His miracle power when I need Him most?",
             "color_heading_label": "#1d2228"
           }
         },
         "631378ed-1c98-4d64-b696-d5b4065b5032": {
           "type": "description",
           "settings": {
-            "description": "<p>What if someone significant believed in your future so strongly that they put their name and reputation on the line? Now, imagine if God himself did that for you. How would that change your confidence? How would it help you face your challenges?<\/p><p>Promises provides practical concepts, illustrations, context, bible verses, and questions. The Promises study also includes perforated memory cards that you can tear out and take with you through the week so you can learn God’s Word in a practical way.<\/p><p>Promises can be read as an individual, but it is also great for group studies.<\/p>",
+            "description": "<p>Most of us have wrestled with these questions.<\/p><p>No one performed miracles like Jesus. He restored sight to the blind, helped the lame walk, calmed the seas, and multiplied one boy’s lunch to feed thousands. The Bible is filled with miracles…but what is God trying to show us? This book shows us how God shows up in our lives and meets us in our moment of need.<\/p>",
             "color_description_label": "#1d2228"
           }
         },
@@ -169,7 +171,7 @@
         "2e67b85d-a844-41be-9f38-51091714bcd3": {
           "type": "image-product",
           "settings": {
-            "image_product": "shopify:\/\/shop_images\/MSresources026.jpg"
+            "image_product": "shopify:\/\/shop_images\/MIracles023.jpg"
           }
         },
         "cfe9650a-4e66-4478-b780-08f0e19b2a22": {
@@ -182,6 +184,7 @@
         },
         "9205ad00-fcd9-4297-a7e0-8d637296564e": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "25% discount when you buy 10 or more books",
             "color_text_label": "#1d2228"
@@ -210,7 +213,7 @@
         "2faee0c0-67ee-49e2-baec-4d1b7274d6a8"
       ],
       "settings": {
-        "product": "promises",
+        "product": "miracles-campaign",
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "media_position": "right",

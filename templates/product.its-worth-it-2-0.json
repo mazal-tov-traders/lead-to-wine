@@ -1,54 +1,54 @@
 {
   "sections": {
-    "cc01a5c9-92fb-416b-a914-ea2ef23e205e": {
-      "type": "banner",
+    "558d486e-e4eb-4c1f-98b8-60b0a950d5c9": {
+      "type": "image-banner",
       "blocks": {
-        "4231754f-c541-4e29-9606-2265f6a0e684": {
-          "type": "title",
+        "template--17158228115686__558d486e-e4eb-4c1f-98b8-60b0a950d5c9-heading-1": {
+          "type": "heading",
           "disabled": true,
           "settings": {
-            "title": "The foundations book",
-            "color_title_label": "#ffffff"
+            "heading": "Image banner",
+            "heading_size": "h1"
           }
         },
-        "02834856-42b6-4955-9dc8-61d90b75ef11": {
-          "type": "media",
+        "template--17158228115686__558d486e-e4eb-4c1f-98b8-60b0a950d5c9-text-1": {
+          "type": "text",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/way-to-win-logo.png"
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
           }
         },
-        "fe42e3fd-1bbd-4a42-ae51-f957516aded8": {
-          "type": "description",
+        "template--17158228115686__558d486e-e4eb-4c1f-98b8-60b0a950d5c9-buttons-1": {
+          "type": "buttons",
           "disabled": true,
           "settings": {
-            "description": "<p>Experience the best version of your life.<\/p>",
-            "color_description_label": "#ffffff"
-          }
-        },
-        "eb6f4c67-8dc0-416b-bead-6cab94fedeee": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Buy The book",
-            "button_link": "",
-            "color_button_backgroun": "#ff0000",
-            "color_button_label": "#ffffff",
-            "color_button_border": "#ffffff",
-            "hover_color_button_backgroun": "#ffffff",
-            "hover_color_button_border": "#ffffff",
-            "hover_color_button_label": "#5491d6"
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
-        "4231754f-c541-4e29-9606-2265f6a0e684",
-        "02834856-42b6-4955-9dc8-61d90b75ef11",
-        "fe42e3fd-1bbd-4a42-ae51-f957516aded8",
-        "eb6f4c67-8dc0-416b-bead-6cab94fedeee"
+        "template--17158228115686__558d486e-e4eb-4c1f-98b8-60b0a950d5c9-heading-1",
+        "template--17158228115686__558d486e-e4eb-4c1f-98b8-60b0a950d5c9-text-1",
+        "template--17158228115686__558d486e-e4eb-4c1f-98b8-60b0a950d5c9-buttons-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Screenshot_2024-01-05_at_4.53.38_PM.png"
+        "image": "shopify:\/\/shop_images\/Screenshot_2024-01-05_at_4.47.19_PM.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
       }
     },
     "599530d0-8352-441b-92cc-3db587f9d17e": {
@@ -172,7 +172,7 @@
         "2e67b85d-a844-41be-9f38-51091714bcd3": {
           "type": "image-product",
           "settings": {
-            "image_product": "shopify:\/\/shop_images\/Screenshot_2024-01-05_at_3.23.50_PM.png"
+            "image_product": "shopify:\/\/shop_images\/IWI042.jpg"
           }
         },
         "cfe9650a-4e66-4478-b780-08f0e19b2a22": {
@@ -422,7 +422,7 @@
     }
   },
   "order": [
-    "cc01a5c9-92fb-416b-a914-ea2ef23e205e",
+    "558d486e-e4eb-4c1f-98b8-60b0a950d5c9",
     "599530d0-8352-441b-92cc-3db587f9d17e",
     "main",
     "related-products",

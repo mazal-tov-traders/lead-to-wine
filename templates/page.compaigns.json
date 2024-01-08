@@ -11,10 +11,17 @@
     "49f802a2-17c0-4bae-801e-18074217c2e9": {
       "type": "image-content",
       "blocks": {
+        "2286f5c5-7416-4753-886a-f567e86fb570": {
+          "type": "title",
+          "settings": {
+            "title": "Campaigns",
+            "color_title_label": "#4d4d4e"
+          }
+        },
         "73d2ec4f-cc21-4b0e-aab0-1318869d815f": {
           "type": "media",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_4133725_1_dc3b23e5-dfa0-4816-8680-c79ba5c9155d.jpg"
+            "image": "shopify:\/\/shop_images\/MCRbundles_002.jpg"
           }
         },
         "4a6bb457-33d6-4084-b023-d01268fd63eb": {
@@ -34,12 +41,13 @@
         "da4b19b0-3557-4e94-b1ca-14be611a471d": {
           "type": "description-list",
           "settings": {
-            "description-list": "<ul><li>Increase weekend attendance<\/li><li>Connect parents to what their kids are learning<\/li><li>Energize the culture of your small groups<\/li><\/ul>",
-            "color_list": "#383633"
+            "description-list": "<h3>Increase weekend attendance.<\/h3><h3><\/h3><h3>Connect parents to what their kids are learning.<\/h3><h3><\/h3><h3>Energize Small Group culture.<\/h3>",
+            "color_list": "#4d4d4e"
           }
         }
       },
       "block_order": [
+        "2286f5c5-7416-4753-886a-f567e86fb570",
         "73d2ec4f-cc21-4b0e-aab0-1318869d815f",
         "4a6bb457-33d6-4084-b023-d01268fd63eb",
         "57f8583a-4ac9-44e3-96c6-2194732628ea",
@@ -47,7 +55,7 @@
       ],
       "settings": {
         "background": "_bg-white",
-        "align_content": "left",
+        "align_content": "center",
         "position_image": ""
       }
     },
@@ -57,7 +65,7 @@
         "template--17151717540070__27dd5904-7504-45c1-9f2a-6e9888106121-card-1": {
           "type": "card",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/fi_5628463.svg",
+            "icon": "shopify:\/\/shop_images\/icons8-message-100.png",
             "title": "Message Content",
             "color_title_label": "#383633"
           }
@@ -65,7 +73,7 @@
         "template--17151717540070__27dd5904-7504-45c1-9f2a-6e9888106121-card-2": {
           "type": "card",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/fi_6490828.svg",
+            "icon": "shopify:\/\/shop_images\/icons8-megaphone-100_78b2c4b2-582d-4f8d-835e-7694f4033779.png",
             "title": "Promo Material",
             "color_title_label": "#383633"
           }
@@ -73,7 +81,7 @@
         "template--17151717540070__27dd5904-7504-45c1-9f2a-6e9888106121-card-3": {
           "type": "card",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/fi_4596368.svg",
+            "icon": "shopify:\/\/shop_images\/icons8-group-100_e833b18c-532f-49f1-b82b-e9ae62847688.png",
             "title": "Small Group Leader Guide",
             "color_title_label": "#383633"
           }
@@ -81,7 +89,7 @@
         "template--17151717540070__27dd5904-7504-45c1-9f2a-6e9888106121-card-4": {
           "type": "card",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/fi_7456976.svg",
+            "icon": "shopify:\/\/shop_images\/icons8-children-100.png",
             "title": "Kids Curriculum",
             "color_title_label": "#383633"
           }
@@ -89,7 +97,7 @@
         "template--17151717540070__27dd5904-7504-45c1-9f2a-6e9888106121-card-5": {
           "type": "card",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/fi_6391516.svg",
+            "icon": "shopify:\/\/shop_images\/icons8-open-book-100_1b8b3975-6a00-4581-acdb-7599bf974c1f.png",
             "title": "Study Guide",
             "color_title_label": "#383633"
           }
@@ -124,7 +132,7 @@
             "color_text_label": "#383633",
             "button-label": "Purchase Now",
             "color_hover_btn": "#383633",
-            "color_link_back": "#342663",
+            "color_link_back": "#4d4d4e",
             "button_link": "shopify:\/\/collections\/all"
           }
         },
@@ -132,16 +140,16 @@
           "type": "card",
           "settings": {
             "icon": "shopify:\/\/shop_images\/Rectangle_4133724_1.jpg",
-            "categoty": "lorem",
+            "categoty": "Promises of God",
             "color_category_label": "#ffffff",
             "color_category_back": "#4d4d4e",
             "title": "Promises",
             "color_title_label": "#383633",
-            "text": "Lorem ipsum dolor sit amet consectetur. Etiam cursus at arcu quisque fermentum aliquam vulputate purus commodo.",
+            "text": "Take your church through the promises of God that will give them confidence today and a guarantee for tomorrow.",
             "color_text_label": "#383633",
             "button-label": "Purchase Now",
-            "color_hover_btn": "#383633",
-            "color_link_back": "#342663",
+            "color_hover_btn": "#4d4d4e",
+            "color_link_back": "#4d4d4e",
             "button_link": ""
           }
         },
@@ -149,50 +157,33 @@
           "type": "card",
           "settings": {
             "icon": "shopify:\/\/shop_images\/Rectangle_4133724_2.jpg",
-            "categoty": "lorem",
+            "categoty": "Building a Foundation",
             "color_category_label": "#ffffff",
             "color_category_back": "#4d4d4e",
             "title": "Unshakable",
             "color_title_label": "#383633",
-            "text": "Lorem ipsum dolor sit amet consectetur. Etiam cursus at arcu quisque fermentum aliquam vulputate purus commodo.",
+            "text": "Show your church that when we live according to God's Kingdom and its principles, we’ll find that our lives in Him are unshakable.",
             "color_text_label": "#383633",
             "button-label": "Purchase Now",
-            "color_hover_btn": "#383633",
-            "color_link_back": "#342663",
+            "color_hover_btn": "#4d4d4e",
+            "color_link_back": "#4d4d4e",
             "button_link": ""
           }
         },
         "template--17151717540070__649c0722-ca73-4076-89f0-6772f32438d0-card-4": {
           "type": "card",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Rectangle_4133724_3.jpg",
-            "categoty": "lorem",
+            "icon": "shopify:\/\/shop_images\/MIracles002_c9e80efa-a5f2-4693-8ad1-ec6b035065f8.jpg",
+            "categoty": "Miracles of Jesus",
             "color_category_label": "#ffffff",
             "color_category_back": "#4d4d4e",
             "title": "Miracles",
             "color_title_label": "#383633",
-            "text": "Lorem ipsum dolor sit amet consectetur. Etiam cursus at arcu quisque fermentum aliquam vulputate purus commodo.",
+            "text": "Take your church on a journey to show them how God shows up in our lives and meets us in our moment of need.",
             "color_text_label": "#383633",
             "button-label": "Purchase Now",
-            "color_hover_btn": "#383633",
-            "color_link_back": "#342663",
-            "button_link": ""
-          }
-        },
-        "template--17151717540070__649c0722-ca73-4076-89f0-6772f32438d0-card-5": {
-          "type": "card",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/Rectangle_4133724_4.jpg",
-            "categoty": "lorem",
-            "color_category_label": "#ffffff",
-            "color_category_back": "#4d4d4e",
-            "title": "Miracles",
-            "color_title_label": "#383633",
-            "text": "Lorem ipsum dolor sit amet consectetur. Etiam cursus at arcu quisque fermentum aliquam vulputate purus commodo.",
-            "color_text_label": "#383633",
-            "button-label": "Purchase Now",
-            "color_hover_btn": "#383633",
-            "color_link_back": "#342663",
+            "color_hover_btn": "#4d4d4e",
+            "color_link_back": "#4d4d4e",
             "button_link": ""
           }
         }
@@ -201,8 +192,7 @@
         "template--17151717540070__649c0722-ca73-4076-89f0-6772f32438d0-card-1",
         "template--17151717540070__649c0722-ca73-4076-89f0-6772f32438d0-card-2",
         "template--17151717540070__649c0722-ca73-4076-89f0-6772f32438d0-card-3",
-        "template--17151717540070__649c0722-ca73-4076-89f0-6772f32438d0-card-4",
-        "template--17151717540070__649c0722-ca73-4076-89f0-6772f32438d0-card-5"
+        "template--17151717540070__649c0722-ca73-4076-89f0-6772f32438d0-card-4"
       ],
       "settings": {
         "include_margins": true,
@@ -217,7 +207,7 @@
           "type": "heading",
           "settings": {
             "heading": "How to Use a Campaign",
-            "color_heading_label": "#383633"
+            "color_heading_label": "#4d4d4e"
           }
         },
         "6df5a8a0-cf9d-42db-ad90-50c34df4dff0": {
@@ -231,7 +221,7 @@
           "type": "section",
           "settings": {
             "background_block": "#eae9e5",
-            "label": "1. Purchase a bundle",
+            "label": "1.   Purchase a bundle",
             "color_label": "#eae9e9",
             "background-label": "#4d4d4e",
             "content": "<ul><li>Message content on topics your church cares about.<\/li><li>Kids curriculum that fosters genuine excitement in God’s word.<\/li><\/ul>",

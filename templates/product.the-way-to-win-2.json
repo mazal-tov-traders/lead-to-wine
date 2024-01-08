@@ -165,6 +165,7 @@
         },
         "cfe9650a-4e66-4478-b780-08f0e19b2a22": {
           "type": "text-second",
+          "disabled": true,
           "settings": {
             "text_second": "other ways to buy",
             "color_text_second_label": "#1d2228"
@@ -179,6 +180,7 @@
         },
         "2faee0c0-67ee-49e2-baec-4d1b7274d6a8": {
           "type": "button-link",
+          "disabled": true,
           "settings": {
             "button_link1": "shopify:\/\/products\/the-way-to-win-intensive-1",
             "icon_button1": "shopify:\/\/shop_images\/image_8.svg",

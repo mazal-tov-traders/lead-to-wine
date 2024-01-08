@@ -46,8 +46,8 @@
       ],
       "settings": {
         "include_margins": true,
-        "background": "shopify:\/\/shop_images\/Rectangle_3_1.jpg",
-        "background-mob": "shopify:\/\/shop_images\/Rectangle_4133714_7_f907e7b0-8b09-4ac0-a49f-1b0167601f6e.jpg"
+        "background": "shopify:\/\/shop_images\/PJ_Header_1.jpg",
+        "background-mob": "shopify:\/\/shop_images\/PJ_Header_Tall_1.jpg"
       }
     },
     "2354a153-96f9-4a91-a1cc-cdbb319d67d4": {
@@ -64,7 +64,6 @@
         "71291754-f50f-4388-835f-a7cb9737039b": {
           "type": "single-review",
           "settings": {
-            "quotes": "shopify:\/\/shop_images\/fi_107076_1.svg",
             "photo": "shopify:\/\/shop_images\/Ellipse_4.jpg",
             "title-one": "Chris Hodges",
             "color_name": "#4d4d4e",
@@ -92,7 +91,7 @@
           "settings": {
             "icon": "shopify:\/\/shop_images\/Vector_Smart_Object-2.png",
             "title": "Gatherings",
-            "texxt": "Opportunities throughout the year designed to connect and equip pastors & church leaders.",
+            "texxt": "Connect with other leaders and receive practical tools for growth and development.",
             "color_title_label": "#4d4d4e",
             "color_text": "#4d4d4e",
             "texxt-btn": "Learn More",
@@ -106,7 +105,7 @@
           "settings": {
             "icon": "shopify:\/\/shop_images\/icon.png",
             "title": "Coaching",
-            "texxt": "Training modules designed to give you a more in depth look at processes that can build your church.",
+            "texxt": "Lead pastor coaching and digital trainings to equip leaders to go further in what matters most.",
             "color_title_label": "#4d4d4e",
             "color_text": "#4d4d4e",
             "texxt-btn": "learn more",
@@ -120,7 +119,7 @@
           "settings": {
             "icon": "shopify:\/\/shop_images\/Vector_Smart_Object_bbe40eb1-226e-4ecc-969c-4bca63821a0a.svg",
             "title": "Resources",
-            "texxt": "Books, Study Guides, Campaigns, Message Series, and Kids Curriculum.",
+            "texxt": "Campaigns, message series, books, and study guides created to take people on a spiritual journey.",
             "color_title_label": "#4d4d4e",
             "color_text": "#4d4d4e",
             "texxt-btn": "learn more",
@@ -159,63 +158,6 @@
         "include_margins": true
       }
     },
-    "8f032fcb-57b3-44e5-90df-9413b8b71624": {
-      "type": "multicolumn",
-      "blocks": {
-        "template--17127585513702__8f032fcb-57b3-44e5-90df-9413b8b71624-column-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Vector_Smart_Object-2.svg",
-            "title": "Gatherings",
-            "text": "<h3>Opportunities throughout the year designed to connect and equip pastors & church leaders.<\/h3>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--17127585513702__8f032fcb-57b3-44e5-90df-9413b8b71624-column-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Vector_Smart_Object-2.png",
-            "title": "Coaching",
-            "text": "<p>Training modules designed to give you a more in depth look at processes that can build your church.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--17127585513702__8f032fcb-57b3-44e5-90df-9413b8b71624-column-3": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Vector_Smart_Object_bbe40eb1-226e-4ecc-969c-4bca63821a0a.svg",
-            "title": "Resources",
-            "text": "<p>Books, Study Guides, Message Series, Campaigns, and Kids Curriculum<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--17127585513702__8f032fcb-57b3-44e5-90df-9413b8b71624-column-1",
-        "template--17127585513702__8f032fcb-57b3-44e5-90df-9413b8b71624-column-2",
-        "template--17127585513702__8f032fcb-57b3-44e5-90df-9413b8b71624-column-3"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "7d43acf7-e204-45ea-b598-a020006b59ae": {
       "type": "slider",
       "blocks": {
@@ -223,15 +165,14 @@
           "type": "card",
           "settings": {
             "slider-background": "#e2e2e2",
-            "logo": "shopify:\/\/shop_images\/review-seeds-logo.png",
-            "slide-title": "Lorem ipsum dolor sit amet consectetur.",
+            "logo": "shopify:\/\/shop_images\/MSresources021.jpg",
+            "slide-title": "",
             "slider-title-color": "#4d4d4e",
-            "slide-text": "Lorem ipsum dolor sit amet consectetur. Odio volutpat massa id neque et. Facilisi et in lobortis facilisi. Sed elementum pharetra nisl ultrices tristique nulla eu.",
+            "slide-text": "\"I can't encourage you enough, grab a few copies of The Way to Win, get some guys around you, and just watch the impact it will have on them and your church.\"",
             "slide-text-color": "#4d4d4e",
-            "avatar": "shopify:\/\/shop_images\/Ellipse_6_1.png",
-            "rev-name": "Jabin Chavez",
+            "rev-name": "Adam Henderson",
             "name-color": "#4d4d4e",
-            "location": "City Light Church, Las Vegas",
+            "location": "Radiant Church",
             "location-color": "#d5cfc4"
           }
         },
@@ -239,15 +180,14 @@
           "type": "card",
           "settings": {
             "slider-background": "#e2e2e2",
-            "logo": "shopify:\/\/shop_images\/review-seeds-logo.png",
-            "slide-title": "Lorem ipsum dolor sit amet consectetur.",
+            "logo": "shopify:\/\/shop_images\/Promises1_70420de4-5ef8-42a9-b686-2b2e18e17686.jpg",
+            "slide-title": "",
             "slider-title-color": "#4d4d4e",
-            "slide-text": "Lorem ipsum dolor sit amet consectetur. Odio volutpat massa id neque et. Facilisi et in lobortis facilisi. Sed elementum pharetra nisl ultrices tristique nulla eu.",
+            "slide-text": "\"Promises is not only an absolutely stunning study guide, but it is foundational and life-giving. I loved going through this study with my small group and understanding God's promises to us in our most important relationships and biggest struggles. I understood God in a way I hadn't ever grasped before; it brought me closer to Him.\"",
             "slide-text-color": "#4d4d4e",
-            "avatar": "shopify:\/\/shop_images\/Ellipse_6_1.png",
-            "rev-name": "Jabin Chavez",
+            "rev-name": "Taelor Martinez",
             "name-color": "#4d4d4e",
-            "location": "City Light Church, Las Vegas",
+            "location": "",
             "location-color": "#d5cfc4"
           }
         },
@@ -255,15 +195,14 @@
           "type": "card",
           "settings": {
             "slider-background": "#e2e2e2",
-            "logo": "shopify:\/\/shop_images\/review-seeds-logo.png",
+            "logo": "shopify:\/\/shop_images\/WTW1_4fc18698-241b-4279-8907-bee710980e29.jpg",
             "slide-title": "",
             "slider-title-color": "#4d4d4e",
-            "slide-text": "Lorem ipsum dolor sit amet consectetur.",
+            "slide-text": "\"I had been wanting to pour into a group of men in my church for a while, the problem was finding the right resource. I love how The Way to Win sets me up to win as a pastor  at discipling the men in my church.\"",
             "slide-text-color": "#4d4d4e",
-            "avatar": "shopify:\/\/shop_images\/Ellipse_6_1.png",
-            "rev-name": "Jabin Chavez",
+            "rev-name": "Brandon Cormier",
             "name-color": "#4d4d4e",
-            "location": "City Light Church, Las Vegas",
+            "location": "Zeal Church, Colorado Springs",
             "location-color": "#d5cfc4"
           }
         }
@@ -298,7 +237,7 @@
         "e3684287-fde5-44a4-82a7-59aad424d878": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. <\/p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.<\/p>",
+            "text": "<p>I was raised in Northeast Texas by wonderful parents who modeled a strong faith and character that is the foundation of my life today. After completing high school, I attended Baylor University and graduated in 1996 with a Bachelor of Arts in Religion. I completed my master’s degree at Southwestern Baptist Theological Seminary in 2006 and earned a doctorate from Southeastern University in 2022. <\/p><p>After pastoring several established congregations, God began to stir my heart with the dream of planting a life-giving, spirit-filled, community church, but I was not sure where! Through much prayer and consultation, the Lord spoke to me clearly that I was to go to Keller, TX to start a church.<\/p>",
             "color_description_label": "#383633"
           }
         },
@@ -317,7 +256,7 @@
         "a5475cd8-a97d-414d-a455-801907e0b395"
       ],
       "custom_css": [
-        ".link {color: #4D4D4E;}"
+        ".link {color: #4d4d4e;}"
       ],
       "settings": {
         "position_image": ""
@@ -364,7 +303,6 @@
     "2354a153-96f9-4a91-a1cc-cdbb319d67d4",
     "cffa4dce-b708-40de-a035-cf7a78b97a83",
     "9cd67dd3-24ec-4a6c-932b-1b8cf7511904",
-    "8f032fcb-57b3-44e5-90df-9413b8b71624",
     "7d43acf7-e204-45ea-b598-a020006b59ae",
     "dc3ddbd5-59ca-45d9-aaf4-b83b99d70a0d",
     "8b54a942-97cd-450a-94d6-17cb2dbe9dd8"

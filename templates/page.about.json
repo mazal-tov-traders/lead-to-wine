@@ -15,7 +15,7 @@
           "type": "title",
           "settings": {
             "title": "About",
-            "color_title_label": "#fff"
+            "color_title_label": "#ffffff"
           }
         }
       },
@@ -23,7 +23,7 @@
         "ea2bc182-7552-4dfc-9750-79392186d3b2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Rectangle_3_1_3.jpg"
+        "image": "shopify:\/\/shop_images\/About_Header_v4.jpg"
       }
     },
     "a5b2ee29-1f27-42c1-beb4-6b654b669a90": {
@@ -31,29 +31,38 @@
       "blocks": {
         "3d88a375-0757-4530-a793-39b589d0e9b6": {
           "type": "media",
+          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/c1e3486467ed980fcf5583dfcb4d831b.png"
+            "image": "shopify:\/\/shop_images\/Roundtables_021.jpg"
           }
         },
         "6c7a5d48-fd4f-4d5a-9d6b-1757a3c1bdaa": {
           "type": "title",
           "settings": {
-            "title": "Why<em>We Exist<\/em>",
+            "title": "Why Lead to Win Exists",
             "color_title_label": "#4d4d4e"
           }
         },
         "332f1000-a6a6-4789-9df3-c2fd49c45486": {
           "type": "description",
           "settings": {
-            "description": "<p><em>Lead to win exists to gather, coach, and equip leaders to win in the areas that matter most.<\/em><\/p>",
+            "description": "<h2>Lead to win exists to gather, coach, and equip leaders to win in the areas that matter most. <\/h2>",
             "color_description_label": "#d5cfc4"
+          }
+        },
+        "e19a6b3a-63fc-46f5-8fe5-81295228e6fe": {
+          "type": "content",
+          "settings": {
+            "content": "wer",
+            "color_content_label": "#383633"
           }
         }
       },
       "block_order": [
         "3d88a375-0757-4530-a793-39b589d0e9b6",
         "6c7a5d48-fd4f-4d5a-9d6b-1757a3c1bdaa",
-        "332f1000-a6a6-4789-9df3-c2fd49c45486"
+        "332f1000-a6a6-4789-9df3-c2fd49c45486",
+        "e19a6b3a-63fc-46f5-8fe5-81295228e6fe"
       ],
       "settings": {
         "background": "_bg-white",
@@ -99,6 +108,7 @@
       "blocks": {
         "81a79616-d6f8-4fd9-a860-21db42be65a2": {
           "type": "media",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/about-2.jpg"
           }

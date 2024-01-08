@@ -93,28 +93,26 @@
         "9884d006-0d87-4b86-99de-0756660e84ac": {
           "type": "benefits-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/icons8-clock-100.png",
-            "heading": "<h2><strong>Discipleship takes time<\/strong><\/h2>",
-            "color_heading_label": "#383633",
+            "heading": "<h2><strong>Discipleship Takes Time<\/strong><\/h2>",
+            "color_heading_label": "#4d4d4e",
             "content": "<p>A 38-week process that provides the environment men need to grow spiritually and build meaningful relationships.<\/p>",
-            "color_content_label": "#383334"
+            "color_content_label": "#4d4d4e"
           }
         },
         "1dcf7486-cee6-4069-81fb-934a06c0e677": {
           "type": "benefits-item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/icons8-open-book-100.png",
-            "heading": "<h2><strong>Content is key<\/strong><\/h2>",
-            "color_heading_label": "#383633",
+            "heading": "<h2><strong>Content is Key<\/strong><\/h2>",
+            "color_heading_label": "#4d4d4e",
             "content": "<p>Concise chapters intentionally designed to add immediate value to your daily life.<\/p>",
-            "color_content_label": "#383633"
+            "color_content_label": "#4d4d4e"
           }
         },
         "5f7f463f-4d41-4032-b30b-e975cc0748ef": {
           "type": "buttons",
           "settings": {
-            "button_label": "Purchase Now",
-            "button_link": "shopify:\/\/pages\/about",
+            "button_label": "",
+            "button_link": "shopify:\/\/products\/the-way-to-win-intensive-1",
             "color_button_backgroun": "#383633",
             "color_button_label": "#ffffff",
             "color_button_border": "#383633",
@@ -153,8 +151,8 @@
         "fc9cd3f1-3a4b-4170-8e0f-c1edfdb8671b": {
           "type": "description",
           "settings": {
-            "description": "<ul><li>8 training videos that cover the development group vision, process & content structure<\/li><li>Email & text templates<\/li><li>Weekly leader guide<\/li><li>Protips & frequently asked questions<\/li><li>12 copies of The Way to Win book for your first group<\/li><\/ul>",
-            "color_description_label": "#1d2228"
+            "description": "<ul><li>8 Training Videos Covering the Development Group Vision, Process & Content Structure<\/li><li>Email & Text Templates<\/li><li>Leader Guide<\/li><li>Pro Tips & Frequently Asked Questions<\/li><li>12 Copies of The Way to Win Book for Your First Group<\/li><\/ul>",
+            "color_description_label": "#4d4d4e"
           }
         },
         "template--17147660108006__509810c7-eb06-440c-8b14-3bc4c6394713-price-1": {
@@ -199,9 +197,9 @@
           "type": "media",
           "settings": {
             "text": "Sneak Peak",
-            "image_video": "shopify:\/\/shop_images\/Rectangle_4133735.png",
+            "image_video": "shopify:\/\/shop_images\/Screenshot_2024-01-07_at_7.01.02_PM.png",
             "image_youtube": "shopify:\/\/shop_images\/fi_1384060.png",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+            "video_url": "https:\/\/www.youtube.com\/watch?v=laZ796uCRuw"
           }
         }
       },
@@ -259,7 +257,7 @@
             "color_name_label": "#383633",
             "position": "Zeal Church, Colorado Springs",
             "color_position_label": "#383633",
-            "content": "\"I love the way The Way to Win sets me up to win as a lead pastor in discipling and mentoring the men in my church\"",
+            "content": "\"I love how the The Way to Win sets me up to win as a lead pastor in discipling and mentoring the men in my church\"",
             "color_content_label": "#383633",
             "icon": "shopify:\/\/shop_images\/fi_107076_1.svg"
           }

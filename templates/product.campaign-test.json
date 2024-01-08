@@ -135,14 +135,14 @@
         "486e114f-33c6-4ba4-b61d-056c12ba1dd0": {
           "type": "heading",
           "settings": {
-            "heading": "Does God See me? How do I know what he is saying?",
+            "heading": "Our most popular series on one of God’s primary building blocks, the seed.",
             "color_heading_label": "#1d2228"
           }
         },
         "631378ed-1c98-4d64-b696-d5b4065b5032": {
           "type": "description",
           "settings": {
-            "description": "<p>If you’ve ever thought about these questions, you aren’t alone. The good news is, God cares about you and He wants to speak to you right where you are.<\/p>",
+            "description": "<h4>Growth doesn’t happen overnight – our Seeds series is focused on topics like potential, momentum, multiplication, and legacy so your church can grow in the areas of life they need it most<\/h4>",
             "color_description_label": "#1d2228"
           }
         },
@@ -171,7 +171,7 @@
         "2e67b85d-a844-41be-9f38-51091714bcd3": {
           "type": "image-product",
           "settings": {
-            "image_product": "shopify:\/\/shop_images\/Screenshot_2024-01-05_at_3.10.19_PM.png"
+            "image_product": "shopify:\/\/shop_images\/Screenshot2024-01-06at1.43.25PM.png"
           }
         },
         "cfe9650a-4e66-4478-b780-08f0e19b2a22": {
@@ -184,6 +184,7 @@
         },
         "9205ad00-fcd9-4297-a7e0-8d637296564e": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "25% discount when you buy 10 or more books",
             "color_text_label": "#1d2228"

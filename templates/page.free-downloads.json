@@ -7,9 +7,90 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "d10020a7-4b2c-46b7-9add-181e0f1ae0c9": {
+      "type": "section-tabs",
+      "blocks": {
+        "265394ac-2461-4cbc-99be-1e9270d8bb1b": {
+          "type": "tab-name",
+          "settings": {
+            "trigger": "Assimilation & Growth Track"
+          }
+        },
+        "f024e53f-6620-41f7-bb3d-fcc1c2d95336": {
+          "type": "tab-name",
+          "settings": {
+            "trigger": "Kids"
+          }
+        },
+        "6fa8356f-a1fb-4357-9bdf-542feb43f359": {
+          "type": "tab-name",
+          "settings": {
+            "trigger": "Local Outreach & Global Missions"
+          }
+        }
+      },
+      "block_order": [
+        "265394ac-2461-4cbc-99be-1e9270d8bb1b",
+        "f024e53f-6620-41f7-bb3d-fcc1c2d95336",
+        "6fa8356f-a1fb-4357-9bdf-542feb43f359"
+      ],
+      "settings": {
+        "title": "Free <em>Downloads<\/em>",
+        "color_title": "#383633",
+        "sub_title": "Forms, processes and tools we use everyday at Milestone Church",
+        "color_sub_title": "#918677"
+      }
+    },
+    "de168c7f-5447-4449-9e9c-dc92fac7500a": {
+      "type": "section-for-tabs",
+      "blocks": {
+        "abc966e0-cb1f-4683-93e9-846560ca62fa": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4133625.png",
+            "title": "Assimilation & Growth Track",
+            "color_title": "#383633",
+            "content": "The processes and tools behind the main method we use to connect people to the vision & values of Milestone Church",
+            "color_content": "#383633"
+          }
+        },
+        "1fd3f312-bd86-4891-9cc4-47b7ccc4eae1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Discovery 101",
+            "row_content": "<p>test<\/p>",
+            "label_link": "",
+            "link": ""
+          }
+        },
+        "4ef1ff88-dcd3-456c-b07f-e060eb2aa7ae": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Serve Team 201",
+            "row_content": "<p>The first step in the Growth Track, this two hour luncheon hosted every month where our lead pastor shares the story, heart and vision of Milestone Church.<\/p>",
+            "icon": "shopify:\/\/shop_images\/fi_337946.svg",
+            "label_link": "Membership Agreement",
+            "link": "shopify:\/\/products\/the-way-to-win-intensive-1"
+          }
+        }
+      },
+      "block_order": [
+        "abc966e0-cb1f-4683-93e9-846560ca62fa",
+        "1fd3f312-bd86-4891-9cc4-47b7ccc4eae1",
+        "4ef1ff88-dcd3-456c-b07f-e060eb2aa7ae"
+      ],
+      "settings": {
+        "title": "",
+        "color_title": "#383633",
+        "sub_title": "",
+        "color_sub_title": "#383633"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "d10020a7-4b2c-46b7-9add-181e0f1ae0c9",
+    "de168c7f-5447-4449-9e9c-dc92fac7500a"
   ]
 }

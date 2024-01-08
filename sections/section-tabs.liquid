@@ -13,14 +13,7 @@
       {%- endif -%}
     </div>
     <div class="section-tabs__wrapper">
-      {% for block in section.blocks %}
-        {% case block.type %}
-          {% when 'tab-name' %}
-            <div id="tabs-trigger-{{ forloop.index }}" class="tab-trigger" data-index="{{ forloop.index }}">
-              {{ block.settings.trigger }}
-            </div>
-        {% endcase %}
-      {% endfor %}
+      <div class="tab-trigger"></div>
     </div>
   </div>
 </section>
@@ -54,19 +47,7 @@
       "default": "#383633"
     }
   ],
-  "blocks": [
-    {
-      "type": "tab-name",
-      "name": "Tab Name",
-      "settings": [
-        {
-          "type": "text",
-          "id": "trigger",
-          "label": "Tab Name"
-        }
-      ]
-    }
-  ],
+  "blocks": [],
   "presets": [
     {
       "name": "Section Tabs"

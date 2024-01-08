@@ -3,6 +3,9 @@
 
 <section class="section-fot-tabs">
   <div class="page-width">
+    <button type="button"  class="tab-trigger">{{section.settings.trigger }}</button>
+
+
     <div class="heading-wrapper">
       {%- if section.settings.title != blank -%}
         <h2 class="title" style=" color: {{ section.settings.color_title }};">
@@ -68,31 +71,7 @@
                   aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
                 >
                   {{ block.settings.row_content }}
-                  {% for block in section.blocks %}
-                    {% if block.type == 'icon-and-link' %}
-                      <div class="link-in-accordion-content">
-                        {%- if block.settings.icon != blank -%}
-                          <img
-                            src="{{ block.settings.icon | img_url:  'original'}}"
-                            alt=""
-                          >
-                        {% endif %}
-                        {%- if block.settings.label_link != blank -%}
-                          <a
-                            {% if block.settings.link == blank %}
-                              role="link" aria-disabled="true"
-                            {% else %}
-                              href="{{ block.settings.link }}"
-                            {% endif %}
-
-                            class="link"
-                          >
-                            {{- block.settings.label_link | escape -}}
-                          </a>
-                        {%- endif -%}
-                      </div>
-                    {% endif %}
-                  {% endfor %}
+              
                 </div>
               </details>
             </div>
@@ -108,6 +87,11 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+        "type": "text",
+        "id": "trigger",
+        "label": "Tab Name"
+      }
   ],
   "blocks": [
     {
@@ -158,13 +142,7 @@
           "type": "richtext",
           "id": "row_content",
           "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.row_content.label"
-        }
-      ]
-    },
-    {
-      "type": "icon-and-link",
-      "name": "Icon And Link",
-      "settings": [
+        },
         {
           "type": "image_picker",
           "id": "icon",

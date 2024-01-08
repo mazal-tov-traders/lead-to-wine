@@ -90,22 +90,7 @@
   {%- endif -%}
   <section class="color imag">
     <div class="page-width section-{{ section.id }}-padding">
-      <div class="featured-product product product-- grid grid--1-col color- product--{{ section.settings.media_position }} isolate {% if product.media.size > 0 or section.settings.product == blank %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
-        <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
-          {%- for block in section.blocks -%}
-            {%- case block.type -%}
-              {% comment %} german {% endcomment %}
-              {% comment %} {%- when 'image-product' -%}
-                {%- if block.settings.image_product != blank -%}
-                  <img
-                    src="{{ block.settings.image_product | img_url: 'original' }}"
-                    alt="image"
-                    class="image-product"
-                  >
-                {% endif %} {% endcomment %}
-            {%- endcase -%}
-          {%- endfor -%}
-        </div>
+      <div class="featured-product featured-product{{ section.settings.media_position }} product product-- grid grid--1-col  isolate {% if product.media.size > 0 or section.settings.product == blank %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
         <div class="product__info-wrapper grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           <product-info
             id="ProductInfo-{{ section.id }}"
@@ -482,65 +467,63 @@
             </div>
           </product-info>
         </div>
-        {%- if section.settings.media_position == 'right' -%}
-          <div class="grid__item product__media-wrapper">
-            {%- if section.settings.product != blank -%}
-              {%- for block in section.blocks -%}
-                {%- case block.type -%}
-                  {%- when 'image-product' -%}
-                    {%- if block.settings.image_product != blank -%}
-                      <img
-                        src="{{ block.settings.image_product | img_url: 'original' }}"
-                        alt="image"
-                        class="image-product"
-                      >
-                    {% endif %}
-                  {%- when 'media' -%}
-                    {%- if block.settings.text != blank -%}
-                      <div class="product__caption">
-                        <span>{{ block.settings.text }}</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="97" height="97" viewBox="0 0 97 97" fill="none">
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M4.04541 21.7751C41.0766 17.4327 66.9539 44.7697 79.8339 77.0955C80.0562 77.6503 80.687 77.9229 81.2418 77.7007C81.7966 77.4784 82.0692 76.8476 81.847 76.2928C68.6081 43.061 41.8602 15.1589 3.79162 19.6235C3.19842 19.6919 2.77366 20.2304 2.84272 20.8262C2.91107 21.4194 3.44956 21.8441 4.04541 21.7751Z"
-                                fill="#029D50"/>
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M80.5992 76.0869C79.1158 74.8933 77.2707 73.3747 77.0563 73.2085C71.2459 68.704 65.0481 65.3422 58.1445 62.7698C57.5844 62.5603 56.9591 62.8469 56.7496 63.4069C56.5401 63.967 56.8266 64.5923 57.3867 64.8018C64.082 67.2941 70.0936 70.5528 75.7293 74.923C76.0579 75.1775 80.2036 78.5937 81.0938 79.2215C81.4576 79.4807 81.7441 79.5143 81.8124 79.5158C82.175 79.5376 82.4188 79.4015 82.5849 79.2607C82.7713 79.1004 83.0144 78.7607 83.0398 78.2216C83.0641 77.6574 82.8281 76.4805 82.7925 76.1786C82.2681 71.6223 81.2858 66.5828 81.3258 61.745C81.3636 57.1314 82.3324 52.696 85.6964 49.1164C86.1063 48.681 86.0835 47.9935 85.6481 47.5836C85.2127 47.1736 84.5251 47.1964 84.1152 47.6318C80.3551 51.6347 79.2003 56.5703 79.1577 61.7258C79.1185 66.5351 80.057 71.5381 80.5992 76.0869Z"
-                                fill="#029D50"/>
-                        </svg>
-                      </div>
-                    {%- endif -%}
-
-                    <div
-                      class="video-wrapper"
-                      data-video-url="{{ block.settings.video_url.id }}"
+        <div class="grid__item product__media-wrapper">
+          {%- if section.settings.product != blank -%}
+            {%- for block in section.blocks -%}
+              {%- case block.type -%}
+                {%- when 'image-product' -%}
+                  {%- if block.settings.image_product != blank -%}
+                    <img
+                      src="{{ block.settings.image_product | img_url: 'original' }}"
+                      alt="image"
+                      class="image-product"
                     >
-                      <div class="video-wrapper_box">
-                        {%- if block.settings.image_video != blank -%}
-                          <img
-                            src="{{ block.settings.image_video | img_url: 'original' }}"
-                            alt="image"
-                            class="image-video"
-                          >
-                        {%- endif -%}
-                        {% if block.settings.image_youtube != blank %}
-                          <img
-                            src="{{ block.settings.image_youtube | img_url: 'original' }}"
-                            alt="image"
-                            class="image-youtube"
-                            onclick="showPopup(this.closest('[data-video-url]').dataset.videoUrl)"
-                          >
-                        {% endif %}
-                      </div>
+                  {% endif %}
+                {%- when 'media' -%}
+                  {%- if block.settings.text != blank -%}
+                    <div class="product__caption">
+                      <span>{{ block.settings.text }}</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="97" height="97" viewBox="0 0 97 97" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M4.04541 21.7751C41.0766 17.4327 66.9539 44.7697 79.8339 77.0955C80.0562 77.6503 80.687 77.9229 81.2418 77.7007C81.7966 77.4784 82.0692 76.8476 81.847 76.2928C68.6081 43.061 41.8602 15.1589 3.79162 19.6235C3.19842 19.6919 2.77366 20.2304 2.84272 20.8262C2.91107 21.4194 3.44956 21.8441 4.04541 21.7751Z"
+                              fill="#029D50"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M80.5992 76.0869C79.1158 74.8933 77.2707 73.3747 77.0563 73.2085C71.2459 68.704 65.0481 65.3422 58.1445 62.7698C57.5844 62.5603 56.9591 62.8469 56.7496 63.4069C56.5401 63.967 56.8266 64.5923 57.3867 64.8018C64.082 67.2941 70.0936 70.5528 75.7293 74.923C76.0579 75.1775 80.2036 78.5937 81.0938 79.2215C81.4576 79.4807 81.7441 79.5143 81.8124 79.5158C82.175 79.5376 82.4188 79.4015 82.5849 79.2607C82.7713 79.1004 83.0144 78.7607 83.0398 78.2216C83.0641 77.6574 82.8281 76.4805 82.7925 76.1786C82.2681 71.6223 81.2858 66.5828 81.3258 61.745C81.3636 57.1314 82.3324 52.696 85.6964 49.1164C86.1063 48.681 86.0835 47.9935 85.6481 47.5836C85.2127 47.1736 84.5251 47.1964 84.1152 47.6318C80.3551 51.6347 79.2003 56.5703 79.1577 61.7258C79.1185 66.5351 80.057 71.5381 80.5992 76.0869Z"
+                              fill="#029D50"/>
+                      </svg>
                     </div>
-                    <div class="popup-video" id="popup">
-                      <span class="close" onclick="closePopup()">{% render 'icon-close-black' %}</span>
-                      <div id="videoContainer" class="video-container"></div>
+                  {%- endif -%}
+
+                  <div
+                    class="video-wrapper"
+                    data-video-url="{{ block.settings.video_url.id }}"
+                  >
+                    <div class="video-wrapper_box">
+                      {%- if block.settings.image_video != blank -%}
+                        <img
+                          src="{{ block.settings.image_video | img_url: 'original' }}"
+                          alt="image"
+                          class="image-video"
+                        >
+                      {%- endif -%}
+                      {% if block.settings.image_youtube != blank %}
+                        <img
+                          src="{{ block.settings.image_youtube | img_url: 'original' }}"
+                          alt="image"
+                          class="image-youtube"
+                          onclick="showPopup(this.closest('[data-video-url]').dataset.videoUrl)"
+                        >
+                      {% endif %}
                     </div>
-                {%- endcase -%}
-              {%- endfor -%}
-            {%- endif -%}
-          </div>
-        {%- endif -%}
+                  </div>
+                  <div class="popup-video" id="popup">
+                    <span class="close" onclick="closePopup()">{% render 'icon-close-black' %}</span>
+                    <div id="videoContainer" class="video-container"></div>
+                  </div>
+              {%- endcase -%}
+            {%- endfor -%}
+          {%- endif -%}
+        </div>
       </div>
       {% render 'product-media-modal', product: product, variant_images: media_to_render %}
     </div>
@@ -652,8 +635,6 @@
         </span>
       `;
     }
-
-  
 
     const buttonsWrapper = document.querySelectorAll('.wrapper-baton-and-quantity');
 
@@ -984,15 +965,15 @@
       "id": "media_position",
       "options": [
         {
-          "value": "left",
+          "value": "_reverse",
           "label": "t:sections.featured-product.settings.media_position.options__1.label"
         },
         {
-          "value": "right",
+          "value": " ",
           "label": "t:sections.featured-product.settings.media_position.options__2.label"
         }
       ],
-      "default": "left",
+      "default": " ",
       "label": "t:sections.featured-product.settings.media_position.label",
       "info": "t:sections.featured-product.settings.media_position.info"
     },

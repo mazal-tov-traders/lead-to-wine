@@ -70,27 +70,74 @@
             "heading": "Serve Team 201",
             "row_content": "<p>The first step in the Growth Track, this two hour luncheon hosted every month where our lead pastor shares the story, heart and vision of Milestone Church.<\/p>",
             "icon": "shopify:\/\/shop_images\/fi_337946.svg",
-            "label_link": "Membership Agreement",
-            "link": "shopify:\/\/products\/the-way-to-win-intensive-1"
+            "label_link": "rfrfwe",
+            "link": "shopify:\/\/pages\/campaigns"
+          }
+        },
+        "d7e24830-02bb-445d-9b00-adfa80b36f4e": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "FAQ",
+            "row_content": "<ol><li>Question 1<\/li><li>test<\/li><\/ol><p><\/p><ul><li>Question 2<\/li><li>test<\/li><\/ul>",
+            "label_link": "",
+            "link": ""
           }
         }
       },
       "block_order": [
         "abc966e0-cb1f-4683-93e9-846560ca62fa",
         "1fd3f312-bd86-4891-9cc4-47b7ccc4eae1",
-        "4ef1ff88-dcd3-456c-b07f-e060eb2aa7ae"
+        "4ef1ff88-dcd3-456c-b07f-e060eb2aa7ae",
+        "d7e24830-02bb-445d-9b00-adfa80b36f4e"
       ],
       "settings": {
-        "title": "",
-        "color_title": "#383633",
-        "sub_title": "",
-        "color_sub_title": "#383633"
+      }
+    },
+    "b93f4efb-baed-4a3a-aa9e-aba70b43d227": {
+      "type": "section-for-tabs",
+      "blocks": {
+        "d41a4d9e-a540-4b20-8728-4a6a653fb9cf": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_1f712cee-4d55-4b31-8efb-d346eaafd06f.svg",
+            "title": "Assimilation & Growth Track",
+            "color_title": "#383633",
+            "content": "The processes and tools behind the main method we use to connect people to the vision & values of Milestone Church",
+            "color_content": "#383633"
+          }
+        },
+        "c6533245-9d75-4cf2-8a54-ca4d5d455c89": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "row_content": "<p>test<\/p>",
+            "label_link": "",
+            "link": ""
+          }
+        },
+        "55d698d5-36f8-4d73-96ea-22f12cce1ff0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "test",
+            "row_content": "<p>test<\/p>",
+            "label_link": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "d41a4d9e-a540-4b20-8728-4a6a653fb9cf",
+        "c6533245-9d75-4cf2-8a54-ca4d5d455c89",
+        "55d698d5-36f8-4d73-96ea-22f12cce1ff0"
+      ],
+      "settings": {
       }
     }
   },
   "order": [
     "main",
     "d10020a7-4b2c-46b7-9add-181e0f1ae0c9",
-    "de168c7f-5447-4449-9e9c-dc92fac7500a"
+    "de168c7f-5447-4449-9e9c-dc92fac7500a",
+    "b93f4efb-baed-4a3a-aa9e-aba70b43d227"
   ]
 }

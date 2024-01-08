@@ -1,4 +1,4 @@
-<div style="background-image: url({{ section.settings.background |   image_url }}); background-size:cover" >
+<div style="background: url({{ section.settings.background | image_url }}) 100% 100% repeat;" >
 <section class="leaders-gathering">
 <div class="inner page-width">
   {% for block in section.blocks %}
@@ -19,8 +19,8 @@
           <span class="screen-reader-text">Leaders Gathering</span>
         </h1>
         <div class="leaders-gathering__text">
-          {% if block.settings.year %}
-            <p>{{ block.settings.year }}</p>
+          {% if block.settings.date %}
+            <p>{{ block.settings.date }}</p>
           {% endif %}
           {% if block.settings.text %}
             <p>{{ block.settings.text }}</p>

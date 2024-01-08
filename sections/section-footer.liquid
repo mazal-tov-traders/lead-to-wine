@@ -1,0 +1,273 @@
+<footer style="background: {{ section.settings.background-color }};" class="footer">
+    <div class="page-width">
+        <div class="footer__top">
+            {% for block in section.blocks %}
+                {% if block.type == "footer-menu" %}
+                    <div class="footer__menu-wrapper">
+                        <div class="footer__block">
+                            <ul class="footer-menu">
+                                {% if linklists['footer-menu-1'].links.size > 0 %}
+                                    {% for link in linklists['footer-menu-1'].links %}
+                                        <li class="menu-item">{{ link.title | link_to: link.url, class: 'link' }}</li>
+                                    {% endfor %}
+                                {% endif %}
+                            </ul>
+                        </div>
+                        <div class="footer__block">
+                            <ul class="footer-menu">
+                                {% if linklists['footer-menu-2'].links.size > 0 %}
+                                    {% for link in linklists['footer-menu-2'].links %}
+                                        <li class="menu-item has-sub-menu">
+                                            {{ link.title | link_to: link.url, class: 'link' }}
+                                            {% if link.links.size > 0 %}
+                                                <ul class="footer-menu__sub-menu">
+                                                    {% for sublink in link.links %}
+                                                        <li class="menu-item">
+                                                            {{ sublink.title | link_to: sublink.url, class: 'link' }}
+                                                        </li>
+                                                    {% endfor %}
+                                                </ul>
+                                            {% endif %}
+                                        </li>
+                                    {% endfor %}
+                                {% endif %}
+                            </ul>
+                        </div>
+                        <div class="footer__block">
+                            <ul class="footer-menu">
+                                <li style="color:{{ block.settings.links-color }};" class="menu-item has-sub-menu">
+                                    {% if linklists['footer-menu-3'].links.size > 0 %}
+                                        {% for link in linklists['footer-menu-3'].links %}
+                                            {{ link.title | link_to: link.url, class: 'link' }}
+                                            {% if link.links.size > 0 %}
+                                                <ul class="footer-menu__sub-menu">
+                                                    {% for sublink in link.links %}
+                                                        <li class="menu-item">
+                                                            {{ sublink.title | link_to: sublink.url, class: 'link' }}
+                                                        </li>
+                                                    {% endfor %}
+                                                </ul>
+                                            {% endif %}
+                                        {% endfor %}
+                                    {% endif %}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+
+            <div class="footer__content">
+                <div class="footer__logo">
+                    {% if section.settings.logo %}
+                        <img src="{{ section.settings.logo | image_url }}" alt="social-icon">
+                    {% endif %}
+                </div>
+                <div class="social-links">
+                    {% for block in section.blocks %}
+                        {% if block.type == 'footer-content' %}
+                            {% if block.settings.icon-color %}
+                                <a class="social-links__link" href="#">
+                                    <img class="icon-color" src="{{ block.settings.icon-color | image_url }}" alt="social-icon" aria-hidden="true">
+                                    {% if block.settings.icon %}
+                                        <img src="{{ block.settings.icon | image_url }}" alt="" aria-hidden="true">
+                                    {% endif %}
+                                    {% if block.settings.reader-text %}
+                                        <span class="screen-reader-text">{{ block.settings.reader-text }}</span>
+                                    {% endif %}
+                                </a>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__wrapper">
+                {% for block in section.blocks %}
+                    {% if block.type == "footer-bottom" %}
+                        <div class="footer__copyright">
+                            {% if block.settings.color_copy %}
+                                <p style="color:{{ block.settings.color_copy }};">{{ block.settings.footer-copyright }}</p>
+                            {% endif %}
+                            <div class="footer-links">
+                                <ul class="footer-links__items">
+                                    {% for link in linklists['footer-menu-4'].links %}
+                                        <li class="footer-links__item">
+                                            {{ link.title | link_to: link.url, class: 'footer-links__link' }}
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer__by">
+                            {% if block.settings.link-by-label and block.settings.link-by-text %}
+                                <a class="footer__by-link" href="https://www.webloftdesigns.com/">{{ block.settings.link-by-label }}
+                                    <span class="page-footer__by-name">{{ block.settings.link-by-text }}</span></a>
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</footer>
+
+{% schema %}
+    {
+      "name": "section footer",
+      "tag": "section",
+      "class": "section",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "include_margins",
+          "default": true,
+          "label": "t:sections.apps.settings.include_margins.label"
+        },
+        {
+            "type": "image_picker",
+            "id": "logo",
+            "label": "logo Image"
+          },
+          {
+            "type": "color",
+            "id": "background-color",
+            "label": "footer background",
+            "default": "#383633"
+          }
+      ],
+      "blocks": [
+        {
+        "type": "footer-menu",
+        "name": "footer-menu",
+        "limit": 25,
+        "settings": [
+            {
+            "type": "color",
+            "id": "links-color",
+            "label": "footer links color",
+            "default": "#FFF"
+          },
+          {
+            "type": "color",
+            "id": "sub-links-color",
+            "label": "footer sub links color",
+            "default": "#EAE9E5"
+          }
+        ]
+      },
+          {
+        "type": "footer-content",
+        "name": "footer content",
+        "limit": 25,
+        "settings": [
+          
+          {
+            "type": "url",
+            "id": "social_link",
+            "label": "social link"
+        },
+        {
+            "type": "image_picker",
+            "id": "icon",
+            "label": "icon"
+          },
+          {
+            "type": "image_picker",
+            "id": "icon-color",
+            "label": "icon color"
+          },
+          {
+            "type": "inline_richtext",
+            "id": "reader-text",
+            "label": "title"
+          }
+        ]
+      },
+      {
+        "type": "footer-bottom",
+        "name": "footer bottom",
+        "limit": 25,
+        "settings": [
+        
+          {
+            "type": "inline_richtext",
+            "id": "footer-copyright",
+            "label": "footer copyright"
+          },
+          {
+            "type": "color",
+            "id": "color_copy",
+            "label": "footer copyright color",
+            "default": "#383633"
+          },
+          {
+            "type": "inline_richtext",
+            "id": "link-label",
+            "label": "link label"
+          },
+    
+        
+          {
+            "type": "url",
+            "id": "button-link",
+            "label": "Button link"
+        },
+        {
+            "type": "inline_richtext",
+            "id": "link-label-2",
+            "label": "link label"
+          },
+    
+          {
+            "type": "url",
+            "id": "button-link-2",
+            "label": "Button link"
+        },
+        {
+            "type": "inline_richtext",
+            "id": "link-label-3",
+            "label": "link label"
+          },
+    
+          {
+            "type": "url",
+            "id": "button-link-3",
+            "label": "Button link"
+        },
+        {
+            "type": "color",
+            "id": "color_link_label",
+            "label": "link label color",
+            "default": "#383633"
+          },
+          
+          {
+            "type": "url",
+            "id": "link-by-url",
+            "label": "link by url"
+        },
+        {
+            "type": "inline_richtext",
+            "id": "link-by-label",
+            "label": "link by label"
+          },
+          {
+            "type": "inline_richtext",
+            "id": "link-by-text",
+            "label": "link by label text"
+          }
+        ]
+      }
+      ],
+      "presets": [
+        {
+          "name": "footer-menu",
+          "blocks": [
+          
+          ]
+        }
+      ]
+    }
+    {% endschema %}

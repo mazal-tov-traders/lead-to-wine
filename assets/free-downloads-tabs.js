@@ -25,6 +25,8 @@ if ( tabSections.length ) {
 
 			tabsContentEl.append( tab.closest('.shopify-section' ) );
 			tabsButtonsEl.append( trigger.cloneNode( true ) );
+
+			createAccordions( tabContent );
 		})
 	}
 
@@ -77,6 +79,19 @@ if ( tabSections.length ) {
 		const y = top + window.pageYOffset - headerHeight;
 
 		window.scrollTo( { top: y, behavior: 'smooth' } );
+	}
+
+	const createAccordions = ( tabContent ) => {
+		const ol = tabContent.querySelectorAll( 'ol' );
+		if ( ol.length ) {
+			ol.forEach(( list ) => {
+				list.classList.add( 'faq-accordion' );
+				const firstLi = list.querySelector('li:first-child')
+				const secondLi = list.querySelector('li:nth-child(2)')
+				firstLi.innerHTML = `<details><summary>${firstLi.textContent}</summary><div class="faq-accordion__content">${secondLi.textContent}</div></details>`;
+				secondLi.remove();
+			})
+		}
 	}
 
 	const init = () => {

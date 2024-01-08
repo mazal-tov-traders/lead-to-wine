@@ -45,7 +45,7 @@
             </div>
           {% when 'collapsible_row' %}
             <div
-              class="accordion content-container"
+              class="accordion content-container{% if block.settings.mobile_hide == true  %} mobile-hide{% endif %}"
               {{ block.shopify_attributes }}
             >
               <details
@@ -134,7 +134,7 @@
   "class": "section",
   "settings": [
     {
-      "type": "text",
+      "type": "richtext",
       "id": "trigger",
       "label": "Tab Name"
     }
@@ -177,6 +177,12 @@
       "type": "collapsible_row",
       "name": "t:sections.collapsible_content.blocks.collapsible_row.name",
       "settings": [
+        {
+          "type": "checkbox",
+          "id": "mobile_hide",
+          "default": false,
+          "label": "Mobile Hide"
+        },
         {
           "type": "text",
           "id": "heading",

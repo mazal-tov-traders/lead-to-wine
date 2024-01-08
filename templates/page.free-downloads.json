@@ -10,31 +10,6 @@
     },
     "d10020a7-4b2c-46b7-9add-181e0f1ae0c9": {
       "type": "section-tabs",
-      "blocks": {
-        "265394ac-2461-4cbc-99be-1e9270d8bb1b": {
-          "type": "tab-name",
-          "settings": {
-            "trigger": "Assimilation & Growth Track"
-          }
-        },
-        "f024e53f-6620-41f7-bb3d-fcc1c2d95336": {
-          "type": "tab-name",
-          "settings": {
-            "trigger": "Kids"
-          }
-        },
-        "6fa8356f-a1fb-4357-9bdf-542feb43f359": {
-          "type": "tab-name",
-          "settings": {
-            "trigger": "Local Outreach & Global Missions"
-          }
-        }
-      },
-      "block_order": [
-        "265394ac-2461-4cbc-99be-1e9270d8bb1b",
-        "f024e53f-6620-41f7-bb3d-fcc1c2d95336",
-        "6fa8356f-a1fb-4357-9bdf-542feb43f359"
-      ],
       "settings": {
         "title": "Free <em>Downloads<\/em>",
         "color_title": "#383633",
@@ -60,8 +35,12 @@
           "settings": {
             "heading": "Discovery 101",
             "row_content": "<p>test<\/p>",
-            "label_link": "",
-            "link": ""
+            "first_label": "",
+            "first_link": "",
+            "second_label": "",
+            "second_link": "",
+            "third_label": "",
+            "third_link": ""
           }
         },
         "4ef1ff88-dcd3-456c-b07f-e060eb2aa7ae": {
@@ -69,9 +48,12 @@
           "settings": {
             "heading": "Serve Team 201",
             "row_content": "<p>The first step in the Growth Track, this two hour luncheon hosted every month where our lead pastor shares the story, heart and vision of Milestone Church.<\/p>",
-            "icon": "shopify:\/\/shop_images\/fi_337946.svg",
-            "label_link": "rfrfwe",
-            "link": "shopify:\/\/pages\/campaigns"
+            "first_label": "",
+            "first_link": "",
+            "second_label": "",
+            "second_link": "",
+            "third_label": "",
+            "third_link": ""
           }
         },
         "d7e24830-02bb-445d-9b00-adfa80b36f4e": {
@@ -79,8 +61,12 @@
           "settings": {
             "heading": "FAQ",
             "row_content": "<ol><li>Question 1<\/li><li>test<\/li><\/ol><p><\/p><ul><li>Question 2<\/li><li>test<\/li><\/ul>",
-            "label_link": "",
-            "link": ""
+            "first_label": "",
+            "first_link": "",
+            "second_label": "",
+            "second_link": "",
+            "third_label": "",
+            "third_link": ""
           }
         }
       },
@@ -91,6 +77,7 @@
         "d7e24830-02bb-445d-9b00-adfa80b36f4e"
       ],
       "settings": {
+        "trigger": "Assimilation & Growth Track"
       }
     },
     "b93f4efb-baed-4a3a-aa9e-aba70b43d227": {
@@ -111,8 +98,12 @@
           "settings": {
             "heading": "Collapsible row",
             "row_content": "<p>test<\/p>",
-            "label_link": "",
-            "link": ""
+            "first_label": "",
+            "first_link": "",
+            "second_label": "",
+            "second_link": "",
+            "third_label": "",
+            "third_link": ""
           }
         },
         "55d698d5-36f8-4d73-96ea-22f12cce1ff0": {
@@ -120,8 +111,12 @@
           "settings": {
             "heading": "test",
             "row_content": "<p>test<\/p>",
-            "label_link": "",
-            "link": ""
+            "first_label": "",
+            "first_link": "",
+            "second_label": "",
+            "second_link": "",
+            "third_label": "",
+            "third_link": ""
           }
         }
       },
@@ -131,6 +126,41 @@
         "55d698d5-36f8-4d73-96ea-22f12cce1ff0"
       ],
       "settings": {
+        "trigger": "Local Outreach & Global Missions"
+      }
+    },
+    "6e92c376-4cd0-4342-8fc5-22e93830634e": {
+      "type": "section-for-tabs",
+      "blocks": {
+        "b4e1e96e-b46f-4861-8039-497bff856eb8": {
+          "type": "media",
+          "settings": {
+            "title": "Assimilation & Growth Track",
+            "color_title": "#383633",
+            "content": "The processes and tools behind the main method we use to connect people to the vision & values of Milestone Church",
+            "color_content": "#383633"
+          }
+        },
+        "a3334af6-f4fc-4bb9-9702-f8a10ccac3ad": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "row_content": "<p>test<\/p>",
+            "first_label": "",
+            "first_link": "",
+            "second_label": "",
+            "second_link": "",
+            "third_label": "",
+            "third_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "b4e1e96e-b46f-4861-8039-497bff856eb8",
+        "a3334af6-f4fc-4bb9-9702-f8a10ccac3ad"
+      ],
+      "settings": {
+        "trigger": "Pastoral Care"
       }
     }
   },
@@ -138,6 +168,7 @@
     "main",
     "d10020a7-4b2c-46b7-9add-181e0f1ae0c9",
     "de168c7f-5447-4449-9e9c-dc92fac7500a",
-    "b93f4efb-baed-4a3a-aa9e-aba70b43d227"
+    "b93f4efb-baed-4a3a-aa9e-aba70b43d227",
+    "6e92c376-4cd0-4342-8fc5-22e93830634e"
   ]
 }

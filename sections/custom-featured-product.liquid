@@ -94,14 +94,15 @@
         <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
           {%- for block in section.blocks -%}
             {%- case block.type -%}
-              {%- when 'image-product' -%}
+              {% comment %} german {% endcomment %}
+              {% comment %} {%- when 'image-product' -%}
                 {%- if block.settings.image_product != blank -%}
                   <img
                     src="{{ block.settings.image_product | img_url: 'original' }}"
                     alt="image"
                     class="image-product"
                   >
-                {% endif %}
+                {% endif %} {% endcomment %}
             {%- endcase -%}
           {%- endfor -%}
         </div>

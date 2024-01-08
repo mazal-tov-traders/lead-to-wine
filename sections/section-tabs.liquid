@@ -1,0 +1,76 @@
+<section class="section-tabs">
+  <div class="page-width">
+    <div class="heading-wrapper">
+      {%- if section.settings.title != blank -%}
+        <h2 class="title" style=" color: {{ section.settings.color_title }};">
+          {{ section.settings.title -}}
+        </h2>
+      {%- endif -%}
+      {%- if section.settings.sub_title != blank -%}
+        <div class="sub-title" style=" color: {{ section.settings.color_sub_title }};">
+          {{ section.settings.sub_title -}}
+        </div>
+      {%- endif -%}
+    </div>
+    <div class="section-tabs__wrapper">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'tab-name' %}
+            <div id="tabs-trigger-{{ forloop.index }}" class="tab-trigger" data-index="{{ forloop.index }}">
+              {{ block.settings.trigger }}
+            </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Section Tabs",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "color",
+      "id": "color_title",
+      "label": "Color Title",
+      "default": "#383633"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "sub_title",
+      "label": "Sub Title"
+    },
+    {
+      "type": "color",
+      "id": "color_sub_title",
+      "label": "Color Sub Title",
+      "default": "#383633"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tab-name",
+      "name": "Tab Name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "trigger",
+          "label": "Tab Name"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Section Tabs"
+    }
+  ]
+}
+{% endschema %}

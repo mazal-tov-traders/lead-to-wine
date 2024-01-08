@@ -105,7 +105,7 @@
   </div>
 </section>
 
-<script>
+{% comment %} <script>
   document.addEventListener('DOMContentLoaded', function () {
     function controlVideo(vidFunc) {
       var iframe = document.getElementsByTagName('iframe')[0].contentWindow;
@@ -141,7 +141,7 @@
 
     observer.observe(video);
   });
-</script>
+</script> {% endcomment %}
 
 <script>
   const productGallery = document.querySelector('.product-gallery');

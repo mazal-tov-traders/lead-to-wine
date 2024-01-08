@@ -1,0 +1,22 @@
+@import "../variables-and-mixins.scss";
+
+.section-tabs-heading {
+	text-align: center;
+	padding: 60px 0 50px;
+
+	.title {
+		text-transform: uppercase;
+		margin-bottom: 20px;
+
+		em,
+		i {
+			text-transform: initial;
+		}
+	}
+
+	.sub-title {
+		@include text-style-text-headline-3;
+
+		color: $color-text-second;
+	}
+}

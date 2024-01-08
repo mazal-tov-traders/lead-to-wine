@@ -1,10 +1,9 @@
 {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
 {{ 'collapsible-content.css' | asset_url | stylesheet_tag }}
 
-<section class="section-fot-tabs">
+<section class="section-tab">
   <div class="page-width">
-    <button type="button"  class="tab-trigger">{{section.settings.trigger }}</button>
-
+    <button type="button" class="tab-trigger">{{ section.settings.trigger }}</button>
 
     <div class="heading-wrapper">
       {%- if section.settings.title != blank -%}
@@ -18,20 +17,20 @@
         </div>
       {%- endif -%}
     </div>
-    <div class="section-fot-tabs__wrapper">
+    <div class="section-tab__wrapper">
       {% for block in section.blocks %}
         {% case block.type %}
           {% when 'media' %}
             <div class="image-and-title">
               {%- if block.settings.image != blank -%}
-                <div class="section-fot-tabs__image">
+                <div class="section-tab__image">
                   <img
                     src="{{ block.settings.image | img_url:  'original'}}"
                     alt=""
                   >
                 </div>
               {% endif %}
-              <div class="section-fot-tabs__titel-wrapper">
+              <div class="section-tab__title-wrapper">
                 {%- if block.settings.title != blank -%}
                   <div class="title" style=" color: {{ section.settings.color_title }};">
                     {{ block.settings.title }}
@@ -71,7 +70,54 @@
                   aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
                 >
                   {{ block.settings.row_content }}
-              
+                  {% comment %}  {% endcomment %}
+                  {%- if block.settings.first_label != blank -%}
+                    <div class="wrapper-link">
+                      {% render 'icon-pdf' %}
+                      <a
+                        {% if block.settings.first_link == blank %}
+                          role="link" aria-disabled="true"
+                        {% else %}
+                          href="{{ block.settings.first_link }}"
+                        {% endif %}
+                        class="link"
+                      >
+                        {{- block.settings.first_label | escape -}}
+                      </a>
+                    </div>
+                  {%- endif -%}
+                  {% comment %}  {% endcomment %}
+                  {%- if block.settings.second_label != blank -%}
+                    <div class="wrapper-link">
+                      {% render 'icon-pdf' %}
+                      <a
+                        {% if block.settings.second_link == blank %}
+                          role="link" aria-disabled="true"
+                        {% else %}
+                          href="{{ block.settings.second_link }}"
+                        {% endif %}
+                        class="link"
+                      >
+                        {{- block.settings.second_label | escape -}}
+                      </a>
+                    </div>
+                  {%- endif -%}
+                  {% comment %}  {% endcomment %}
+                  {%- if block.settings.third_label != blank -%}
+                    <div class="wrapper-link">
+                      {% render 'icon-pdf' %}
+                      <a
+                        {% if block.settings.third_link == blank %}
+                          role="link" aria-disabled="true"
+                        {% else %}
+                          href="{{ block.settings.third_link }}"
+                        {% endif %}
+                        class="link"
+                      >
+                        {{- block.settings.third_label | escape -}}
+                      </a>
+                    </div>
+                  {%- endif -%}
                 </div>
               </details>
             </div>
@@ -88,10 +134,10 @@
   "class": "section",
   "settings": [
     {
-        "type": "text",
-        "id": "trigger",
-        "label": "Tab Name"
-      }
+      "type": "text",
+      "id": "trigger",
+      "label": "Tab Name"
+    }
   ],
   "blocks": [
     {
@@ -144,19 +190,34 @@
           "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.row_content.label"
         },
         {
-          "type": "image_picker",
-          "id": "icon",
-          "label": "Icon For Link"
-        },
-        {
           "type": "text",
-          "id": "label_link",
-          "label": "label Link"
+          "id": "first_label",
+          "label": "label First Link"
         },
         {
           "type": "url",
-          "id": "link",
-          "label": "Link"
+          "id": "first_link",
+          "label": "First Link"
+        },
+        {
+          "type": "text",
+          "id": "second_label",
+          "label": "label Second Link"
+        },
+        {
+          "type": "url",
+          "id": "second_link",
+          "label": "Second Link"
+        },
+        {
+          "type": "text",
+          "id": "third_label",
+          "label": "label Third Link"
+        },
+        {
+          "type": "url",
+          "id": "third_link",
+          "label": "Third Link"
         }
       ]
     }

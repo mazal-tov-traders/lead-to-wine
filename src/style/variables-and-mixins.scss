@@ -178,18 +178,18 @@ $color-element-hover: #383633;
   display: flex;
   align-items: center;
   gap: 5px;
-  color: $color-colors-main;
+  color: #4d4d4e;
   transition: gap 0.3s, text-shadow 0.3s;
 
   &:hover,
   &:focus {
-    gap: 10px;
-    text-shadow: 0 0 0;
-    text-decoration: none;
+     gap: 10px;
+     text-shadow: 0 0 0;
+     text-decoration: none;
   }
 
   svg {
-    flex-shrink: 0;
+     flex-shrink: 0;
   }
 }
 
@@ -269,3 +269,8 @@ $color-element-hover: #383633;
      border-bottom: 1px solid;
   }
 }
+
+
+
+
+

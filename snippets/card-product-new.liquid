@@ -34,7 +34,8 @@
       <h2
         class="product__title {{ block.settings.heading_size }}"
         {{ block.shopify_attributes }}
-        style=" color: {{ block.settings.color_title_label }};"
+        style=" color: {{ block.settings.color_title_label }}; 
+        background: {{ product.metafields.custom.background_title | escape  }};"
       >
         {%- if product.title != blank -%}
           {{ product.title | escape }}

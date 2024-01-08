@@ -103,7 +103,7 @@
       ],
       "settings": {
         "background": "shopify:\/\/shop_images\/product-gallery-bg.jpg",
-        "title": "Seeds Campaign",
+        "title": "Unshakable Campaign",
         "color_title_label": "#ffffff",
         "description": "<p><em>Our most popular series on one of God’s primary building blocks, the seed.<\/em><\/p><p>Growth doesn’t happen overnight – our Seeds series is focused on topics like potential, momentum, multiplication, and legacy so your church can grow in the areas of life they need it most<\/p>",
         "color_description_label": "#ffffff"
@@ -151,7 +151,7 @@
         "9416f00d-a63b-4256-abcd-1c34f38b2029": {
           "type": "image-product",
           "settings": {
-            "image_product": "shopify:\/\/shop_images\/Screenshot2024-01-06at1.43.25PM.png"
+            "image_product": "shopify:\/\/shop_images\/Unshakable040.jpg"
           }
         },
         "0aa85ac3-a423-41a0-8df9-a97a28421314": {
@@ -172,7 +172,7 @@
         "0aa85ac3-a423-41a0-8df9-a97a28421314"
       ],
       "settings": {
-        "product": "seeds-kids-curriculum",
+        "product": "unshakable-campaign",
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "media_position": "",
@@ -183,7 +183,7 @@
     "2af4e7bc-7041-4030-bb56-69b216f7f6ac": {
       "type": "individual-collection-section",
       "settings": {
-        "section_collection": "seeds-campaign",
+        "section_collection": "unshakable-campaign",
         "section_header": ""
       }
     },

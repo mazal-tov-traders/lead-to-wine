@@ -50,34 +50,34 @@
             "color_text_label": "#ffffff"
           }
         },
-        "010470b0-00b6-44ba-97f3-cbdad1b0c304": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/gallery-1.jpg"
-          }
-        },
         "e44ebc8f-6a7d-4979-aa08-763d57ad589c": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SEEDS49.jpg"
+            "image": "shopify:\/\/shop_images\/MIracles023_e4c1eee6-2e4c-4cf5-9568-e8da5e114532.jpg"
           }
         },
         "18079372-3756-464c-bf85-bc13745d8d78": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SEEDS32.jpg"
+            "image": "shopify:\/\/shop_images\/MIracles014.jpg"
+          }
+        },
+        "010470b0-00b6-44ba-97f3-cbdad1b0c304": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot2024-01-08at1.44.47PM.png"
           }
         },
         "91f879ff-16c4-467d-8aa8-fb36eb27d3d3": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screenshot_2024-01-08_at_1.29.55_PM.png"
+            "image": "shopify:\/\/shop_images\/gallery-4.jpg"
           }
         },
         "f7060805-4bca-4055-9878-ceec40b4fefa": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screenshot_2024-01-08_at_1.30.07_PM.png"
+            "image": "shopify:\/\/shop_images\/gallery-5.jpg"
           }
         },
         "1f4752b8-bda9-4564-91d9-d354e2fbee72": {
@@ -94,18 +94,18 @@
         "fbce13a9-7b88-49ae-af8c-745e7076b802",
         "803601f5-f386-470e-9318-dad598ec3a9f",
         "198c2e99-c95d-4b1e-aab2-02a3527ac9c2",
-        "010470b0-00b6-44ba-97f3-cbdad1b0c304",
         "e44ebc8f-6a7d-4979-aa08-763d57ad589c",
         "18079372-3756-464c-bf85-bc13745d8d78",
+        "010470b0-00b6-44ba-97f3-cbdad1b0c304",
         "91f879ff-16c4-467d-8aa8-fb36eb27d3d3",
         "f7060805-4bca-4055-9878-ceec40b4fefa",
         "1f4752b8-bda9-4564-91d9-d354e2fbee72"
       ],
       "settings": {
-        "background": "shopify:\/\/shop_images\/product-gallery-bg.jpg",
-        "title": "Seeds Campaign",
+        "background": "shopify:\/\/shop_images\/faq-banner.jpg",
+        "title": "Miracles Campaign",
         "color_title_label": "#ffffff",
-        "description": "<p><em>Our most popular series on one of God’s primary building blocks, the seed.<\/em><\/p><p>Growth doesn’t happen overnight – our Seeds series is focused on topics like potential, momentum, multiplication, and legacy so your church can grow in the areas of life they need it most<\/p>",
+        "description": "<p><em>Take your church on a journey through Jesus’ most powerful miracles.<\/em><\/p><p>He restored sight to the blind, helped the lame walk, calmed the seas, and multiplied one boy’s lunch to feed thousands. The Bible is filled with miracles… but what is God trying to show us? This study shows your church how God shows up in our lives and meets us in our moment of need.<\/p>",
         "color_description_label": "#ffffff"
       }
     },
@@ -151,7 +151,7 @@
         "9416f00d-a63b-4256-abcd-1c34f38b2029": {
           "type": "image-product",
           "settings": {
-            "image_product": "shopify:\/\/shop_images\/Screenshot2024-01-06at1.43.25PM.png"
+            "image_product": "shopify:\/\/shop_images\/Screenshot_2024-01-08_at_1.42.25_PM.png"
           }
         },
         "0aa85ac3-a423-41a0-8df9-a97a28421314": {
@@ -172,7 +172,7 @@
         "0aa85ac3-a423-41a0-8df9-a97a28421314"
       ],
       "settings": {
-        "product": "seeds-kids-curriculum",
+        "product": "miracles-campaign",
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "media_position": "",
@@ -183,7 +183,7 @@
     "2af4e7bc-7041-4030-bb56-69b216f7f6ac": {
       "type": "individual-collection-section",
       "settings": {
-        "section_collection": "seeds-campaign",
+        "section_collection": "miracles-campaign",
         "section_header": ""
       }
     },
@@ -210,9 +210,9 @@
           "settings": {
             "label": "INTRO one",
             "color_label": "#ffffff",
-            "background_color_label": "#94a06f",
+            "background_color_label": "#595035",
             "item_title": "POTENTIAL",
-            "color_item_title": "#94a06f",
+            "color_item_title": "#595035",
             "background_color_item_title": "#eae9e5",
             "text": "Realizing our potential",
             "color_text": "#383633"
@@ -223,9 +223,9 @@
           "settings": {
             "label": "INTRO two",
             "color_label": "#ffffff",
-            "background_color_label": "#94a06f",
+            "background_color_label": "#595035",
             "item_title": "PROCESS",
-            "color_item_title": "#94a06f",
+            "color_item_title": "#595035",
             "background_color_item_title": "#eae9e5",
             "text": "Creating a healthy environment to hear from God",
             "color_text": "#383633"
@@ -236,9 +236,9 @@
           "settings": {
             "label": "WEEK ONE",
             "color_label": "#ffffff",
-            "background_color_label": "#94a06f",
+            "background_color_label": "#595035",
             "item_title": "RESISTANCE",
-            "color_item_title": "#94a06f",
+            "color_item_title": "#595035",
             "background_color_item_title": "#eae9e5",
             "text": "Handling adversity",
             "color_text": "#383633"
@@ -249,9 +249,9 @@
           "settings": {
             "label": "WEEK two",
             "color_label": "#ffffff",
-            "background_color_label": "#94a06f",
+            "background_color_label": "#595035",
             "item_title": "FAITH",
-            "color_item_title": "#94a06f",
+            "color_item_title": "#595035",
             "background_color_item_title": "#eae9e5",
             "text": "Growing in faith",
             "color_text": "#383633"
@@ -260,11 +260,11 @@
         "46cb10c1-09c3-44b5-8ad5-5fc1ab4c61bf": {
           "type": "overview-item",
           "settings": {
-            "label": "WEEK three",
+            "label": "WEEK two",
             "color_label": "#ffffff",
-            "background_color_label": "#94a06f",
+            "background_color_label": "#595035",
             "item_title": "MOMENTUM",
-            "color_item_title": "#94a06f",
+            "color_item_title": "#595035",
             "background_color_item_title": "#eae9e5",
             "text": "Three questions to ask about sowing and reaping",
             "color_text": "#383633"
@@ -275,9 +275,9 @@
           "settings": {
             "label": "WEEK FOUR",
             "color_label": "#ffffff",
-            "background_color_label": "#94a06f",
+            "background_color_label": "#595035",
             "item_title": "TRANSFORMATION",
-            "color_item_title": "#94a06f",
+            "color_item_title": "#595035",
             "background_color_item_title": "#eae9e5",
             "text": "Walking in your new nature",
             "color_text": "#383633"
@@ -288,9 +288,9 @@
           "settings": {
             "label": "WEEK FIVE",
             "color_label": "#ffffff",
-            "background_color_label": "#94a06f",
+            "background_color_label": "#595035",
             "item_title": "MULTIPLICATION",
-            "color_item_title": "#94a06f",
+            "color_item_title": "#595035",
             "background_color_item_title": "#eae9e5",
             "text": "Generosity and multiplication",
             "color_text": "#383633"
@@ -301,9 +301,9 @@
           "settings": {
             "label": "WEEksix",
             "color_label": "#ffffff",
-            "background_color_label": "#94a06f",
+            "background_color_label": "#595035",
             "item_title": "LEGACY",
-            "color_item_title": "#94a06f",
+            "color_item_title": "#595035",
             "background_color_item_title": "#eae9e5",
             "text": "Leaving a legacy",
             "color_text": "#383633"
@@ -326,62 +326,12 @@
         "color_label": "#383633"
       }
     },
-    "a7835f92-4df9-4df4-87fb-858f1bfba4a7": {
-      "type": "video-and-content",
-      "blocks": {
-        "9ec0ed9a-4499-4ebe-9e7b-250cb02f2869": {
-          "type": "content",
-          "settings": {
-            "title": "Promo Video",
-            "color_title_label": "#383633",
-            "sub_title": "",
-            "color_sub_title": "#918677"
-          }
-        },
-        "8d863d8f-8f32-4152-9bf7-ba09f49af712": {
-          "type": "media",
-          "settings": {
-            "image_video": "shopify:\/\/shop_images\/Screenshot_2024-01-08_at_1.35.08_PM.png",
-            "image_youtube": "shopify:\/\/shop_images\/fi_1384060.svg",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
-          }
-        }
-      },
-      "block_order": [
-        "9ec0ed9a-4499-4ebe-9e7b-250cb02f2869",
-        "8d863d8f-8f32-4152-9bf7-ba09f49af712"
-      ],
+    "bc004a06-4f99-4dd2-ab5f-1c502b5bae37": {
+      "type": "video",
       "settings": {
-        "position": ""
-      }
-    },
-    "d94fc19a-e4c4-4c17-b1f9-c0cfc2e734a2": {
-      "type": "video-and-content",
-      "blocks": {
-        "1859d013-09ad-48c1-b042-f60dda23888e": {
-          "type": "content",
-          "settings": {
-            "title": "Kids Song & Lyric Video",
-            "color_title_label": "#383633",
-            "sub_title": "",
-            "color_sub_title": "#918677"
-          }
-        },
-        "68ba616b-def6-442a-bfb7-f8a226d0ec96": {
-          "type": "media",
-          "settings": {
-            "image_video": "shopify:\/\/shop_images\/video-poster-2_aac26289-9b39-4b89-8add-1d0cf5fc1ae0.jpg",
-            "image_youtube": "shopify:\/\/shop_images\/fi_1384060.svg",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=r2-H1JAV5X8"
-          }
-        }
-      },
-      "block_order": [
-        "1859d013-09ad-48c1-b042-f60dda23888e",
-        "68ba616b-def6-442a-bfb7-f8a226d0ec96"
-      ],
-      "settings": {
-        "position": "_reverse"
+        "image": "shopify:\/\/shop_images\/seeds-logo.png",
+        "screen-reader-text": "Seeds Tomorrow Starts Today",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
       }
     },
     "b14a2295-d2ef-410a-9000-7ed035ebdcf8": {
@@ -392,7 +342,7 @@
           "settings": {
             "title": "Message Bumper",
             "color_title_label": "#383633",
-            "sub_title": "",
+            "sub_title": "Lorem ipsum dolor sit amet consectetur. Gravida sed turpis lorem et auctor. Vel vehicula eu nec laoreet laoreet elementum arcu rhoncus aliquam.",
             "color_sub_title": "#918677"
           }
         },
@@ -412,6 +362,35 @@
       "settings": {
         "position": ""
       }
+    },
+    "d94fc19a-e4c4-4c17-b1f9-c0cfc2e734a2": {
+      "type": "video-and-content",
+      "blocks": {
+        "1859d013-09ad-48c1-b042-f60dda23888e": {
+          "type": "content",
+          "settings": {
+            "title": "Kids Song & Lyric",
+            "color_title_label": "#383633",
+            "sub_title": "Lorem ipsum dolor sit amet consectetur. Gravida sed turpis lorem et auctor. Vel vehicula eu nec laoreet laoreet elementum arcu rhoncus aliquam.",
+            "color_sub_title": "#918677"
+          }
+        },
+        "68ba616b-def6-442a-bfb7-f8a226d0ec96": {
+          "type": "media",
+          "settings": {
+            "image_video": "shopify:\/\/shop_images\/video-poster-2_aac26289-9b39-4b89-8add-1d0cf5fc1ae0.jpg",
+            "image_youtube": "shopify:\/\/shop_images\/fi_1384060.svg",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        }
+      },
+      "block_order": [
+        "1859d013-09ad-48c1-b042-f60dda23888e",
+        "68ba616b-def6-442a-bfb7-f8a226d0ec96"
+      ],
+      "settings": {
+        "position": "_reverse"
+      }
     }
   },
   "order": [
@@ -420,8 +399,8 @@
     "2af4e7bc-7041-4030-bb56-69b216f7f6ac",
     "main",
     "e1fed952-e66e-462c-b3d6-d4469cbb7762",
-    "a7835f92-4df9-4df4-87fb-858f1bfba4a7",
-    "d94fc19a-e4c4-4c17-b1f9-c0cfc2e734a2",
-    "b14a2295-d2ef-410a-9000-7ed035ebdcf8"
+    "bc004a06-4f99-4dd2-ab5f-1c502b5bae37",
+    "b14a2295-d2ef-410a-9000-7ed035ebdcf8",
+    "d94fc19a-e4c4-4c17-b1f9-c0cfc2e734a2"
   ]
 }

@@ -50,22 +50,22 @@
             "color_text_label": "#ffffff"
           }
         },
-        "010470b0-00b6-44ba-97f3-cbdad1b0c304": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/gallery-1.jpg"
-          }
-        },
         "e44ebc8f-6a7d-4979-aa08-763d57ad589c": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SEEDS49.jpg"
+            "image": "shopify:\/\/shop_images\/Promises102.jpg"
+          }
+        },
+        "010470b0-00b6-44ba-97f3-cbdad1b0c304": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MSresources028.jpg"
           }
         },
         "18079372-3756-464c-bf85-bc13745d8d78": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SEEDS32.jpg"
+            "image": "shopify:\/\/shop_images\/Promises098.jpg"
           }
         },
         "91f879ff-16c4-467d-8aa8-fb36eb27d3d3": {
@@ -94,19 +94,19 @@
         "fbce13a9-7b88-49ae-af8c-745e7076b802",
         "803601f5-f386-470e-9318-dad598ec3a9f",
         "198c2e99-c95d-4b1e-aab2-02a3527ac9c2",
-        "010470b0-00b6-44ba-97f3-cbdad1b0c304",
         "e44ebc8f-6a7d-4979-aa08-763d57ad589c",
+        "010470b0-00b6-44ba-97f3-cbdad1b0c304",
         "18079372-3756-464c-bf85-bc13745d8d78",
         "91f879ff-16c4-467d-8aa8-fb36eb27d3d3",
         "f7060805-4bca-4055-9878-ceec40b4fefa",
         "1f4752b8-bda9-4564-91d9-d354e2fbee72"
       ],
       "settings": {
-        "background": "shopify:\/\/shop_images\/product-gallery-bg.jpg",
-        "title": "Seeds Campaign",
-        "color_title_label": "#ffffff",
+        "background": "shopify:\/\/shop_images\/Screenshot_2024-01-05_at_3.44.52_PM.png",
+        "title": "Promises Campaign",
+        "color_title_label": "#212f41",
         "description": "<p><em>Our most popular series on one of God’s primary building blocks, the seed.<\/em><\/p><p>Growth doesn’t happen overnight – our Seeds series is focused on topics like potential, momentum, multiplication, and legacy so your church can grow in the areas of life they need it most<\/p>",
-        "color_description_label": "#ffffff"
+        "color_description_label": "#212f41"
       }
     },
     "ee5d7643-9aae-4e94-adc8-d5a7f6b94e71": {
@@ -151,7 +151,7 @@
         "9416f00d-a63b-4256-abcd-1c34f38b2029": {
           "type": "image-product",
           "settings": {
-            "image_product": "shopify:\/\/shop_images\/Screenshot2024-01-06at1.43.25PM.png"
+            "image_product": "shopify:\/\/shop_images\/Promises105_e5bb5cd8-442b-4e73-8bf8-935292c1d532.jpg"
           }
         },
         "0aa85ac3-a423-41a0-8df9-a97a28421314": {
@@ -172,7 +172,7 @@
         "0aa85ac3-a423-41a0-8df9-a97a28421314"
       ],
       "settings": {
-        "product": "seeds-kids-curriculum",
+        "product": "promises-campaign",
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "media_position": "",
@@ -183,7 +183,7 @@
     "2af4e7bc-7041-4030-bb56-69b216f7f6ac": {
       "type": "individual-collection-section",
       "settings": {
-        "section_collection": "seeds-campaign",
+        "section_collection": "promises-campaign",
         "section_header": ""
       }
     },
@@ -210,11 +210,11 @@
           "settings": {
             "label": "INTRO one",
             "color_label": "#ffffff",
-            "background_color_label": "#94a06f",
-            "item_title": "POTENTIAL",
-            "color_item_title": "#94a06f",
+            "background_color_label": "#212f41",
+            "item_title": "trust in god's promises",
+            "color_item_title": "#212f41",
             "background_color_item_title": "#eae9e5",
-            "text": "Realizing our potential",
+            "text": "",
             "color_text": "#383633"
           }
         },
@@ -223,11 +223,11 @@
           "settings": {
             "label": "INTRO two",
             "color_label": "#ffffff",
-            "background_color_label": "#94a06f",
-            "item_title": "PROCESS",
-            "color_item_title": "#94a06f",
+            "background_color_label": "#212f41",
+            "item_title": "receiving god's promises",
+            "color_item_title": "#212f41",
             "background_color_item_title": "#eae9e5",
-            "text": "Creating a healthy environment to hear from God",
+            "text": "",
             "color_text": "#383633"
           }
         },
@@ -236,11 +236,11 @@
           "settings": {
             "label": "WEEK ONE",
             "color_label": "#ffffff",
-            "background_color_label": "#94a06f",
-            "item_title": "RESISTANCE",
-            "color_item_title": "#94a06f",
+            "background_color_label": "#212f41",
+            "item_title": "god's promises to me",
+            "color_item_title": "#212f41",
             "background_color_item_title": "#eae9e5",
-            "text": "Handling adversity",
+            "text": "",
             "color_text": "#383633"
           }
         },
@@ -249,11 +249,11 @@
           "settings": {
             "label": "WEEK two",
             "color_label": "#ffffff",
-            "background_color_label": "#94a06f",
-            "item_title": "FAITH",
-            "color_item_title": "#94a06f",
+            "background_color_label": "#212f41",
+            "item_title": "standing on god's promises",
+            "color_item_title": "#212f41",
             "background_color_item_title": "#eae9e5",
-            "text": "Growing in faith",
+            "text": "",
             "color_text": "#383633"
           }
         },
@@ -262,11 +262,11 @@
           "settings": {
             "label": "WEEK three",
             "color_label": "#ffffff",
-            "background_color_label": "#94a06f",
-            "item_title": "MOMENTUM",
-            "color_item_title": "#94a06f",
+            "background_color_label": "#212f41",
+            "item_title": "god's promise for guilt & failure",
+            "color_item_title": "#212f41",
             "background_color_item_title": "#eae9e5",
-            "text": "Three questions to ask about sowing and reaping",
+            "text": "",
             "color_text": "#383633"
           }
         },
@@ -275,11 +275,11 @@
           "settings": {
             "label": "WEEK FOUR",
             "color_label": "#ffffff",
-            "background_color_label": "#94a06f",
-            "item_title": "TRANSFORMATION",
-            "color_item_title": "#94a06f",
+            "background_color_label": "#212f41",
+            "item_title": "god's promises for marriage & family",
+            "color_item_title": "#212f41",
             "background_color_item_title": "#eae9e5",
-            "text": "Walking in your new nature",
+            "text": "",
             "color_text": "#383633"
           }
         },
@@ -288,24 +288,24 @@
           "settings": {
             "label": "WEEK FIVE",
             "color_label": "#ffffff",
-            "background_color_label": "#94a06f",
-            "item_title": "MULTIPLICATION",
-            "color_item_title": "#94a06f",
+            "background_color_label": "#212f41",
+            "item_title": "god's promise for lonliness",
+            "color_item_title": "#212f41",
             "background_color_item_title": "#eae9e5",
-            "text": "Generosity and multiplication",
+            "text": "",
             "color_text": "#383633"
           }
         },
         "b0a0a2f7-ef66-4c8f-abf8-24e82cc7c01a": {
           "type": "overview-item",
           "settings": {
-            "label": "WEEksix",
+            "label": "WEEk six",
             "color_label": "#ffffff",
-            "background_color_label": "#94a06f",
-            "item_title": "LEGACY",
-            "color_item_title": "#94a06f",
+            "background_color_label": "#212f41",
+            "item_title": "god's promise for pain & challenges",
+            "color_item_title": "#212f41",
             "background_color_item_title": "#eae9e5",
-            "text": "Leaving a legacy",
+            "text": "",
             "color_text": "#383633"
           }
         }

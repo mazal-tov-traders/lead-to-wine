@@ -87,9 +87,7 @@
                 {% for block in section.blocks %}
                     {% if block.type == "footer-bottom" %}
                         <div class="footer__copyright">
-                            {% if block.settings.color_copy %}
                                 <p style="color:{{ block.settings.color_copy }};">{{ block.settings.footer-copyright }}</p>
-                            {% endif %}
                             <div class="footer-links">
                                 <ul class="footer-links__items">
                                     {% for link in linklists['footer-menu-4'].links %}
@@ -100,6 +98,7 @@
                                 </ul>
                             </div>
                         </div>
+                        </div>
                         <div class="footer__by">
                             {% if block.settings.link-by-label and block.settings.link-by-text %}
                                 <a class="footer__by-link" href="https://www.webloftdesigns.com/">{{ block.settings.link-by-label }}
@@ -108,7 +107,6 @@
                         </div>
                     {% endif %}
                 {% endfor %}
-            </div>
         </div>
     </div>
 </footer>
@@ -202,47 +200,7 @@
             "label": "footer copyright color",
             "default": "#383633"
           },
-          {
-            "type": "inline_richtext",
-            "id": "link-label",
-            "label": "link label"
-          },
-    
         
-          {
-            "type": "url",
-            "id": "button-link",
-            "label": "Button link"
-        },
-        {
-            "type": "inline_richtext",
-            "id": "link-label-2",
-            "label": "link label"
-          },
-    
-          {
-            "type": "url",
-            "id": "button-link-2",
-            "label": "Button link"
-        },
-        {
-            "type": "inline_richtext",
-            "id": "link-label-3",
-            "label": "link label"
-          },
-    
-          {
-            "type": "url",
-            "id": "button-link-3",
-            "label": "Button link"
-        },
-        {
-            "type": "color",
-            "id": "color_link_label",
-            "label": "link label color",
-            "default": "#383633"
-          },
-          
           {
             "type": "url",
             "id": "link-by-url",

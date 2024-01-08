@@ -1,0 +1,44 @@
+<div class="page-width">
+    <h1 class="title">Please fill out the interest form below to receive information about coaching opportunities.</h1>
+    <div class="faq-form-wraper">
+
+    </div>
+</div>
+
+{% schema %}
+    {
+      "name": "faq",
+      "tag": "section",
+      "class": "section topics",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "include_margins",
+          "default": true,
+          "label": "t:sections.apps.settings.include_margins.label"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "section-title",
+          "label": "section title"
+        },
+        {
+          "type": "color",
+          "id": "color_title_label",
+          "label": "Color Title Label",
+          "default": "#383633"
+        }
+      ],
+      "blocks": [
+     
+      ],
+      "presets": [
+        {
+          "name": "FAQ",
+          "blocks": [
+              
+          ]
+        }
+      ]
+    }
+{% endschema %}

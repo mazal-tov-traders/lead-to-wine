@@ -2,8 +2,80 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "6bf4f3ef-c55e-4677-be4d-30849351ed00": {
+      "type": "section-footer",
+      "blocks": {
+        "eec20432-c79e-4098-a6d4-b204ecde4ba8": {
+          "type": "footer-menu",
+          "settings": {
+            "links-color": "#ffffff",
+            "sub-links-color": "#eae9e5"
+          }
+        },
+        "df82fa88-f4e2-4ad2-834c-74ca72b507e4": {
+          "type": "footer-content",
+          "settings": {
+            "social_link": "",
+            "icon": "shopify:\/\/shop_images\/youtube.svg",
+            "icon-color": "shopify:\/\/shop_images\/youtube-color.svg",
+            "reader-text": ""
+          }
+        },
+        "622b6c4a-e1a9-45bd-80c9-68e80b9eeb3e": {
+          "type": "footer-content",
+          "settings": {
+            "social_link": "",
+            "icon": "shopify:\/\/shop_images\/instagram.svg",
+            "icon-color": "shopify:\/\/shop_images\/instagram-color.svg",
+            "reader-text": ""
+          }
+        },
+        "0765aa86-dc97-40e0-be86-7c7bb3ae5f80": {
+          "type": "footer-content",
+          "settings": {
+            "social_link": "",
+            "icon": "shopify:\/\/shop_images\/facebook.svg",
+            "icon-color": "shopify:\/\/shop_images\/facebook-color.svg",
+            "reader-text": ""
+          }
+        },
+        "759a4895-4078-4fc5-81d5-3f7291b353b2": {
+          "type": "footer-content",
+          "settings": {
+            "social_link": "",
+            "icon": "shopify:\/\/shop_images\/linkedin.svg",
+            "icon-color": "shopify:\/\/shop_images\/linkedin-color.svg",
+            "reader-text": ""
+          }
+        },
+        "bba465c9-4c90-4761-a861-8a3e721c9165": {
+          "type": "footer-bottom",
+          "settings": {
+            "footer-copyright": "© Copyright 2023 Lead To Win. All Rights Reserved.",
+            "color_copy": "#c6c5c1",
+            "link-by-url": "",
+            "link-by-label": "Dallas and Plano Web Design Agency:",
+            "link-by-text": "Web Loft Designs"
+          }
+        }
+      },
+      "block_order": [
+        "eec20432-c79e-4098-a6d4-b204ecde4ba8",
+        "df82fa88-f4e2-4ad2-834c-74ca72b507e4",
+        "622b6c4a-e1a9-45bd-80c9-68e80b9eeb3e",
+        "0765aa86-dc97-40e0-be86-7c7bb3ae5f80",
+        "759a4895-4078-4fc5-81d5-3f7291b353b2",
+        "bba465c9-4c90-4761-a861-8a3e721c9165"
+      ],
+      "settings": {
+        "include_margins": true,
+        "logo": "shopify:\/\/shop_images\/Lead_to_Win_1_9df2887f-ffce-4482-b5c1-6585b5890919.png",
+        "background-color": "#383633"
+      }
+    },
     "footer": {
       "type": "footer",
+      "disabled": true,
       "settings": {
         "color_scheme": "inverse",
         "newsletter_enable": false,
@@ -21,6 +93,7 @@
     }
   },
   "order": [
+    "6bf4f3ef-c55e-4677-be4d-30849351ed00",
     "footer"
   ]
 }

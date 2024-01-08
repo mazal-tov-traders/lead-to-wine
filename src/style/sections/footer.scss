@@ -213,13 +213,16 @@
 
 	.footer-links {
 		&__items {
-			list-style-type: none;
-			padding: 0;
-			margin: 0;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-		}
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            @media ($lg) {
+                justify-content: flex-start;
+             }
+        }
 
 		&__item {
 			&:not(:last-child) {

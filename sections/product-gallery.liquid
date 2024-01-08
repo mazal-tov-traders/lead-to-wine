@@ -1,0 +1,308 @@
+{{ 'video-section.css' | asset_url | stylesheet_tag }}
+{{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+{% for block in section.blocks %}
+  {% case block.type %}
+    {% when 'video' %}
+      {%- liquid
+        assign video_id = block.settings.video.id | default: block.settings.video_url.id
+      -%}
+  {% endcase %}
+{% endfor %}
+
+<section class="product-gallery">
+  <img class="object-fit object-fit-cover" src="{{ section.settings.background  | img_url:  'original' }}" alt="">
+  <div class="page-width">
+    <div class="product-gallery__wrapper">
+      <div class="product-gallery__gallery">
+        <div class="gallery">
+          <div class="gallery__items">
+            {% for block in section.blocks %}
+              {% case block.type %}
+                {% when 'image' %}
+                  {%- if block.settings.image != blank -%}
+                    <div class="gallery__item">
+                      <img class="gallery__image" src="{{ block.settings.image  | img_url:  'original' }}" alt="">
+                    </div>
+                  {% endif %}
+                {% when 'video' %}
+                  <div class="gallery__item">
+                    <div id="iframe">
+                      <iframe
+                        src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1&mute=1{{ loop }}"
+                        class="js-youtube"
+                        allow="autoplay; encrypted-media"
+                        allowfullscreen=""
+                      ></iframe>
+                    </div>
+                  </div>
+              {% endcase %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      <div class="product-gallery__content">
+        {%- if section.settings.title != blank -%}
+          <h1 class="title" style=" color: {{ section.settings.color_title_label }};">
+            {{ section.settings.title -}}
+          </h1>
+        {%- endif -%}
+        {%- if section.settings.description != blank -%}
+          <div class="product-gallery__description" style=" color: {{ section.settings.color_description_label }};">
+            {{ section.settings.description -}}
+          </div>
+        {%- endif -%}
+
+        <div class="product-gallery__content-wrap">
+          {% for block in section.blocks %}
+            {% case block.type %}
+              {% when 'sub-title' %}
+                {%- if block.settings.sub_title != blank -%}
+                  <h2 class="product-gallery__sub-title" style=" color: {{ section.settings.color_sub_title_label }};">
+                    {{ block.settings.sub_title }}
+                  </h2>
+                {% endif %}
+              {% when 'icon-and-text' %}
+                <ul>
+                  <li>
+                    {%- if block.settings.icon != blank -%}
+                      <img
+                        class="product-gallery__icon"
+                        src="{{ block.settings.icon | img_url:  'original' }}"
+                        alt=""
+                      >
+                    {% endif %}
+                    {%- if block.settings.text != blank -%}
+                      <span style=" color: {{block.settings.color_text_label }};">{{ block.settings.text }}</span>
+                    {% endif %}
+                  </li>
+                </ul>
+            {% endcase %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'button' %}
+          {%- if block.settings.link_label != blank -%}
+            <div class="product-gallery__btn">
+              <a
+                {% if block.settings.link == blank %}
+                  role="link" aria-disabled="true"
+                {% else %}
+                  href="{{ block.settings.link }}"
+                {% endif %}
+                style=" color:{{ block.settings.color_link_label }};"
+
+                class="btn"
+              >
+                {{- block.settings.link_label | escape -}}
+              </a>
+            </div>
+          {%- endif -%}
+      {% endcase %}
+    {% endfor %}
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    function controlVideo(vidFunc) {
+      var iframe = document.getElementsByTagName('iframe')[0].contentWindow;
+      iframe.postMessage('{"event":"command","func":"' + vidFunc + '","args":""}', '*');
+    }
+
+    var video = document.getElementById('iframe');
+    var isPlaying = false;
+
+    var options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5,
+    };
+
+    var observer = new IntersectionObserver(handleIntersect, options);
+
+    function handleIntersect(entries, observer) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          if (!isPlaying) {
+            controlVideo('playVideo');
+            isPlaying = true;
+          }
+        } else {
+          if (isPlaying) {
+            controlVideo('pauseVideo');
+            isPlaying = false;
+          }
+        }
+      });
+    }
+
+    observer.observe(video);
+  });
+</script>
+
+<script>
+  const productGallery = document.querySelector('.product-gallery');
+
+  if (productGallery) {
+    const gallery = productGallery.querySelector('.gallery');
+    const parent = gallery.querySelector('.gallery__items');
+    const galleryItems = gallery.querySelectorAll('.gallery__item');
+
+    parent.classList.add('parent');
+
+    if (galleryItems.length) {
+      const mainItemEl = document.createElement('div');
+      const cloneItems = document.createElement('div');
+      mainItemEl.classList.add('gallery__main');
+      cloneItems.classList.add('gallery__items');
+
+      gallery.append(mainItemEl, cloneItems);
+      mainItemEl.append(galleryItems[0]);
+
+      galleryItems.forEach((item) => {
+        const galleryButton = document.createElement('button');
+        galleryButton.setAttribute('type', 'button');
+        galleryButton.classList.add('gallery__item');
+        galleryButton.innerHTML = item.innerHTML;
+        cloneItems.append(galleryButton);
+
+        galleryButton.addEventListener('click', () => {
+          const mainItem = mainItemEl.querySelector('.gallery__item');
+          mainItem.innerHTML = galleryButton.innerHTML;
+        });
+      });
+
+      parent.remove();
+    }
+  }
+</script>
+
+{% schema %}
+{
+  "name": "Product Gallery",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background",
+      "label": "Background"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "color",
+      "id": "color_title_label",
+      "label": "Color Title Label",
+      "default": "#fff"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "color",
+      "id": "color_description_label",
+      "label": "Color Description Label",
+      "default": "#fff"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "limit": 5,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    },
+    {
+      "type": "video",
+      "name": "Video",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "video_url",
+          "id": "video_url",
+          "accept": ["youtube", "vimeo"],
+          "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+          "label": "t:sections.video.settings.video_url.label",
+          "info": "t:sections.video.settings.video_url.info"
+        }
+      ]
+    },
+    {
+      "type": "sub-title",
+      "name": "Sub Title",
+      "settings": [
+        {
+          "type": "text",
+          "id": "sub_title",
+          "label": "sub-title"
+        },
+        {
+          "type": "color",
+          "id": "color_sub_title_label",
+          "label": "Color Sub Title Label",
+          "default": "#fff"
+        }
+      ]
+    },
+    {
+      "type": "icon-and-text",
+      "name": "Icon And Text",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "color",
+          "id": "color_text_label",
+          "label": "Color Text Label",
+          "default": "#fff"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Button",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "link_label",
+          "label": "link label"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Gallery"
+    }
+  ]
+}
+{% endschema %}

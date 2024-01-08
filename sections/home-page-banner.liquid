@@ -9,7 +9,7 @@
 	<div class="page-width inner">
         {% for block in section.blocks %}
             {% if block.type == "banner-text" %}
-              <h1 style="color: {{ block.settings.color_title_label }}; {% if block.settings.align_content.value == "center" %} margin-left:auto; margin-right:auto;{% endif %}" class="home-page-banner__title">
+              <h1 style="color: {{ block.settings.color_title_label }}; {% if block.settings.align_content == "center" %} margin-left:auto; margin-right:auto;{% endif %}" class="home-page-banner__title">
                 {% if block.settings.title-one %}
                   {{ block.settings.title-one }}
                 {% endif %}

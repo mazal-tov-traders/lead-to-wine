@@ -11,6 +11,24 @@
     "d10020a7-4b2c-46b7-9add-181e0f1ae0c9": {
       "type": "section-tabs",
       "blocks": {
+        "265394ac-2461-4cbc-99be-1e9270d8bb1b": {
+          "type": "tab-name",
+          "settings": {
+            "trigger": "Assimilation & Growth Track"
+          }
+        },
+        "f024e53f-6620-41f7-bb3d-fcc1c2d95336": {
+          "type": "tab-name",
+          "settings": {
+            "trigger": "Kids"
+          }
+        },
+        "6fa8356f-a1fb-4357-9bdf-542feb43f359": {
+          "type": "tab-name",
+          "settings": {
+            "trigger": "Local Outreach & Global Missions"
+          }
+        }
       },
       "block_order": [
         "265394ac-2461-4cbc-99be-1e9270d8bb1b",

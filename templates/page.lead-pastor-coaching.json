@@ -4,41 +4,42 @@
       "type": "main-page",
       "disabled": true,
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "6ba24a52-caed-4d7a-a385-4282dde32197": {
-      "type": "banner",
+    "80a6bd69-f104-43d7-947c-ec4fcec801e4": {
+      "type": "home-page-banner",
       "blocks": {
-        "0d90c792-3b56-4038-9575-42a9ccd3b3e0": {
-          "type": "title",
+        "02fc4c3e-1227-42ff-86fc-2966db1592de": {
+          "type": "banner-text",
           "settings": {
-            "title": "Lead Pastor Coaching",
-            "color_title_label": "#fff"
+            "title-one": "<p>LEAD PASTOR COACHING<\/p>",
+            "color_title_label": "#eae9e5",
+            "align_content": "center"
           }
         }
       },
       "block_order": [
-        "0d90c792-3b56-4038-9575-42a9ccd3b3e0"
+        "02fc4c3e-1227-42ff-86fc-2966db1592de"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Coaching_Header_v1_9c96ee32-91b2-4021-aeb4-95cf5ede9cbb.jpg"
+        "include_margins": true,
+        "background": "shopify:\/\/shop_images\/Rectangle_4133714_9.jpg"
       }
     },
-    "be1473e9-794c-44dd-9dd6-3ad28153b724": {
-      "type": "custom-liquid",
+    "8adf3fe2-ac05-40ed-9223-69c8c68ffa6b": {
+      "type": "gaq-form",
       "settings": {
-        "custom_liquid": "<script charset=\"utf-8\" type=\"text\/javascript\" src=\"\/\/js.hsforms.net\/forms\/embed\/v2.js\"><\/script>\n<script>\n  hbspt.forms.create({\n    region: \"na1\",\n    portalId: \"23904200\",\n    formId: \"ddefa238-8226-4095-b257-a3133a91ef96\"\n  });\n<\/script>",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "include_margins": true,
+        "section-title": "Please fill out the interest form below to receive information about coaching opportunities.",
+        "color_title_label": "#383633"
       }
     }
   },
   "order": [
     "main",
-    "6ba24a52-caed-4d7a-a385-4282dde32197",
-    "be1473e9-794c-44dd-9dd6-3ad28153b724"
+    "80a6bd69-f104-43d7-947c-ec4fcec801e4",
+    "8adf3fe2-ac05-40ed-9223-69c8c68ffa6b"
   ]
 }

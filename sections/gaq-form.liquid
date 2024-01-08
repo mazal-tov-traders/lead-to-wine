@@ -1,13 +1,20 @@
 <div class="page-width">
-    <h1 class="title">Please fill out the interest form below to receive information about coaching opportunities.</h1>
+    <h2 class="title">{{ section.settings.section-title }}</h2>
     <div class="faq-form-wraper">
-
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+      <script>
+        hbspt.forms.create({
+          region: "na1",
+          portalId: "23904200",
+          formId: "ddefa238-8226-4095-b257-a3133a91ef96"
+        });
+      </script>
     </div>
 </div>
 
 {% schema %}
     {
-      "name": "faq",
+      "name": "lead pastor coaching",
       "tag": "section",
       "class": "section topics",
       "settings": [
@@ -18,7 +25,7 @@
           "label": "t:sections.apps.settings.include_margins.label"
         },
         {
-          "type": "inline_richtext",
+          "type": "richtext",
           "id": "section-title",
           "label": "section title"
         },
@@ -34,7 +41,7 @@
       ],
       "presets": [
         {
-          "name": "FAQ",
+          "name": "Lead pastor coaching",
           "blocks": [
               
           ]

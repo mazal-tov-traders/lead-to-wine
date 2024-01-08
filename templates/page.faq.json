@@ -15,7 +15,8 @@
           "type": "banner-text",
           "settings": {
             "title-one": "<p>Lead Pastor Coaching<\/p>",
-            "color_title_label": "#EAE9E5"
+            "color_title_label": "#eae9e5",
+            "align_content": "center"
           }
         }
       },

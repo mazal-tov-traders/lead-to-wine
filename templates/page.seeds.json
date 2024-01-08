@@ -1,9 +1,189 @@
 {
   "sections": {
+    "0c20b859-5668-4af5-a5ac-0c92eabf662a": {
+      "type": "product-gallery",
+      "blocks": {
+        "05af04be-278b-4d21-a55d-45043fcb6a05": {
+          "type": "sub-title",
+          "settings": {
+            "sub_title": "Your Seeds campaign includes:",
+            "color_sub_title_label": "#ffffff"
+          }
+        },
+        "5ab2fd70-9256-46c8-9ead-d0b622fdcfc1": {
+          "type": "icon-and-text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/fi_10812361.svg",
+            "text": "8 Messages",
+            "color_text_label": "#ffffff"
+          }
+        },
+        "a583b134-85e8-475e-8eb6-9d81b594d0c4": {
+          "type": "icon-and-text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/fi_6490828_d618671d-cf0a-4931-94be-5ac7cf1088bd.svg",
+            "text": "Promo Material",
+            "color_text_label": "#ffffff"
+          }
+        },
+        "fbce13a9-7b88-49ae-af8c-745e7076b802": {
+          "type": "icon-and-text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/fi_7456976_8071fb4c-f557-457e-961d-2533261e439b.svg",
+            "text": "Kids Curriculum",
+            "color_text_label": "#ffffff"
+          }
+        },
+        "803601f5-f386-470e-9318-dad598ec3a9f": {
+          "type": "icon-and-text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/fi_4596368_539a9359-04f8-469e-a545-9820b76498bb.svg",
+            "text": "Small Group Leader Guide",
+            "color_text_label": "#ffffff"
+          }
+        },
+        "198c2e99-c95d-4b1e-aab2-02a3527ac9c2": {
+          "type": "icon-and-text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/fi_6391516_2fd7df91-4e35-4b1e-bae8-70f85ebc9f11.svg",
+            "text": "Study Guide",
+            "color_text_label": "#ffffff"
+          }
+        },
+        "e44ebc8f-6a7d-4979-aa08-763d57ad589c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gallery-1.jpg"
+          }
+        },
+        "18079372-3756-464c-bf85-bc13745d8d78": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gallery-2.jpg"
+          }
+        },
+        "010470b0-00b6-44ba-97f3-cbdad1b0c304": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gallery-3.jpg"
+          }
+        },
+        "91f879ff-16c4-467d-8aa8-fb36eb27d3d3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gallery-4.jpg"
+          }
+        },
+        "f7060805-4bca-4055-9878-ceec40b4fefa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gallery-5.jpg"
+          }
+        },
+        "1f4752b8-bda9-4564-91d9-d354e2fbee72": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=nIk8fPYik3s&t=14s"
+          }
+        }
+      },
+      "block_order": [
+        "05af04be-278b-4d21-a55d-45043fcb6a05",
+        "5ab2fd70-9256-46c8-9ead-d0b622fdcfc1",
+        "a583b134-85e8-475e-8eb6-9d81b594d0c4",
+        "fbce13a9-7b88-49ae-af8c-745e7076b802",
+        "803601f5-f386-470e-9318-dad598ec3a9f",
+        "198c2e99-c95d-4b1e-aab2-02a3527ac9c2",
+        "e44ebc8f-6a7d-4979-aa08-763d57ad589c",
+        "18079372-3756-464c-bf85-bc13745d8d78",
+        "010470b0-00b6-44ba-97f3-cbdad1b0c304",
+        "91f879ff-16c4-467d-8aa8-fb36eb27d3d3",
+        "f7060805-4bca-4055-9878-ceec40b4fefa",
+        "1f4752b8-bda9-4564-91d9-d354e2fbee72"
+      ],
+      "settings": {
+        "background": "shopify:\/\/shop_images\/product-gallery-bg.jpg",
+        "title": "Seeds Campaign",
+        "color_title_label": "#ffffff",
+        "description": "<p><em>Our most popular series on one of God’s primary building blocks, the seed.<\/em><\/p><p>Growth doesn’t happen overnight – our Seeds series is focused on topics like potential, momentum, multiplication, and legacy so your church can grow in the areas of life they need it most<\/p>",
+        "color_description_label": "#ffffff"
+      }
+    },
+    "ee5d7643-9aae-4e94-adc8-d5a7f6b94e71": {
+      "type": "custom-featured-product",
+      "blocks": {
+        "template--17155897098470__ee5d7643-9aae-4e94-adc8-d5a7f6b94e71-title-1": {
+          "type": "title",
+          "settings": {
+            "color_title_label": "#1D2228",
+            "heading_size": "h1"
+          }
+        },
+        "9d372826-3176-4d23-b9b8-0e2bfb1cd958": {
+          "type": "description",
+          "settings": {
+            "description": "<p>Immediately after purchasing, you will receive an email with a link to download all campaign files.<\/p>",
+            "color_description_label": "#1D2228"
+          }
+        },
+        "template--17155897098470__ee5d7643-9aae-4e94-adc8-d5a7f6b94e71-price-1": {
+          "type": "price",
+          "settings": {
+            "color_price_label": "#1D2228"
+          }
+        },
+        "template--17155897098470__ee5d7643-9aae-4e94-adc8-d5a7f6b94e71-quantity_selector-1": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--17155897098470__ee5d7643-9aae-4e94-adc8-d5a7f6b94e71-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "color_button_backgroun": "#5491D6",
+            "color_button_label": "#fff",
+            "color_button_border": "#5491D6",
+            "hover_color_button_backgroun": "#5491D6",
+            "hover_color_button_border": "#5491D6",
+            "hover_color_button_label": "#fff"
+          }
+        },
+        "9416f00d-a63b-4256-abcd-1c34f38b2029": {
+          "type": "image-product",
+          "settings": {
+            "image_product": "shopify:\/\/shop_images\/Screenshot2024-01-06at1.43.25PM.png"
+          }
+        },
+        "0aa85ac3-a423-41a0-8df9-a97a28421314": {
+          "type": "text-second",
+          "settings": {
+            "text_second": "See below for options to purchase Message Series, Kids Curriculum, or Study Guides seperately.",
+            "color_text_second_label": "#1D2228"
+          }
+        }
+      },
+      "block_order": [
+        "template--17155897098470__ee5d7643-9aae-4e94-adc8-d5a7f6b94e71-title-1",
+        "9d372826-3176-4d23-b9b8-0e2bfb1cd958",
+        "template--17155897098470__ee5d7643-9aae-4e94-adc8-d5a7f6b94e71-price-1",
+        "template--17155897098470__ee5d7643-9aae-4e94-adc8-d5a7f6b94e71-quantity_selector-1",
+        "template--17155897098470__ee5d7643-9aae-4e94-adc8-d5a7f6b94e71-buy_buttons-1",
+        "9416f00d-a63b-4256-abcd-1c34f38b2029",
+        "0aa85ac3-a423-41a0-8df9-a97a28421314"
+      ],
+      "settings": {
+        "product": "seeds-kids-curriculum",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "",
+        "nubmer_navigat": "",
+        "hide_variants": false
+      }
+    },
     "2af4e7bc-7041-4030-bb56-69b216f7f6ac": {
       "type": "individual-collection-section",
       "settings": {
-        "section_collection": "frontpage",
+        "section_collection": "seeds-campaign",
         "section_header": ""
       }
     },
@@ -214,6 +394,8 @@
     }
   },
   "order": [
+    "0c20b859-5668-4af5-a5ac-0c92eabf662a",
+    "ee5d7643-9aae-4e94-adc8-d5a7f6b94e71",
     "2af4e7bc-7041-4030-bb56-69b216f7f6ac",
     "main",
     "e1fed952-e66e-462c-b3d6-d4469cbb7762",

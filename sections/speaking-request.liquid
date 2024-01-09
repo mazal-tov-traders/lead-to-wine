@@ -46,7 +46,6 @@
                 </a>
               {%- endif -%}
             {% when 'form' %}
-              {%- if block.settings.form != blank -%}
                 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
                 <script>
                   hbspt.forms.create({
@@ -54,8 +53,7 @@
                     portalId: '23904200',
                     formId: '13e7d1be-3d45-4529-8332-1fb6fb14e1cc',
                   });
-                </script>
-              {%- endif -%}
+                </script>     
           {% endcase %}
         {% endfor %}
       </div>

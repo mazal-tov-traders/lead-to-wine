@@ -33,6 +33,7 @@
         "1fd3f312-bd86-4891-9cc4-47b7ccc4eae1": {
           "type": "collapsible_row",
           "settings": {
+            "mobile_hide": false,
             "heading": "Discovery 101",
             "row_content": "<p>test<\/p>",
             "first_label": "test1",
@@ -46,6 +47,7 @@
         "4ef1ff88-dcd3-456c-b07f-e060eb2aa7ae": {
           "type": "collapsible_row",
           "settings": {
+            "mobile_hide": false,
             "heading": "Serve Team 201",
             "row_content": "<p>The first step in the Growth Track, this two hour luncheon hosted every month where our lead pastor shares the story, heart and vision of Milestone Church.<\/p>",
             "first_label": "",
@@ -59,8 +61,9 @@
         "d7e24830-02bb-445d-9b00-adfa80b36f4e": {
           "type": "collapsible_row",
           "settings": {
+            "mobile_hide": false,
             "heading": "FAQ",
-            "row_content": "<ol><li><\/li><\/ol>",
+            "row_content": "<ol><li>Question<\/li><li>Answer<\/li><\/ol><p><\/p><ol><li>Question 2<\/li><li>Answer 2<\/li><\/ol><p><\/p><ol><li>Question3<\/li><li>Answer 3<\/li><\/ol>",
             "first_label": "",
             "first_link": "shopify:\/\/pages\/frequently-asked-questions",
             "second_label": "",
@@ -96,6 +99,7 @@
         "c6533245-9d75-4cf2-8a54-ca4d5d455c89": {
           "type": "collapsible_row",
           "settings": {
+            "mobile_hide": false,
             "heading": "Collapsible row",
             "row_content": "<p>test<\/p>",
             "first_label": "",
@@ -109,6 +113,7 @@
         "55d698d5-36f8-4d73-96ea-22f12cce1ff0": {
           "type": "collapsible_row",
           "settings": {
+            "mobile_hide": false,
             "heading": "test",
             "row_content": "<p>test<\/p>",
             "first_label": "",
@@ -144,6 +149,7 @@
         "a3334af6-f4fc-4bb9-9702-f8a10ccac3ad": {
           "type": "collapsible_row",
           "settings": {
+            "mobile_hide": false,
             "heading": "Collapsible row",
             "row_content": "<p>test<\/p>",
             "first_label": "",

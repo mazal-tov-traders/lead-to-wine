@@ -1,64 +1,57 @@
 <div class="page-width">
-    {% for block in section.blocks %}
-        {% if block.settings.title != blank %}
-                <h1 style="color:{{ block.settings.color_title_label }}" class="title">{{ block.settings.title }}</h1>
+  {% for block in section.blocks %}
+      <h1 style="color:{{ block.settings.color_title_label }}" class="title">{{ block.settings.title }}</h1>
       <div class="contact-us__wrapper">
-      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-      <script>
-        hbspt.forms.create({
-          region: 'na1',
-          portalId: '23904200',
-          formId: 'b12ba1c3-435f-4022-a8ac-97958114afd3'
-        });
-      </script>
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+        <script>
+          hbspt.forms.create({
+            region: 'na1',
+            portalId: '23904200',
+            formId: 'b12ba1c3-435f-4022-a8ac-97958114afd3',
+          });
+        </script>
       </div>
-        {% endif %}
-     
-    {% endfor %}
-
+  {% endfor %}
 </div>
 
 {% schema %}
+{
+  "name": "contact-form-custom",
+  "tag": "section",
+  "class": "section contact-us",
+  "settings": [
     {
-      "name": "contact-form-custom",
-      "tag": "section",
-      "class": "section contact-us",
+      "type": "checkbox",
+      "id": "include_margins",
+      "default": true,
+      "label": "t:sections.apps.settings.include_margins.label"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "contact-form",
+      "name": "contact-form",
+      "limit": 25,
       "settings": [
         {
-          "type": "checkbox",
-          "id": "include_margins",
-          "default": true,
-          "label": "t:sections.apps.settings.include_margins.label"
-        }
-      ],
-      "blocks": [
+          "type": "inline_richtext",
+          "id": "title",
+          "label": "form-title"
+        },
         {
-          "type": "contact-form",
-          "name": "contact-form",
-          "limit": 25,
-          "settings": [
-            {
-            "type": "inline_richtext",
-            "id": "title",
-            "label": "form-title"
-            },
-            {
           "type": "color",
           "id": "color_title_label",
           "label": "Color Title Label",
           "default": "#383633"
         }
-     
-          ]
-        }
-      ],
-      "presets": [
-        {
-          "name": "contact form custom",
-          "blocks": [
-                 
-          ]
-        }
       ]
     }
+  ],
+  "presets": [
+    {
+      "name": "contact form custom",
+      "blocks": []
+    }
+  ]
+}
 {% endschema %}

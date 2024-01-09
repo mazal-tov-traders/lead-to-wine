@@ -6,7 +6,6 @@
     {% for block in section.blocks %}
       {% case block.type %}
         {% when 'section' %}
-          {% if block.settings.title != blank %}
             <div class="feedback__wrapper">
               <h3 class="feedback__sub-title" style=" color:{{ block.settings.color_title-label }};">{{ block.settings.title }}</h3>
               <div class="feedback__form">
@@ -20,7 +19,6 @@
                 </script>
               </div>
             </div>
-          {% endif %}
       {% endcase %}
     {% endfor %}
   </div>

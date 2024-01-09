@@ -6,7 +6,7 @@
         "05af04be-278b-4d21-a55d-45043fcb6a05": {
           "type": "sub-title",
           "settings": {
-            "sub_title": "Your Seeds campaign includes:",
+            "sub_title": "Your Miracles campaign includes:",
             "color_sub_title_label": "#ffffff"
           }
         },
@@ -71,17 +71,18 @@
         "91f879ff-16c4-467d-8aa8-fb36eb27d3d3": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/gallery-4.jpg"
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-01-08_at_3.28.21_PM.png"
           }
         },
         "f7060805-4bca-4055-9878-ceec40b4fefa": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/gallery-5.jpg"
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-01-08_at_3.30.42_PM.png"
           }
         },
         "1f4752b8-bda9-4564-91d9-d354e2fbee72": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "video_url": "https:\/\/www.youtube.com\/watch?v=nIk8fPYik3s&t=14s"
           }
@@ -122,7 +123,7 @@
         "9d372826-3176-4d23-b9b8-0e2bfb1cd958": {
           "type": "description",
           "settings": {
-            "description": "<p>Immediately after purchasing, you will receive an email with a link to download all campaign files.<\/p>",
+            "description": "<p>A complete Miracles campaign includes all content and assets you need to run a church-wide campaign:<\/p><ul><li>8-Weeks of Message Content<\/li><li>All Promo Material<\/li><li>Digital Small Group Leader Guide<\/li><li>Kids Curriculum<\/li><li>50 Study Guide Books<\/li><\/ul><p>After purchasing, you will receive an email with a link to download all campaign files.<\/p>",
             "color_description_label": "#1d2228"
           }
         },
@@ -156,6 +157,7 @@
         },
         "0aa85ac3-a423-41a0-8df9-a97a28421314": {
           "type": "text-second",
+          "disabled": true,
           "settings": {
             "text_second": "See below for options to purchase Message Series, Kids Curriculum, or Study Guides seperately.",
             "color_text_second_label": "#1d2228"
@@ -178,6 +180,15 @@
         "media_position": "",
         "nubmer_navigat": "",
         "hide_variants": false
+      }
+    },
+    "86d14725-e78c-41b7-b886-13b7bd9f2e38": {
+      "type": "section-tabs",
+      "settings": {
+        "title": "Purchase Campaign Elements Separately",
+        "color_title": "#383633",
+        "sub_title": "",
+        "color_sub_title": "#383633"
       }
     },
     "2af4e7bc-7041-4030-bb56-69b216f7f6ac": {
@@ -210,11 +221,11 @@
           "settings": {
             "label": "INTRO one",
             "color_label": "#ffffff",
-            "background_color_label": "#595035",
-            "item_title": "POTENTIAL",
-            "color_item_title": "#595035",
+            "background_color_label": "#4d657d",
+            "item_title": "who needs a miracle?",
+            "color_item_title": "#4d657d",
             "background_color_item_title": "#eae9e5",
-            "text": "Realizing our potential",
+            "text": "",
             "color_text": "#383633"
           }
         },
@@ -223,11 +234,11 @@
           "settings": {
             "label": "INTRO two",
             "color_label": "#ffffff",
-            "background_color_label": "#595035",
-            "item_title": "PROCESS",
-            "color_item_title": "#595035",
+            "background_color_label": "#4d657d",
+            "item_title": "do i deserve a miracle?",
+            "color_item_title": "#4d657d",
             "background_color_item_title": "#eae9e5",
-            "text": "Creating a healthy environment to hear from God",
+            "text": "",
             "color_text": "#383633"
           }
         },
@@ -236,11 +247,11 @@
           "settings": {
             "label": "WEEK ONE",
             "color_label": "#ffffff",
-            "background_color_label": "#595035",
-            "item_title": "RESISTANCE",
-            "color_item_title": "#595035",
+            "background_color_label": "#4d657d",
+            "item_title": "finding peace in the storm",
+            "color_item_title": "#4d657d",
             "background_color_item_title": "#eae9e5",
-            "text": "Handling adversity",
+            "text": "",
             "color_text": "#383633"
           }
         },
@@ -249,37 +260,37 @@
           "settings": {
             "label": "WEEK two",
             "color_label": "#ffffff",
-            "background_color_label": "#595035",
-            "item_title": "FAITH",
-            "color_item_title": "#595035",
+            "background_color_label": "#4d657d",
+            "item_title": "finding a secure identity in christ",
+            "color_item_title": "#4d657d",
             "background_color_item_title": "#eae9e5",
-            "text": "Growing in faith",
+            "text": "",
             "color_text": "#383633"
           }
         },
         "46cb10c1-09c3-44b5-8ad5-5fc1ab4c61bf": {
           "type": "overview-item",
           "settings": {
-            "label": "WEEK two",
+            "label": "WEEK three",
             "color_label": "#ffffff",
-            "background_color_label": "#595035",
-            "item_title": "MOMENTUM",
-            "color_item_title": "#595035",
+            "background_color_label": "#4d657d",
+            "item_title": "what to do when you don't know what to do",
+            "color_item_title": "#4d657d",
             "background_color_item_title": "#eae9e5",
-            "text": "Three questions to ask about sowing and reaping",
+            "text": "",
             "color_text": "#383633"
           }
         },
         "fd50fec1-5af1-4957-9630-3423c547c47c": {
           "type": "overview-item",
           "settings": {
-            "label": "WEEK FOUR",
+            "label": "WEEK Four",
             "color_label": "#ffffff",
-            "background_color_label": "#595035",
-            "item_title": "TRANSFORMATION",
-            "color_item_title": "#595035",
+            "background_color_label": "#4d657d",
+            "item_title": "finding real friends",
+            "color_item_title": "#4d657d",
             "background_color_item_title": "#eae9e5",
-            "text": "Walking in your new nature",
+            "text": "",
             "color_text": "#383633"
           }
         },
@@ -288,24 +299,24 @@
           "settings": {
             "label": "WEEK FIVE",
             "color_label": "#ffffff",
-            "background_color_label": "#595035",
-            "item_title": "MULTIPLICATION",
-            "color_item_title": "#595035",
+            "background_color_label": "#4d657d",
+            "item_title": "Lazarus’ miracle",
+            "color_item_title": "#4d657d",
             "background_color_item_title": "#eae9e5",
-            "text": "Generosity and multiplication",
+            "text": "",
             "color_text": "#383633"
           }
         },
         "b0a0a2f7-ef66-4c8f-abf8-24e82cc7c01a": {
           "type": "overview-item",
           "settings": {
-            "label": "WEEksix",
+            "label": "WEEk six",
             "color_label": "#ffffff",
-            "background_color_label": "#595035",
-            "item_title": "LEGACY",
-            "color_item_title": "#595035",
+            "background_color_label": "#4d657d",
+            "item_title": "what does jesus do with my failure?",
+            "color_item_title": "#4d657d",
             "background_color_item_title": "#eae9e5",
-            "text": "Leaving a legacy",
+            "text": "",
             "color_text": "#383633"
           }
         }
@@ -326,12 +337,33 @@
         "color_label": "#383633"
       }
     },
-    "bc004a06-4f99-4dd2-ab5f-1c502b5bae37": {
-      "type": "video",
+    "9dc31102-5652-4922-a8b3-21f74cc25c51": {
+      "type": "video-and-content",
+      "blocks": {
+        "f79f353c-fa00-4b7e-b5c5-379bf7e93f5d": {
+          "type": "content",
+          "settings": {
+            "title": "Promo Video",
+            "color_title_label": "#383633",
+            "sub_title": "",
+            "color_sub_title": "#918677"
+          }
+        },
+        "f631ed67-9cf0-4814-9d37-cdae381edf7d": {
+          "type": "media",
+          "settings": {
+            "image_video": "shopify:\/\/shop_images\/Screenshot_2024-01-08_at_4.14.36_PM.png",
+            "image_youtube": "shopify:\/\/shop_images\/fi_1384060.svg",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=v4NyK0Y5R7g&feature=youtu.be"
+          }
+        }
+      },
+      "block_order": [
+        "f79f353c-fa00-4b7e-b5c5-379bf7e93f5d",
+        "f631ed67-9cf0-4814-9d37-cdae381edf7d"
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/seeds-logo.png",
-        "screen-reader-text": "Seeds Tomorrow Starts Today",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+        "position": "_reverse"
       }
     },
     "b14a2295-d2ef-410a-9000-7ed035ebdcf8": {
@@ -342,16 +374,16 @@
           "settings": {
             "title": "Message Bumper",
             "color_title_label": "#383633",
-            "sub_title": "Lorem ipsum dolor sit amet consectetur. Gravida sed turpis lorem et auctor. Vel vehicula eu nec laoreet laoreet elementum arcu rhoncus aliquam.",
+            "sub_title": "",
             "color_sub_title": "#918677"
           }
         },
         "6acc659a-0c73-49c6-a72a-b0e3e0b91693": {
           "type": "media",
           "settings": {
-            "image_video": "shopify:\/\/shop_images\/video-poster-1.jpg",
+            "image_video": "shopify:\/\/shop_images\/Screenshot_2024-01-08_at_4.16.05_PM.png",
             "image_youtube": "shopify:\/\/shop_images\/fi_1384060.svg",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+            "video_url": "https:\/\/www.youtube.com\/watch?v=XOAB2g8Yxsc"
           }
         }
       },
@@ -362,45 +394,16 @@
       "settings": {
         "position": ""
       }
-    },
-    "d94fc19a-e4c4-4c17-b1f9-c0cfc2e734a2": {
-      "type": "video-and-content",
-      "blocks": {
-        "1859d013-09ad-48c1-b042-f60dda23888e": {
-          "type": "content",
-          "settings": {
-            "title": "Kids Song & Lyric",
-            "color_title_label": "#383633",
-            "sub_title": "Lorem ipsum dolor sit amet consectetur. Gravida sed turpis lorem et auctor. Vel vehicula eu nec laoreet laoreet elementum arcu rhoncus aliquam.",
-            "color_sub_title": "#918677"
-          }
-        },
-        "68ba616b-def6-442a-bfb7-f8a226d0ec96": {
-          "type": "media",
-          "settings": {
-            "image_video": "shopify:\/\/shop_images\/video-poster-2_aac26289-9b39-4b89-8add-1d0cf5fc1ae0.jpg",
-            "image_youtube": "shopify:\/\/shop_images\/fi_1384060.svg",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
-          }
-        }
-      },
-      "block_order": [
-        "1859d013-09ad-48c1-b042-f60dda23888e",
-        "68ba616b-def6-442a-bfb7-f8a226d0ec96"
-      ],
-      "settings": {
-        "position": "_reverse"
-      }
     }
   },
   "order": [
     "0c20b859-5668-4af5-a5ac-0c92eabf662a",
     "ee5d7643-9aae-4e94-adc8-d5a7f6b94e71",
+    "86d14725-e78c-41b7-b886-13b7bd9f2e38",
     "2af4e7bc-7041-4030-bb56-69b216f7f6ac",
     "main",
     "e1fed952-e66e-462c-b3d6-d4469cbb7762",
-    "bc004a06-4f99-4dd2-ab5f-1c502b5bae37",
-    "b14a2295-d2ef-410a-9000-7ed035ebdcf8",
-    "d94fc19a-e4c4-4c17-b1f9-c0cfc2e734a2"
+    "9dc31102-5652-4922-a8b3-21f74cc25c51",
+    "b14a2295-d2ef-410a-9000-7ed035ebdcf8"
   ]
 }

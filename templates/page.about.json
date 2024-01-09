@@ -14,7 +14,7 @@
         "ea2bc182-7552-4dfc-9750-79392186d3b2": {
           "type": "title",
           "settings": {
-            "title": "About",
+            "title": "About Lead to Win",
             "color_title_label": "#ffffff"
           }
         }
@@ -31,9 +31,8 @@
       "blocks": {
         "3d88a375-0757-4530-a793-39b589d0e9b6": {
           "type": "media",
-          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Roundtables_021.jpg"
+            "image": "shopify:\/\/shop_images\/Header_Test_2.jpg"
           }
         },
         "6c7a5d48-fd4f-4d5a-9d6b-1757a3c1bdaa": {
@@ -53,8 +52,15 @@
         "e19a6b3a-63fc-46f5-8fe5-81295228e6fe": {
           "type": "content",
           "settings": {
-            "content": "wer",
+            "content": "fjakl;fdjlka;djffjdlkafjdl",
             "color_content_label": "#383633"
+          }
+        },
+        "5d3d22b9-caae-4906-9d4c-e9e1e26e1241": {
+          "type": "description-list",
+          "settings": {
+            "description-list": "<p>Do you not know that in a race all the runners run, but only one gets the prize? Run in such a way as to get the prize. <\/p><p>1 Corinthians 9:24 (NIV)<\/p>",
+            "color_list": "#383633"
           }
         }
       },
@@ -62,7 +68,8 @@
         "3d88a375-0757-4530-a793-39b589d0e9b6",
         "6c7a5d48-fd4f-4d5a-9d6b-1757a3c1bdaa",
         "332f1000-a6a6-4789-9df3-c2fd49c45486",
-        "e19a6b3a-63fc-46f5-8fe5-81295228e6fe"
+        "e19a6b3a-63fc-46f5-8fe5-81295228e6fe",
+        "5d3d22b9-caae-4906-9d4c-e9e1e26e1241"
       ],
       "settings": {
         "background": "_bg-white",

@@ -13,8 +13,44 @@
       "settings": {
         "title": "Free <em>Downloads<\/em>",
         "color_title": "#383633",
-        "sub_title": "Forms, processes and tools we use everyday at Milestone Church",
+        "sub_title": "Forms, processes, and tools we use every day at Milestone Church",
         "color_sub_title": "#918677"
+      }
+    },
+    "b60a7182-91c6-4dd4-915f-e6e1ef4985aa": {
+      "type": "section-for-tabs",
+      "blocks": {
+        "286e3dea-0b3a-45bb-8e69-2f36e9fcaa8e": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2025_Leaders_gathering_1.png",
+            "title": "",
+            "color_title": "#383633",
+            "content": "",
+            "color_content": "#383633"
+          }
+        },
+        "51e455a0-118b-43b7-8f46-980b08fd07f3": {
+          "type": "collapsible_row",
+          "settings": {
+            "mobile_hide": false,
+            "heading": "Breakout Session Slide Decks",
+            "row_content": "",
+            "first_label": "Assimilation & Growth Track",
+            "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Growth%20Track%20Free%20Downloads\/Leaders%20Gathering%20Assimilation%20Breakout%20Slides_For_Web.pdf",
+            "second_label": "Production",
+            "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Worship%20Free%20Downloads\/LG%20Production%20Breakout%20Slides.pdf",
+            "third_label": "NextGen",
+            "third_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Kids%20Downloads\/Next%20Gen%20Leaders%20Gathering%20Slides.pdf"
+          }
+        }
+      },
+      "block_order": [
+        "286e3dea-0b3a-45bb-8e69-2f36e9fcaa8e",
+        "51e455a0-118b-43b7-8f46-980b08fd07f3"
+      ],
+      "settings": {
+        "trigger": "<p>Breakout Slides<\/p>"
       }
     },
     "de168c7f-5447-4449-9e9c-dc92fac7500a": {
@@ -23,11 +59,25 @@
         "abc966e0-cb1f-4683-93e9-846560ca62fa": {
           "type": "media",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_4133625.png",
+            "image": "shopify:\/\/shop_images\/Growth_Track.jpg",
             "title": "Assimilation & Growth Track",
             "color_title": "#383633",
             "content": "The processes and tools behind the main method we use to connect people to the vision & values of Milestone Church",
             "color_content": "#383633"
+          }
+        },
+        "55568dd4-9d2e-4fc9-977b-30cbc176aeb1": {
+          "type": "collapsible_row",
+          "settings": {
+            "mobile_hide": false,
+            "heading": "Overview",
+            "row_content": "",
+            "first_label": "Overview of the Growth Track",
+            "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Growth%20Track%20Free%20Downloads\/Growth_Track_Overview.pdf",
+            "second_label": "Growth Track People Board",
+            "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Growth%20Track%20Free%20Downloads\/Growth_Track_People_Board_Overview.pdf",
+            "third_label": "People Board Shopping List",
+            "third_link": "https:\/\/a.co\/g5KGPcv"
           }
         },
         "1fd3f312-bd86-4891-9cc4-47b7ccc4eae1": {
@@ -35,13 +85,13 @@
           "settings": {
             "mobile_hide": false,
             "heading": "Discovery 101",
-            "row_content": "<p>test<\/p>",
-            "first_label": "test1",
-            "first_link": "shopify:\/\/pages\/contact",
-            "second_label": "test 2",
-            "second_link": "shopify:\/\/pages\/contact",
-            "third_label": "test 3",
-            "third_link": "shopify:\/\/products\/closer"
+            "row_content": "",
+            "first_label": "Membership Agreement",
+            "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Growth%20Track%20Free%20Downloads\/Membership%20Agreement.pdf",
+            "second_label": "Discovery 101 Booklet",
+            "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Growth%20Track%20Free%20Downloads\/Discovery101Booklet.pdf",
+            "third_label": "101 Connector Notes",
+            "third_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Growth%20Track%20Free%20Downloads\/101%20Connector%20Notes.pdf"
           }
         },
         "4ef1ff88-dcd3-456c-b07f-e060eb2aa7ae": {
@@ -49,32 +99,33 @@
           "settings": {
             "mobile_hide": false,
             "heading": "Serve Team 201",
-            "row_content": "<p>The first step in the Growth Track, this two hour luncheon hosted every month where our lead pastor shares the story, heart and vision of Milestone Church.<\/p>",
-            "first_label": "",
-            "first_link": "",
-            "second_label": "",
-            "second_link": "",
-            "third_label": "",
-            "third_link": ""
+            "row_content": "",
+            "first_label": "Serve Team 201 Booklet",
+            "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Growth%20Track%20Free%20Downloads\/ServeTeam201Booklet.pdf",
+            "second_label": "Serve Team Application",
+            "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Growth%20Track%20Free%20Downloads\/201%20Form.pdf",
+            "third_label": "Volunteer Application",
+            "third_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Growth%20Track%20Free%20Downloads\/201%20Volunteer%20Application%20Form.pdf"
           }
         },
         "d7e24830-02bb-445d-9b00-adfa80b36f4e": {
           "type": "collapsible_row",
           "settings": {
             "mobile_hide": false,
-            "heading": "FAQ",
-            "row_content": "<ol><li>Question<\/li><li>Answer<\/li><\/ol><p><\/p><ol><li>Question 2<\/li><li>Answer 2<\/li><\/ol><p><\/p><ol><li>Question3<\/li><li>Answer 3<\/li><\/ol>",
-            "first_label": "",
-            "first_link": "shopify:\/\/pages\/frequently-asked-questions",
-            "second_label": "",
-            "second_link": "",
-            "third_label": "",
-            "third_link": ""
+            "heading": "Values 301",
+            "row_content": "",
+            "first_label": "Values 301 Booklet",
+            "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Growth%20Track%20Free%20Downloads\/Values301Booklet.pdf",
+            "second_label": "301 Leader Survey Form - Example",
+            "second_link": "https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLScPD_6VV1r4m9bfPv0_G2EfFvSUB_9lx--5D1wsnjnVrHLz6Q\/viewform?usp=sf_link",
+            "third_label": "301 Next Steps Form",
+            "third_link": "https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLSc0fKRvgJ_O8QsHGGAJ4ksV2Li6kYLDDK1NuFwWJj_6sQn1ug\/viewform?usp=sf_link"
           }
         }
       },
       "block_order": [
         "abc966e0-cb1f-4683-93e9-846560ca62fa",
+        "55568dd4-9d2e-4fc9-977b-30cbc176aeb1",
         "1fd3f312-bd86-4891-9cc4-47b7ccc4eae1",
         "4ef1ff88-dcd3-456c-b07f-e060eb2aa7ae",
         "d7e24830-02bb-445d-9b00-adfa80b36f4e"
@@ -83,16 +134,127 @@
         "trigger": "<p>Assimilation &<\/p><p>Growth Track<\/p>"
       }
     },
+    "71c0728f-2eb0-4a87-b205-4b943806ca22": {
+      "type": "section-for-tabs",
+      "blocks": {
+        "592d0fe6-f5d3-4519-8098-1bce1640e716": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Milestone_Kids.jpg",
+            "title": "Kids",
+            "color_title": "#383633",
+            "content": "At Milestone Kids, You Don't Have to Wait to Be  GREAT!",
+            "color_content": "#383633"
+          }
+        },
+        "c9119a64-6594-48fc-b94d-2a89562fed06": {
+          "type": "collapsible_row",
+          "settings": {
+            "mobile_hide": false,
+            "heading": "Kids Overview Documents",
+            "row_content": "",
+            "first_label": "Milestone Kids Core Values",
+            "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Kids%20Downloads\/Milestone_Core_Values.pdf",
+            "second_label": "Salvation & Baptism Resource",
+            "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Kids%20Downloads\/Kids_Baptism_Resource.pdf",
+            "third_label": "5 Ways to Pray for Your Child",
+            "third_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Kids%20Downloads\/5_Ways_2_Pray_Resource.pdf"
+          }
+        },
+        "096a616e-5aed-40b6-8843-513e41ba57cd": {
+          "type": "collapsible_row",
+          "settings": {
+            "mobile_hide": false,
+            "heading": "Weekend Services",
+            "row_content": "",
+            "first_label": "Message Map Template",
+            "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Kids%20Downloads\/Message%20Map%20Template.xlsx",
+            "second_label": "Message Outline Guide",
+            "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Kids%20Downloads\/Message%20Outline.pdf",
+            "third_label": "Service Order Example",
+            "third_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Kids%20Downloads\/Service%20Order%20Example.pdf"
+          }
+        },
+        "5db9d59b-85e1-4c13-8f4b-c5b81e57a905": {
+          "type": "collapsible_row",
+          "settings": {
+            "mobile_hide": false,
+            "heading": "Weekend Metrics",
+            "row_content": "",
+            "first_label": "Weekend Metrics Spreadsheet",
+            "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Kids%20Downloads\/Weekend%20Metrics.xlsx",
+            "second_label": "",
+            "second_link": "",
+            "third_label": "",
+            "third_link": ""
+          }
+        },
+        "4f857f1e-4245-4601-8428-1955b70b5a94": {
+          "type": "collapsible_row",
+          "settings": {
+            "mobile_hide": false,
+            "heading": "Small Group Leader Training",
+            "row_content": "",
+            "first_label": "Small Group Leader Training",
+            "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Kids%20Downloads\/Kids%20Small%20Group%20Leader%20Training.pdf",
+            "second_label": "",
+            "second_link": "",
+            "third_label": "",
+            "third_link": ""
+          }
+        },
+        "29e9336a-e667-4331-9cfc-e4db049d797c": {
+          "type": "collapsible_row",
+          "settings": {
+            "mobile_hide": false,
+            "heading": "Volunteer Application & Onboarding",
+            "row_content": "",
+            "first_label": "Youth Volunteer Application",
+            "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Kids%20Downloads\/Youth%20Volunteer%20Application.pdf",
+            "second_label": "Volunteer Onboarding",
+            "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Kids%20Downloads\/Volunteer%20Onboarding%20Process.pdf",
+            "third_label": "",
+            "third_link": ""
+          }
+        },
+        "dd01c478-3713-4189-9598-5a68b5807773": {
+          "type": "collapsible_row",
+          "settings": {
+            "mobile_hide": false,
+            "heading": "Volunteer Observer Documents",
+            "row_content": "",
+            "first_label": "Elementary Volunteer Observer Sheets",
+            "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Kids%20Downloads\/Elementary%20Observation%20Form.pdf",
+            "second_label": "Preschool Volunteer Observer Sheets",
+            "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Kids%20Downloads\/Preschool%20Observation%20Form.pdf",
+            "third_label": "",
+            "third_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "592d0fe6-f5d3-4519-8098-1bce1640e716",
+        "c9119a64-6594-48fc-b94d-2a89562fed06",
+        "096a616e-5aed-40b6-8843-513e41ba57cd",
+        "5db9d59b-85e1-4c13-8f4b-c5b81e57a905",
+        "4f857f1e-4245-4601-8428-1955b70b5a94",
+        "29e9336a-e667-4331-9cfc-e4db049d797c",
+        "dd01c478-3713-4189-9598-5a68b5807773"
+      ],
+      "settings": {
+        "trigger": "<p>Kids<\/p>"
+      }
+    },
     "b93f4efb-baed-4a3a-aa9e-aba70b43d227": {
       "type": "section-for-tabs",
       "blocks": {
         "d41a4d9e-a540-4b20-8728-4a6a653fb9cf": {
           "type": "media",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4_1f712cee-4d55-4b31-8efb-d346eaafd06f.svg",
-            "title": "Assimilation & Growth Track",
+            "image": "shopify:\/\/shop_images\/Serve_Team.jpg",
+            "title": "Local Outreach & Global Missions",
             "color_title": "#383633",
-            "content": "The processes and tools behind the main method we use to connect people to the vision & values of Milestone Church",
+            "content": "",
             "color_content": "#383633"
           }
         },
@@ -100,10 +262,10 @@
           "type": "collapsible_row",
           "settings": {
             "mobile_hide": false,
-            "heading": "Collapsible row",
-            "row_content": "<p>test<\/p>",
-            "first_label": "",
-            "first_link": "",
+            "heading": "2023 Impact Video",
+            "row_content": "",
+            "first_label": "Missions Impact Video",
+            "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Missions%20and%20Outreach\/Impact%20Brochure%202023.pdf",
             "second_label": "",
             "second_link": "",
             "third_label": "",
@@ -114,12 +276,26 @@
           "type": "collapsible_row",
           "settings": {
             "mobile_hide": false,
-            "heading": "test",
-            "row_content": "<p>test<\/p>",
-            "first_label": "",
-            "first_link": "",
-            "second_label": "",
-            "second_link": "",
+            "heading": "Mission Trips",
+            "row_content": "",
+            "first_label": "Mission Team Training Manual",
+            "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Missions%20and%20Outreach\/mission_team_training_manual.pdf",
+            "second_label": "Mission Trip Consent Form",
+            "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Missions%20and%20Outreach\/milestone_mission_trip_consent.pdf",
+            "third_label": "Minor Consent Form",
+            "third_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Missions%20and%20Outreach\/missions_minor_consent.pdf"
+          }
+        },
+        "eb01a133-fe7c-45f0-a1eb-1ecfc5268634": {
+          "type": "collapsible_row",
+          "settings": {
+            "mobile_hide": false,
+            "heading": "Serve Day",
+            "row_content": "",
+            "first_label": "Playbook",
+            "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Missions%20and%20Outreach\/serve_day_playbook.pdf",
+            "second_label": "Project Guidelines",
+            "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Missions%20and%20Outreach\/serve_day_project_guidelines.pdf",
             "third_label": "",
             "third_link": ""
           }
@@ -128,7 +304,8 @@
       "block_order": [
         "d41a4d9e-a540-4b20-8728-4a6a653fb9cf",
         "c6533245-9d75-4cf2-8a54-ca4d5d455c89",
-        "55d698d5-36f8-4d73-96ea-22f12cce1ff0"
+        "55d698d5-36f8-4d73-96ea-22f12cce1ff0",
+        "eb01a133-fe7c-45f0-a1eb-1ecfc5268634"
       ],
       "settings": {
         "trigger": "<p>Local Outreach & <\/p><p>Global Missions<\/p>"
@@ -140,9 +317,10 @@
         "b4e1e96e-b46f-4861-8039-497bff856eb8": {
           "type": "media",
           "settings": {
-            "title": "Assimilation & Growth Track",
+            "image": "shopify:\/\/shop_images\/Pastoral_Care.jpg",
+            "title": "Pastoral Care",
             "color_title": "#383633",
-            "content": "The processes and tools behind the main method we use to connect people to the vision & values of Milestone Church",
+            "content": "",
             "color_content": "#383633"
           }
         },
@@ -150,10 +328,24 @@
           "type": "collapsible_row",
           "settings": {
             "mobile_hide": false,
-            "heading": "Collapsible row",
-            "row_content": "<p>test<\/p>",
-            "first_label": "",
-            "first_link": "",
+            "heading": "Weddings",
+            "row_content": "",
+            "first_label": "Wedding Policies & Procedures",
+            "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Pastoral%20Care%20Free%20Downloads\/Wedding%20&%20Procedures.pdf",
+            "second_label": "",
+            "second_link": "",
+            "third_label": "",
+            "third_link": ""
+          }
+        },
+        "1aef3910-b00b-4bde-80ee-1c82a6b8bec9": {
+          "type": "collapsible_row",
+          "settings": {
+            "mobile_hide": false,
+            "heading": "Funerals",
+            "row_content": "",
+            "first_label": "Funeral Policies & Procedures",
+            "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Pastoral%20Care%20Free%20Downloads\/Funeral%20Policies%20&%20Procedures.pdf",
             "second_label": "",
             "second_link": "",
             "third_label": "",
@@ -163,18 +355,364 @@
       },
       "block_order": [
         "b4e1e96e-b46f-4861-8039-497bff856eb8",
-        "a3334af6-f4fc-4bb9-9702-f8a10ccac3ad"
+        "a3334af6-f4fc-4bb9-9702-f8a10ccac3ad",
+        "1aef3910-b00b-4bde-80ee-1c82a6b8bec9"
       ],
       "settings": {
         "trigger": "<p>Pastoral Care<\/p>"
+      }
+    },
+    "ccc074f7-0edf-46b5-8a69-32e60c42bd4e": {
+      "type": "section-for-tabs",
+      "blocks": {
+        "cffa998b-111b-467e-ae30-b0dfe6200396": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/First_Impressions.jpg",
+            "title": "Serve Team",
+            "color_title": "#383633",
+            "content": "",
+            "color_content": "#383633"
+          }
+        },
+        "88fc263d-4530-40fd-b87f-1169a8609e5f": {
+          "type": "collapsible_row",
+          "settings": {
+            "mobile_hide": false,
+            "heading": "Serve Team 201 Booklet",
+            "row_content": "",
+            "first_label": "201 Booklet",
+            "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Growth%20Track%20Free%20Downloads\/ServeTeam201Booklet.pdf",
+            "second_label": "",
+            "second_link": "",
+            "third_label": "",
+            "third_link": ""
+          }
+        },
+        "a8b0d878-b528-41ef-8741-23689414857b": {
+          "type": "collapsible_row",
+          "settings": {
+            "mobile_hide": false,
+            "heading": "Serve Team 201 Forms",
+            "row_content": "",
+            "first_label": "Serve Team Application",
+            "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Growth%20Track%20Free%20Downloads\/201%20Form.pdf",
+            "second_label": "Volunteer Application",
+            "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Growth%20Track%20Free%20Downloads\/201%20Volunteer%20Application%20Form.pdf",
+            "third_label": "Connector Notes",
+            "third_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Growth%20Track%20Free%20Downloads\/201%20Connector%20Notes.pdf"
+          }
+        }
+      },
+      "block_order": [
+        "cffa998b-111b-467e-ae30-b0dfe6200396",
+        "88fc263d-4530-40fd-b87f-1169a8609e5f",
+        "a8b0d878-b528-41ef-8741-23689414857b"
+      ],
+      "settings": {
+        "trigger": "<p>Serve Team<\/p>"
+      }
+    },
+    "a3d11579-fa60-406e-b5cd-e71cdaed0145": {
+      "type": "section-for-tabs",
+      "blocks": {
+        "2d98a6df-73d5-4998-a79a-0a5efad535d1": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-01-08_at_11.02.34_PM.png",
+            "title": "Small Groups",
+            "color_title": "#383633",
+            "content": "",
+            "color_content": "#383633"
+          }
+        },
+        "929feea9-f1b8-4912-8c56-28759e9812dc": {
+          "type": "collapsible_row",
+          "settings": {
+            "mobile_hide": false,
+            "heading": "Small Groups General Documents",
+            "row_content": "",
+            "first_label": "Overview",
+            "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Small%20Groups%20Free%20Downloads\/Small%20Groups%20Overview.pdf",
+            "second_label": "Churchwide Campaigns",
+            "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Small%20Groups%20Free%20Downloads\/Churchwide%20Campaigns.pdf",
+            "third_label": "Small Group Leader Application",
+            "third_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Small%20Groups%20Free%20Downloads\/Example%20Small%20Group%20Leader%20Application.pdf"
+          }
+        },
+        "4e01fc36-40ef-445e-b60b-6ef27aa4ec28": {
+          "type": "collapsible_row",
+          "settings": {
+            "mobile_hide": false,
+            "heading": "New Leader Onboarding",
+            "row_content": "",
+            "first_label": "New Leader Onboarding Website",
+            "first_link": "https:\/\/milestonechurch.com\/connect\/small-groups\/new-leader-onboarding\/#Apply",
+            "second_label": "",
+            "second_link": "",
+            "third_label": "",
+            "third_link": ""
+          }
+        },
+        "be2223e4-34d7-409c-958c-b7ca987ba53e": {
+          "type": "collapsible_row",
+          "settings": {
+            "mobile_hide": false,
+            "heading": "Small Group Coaching",
+            "row_content": "",
+            "first_label": "Small Group Coaching Website",
+            "first_link": "https:\/\/milestonechurch.com\/sgcoach\/",
+            "second_label": "",
+            "second_link": "",
+            "third_label": "",
+            "third_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "2d98a6df-73d5-4998-a79a-0a5efad535d1",
+        "929feea9-f1b8-4912-8c56-28759e9812dc",
+        "4e01fc36-40ef-445e-b60b-6ef27aa4ec28",
+        "be2223e4-34d7-409c-958c-b7ca987ba53e"
+      ],
+      "settings": {
+        "trigger": "<p>Small Groups<\/p>"
+      }
+    },
+    "edf4e287-b6c4-451e-a507-0395d7432774": {
+      "type": "section-for-tabs",
+      "blocks": {
+        "71bf958c-59c2-42d8-a364-0d8cff42fca0": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Students.jpg",
+            "title": "Students",
+            "color_title": "#383633",
+            "content": "",
+            "color_content": "#383633"
+          }
+        },
+        "393c10cd-4391-47f3-9797-bf5fd1f58d18": {
+          "type": "collapsible_row",
+          "settings": {
+            "mobile_hide": false,
+            "heading": "Calendars & Schedules",
+            "row_content": "",
+            "first_label": "Elevate Yearly\/Weekly Calendar",
+            "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Yearly%20And%20Weekly%20Calendar.pdf",
+            "second_label": "Elevate Message Map",
+            "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Elevate%20Message%20Map%20Example.pdf",
+            "third_label": "Next Gen Student Leadership Schedule",
+            "third_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/NGSL%20(high%20school%20summer%20internship)%20schedule.pdf"
+          }
+        },
+        "270c92e7-671f-406b-8d55-552d9d6f59bf": {
+          "type": "collapsible_row",
+          "settings": {
+            "mobile_hide": false,
+            "heading": "Camps & Retreats General Documents",
+            "row_content": "",
+            "first_label": "Small Group Leader Training",
+            "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Retreat%20Leader%20Training%20Guide%20Example%20(2).pdf",
+            "second_label": "Retreat Parent Meeting Example",
+            "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Retreat%20Parent%20Meeting%20Example.pdf",
+            "third_label": "Host Home Training",
+            "third_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Retreat%20Host%20Home%20Guide%20Example%20(1).pdf"
+          }
+        },
+        "d794c3c5-4cba-4dcb-9f85-3eb7683fa007": {
+          "type": "collapsible_row",
+          "settings": {
+            "mobile_hide": false,
+            "heading": "Spring Retreat",
+            "row_content": "",
+            "first_label": "Spring Retreat Schedule",
+            "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Spring%20Retreat%20(BOTS)%20Schedule.pdf",
+            "second_label": "Middle School BOTS Recap",
+            "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Middle%20School%20BOTS%202023%20Recap.pdf",
+            "third_label": "High School BOTS Recap",
+            "third_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/High%20school%20BOTS%202023%20recap.pdf"
+          }
+        },
+        "af3cf481-1bf5-471e-8e19-b2ba8e93b265": {
+          "type": "collapsible_row",
+          "settings": {
+            "mobile_hide": false,
+            "heading": "Summer Camp",
+            "row_content": "",
+            "first_label": "Summer Camp",
+            "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Summer%20Camp%20Schedule.pdf",
+            "second_label": "High School Summer Camp Recap",
+            "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/High%20School%20Camp%202023%20Recap.pdf",
+            "third_label": "Middle School Summer Camp Recap",
+            "third_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Middle%20School%20Camp%202023%20Recap.pdf"
+          }
+        },
+        "a438821d-bf90-40b0-8ae1-26dae0ae5dc2": {
+          "type": "collapsible_row",
+          "settings": {
+            "mobile_hide": false,
+            "heading": "Fall Retreat",
+            "row_content": "",
+            "first_label": "Fall Retreat Schedule",
+            "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Fall%20Retreat%20Schedule%20(1).pdf",
+            "second_label": "Host Home Training",
+            "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Retreat%20Host%20Home%20Guide%20Example%20(1).pdf",
+            "third_label": "Fall Retreat Recap",
+            "third_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Fall%20Retreat%202023%20Recap.pdf"
+          }
+        },
+        "2dd83739-cf3d-4e5b-a440-490e83829776": {
+          "type": "collapsible_row",
+          "settings": {
+            "mobile_hide": false,
+            "heading": "Storytelling",
+            "row_content": "",
+            "first_label": "Social Media Stories",
+            "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Social%20Media%20Stories.pdf",
+            "second_label": "Students Telling Stories",
+            "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Students%20Telling%20Stories.zip",
+            "third_label": "",
+            "third_link": ""
+          }
+        },
+        "1ac5e1b7-8775-45e4-a147-6bd90a3b0c48": {
+          "type": "collapsible_row",
+          "settings": {
+            "mobile_hide": false,
+            "heading": "Superseries Strategy",
+            "row_content": "",
+            "first_label": "Superseries Strategy",
+            "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Super%20Series%20Strategy.pdf",
+            "second_label": "",
+            "second_link": "",
+            "third_label": "",
+            "third_link": ""
+          }
+        },
+        "9ef80d7b-146c-42a9-904f-9221a9619377": {
+          "type": "collapsible_row",
+          "settings": {
+            "mobile_hide": false,
+            "heading": "Superseries Recap Stories",
+            "row_content": "",
+            "first_label": "Recap Example 1",
+            "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Super%20Series%20Recap%20(Example%201).pdf",
+            "second_label": "Recap Example 2",
+            "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Super%20Series%20Recap%20(Example%202).pdf",
+            "third_label": "Recap Example 3",
+            "third_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Super%20Series%20Recap%20(Example%203).pdf"
+          }
+        },
+        "14b4742e-532e-4b06-8a8b-43bda6eb16c1": {
+          "type": "collapsible_row",
+          "settings": {
+            "mobile_hide": false,
+            "heading": "Additional Resources",
+            "row_content": "",
+            "first_label": "New Salvation & Baptism Resource",
+            "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/NEW%20Salvation%20&%20Baptism%20Resource.pdf",
+            "second_label": "",
+            "second_link": "",
+            "third_label": "",
+            "third_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "71bf958c-59c2-42d8-a364-0d8cff42fca0",
+        "393c10cd-4391-47f3-9797-bf5fd1f58d18",
+        "270c92e7-671f-406b-8d55-552d9d6f59bf",
+        "d794c3c5-4cba-4dcb-9f85-3eb7683fa007",
+        "af3cf481-1bf5-471e-8e19-b2ba8e93b265",
+        "a438821d-bf90-40b0-8ae1-26dae0ae5dc2",
+        "2dd83739-cf3d-4e5b-a440-490e83829776",
+        "1ac5e1b7-8775-45e4-a147-6bd90a3b0c48",
+        "9ef80d7b-146c-42a9-904f-9221a9619377",
+        "14b4742e-532e-4b06-8a8b-43bda6eb16c1"
+      ],
+      "settings": {
+        "trigger": "<p>Students<\/p>"
+      }
+    },
+    "0d01a383-5182-4ccb-97f3-ffd92099c951": {
+      "type": "section-for-tabs",
+      "blocks": {
+        "676d9e03-9e79-4b6b-bb76-662f55956f50": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Worship.jpg",
+            "title": "Worship",
+            "color_title": "#383633",
+            "content": "",
+            "color_content": "#383633"
+          }
+        },
+        "942a5638-b27a-46d2-b35d-7ef3e7b4b123": {
+          "type": "collapsible_row",
+          "settings": {
+            "mobile_hide": false,
+            "heading": "Milestone Worship Dev Process",
+            "row_content": "",
+            "first_label": "Worship Handbook & Dev Guide",
+            "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Worship%20Free%20Downloads\/WorshipHandbook2023%20UPDATED%20VERSION.pdf",
+            "second_label": "Worship Dev Leader Guide",
+            "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Worship%20Free%20Downloads\/DEV%20LEADER%20GUIDE%20-%202023.pdf",
+            "third_label": "",
+            "third_link": ""
+          }
+        },
+        "d86add07-42b1-4c17-97bd-73fd31c9c933": {
+          "type": "collapsible_row",
+          "settings": {
+            "mobile_hide": false,
+            "heading": "Faithful Album",
+            "row_content": "",
+            "first_label": "Faithful Album",
+            "first_link": "https:\/\/cloudfiles.to\/FMZ2IYpkH69",
+            "second_label": "",
+            "second_link": "",
+            "third_label": "",
+            "third_link": ""
+          }
+        },
+        "bb5357ae-0c58-471d-b71e-9dae0456a508": {
+          "type": "collapsible_row",
+          "settings": {
+            "mobile_hide": false,
+            "heading": "Christmas at Milestone",
+            "row_content": "",
+            "first_label": "Christmas at Milestone",
+            "first_link": "https:\/\/cloudfiles.to\/rdUVwPUU8ys",
+            "second_label": "",
+            "second_link": "",
+            "third_label": "",
+            "third_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "676d9e03-9e79-4b6b-bb76-662f55956f50",
+        "942a5638-b27a-46d2-b35d-7ef3e7b4b123",
+        "d86add07-42b1-4c17-97bd-73fd31c9c933",
+        "bb5357ae-0c58-471d-b71e-9dae0456a508"
+      ],
+      "settings": {
+        "trigger": "<p>Worship<\/p>"
       }
     }
   },
   "order": [
     "main",
     "d10020a7-4b2c-46b7-9add-181e0f1ae0c9",
+    "b60a7182-91c6-4dd4-915f-e6e1ef4985aa",
     "de168c7f-5447-4449-9e9c-dc92fac7500a",
+    "71c0728f-2eb0-4a87-b205-4b943806ca22",
     "b93f4efb-baed-4a3a-aa9e-aba70b43d227",
-    "6e92c376-4cd0-4342-8fc5-22e93830634e"
+    "6e92c376-4cd0-4342-8fc5-22e93830634e",
+    "ccc074f7-0edf-46b5-8a69-32e60c42bd4e",
+    "a3d11579-fa60-406e-b5cd-e71cdaed0145",
+    "edf4e287-b6c4-451e-a507-0395d7432774",
+    "0d01a383-5182-4ccb-97f3-ffd92099c951"
   ]
 }

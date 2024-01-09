@@ -6,25 +6,26 @@
         "559525fe-0d69-4ae7-a2fd-8c0b99c0afa8": {
           "type": "banner-text",
           "settings": {
-            "year": "2024",
+            "year": "",
             "row": "shopify:\/\/shop_images\/Artwork_1.svg",
             "image-top": "shopify:\/\/shop_images\/2025_Leaders_gathering_1.png",
-            "date": "Tuesday, January 9",
-            "text": "Milestone Church",
+            "date": "",
+            "text": "",
             "color_title_label": "#1d2228"
           }
         },
         "template--17141571944678__7ab22397-c0ce-419d-805b-048388f513b8-icon-title-1": {
           "type": "icon-title",
+          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/fi_2065223.svg",
             "title": "Campaigns",
-            "color_title_label": "#1d2228",
+            "color_title_label": "#4d4d4e",
             "custom_url": ""
           }
         },
         "template--17141571944678__7ab22397-c0ce-419d-805b-048388f513b8-icon-title-2": {
           "type": "icon-title",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/fi_7773333.svg",
             "title": "Free Downloads",
@@ -34,6 +35,7 @@
         },
         "template--17141571944678__7ab22397-c0ce-419d-805b-048388f513b8-icon-title-3": {
           "type": "icon-title",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/fi_3532930.svg",
             "title": "Books & Study Guides",
@@ -64,8 +66,8 @@
       "type": "main-page",
       "disabled": true,
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "7f3d0da4-ddcf-4682-8605-ffdf3941fd92": {
@@ -88,7 +90,7 @@
           "type": "button",
           "settings": {
             "button_label": "Register Here",
-            "button_link": "",
+            "button_link": "https:\/\/share.hsforms.com\/1i74YyIOTRpGn-XqjBy2Syge8clk",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -104,7 +106,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "background-2",
+        "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52

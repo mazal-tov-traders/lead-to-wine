@@ -119,21 +119,21 @@
     "649c0722-ca73-4076-89f0-6772f32438d0": {
       "type": "topics",
       "blocks": {
-        "template--17151717540070__649c0722-ca73-4076-89f0-6772f32438d0-card-1": {
+        "template--17151717540070__649c0722-ca73-4076-89f0-6772f32438d0-card-4": {
           "type": "card",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Rectangle_4133724_6.jpg",
-            "categoty": "Spiritual Growth",
+            "icon": "shopify:\/\/shop_images\/MIracles002_c9e80efa-a5f2-4693-8ad1-ec6b035065f8.jpg",
+            "categoty": "Miracles of Jesus",
             "color_category_label": "#ffffff",
             "color_category_back": "#4d4d4e",
-            "title": "Seeds",
+            "title": "Miracles",
             "color_title_label": "#383633",
-            "text": "Take your church on a spiritual growth journey utilizing the power and principles of the seed.",
+            "text": "Take your church on a journey to show them how God shows up in our lives and meets us in our moment of need.",
             "color_text_label": "#383633",
             "button-label": "Purchase Now",
-            "color_hover_btn": "#383633",
+            "color_hover_btn": "#4d4d4e",
             "color_link_back": "#4d4d4e",
-            "button_link": "shopify:\/\/pages\/seeds"
+            "button_link": "shopify:\/\/pages\/miracles-campaign"
           }
         },
         "template--17151717540070__649c0722-ca73-4076-89f0-6772f32438d0-card-2": {
@@ -153,6 +153,23 @@
             "button_link": "shopify:\/\/pages\/promises-campaign"
           }
         },
+        "template--17151717540070__649c0722-ca73-4076-89f0-6772f32438d0-card-1": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Rectangle_4133724_6.jpg",
+            "categoty": "Spiritual Growth",
+            "color_category_label": "#ffffff",
+            "color_category_back": "#4d4d4e",
+            "title": "Seeds",
+            "color_title_label": "#383633",
+            "text": "Take your church on a spiritual growth journey utilizing the power and principles of the seed.",
+            "color_text_label": "#383633",
+            "button-label": "Purchase Now",
+            "color_hover_btn": "#383633",
+            "color_link_back": "#4d4d4e",
+            "button_link": "shopify:\/\/pages\/seeds"
+          }
+        },
         "template--17151717540070__649c0722-ca73-4076-89f0-6772f32438d0-card-3": {
           "type": "card",
           "settings": {
@@ -169,30 +186,13 @@
             "color_link_back": "#4d4d4e",
             "button_link": "shopify:\/\/pages\/unshakable-campaign"
           }
-        },
-        "template--17151717540070__649c0722-ca73-4076-89f0-6772f32438d0-card-4": {
-          "type": "card",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/MIracles002_c9e80efa-a5f2-4693-8ad1-ec6b035065f8.jpg",
-            "categoty": "Miracles of Jesus",
-            "color_category_label": "#ffffff",
-            "color_category_back": "#4d4d4e",
-            "title": "Miracles",
-            "color_title_label": "#383633",
-            "text": "Take your church on a journey to show them how God shows up in our lives and meets us in our moment of need.",
-            "color_text_label": "#383633",
-            "button-label": "Purchase Now",
-            "color_hover_btn": "#4d4d4e",
-            "color_link_back": "#4d4d4e",
-            "button_link": "shopify:\/\/pages\/miracles-campaign"
-          }
         }
       },
       "block_order": [
-        "template--17151717540070__649c0722-ca73-4076-89f0-6772f32438d0-card-1",
+        "template--17151717540070__649c0722-ca73-4076-89f0-6772f32438d0-card-4",
         "template--17151717540070__649c0722-ca73-4076-89f0-6772f32438d0-card-2",
-        "template--17151717540070__649c0722-ca73-4076-89f0-6772f32438d0-card-3",
-        "template--17151717540070__649c0722-ca73-4076-89f0-6772f32438d0-card-4"
+        "template--17151717540070__649c0722-ca73-4076-89f0-6772f32438d0-card-1",
+        "template--17151717540070__649c0722-ca73-4076-89f0-6772f32438d0-card-3"
       ],
       "settings": {
         "include_margins": true,

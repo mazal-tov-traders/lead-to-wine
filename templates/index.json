@@ -37,7 +37,8 @@
           "type": "banner-text",
           "settings": {
             "title-one": "<p>Coaching & <strong>Development <\/strong>in Life & Faith<\/p>",
-            "color_title_label": "#eae9e5"
+            "color_title_label": "#eae9e5",
+            "align_content": "right"
           }
         }
       },
@@ -69,9 +70,9 @@
             "color_name": "#4d4d4e",
             "title-two": "Church of the Highlands",
             "color_text": "#d5cfc4",
-            "title-three": "Lorem ipsum dolor sit amet consectetur. Odio volutpat massa id neque et. Facilisi et in lobortis facilisi. Sed elementum pharetra nisl ultrices tristique nulla eu.",
+            "title-three": "\"Every leader benefits from coaching. Coaches help us see things we can't, give us confidence to enlarge our vision, and provide permission to prioritize the things that matter the most. My friend Jeff Little is one of the finest leaders and coaches I know, and I'm certain you will greatly benefit from his strategic thinking and biblical encouragement. He has a unique ability to help leaders win on the scoreboards that truly matter.\"",
             "color_text_1": "#4d4d4e",
-            "title-4": "Odio volutpat massa id neque et. Facilisi et in lobortis facilisi. Sed elementum pharetra nisl ultrices tristique nulla eu.",
+            "title-4": "",
             "color_title_label": "#4d4d4e"
           }
         }
@@ -94,7 +95,7 @@
             "texxt": "Connect with other leaders and receive practical tools for growth and development.",
             "color_title_label": "#4d4d4e",
             "color_text": "#4d4d4e",
-            "texxt-btn": "Learn More",
+            "texxt-btn": "",
             "button_link": "shopify:\/\/pages\/leaders-gathering",
             "color_text-lb": "#4d4d4e",
             "color_text_btn": "#4d4d4e"
@@ -108,7 +109,7 @@
             "texxt": "Lead pastor coaching and digital trainings to equip leaders to go further in what matters most.",
             "color_title_label": "#4d4d4e",
             "color_text": "#4d4d4e",
-            "texxt-btn": "learn more",
+            "texxt-btn": "",
             "button_link": "shopify:\/\/products\/seeds-kids-curriculum",
             "color_text-lb": "#4d4d4e",
             "color_text_btn": "#4d4d4e"
@@ -122,7 +123,7 @@
             "texxt": "Campaigns, message series, books, and study guides created to take people on a spiritual journey.",
             "color_title_label": "#4d4d4e",
             "color_text": "#4d4d4e",
-            "texxt-btn": "learn more",
+            "texxt-btn": "",
             "button_link": "shopify:\/\/products\/promises-series-kit",
             "color_text-lb": "#4d4d4e",
             "color_text_btn": "#4d4d4e"
@@ -164,7 +165,7 @@
         "template--17140783972582__7d43acf7-e204-45ea-b598-a020006b59ae-card-1": {
           "type": "card",
           "settings": {
-            "slider-background": "#e2e2e2",
+            "slider-background": "#ffffff",
             "logo": "shopify:\/\/shop_images\/MSresources021.jpg",
             "slide-title": "",
             "slider-title-color": "#4d4d4e",
@@ -179,7 +180,7 @@
         "template--17140783972582__7d43acf7-e204-45ea-b598-a020006b59ae-card-2": {
           "type": "card",
           "settings": {
-            "slider-background": "#e2e2e2",
+            "slider-background": "#ffffff",
             "logo": "shopify:\/\/shop_images\/Promises1_70420de4-5ef8-42a9-b686-2b2e18e17686.jpg",
             "slide-title": "",
             "slider-title-color": "#4d4d4e",
@@ -194,7 +195,7 @@
         "template--17140783972582__7d43acf7-e204-45ea-b598-a020006b59ae-card-3": {
           "type": "card",
           "settings": {
-            "slider-background": "#e2e2e2",
+            "slider-background": "#ffffff",
             "logo": "shopify:\/\/shop_images\/WTW1_4fc18698-241b-4279-8907-bee710980e29.jpg",
             "slide-title": "",
             "slider-title-color": "#4d4d4e",
@@ -289,6 +290,7 @@
         "template--17127585513702__8b54a942-97cd-450a-94d6-17cb2dbe9dd8-paragraph-1",
         "template--17127585513702__8b54a942-97cd-450a-94d6-17cb2dbe9dd8-email_form-1"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "",
         "full_width": true,

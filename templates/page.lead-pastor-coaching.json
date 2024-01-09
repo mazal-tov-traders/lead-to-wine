@@ -8,38 +8,36 @@
         "padding_bottom": 36
       }
     },
-    "80a6bd69-f104-43d7-947c-ec4fcec801e4": {
-      "type": "home-page-banner",
+    "f030f624-80fa-43dd-9417-c34bda7f08e5": {
+      "type": "banner",
       "blocks": {
-        "02fc4c3e-1227-42ff-86fc-2966db1592de": {
-          "type": "banner-text",
+        "9518cd18-3377-4626-895e-15d82bd2e4ec": {
+          "type": "title",
           "settings": {
-            "title-one": "<p>LEAD PASTOR COACHING<\/p>",
-            "color_title_label": "#eae9e5",
-            "align_content": "center"
+            "title": "Lead pastor coaching",
+            "color_title_label": "#fff"
           }
         }
       },
       "block_order": [
-        "02fc4c3e-1227-42ff-86fc-2966db1592de"
+        "9518cd18-3377-4626-895e-15d82bd2e4ec"
       ],
       "settings": {
-        "include_margins": true,
-        "background": "shopify:\/\/shop_images\/Rectangle_4133714_9.jpg"
+        "image": "shopify:\/\/shop_images\/Coaching_Header_v1_9c96ee32-91b2-4021-aeb4-95cf5ede9cbb.jpg"
       }
     },
     "8adf3fe2-ac05-40ed-9223-69c8c68ffa6b": {
       "type": "gaq-form",
       "settings": {
         "include_margins": true,
-        "section-title": "Please fill out the interest form below to receive information about coaching opportunities.",
+        "section-title": "<p>Please fill out the interest form below to receive information about coaching opportunities.<\/p>",
         "color_title_label": "#383633"
       }
     }
   },
   "order": [
     "main",
-    "80a6bd69-f104-43d7-947c-ec4fcec801e4",
+    "f030f624-80fa-43dd-9417-c34bda7f08e5",
     "8adf3fe2-ac05-40ed-9223-69c8c68ffa6b"
   ]
 }

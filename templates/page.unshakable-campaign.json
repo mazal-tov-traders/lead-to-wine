@@ -6,7 +6,7 @@
         "05af04be-278b-4d21-a55d-45043fcb6a05": {
           "type": "sub-title",
           "settings": {
-            "sub_title": "Your Seeds campaign includes:",
+            "sub_title": "Your Unshakable campaign includes:",
             "color_sub_title_label": "#ffffff"
           }
         },
@@ -14,7 +14,7 @@
           "type": "icon-and-text",
           "settings": {
             "icon": "shopify:\/\/shop_images\/fi_10812361.svg",
-            "text": "8 Messages",
+            "text": "10 Messages",
             "color_text_label": "#ffffff"
           }
         },
@@ -53,35 +53,36 @@
         "010470b0-00b6-44ba-97f3-cbdad1b0c304": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/gallery-1.jpg"
+            "image": "shopify:\/\/shop_images\/Unshakable023.jpg"
           }
         },
         "e44ebc8f-6a7d-4979-aa08-763d57ad589c": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SEEDS49.jpg"
+            "image": "shopify:\/\/shop_images\/Unshakable107.jpg"
           }
         },
         "18079372-3756-464c-bf85-bc13745d8d78": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SEEDS32.jpg"
+            "image": "shopify:\/\/shop_images\/Unshakable012.jpg"
           }
         },
         "91f879ff-16c4-467d-8aa8-fb36eb27d3d3": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screenshot_2024-01-08_at_1.29.55_PM.png"
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-01-08_at_4.56.39_PM.png"
           }
         },
         "f7060805-4bca-4055-9878-ceec40b4fefa": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screenshot_2024-01-08_at_1.30.07_PM.png"
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-01-08_at_4.59.55_PM.png"
           }
         },
         "1f4752b8-bda9-4564-91d9-d354e2fbee72": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "video_url": "https:\/\/www.youtube.com\/watch?v=nIk8fPYik3s&t=14s"
           }
@@ -102,10 +103,10 @@
         "1f4752b8-bda9-4564-91d9-d354e2fbee72"
       ],
       "settings": {
-        "background": "shopify:\/\/shop_images\/product-gallery-bg.jpg",
+        "background": "shopify:\/\/shop_images\/Screenshot_2024-01-08_at_4.44.06_PM.png",
         "title": "Unshakable Campaign",
         "color_title_label": "#ffffff",
-        "description": "<p><em>Our most popular series on one of God’s primary building blocks, the seed.<\/em><\/p><p>Growth doesn’t happen overnight – our Seeds series is focused on topics like potential, momentum, multiplication, and legacy so your church can grow in the areas of life they need it most<\/p>",
+        "description": "<p><em>Take your church on a journey to find safety and security in the Kingdom of God.<\/em><\/p><p>We all face challenges and obstacles that can feel insurmountable. Even the daily responsibilities and pressures of life can feel overwhelming when we trust in our own efforts. The good news is, we have a Savior in Jesus, who is the King of a different Kingdom and worthy of our trust. When we live according to His Kingdom and its principles, we’ll find that our lives in Him are unshakable.<\/p>",
         "color_description_label": "#ffffff"
       }
     },
@@ -122,7 +123,7 @@
         "9d372826-3176-4d23-b9b8-0e2bfb1cd958": {
           "type": "description",
           "settings": {
-            "description": "<p>Immediately after purchasing, you will receive an email with a link to download all campaign files.<\/p>",
+            "description": "<p>A complete Unshakable campaign includes:<\/p><ul><li>10-Weeks of Message Content<\/li><li>Presentation Slides<\/li><li>Message Bumper<\/li><li>Promo Video<\/li><li>Branding & Graphics Package<\/li><li>Digital Small Group Leader Guide<\/li><li>Kids Curriculum<\/li><li>50 Study Guides<\/li><\/ul><p>Immediately after purchasing, you will receive an email with a link to download all campaign files.<\/p>",
             "color_description_label": "#1d2228"
           }
         },
@@ -156,6 +157,7 @@
         },
         "0aa85ac3-a423-41a0-8df9-a97a28421314": {
           "type": "text-second",
+          "disabled": true,
           "settings": {
             "text_second": "See below for options to purchase Message Series, Kids Curriculum, or Study Guides seperately.",
             "color_text_second_label": "#1d2228"
@@ -180,6 +182,15 @@
         "hide_variants": false
       }
     },
+    "f16cd7ae-5332-4b22-a079-f809cd3ecddc": {
+      "type": "section-tabs",
+      "settings": {
+        "title": "Purchase Campaign Elements Separately",
+        "color_title": "#383633",
+        "sub_title": "",
+        "color_sub_title": "#383633"
+      }
+    },
     "2af4e7bc-7041-4030-bb56-69b216f7f6ac": {
       "type": "individual-collection-section",
       "settings": {
@@ -201,7 +212,7 @@
         "524b7136-f35c-408a-8fa1-0e93a1ac5362": {
           "type": "sub-title",
           "settings": {
-            "sub_title": "This 8 week campaign includes two intro weeks to generate excitement about the series and provide time for people to join a small group.",
+            "sub_title": "This 10 week campaign includes two intro weeks to generate excitement about the series and provide time for people to join a small group.",
             "color_label": "#242833"
           }
         },
@@ -210,11 +221,11 @@
           "settings": {
             "label": "INTRO one",
             "color_label": "#ffffff",
-            "background_color_label": "#94a06f",
-            "item_title": "POTENTIAL",
-            "color_item_title": "#94a06f",
+            "background_color_label": "#4d4d4e",
+            "item_title": "What is the Kingdom of God?",
+            "color_item_title": "#4d4d4e",
             "background_color_item_title": "#eae9e5",
-            "text": "Realizing our potential",
+            "text": "",
             "color_text": "#383633"
           }
         },
@@ -223,11 +234,11 @@
           "settings": {
             "label": "INTRO two",
             "color_label": "#ffffff",
-            "background_color_label": "#94a06f",
-            "item_title": "PROCESS",
-            "color_item_title": "#94a06f",
+            "background_color_label": "#4d4d4e",
+            "item_title": "Why is it so easy to miss the kingdom of god?",
+            "color_item_title": "#4d4d4e",
             "background_color_item_title": "#eae9e5",
-            "text": "Creating a healthy environment to hear from God",
+            "text": "",
             "color_text": "#383633"
           }
         },
@@ -236,11 +247,11 @@
           "settings": {
             "label": "WEEK ONE",
             "color_label": "#ffffff",
-            "background_color_label": "#94a06f",
-            "item_title": "RESISTANCE",
-            "color_item_title": "#94a06f",
+            "background_color_label": "#4d4d4e",
+            "item_title": "god's presence helps us overcome worry",
+            "color_item_title": "#4d4d4e",
             "background_color_item_title": "#eae9e5",
-            "text": "Handling adversity",
+            "text": "",
             "color_text": "#383633"
           }
         },
@@ -249,11 +260,11 @@
           "settings": {
             "label": "WEEK two",
             "color_label": "#ffffff",
-            "background_color_label": "#94a06f",
-            "item_title": "FAITH",
-            "color_item_title": "#94a06f",
+            "background_color_label": "#4d4d4e",
+            "item_title": "why people don't experience the kingdom of god",
+            "color_item_title": "#4d4d4e",
             "background_color_item_title": "#eae9e5",
-            "text": "Growing in faith",
+            "text": "",
             "color_text": "#383633"
           }
         },
@@ -262,11 +273,11 @@
           "settings": {
             "label": "WEEK three",
             "color_label": "#ffffff",
-            "background_color_label": "#94a06f",
-            "item_title": "MOMENTUM",
-            "color_item_title": "#94a06f",
+            "background_color_label": "#4d4d4e",
+            "item_title": "what the kingdom of god produces in us",
+            "color_item_title": "#4d4d4e",
             "background_color_item_title": "#eae9e5",
-            "text": "Three questions to ask about sowing and reaping",
+            "text": "",
             "color_text": "#383633"
           }
         },
@@ -275,11 +286,11 @@
           "settings": {
             "label": "WEEK FOUR",
             "color_label": "#ffffff",
-            "background_color_label": "#94a06f",
-            "item_title": "TRANSFORMATION",
-            "color_item_title": "#94a06f",
+            "background_color_label": "#4d4d4e",
+            "item_title": "the kingdom of god changes our relationships",
+            "color_item_title": "#4d4d4e",
             "background_color_item_title": "#eae9e5",
-            "text": "Walking in your new nature",
+            "text": "",
             "color_text": "#383633"
           }
         },
@@ -288,24 +299,50 @@
           "settings": {
             "label": "WEEK FIVE",
             "color_label": "#ffffff",
-            "background_color_label": "#94a06f",
-            "item_title": "MULTIPLICATION",
-            "color_item_title": "#94a06f",
+            "background_color_label": "#4d4d4e",
+            "item_title": "how does the kingdom of god meet our needs?",
+            "color_item_title": "#4d4d4e",
             "background_color_item_title": "#eae9e5",
-            "text": "Generosity and multiplication",
+            "text": "",
             "color_text": "#383633"
           }
         },
         "b0a0a2f7-ef66-4c8f-abf8-24e82cc7c01a": {
           "type": "overview-item",
           "settings": {
-            "label": "WEEksix",
+            "label": "WEEk six",
             "color_label": "#ffffff",
-            "background_color_label": "#94a06f",
-            "item_title": "LEGACY",
-            "color_item_title": "#94a06f",
+            "background_color_label": "#4d4d4e",
+            "item_title": "An 'already-not-yet' kingdom",
+            "color_item_title": "#4d4d4e",
             "background_color_item_title": "#eae9e5",
-            "text": "Leaving a legacy",
+            "text": "",
+            "color_text": "#383633"
+          }
+        },
+        "82eff898-933f-4b7b-b988-a7ef60b4ca95": {
+          "type": "overview-item",
+          "settings": {
+            "label": "Week seven",
+            "color_label": "#ffffff",
+            "background_color_label": "#4d4d4e",
+            "item_title": "how the kingdom responds to darkness",
+            "color_item_title": "#4d4d4e",
+            "background_color_item_title": "#eae9e5",
+            "text": "",
+            "color_text": "#383633"
+          }
+        },
+        "1c637a2b-b489-4908-a790-96ae366b4249": {
+          "type": "overview-item",
+          "settings": {
+            "label": "week eight",
+            "color_label": "#ffffff",
+            "background_color_label": "#4d4d4e",
+            "item_title": "how the kingdom of god impacts your family",
+            "color_item_title": "#4d4d4e",
+            "background_color_item_title": "#eae9e5",
+            "text": "",
             "color_text": "#383633"
           }
         }
@@ -319,7 +356,9 @@
         "46cb10c1-09c3-44b5-8ad5-5fc1ab4c61bf",
         "fd50fec1-5af1-4957-9630-3423c547c47c",
         "43f36cdd-51e5-4cda-8950-8b702d7e1662",
-        "b0a0a2f7-ef66-4c8f-abf8-24e82cc7c01a"
+        "b0a0a2f7-ef66-4c8f-abf8-24e82cc7c01a",
+        "82eff898-933f-4b7b-b988-a7ef60b4ca95",
+        "1c637a2b-b489-4908-a790-96ae366b4249"
       ],
       "settings": {
         "title": "Message content overview",
@@ -341,9 +380,9 @@
         "8d863d8f-8f32-4152-9bf7-ba09f49af712": {
           "type": "media",
           "settings": {
-            "image_video": "shopify:\/\/shop_images\/Screenshot_2024-01-08_at_1.35.08_PM.png",
+            "image_video": "shopify:\/\/shop_images\/Screenshot_2024-01-08_at_6.26.23_PM.png",
             "image_youtube": "shopify:\/\/shop_images\/fi_1384060.svg",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+            "video_url": "https:\/\/www.youtube.com\/watch?v=Z5af3ibfLEQ"
           }
         }
       },
@@ -354,74 +393,15 @@
       "settings": {
         "position": ""
       }
-    },
-    "d94fc19a-e4c4-4c17-b1f9-c0cfc2e734a2": {
-      "type": "video-and-content",
-      "blocks": {
-        "1859d013-09ad-48c1-b042-f60dda23888e": {
-          "type": "content",
-          "settings": {
-            "title": "Kids Song & Lyric Video",
-            "color_title_label": "#383633",
-            "sub_title": "",
-            "color_sub_title": "#918677"
-          }
-        },
-        "68ba616b-def6-442a-bfb7-f8a226d0ec96": {
-          "type": "media",
-          "settings": {
-            "image_video": "shopify:\/\/shop_images\/video-poster-2_aac26289-9b39-4b89-8add-1d0cf5fc1ae0.jpg",
-            "image_youtube": "shopify:\/\/shop_images\/fi_1384060.svg",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=r2-H1JAV5X8"
-          }
-        }
-      },
-      "block_order": [
-        "1859d013-09ad-48c1-b042-f60dda23888e",
-        "68ba616b-def6-442a-bfb7-f8a226d0ec96"
-      ],
-      "settings": {
-        "position": "_reverse"
-      }
-    },
-    "b14a2295-d2ef-410a-9000-7ed035ebdcf8": {
-      "type": "video-and-content",
-      "blocks": {
-        "4a98a36a-4e25-4e4f-8320-50775a0f39e5": {
-          "type": "content",
-          "settings": {
-            "title": "Message Bumper",
-            "color_title_label": "#383633",
-            "sub_title": "",
-            "color_sub_title": "#918677"
-          }
-        },
-        "6acc659a-0c73-49c6-a72a-b0e3e0b91693": {
-          "type": "media",
-          "settings": {
-            "image_video": "shopify:\/\/shop_images\/video-poster-1.jpg",
-            "image_youtube": "shopify:\/\/shop_images\/fi_1384060.svg",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
-          }
-        }
-      },
-      "block_order": [
-        "4a98a36a-4e25-4e4f-8320-50775a0f39e5",
-        "6acc659a-0c73-49c6-a72a-b0e3e0b91693"
-      ],
-      "settings": {
-        "position": ""
-      }
     }
   },
   "order": [
     "0c20b859-5668-4af5-a5ac-0c92eabf662a",
     "ee5d7643-9aae-4e94-adc8-d5a7f6b94e71",
+    "f16cd7ae-5332-4b22-a079-f809cd3ecddc",
     "2af4e7bc-7041-4030-bb56-69b216f7f6ac",
     "main",
     "e1fed952-e66e-462c-b3d6-d4469cbb7762",
-    "a7835f92-4df9-4df4-87fb-858f1bfba4a7",
-    "d94fc19a-e4c4-4c17-b1f9-c0cfc2e734a2",
-    "b14a2295-d2ef-410a-9000-7ed035ebdcf8"
+    "a7835f92-4df9-4df4-87fb-858f1bfba4a7"
   ]
 }

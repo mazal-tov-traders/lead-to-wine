@@ -15,7 +15,7 @@
         "df82fa88-f4e2-4ad2-834c-74ca72b507e4": {
           "type": "footer-content",
           "settings": {
-            "social_link": "",
+            "social_link": "https:\/\/www.youtube.com\/@milestonechurch",
             "icon": "shopify:\/\/shop_images\/youtube.svg",
             "icon-color": "shopify:\/\/shop_images\/youtube-color.svg",
             "reader-text": ""
@@ -24,7 +24,7 @@
         "622b6c4a-e1a9-45bd-80c9-68e80b9eeb3e": {
           "type": "footer-content",
           "settings": {
-            "social_link": "",
+            "social_link": "https:\/\/www.instagram.com\/jefflittle\/",
             "icon": "shopify:\/\/shop_images\/instagram.svg",
             "icon-color": "shopify:\/\/shop_images\/instagram-color.svg",
             "reader-text": ""
@@ -33,7 +33,7 @@
         "0765aa86-dc97-40e0-be86-7c7bb3ae5f80": {
           "type": "footer-content",
           "settings": {
-            "social_link": "",
+            "social_link": "https:\/\/facebook.com\/jefflittle",
             "icon": "shopify:\/\/shop_images\/facebook.svg",
             "icon-color": "shopify:\/\/shop_images\/facebook-color.svg",
             "reader-text": ""
@@ -41,6 +41,7 @@
         },
         "759a4895-4078-4fc5-81d5-3f7291b353b2": {
           "type": "footer-content",
+          "disabled": true,
           "settings": {
             "social_link": "",
             "icon": "shopify:\/\/shop_images\/linkedin.svg",
@@ -51,11 +52,11 @@
         "bba465c9-4c90-4761-a861-8a3e721c9165": {
           "type": "footer-bottom",
           "settings": {
-            "footer-copyright": "© Copyright 2023 Lead To Win. All Rights Reserved.",
+            "footer-copyright": "© Copyright 2024 Lead To Win. All Rights Reserved.",
             "color_copy": "#c6c5c1",
             "link-by-url": "",
-            "link-by-label": "Dallas and Plano Web Design Agency:",
-            "link-by-text": "Web Loft Designs"
+            "link-by-label": "",
+            "link-by-text": ""
           }
         }
       },
@@ -69,7 +70,7 @@
       ],
       "settings": {
         "include_margins": true,
-        "logo": "shopify:\/\/shop_images\/Lead_to_Win_1_9df2887f-ffce-4482-b5c1-6585b5890919.png",
+        "logo": "shopify:\/\/shop_images\/LTW-light.png",
         "background-color": "#383633"
       }
     },

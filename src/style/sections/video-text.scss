@@ -1,5 +1,23 @@
 @import "../variables-and-mixins.scss";
 
+.with-video-text {
+	+ .with-video-text {
+		.video-text {
+			padding-top: 16px;
+		}
+	}
+
+	&:last-child {
+		.video-text {
+			padding-bottom: 80px;
+
+			@media ($lg) {
+				padding-bottom: 100px;
+			}
+		}
+	}
+}
+
 .video-text {
 	padding: 40px 0;
 

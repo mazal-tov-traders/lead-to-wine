@@ -56,12 +56,12 @@
 			transition: color 0.3s, background 0.3s;
 
 			&.active {
-				color: $color-colors-main;
+				color: $color-dark-grey;
 				background: $color-colors-white;
 			}
 
 			&:hover {
-				color: $color-colors-main;
+				color: $color-dark-grey;
 			}
 
 			p {
@@ -141,7 +141,7 @@
 		&:hover,
 		&.active {
 			text-shadow: 0 0 0;
-			color: $color-colors-main;
+			color: $color-dark-grey;
 		}
 
 		&.active {
@@ -331,12 +331,11 @@
 					text-decoration: underline;
 					text-decoration-thickness: 0.75px;
 					text-underline-offset: 2px;
-					transition: color 0.3s;
+					transition: color 0.3s, text-shadow 0.3s;
 
 					&:hover,
 					&:focus {
-						color: $color-colors-main;
-						text-shadow: unset;
+						color: $color-dark-grey;
 					}
 				}
 			}
@@ -374,7 +373,7 @@
 
 				&[open] {
 					summary {
-						color: $color-colors-main;
+						color: $color-dark-grey;
 
 						&::before {
 							opacity: 0;

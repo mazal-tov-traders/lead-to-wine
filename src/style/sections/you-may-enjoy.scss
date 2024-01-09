@@ -31,14 +31,15 @@
 		margin-top: 50px;
 
 		.btn {
-			color: $color-colors-main;
+			color: $color-text-main;
 			background: transparent;
-			border-color: $color-colors-main;
+			border-color: $color-text-main;
 
 			&:hover,
 			&:focus {
 				color: $color-colors-white;
 				background: $color-colors-main;
+				border-color: $color-colors-main;
 			}
 		}
 	}

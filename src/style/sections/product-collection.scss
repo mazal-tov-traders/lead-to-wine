@@ -22,6 +22,12 @@
 		}
 	}
 
+	.title {
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 50px;
+	}
+
 	.card-item {
 		width: 100%;
 		background: $color-colors-white;
@@ -233,11 +239,15 @@
 			}
 
 			.product-form {
+				margin: 0;
+
 				&__submit {
 					@include product-btn;
 
 					gap: 5px;
 					width: 100%;
+					margin: 0;
+					min-height: unset;
 
 					@media ($xs) {
 						width: auto;

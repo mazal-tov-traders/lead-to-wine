@@ -1,5 +1,15 @@
 @import "../variables-and-mixins.scss";
 
+.with-get-started {
+	&:last-child .get-started {
+		padding-bottom: 80px;
+
+		@media ($lg) {
+			padding-bottom: 100px;
+		}
+	}
+}
+
 .get-started {
 	padding: 40px 0;
 
@@ -137,7 +147,7 @@
 			line-height: 18px;
 			color: $color-colors-white;
 			text-transform: uppercase;
-			background: $color-colors-main;
+			background: $color-dark-grey;
 			padding: 10px 20px;
 			display: inline-block;
 			margin-bottom: 20px;

@@ -84,6 +84,63 @@
         "include_margins": true
       }
     },
+    "b385bcad-1809-4707-a2bc-8cd785a28668": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--17127585513702__b385bcad-1809-4707-a2bc-8cd785a28668-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vector_Smart_Object-2.svg",
+            "title": "<strong>Gatherings<\/strong>",
+            "text": "<p>Connect with other leaders and receive practical tools for growth and development.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17127585513702__b385bcad-1809-4707-a2bc-8cd785a28668-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon.png",
+            "title": "Coaching",
+            "text": "<p>Lead pastor coaching and digital trainings to equip leaders to go further in what matters most.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17127585513702__b385bcad-1809-4707-a2bc-8cd785a28668-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vector_Smart_Object_bbe40eb1-226e-4ecc-969c-4bca63821a0a.svg",
+            "title": "Resources",
+            "text": "<p>Campaigns, message series, books, and study guides created to take people on a spiritual journey.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17127585513702__b385bcad-1809-4707-a2bc-8cd785a28668-column-1",
+        "template--17127585513702__b385bcad-1809-4707-a2bc-8cd785a28668-column-2",
+        "template--17127585513702__b385bcad-1809-4707-a2bc-8cd785a28668-column-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "9cd67dd3-24ec-4a6c-932b-1b8cf7511904": {
       "type": "services",
       "blocks": {
@@ -297,59 +354,6 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "b385bcad-1809-4707-a2bc-8cd785a28668": {
-      "type": "multicolumn",
-      "blocks": {
-        "template--17127585513702__b385bcad-1809-4707-a2bc-8cd785a28668-column-1": {
-          "type": "column",
-          "settings": {
-            "title": "<strong>Gatherings<\/strong>",
-            "text": "<p>Connect with other leaders and receive practical tools for growth and development.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--17127585513702__b385bcad-1809-4707-a2bc-8cd785a28668-column-2": {
-          "type": "column",
-          "settings": {
-            "title": "Coaching",
-            "text": "<p>Lead pastor coaching and digital trainings to equip leaders to go further in what matters most.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--17127585513702__b385bcad-1809-4707-a2bc-8cd785a28668-column-3": {
-          "type": "column",
-          "settings": {
-            "title": "Resources",
-            "text": "<p>Campaigns, message series, books, and study guides created to take people on a spiritual journey.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--17127585513702__b385bcad-1809-4707-a2bc-8cd785a28668-column-1",
-        "template--17127585513702__b385bcad-1809-4707-a2bc-8cd785a28668-column-2",
-        "template--17127585513702__b385bcad-1809-4707-a2bc-8cd785a28668-column-3"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h2",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -357,10 +361,10 @@
     "83b9d9c3-5754-4632-b554-7498973a8822",
     "2354a153-96f9-4a91-a1cc-cdbb319d67d4",
     "cffa4dce-b708-40de-a035-cf7a78b97a83",
+    "b385bcad-1809-4707-a2bc-8cd785a28668",
     "9cd67dd3-24ec-4a6c-932b-1b8cf7511904",
     "7d43acf7-e204-45ea-b598-a020006b59ae",
     "dc3ddbd5-59ca-45d9-aaf4-b83b99d70a0d",
-    "8b54a942-97cd-450a-94d6-17cb2dbe9dd8",
-    "b385bcad-1809-4707-a2bc-8cd785a28668"
+    "8b54a942-97cd-450a-94d6-17cb2dbe9dd8"
   ]
 }

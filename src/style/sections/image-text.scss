@@ -37,6 +37,11 @@
 
 	&__content {
 		width: 100%;
+		text-align: center;
+
+		@media ($xs) {
+			text-align: left;
+		}
 
 		@media ($lg) {
 			flex: 1 0 0;
@@ -64,7 +69,12 @@
 	}
 
 	.link {
+		justify-content: center;
 		margin-top: 20px;
+
+		@media ($xs) {
+			justify-content: flex-start;
+		}
 
 		@media ($lg) {
 			margin-top: 50px;

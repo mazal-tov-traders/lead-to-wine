@@ -20,6 +20,11 @@
 		box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
 		padding: 40px 30px;
 		position: relative;
+		text-align: center;
+
+		@media ($xs) {
+			text-align: left;
+		}
 
 		@media ($md) {
 			display: flex;
@@ -37,7 +42,11 @@
 			height: 100px;
 			width: fit-content;
 			object-fit: contain;
-			margin-bottom: 30px;
+			margin: 0 auto 30px;
+
+			@media ($xs) {
+				margin: 0 0 30px;
+			}
 		}
 	}
 

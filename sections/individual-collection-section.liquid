@@ -4,6 +4,9 @@
 {% assign collection = section.settings.section_collection %}
 <section class="product-collection">
   <div class="page-width">
+    {% if section.settings.section_header != blank %}
+    <h2 class="title">{{section.settings.section_header}}</h2>
+    {% endif %}
     <div class="product-collection__wrapper">
       {% for product in collection.products %}
         {% render 'card-product-new', card_product: product %}

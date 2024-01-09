@@ -11,13 +11,14 @@ $height-element: 53px;
 $color-text-main: #383633;
 $color-text-light-grey: #eae9e5;
 $color-text-second: #918677;
-$color-text-link: #342663;
-$color-colors-main: #342663;
+$color-text-link: #4d4d4e;
+$color-colors-main: #d5cfc4;
 $color-colors-second: #383633;
 $color-colors-white: #fff;
 $color-colors-element: #eae9e5;
 $color-colors-light-gray: #dbdbdb;
 $color-colors-89: #898989;
+$color-dark-grey: #4d4d4e;
 
 $color-element-hover: #383633;
 
@@ -255,7 +256,7 @@ $color-element-hover: #383633;
   font-size: 24px;
   font-style: italic;
   line-height: 30px;
-  color: $color-colors-main;
+  color: $color-text-second;
   padding-bottom: 16px;
   position: relative;
 

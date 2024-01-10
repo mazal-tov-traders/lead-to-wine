@@ -3,25 +3,16 @@
     "cc01a5c9-92fb-416b-a914-ea2ef23e205e": {
       "type": "banner",
       "blocks": {
-        "4231754f-c541-4e29-9606-2265f6a0e684": {
-          "type": "title",
-          "settings": {
-            "title": "miracles campaign",
-            "color_title_label": "#ffffff"
-          }
-        },
         "02834856-42b6-4955-9dc8-61d90b75ef11": {
           "type": "media",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/way-to-win-logo.png"
           }
         },
         "fe42e3fd-1bbd-4a42-ae51-f957516aded8": {
           "type": "description",
-          "disabled": true,
           "settings": {
-            "description": "<p>RECOGNIZING HIS VOICE IN A WORLD FULL OF NOISE<\/p>",
+            "description": "<p>Coaching & Developing MEN<br\/>IN MATTERS OF Life & Faith<\/p>",
             "color_description_label": "#ffffff"
           }
         },
@@ -29,7 +20,7 @@
           "type": "button",
           "disabled": true,
           "settings": {
-            "button_label": "Buy The Study Guide",
+            "button_label": "Buy The Book",
             "button_link": "",
             "color_button_backgroun": "#ff0000",
             "color_button_label": "#ffffff",
@@ -41,13 +32,12 @@
         }
       },
       "block_order": [
-        "4231754f-c541-4e29-9606-2265f6a0e684",
         "02834856-42b6-4955-9dc8-61d90b75ef11",
         "fe42e3fd-1bbd-4a42-ae51-f957516aded8",
         "eb6f4c67-8dc0-416b-bead-6cab94fedeee"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Web_Header.jpg"
+        "image": "shopify:\/\/shop_images\/Rectangle_4133714_7.jpg"
       }
     },
     "599530d0-8352-441b-92cc-3db587f9d17e": {
@@ -56,15 +46,14 @@
         "eee09b2e-275d-4424-a011-b63c4dffe9b8": {
           "type": "avatar",
           "settings": {
-            "avatar": "shopify:\/\/shop_images\/image.png",
-            "quotes": "shopify:\/\/shop_images\/fi_107076.svg"
+            "avatar": "shopify:\/\/shop_images\/image.png"
           }
         },
         "198c77df-17b8-4e11-a73e-9eafc7c6a826": {
           "type": "name",
           "settings": {
             "name": "FOREWORD BY JOHN MAXWELL",
-            "color_name_label": "#342663"
+            "color_name_label": "#4d4d4e"
           }
         },
         "60cfe272-5097-4546-8a4c-f7d0bd716fd9": {
@@ -76,6 +65,7 @@
         },
         "ab063952-226d-4403-8344-4ac88ef3c83f": {
           "type": "quote-with-avatar",
+          "disabled": true,
           "settings": {
             "quote-with-avatar": "shopify:\/\/shop_images\/Vector.svg"
           }
@@ -87,7 +77,6 @@
         "60cfe272-5097-4546-8a4c-f7d0bd716fd9",
         "ab063952-226d-4403-8344-4ac88ef3c83f"
       ],
-      "disabled": true,
       "settings": {
       }
     },
@@ -135,14 +124,14 @@
         "486e114f-33c6-4ba4-b61d-056c12ba1dd0": {
           "type": "heading",
           "settings": {
-            "heading": "Does He see what I’m going through? Will He show up with His miracle power when I need Him most?",
+            "heading": "GROWTH AND DEVELOPMENT GUIDE FOR MEN",
             "color_heading_label": "#1d2228"
           }
         },
         "631378ed-1c98-4d64-b696-d5b4065b5032": {
           "type": "description",
           "settings": {
-            "description": "<p>Most of us have wrestled with these questions.<\/p><p>No one performed miracles like Jesus. He restored sight to the blind, helped the lame walk, calmed the seas, and multiplied one boy’s lunch to feed thousands. The Bible is filled with miracles…but what is God trying to show us? This book shows us how God shows up in our lives and meets us in our moment of need.<\/p>",
+            "description": "<ul><li>Coaching for personal, spiritual, and professional areas of life<\/li><li>Concise and practical chapters<\/li><li>Helpful questions and leadership challenges<\/li><li>Great for groups or the individual reader<\/li><\/ul>",
             "color_description_label": "#1d2228"
           }
         },
@@ -171,7 +160,7 @@
         "2e67b85d-a844-41be-9f38-51091714bcd3": {
           "type": "image-product",
           "settings": {
-            "image_product": "shopify:\/\/shop_images\/MIracles023.jpg"
+            "image_product": "shopify:\/\/shop_images\/MSresources021.jpg"
           }
         },
         "cfe9650a-4e66-4478-b780-08f0e19b2a22": {
@@ -184,7 +173,6 @@
         },
         "9205ad00-fcd9-4297-a7e0-8d637296564e": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "text": "25% discount when you buy 10 or more books",
             "color_text_label": "#1d2228"
@@ -213,7 +201,7 @@
         "2faee0c0-67ee-49e2-baec-4d1b7274d6a8"
       ],
       "settings": {
-        "product": "miracles-campaign",
+        "product": "the-way-to-win",
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "media_position": "right",
@@ -236,9 +224,9 @@
           "settings": {
             "background_block": "#eae9e5",
             "label": "Section 1",
-            "color_label": "#ffffff",
-            "background-label": "#342663",
-            "content": "<p>Provides immediate value that the tools in this book with add value to your daily life.<\/p>",
+            "color_label": "#eae9e9",
+            "background-label": "#4d4d4e",
+            "content": "<p>The Winning Lifestyle - Personal Development<\/p>",
             "color_content_label": "#383633"
           }
         },
@@ -247,21 +235,22 @@
           "settings": {
             "background_block": "#eae9e5",
             "label": "Section 2",
-            "color_label": "#ffffff",
-            "background-label": "#342663",
-            "content": "<p>Builds spiritual foundations & show how it benefits all aspects of you life.<\/p>",
+            "color_label": "#eae9e9",
+            "background-label": "#4d4d4e",
+            "content": "<p>The Winning Fundamentals - Spiritual Foundations<\/p>",
             "color_content_label": "#383633"
           }
         },
         "8c9fa32b-6a8c-4875-9d12-e9b21b3a5fd9": {
           "type": "section",
+          "disabled": true,
           "settings": {
             "background_block": "#eae9e5",
             "label": "",
-            "color_label": "#ffffff",
-            "background-label": "#342663",
+            "color_label": "#eae9e9",
+            "background-label": "#4d4d4e",
             "content": "",
-            "color_content_label": "#383633"
+            "color_content_label": "#4d4d4e"
           }
         },
         "f187f553-663e-4f03-9112-d736b8da325f": {
@@ -269,9 +258,9 @@
           "settings": {
             "background_block": "#eae9e5",
             "label": "Section 3",
-            "color_label": "#ffffff",
-            "background-label": "#342663",
-            "content": "<p>Identifies what it means to have integrity in relationships and to lead your family well.<\/p>",
+            "color_label": "#eae9e9",
+            "background-label": "#4d4d4e",
+            "content": "<p>The Winning Playbook - Character Development<\/p>",
             "color_content_label": "#383633"
           }
         },
@@ -280,9 +269,9 @@
           "settings": {
             "background_block": "#eae9e5",
             "label": "Section 4",
-            "color_label": "#ffffff",
-            "background-label": "#342663",
-            "content": "<p>Understanding the difference in actual values vs. aspirational values, and the importance of not just attending church, but engaging.<\/p>",
+            "color_label": "#eae9e9",
+            "background-label": "#4d4d4e",
+            "content": "<p>The Winning Culture - Values<\/p>",
             "color_content_label": "#383633"
           }
         },
@@ -291,9 +280,9 @@
           "settings": {
             "background_block": "#eae9e5",
             "label": "Section 5",
-            "color_label": "#ffffff",
-            "background-label": "#342663",
-            "content": "<p>Equips you to walk with other men in their walk with God.<\/p>",
+            "color_label": "#eae9e9",
+            "background-label": "#4d4d4e",
+            "content": "<p>The Winning Strategy - Discipleship<\/p>",
             "color_content_label": "#383633"
           }
         }
@@ -307,7 +296,6 @@
         "0dfb0884-3faf-4f6c-8616-84bde47fe7af",
         "966e258c-ce7d-4491-b82b-b6540a8dcd51"
       ],
-      "disabled": true,
       "settings": {
       }
     },
@@ -327,10 +315,10 @@
             "button_label": "Download A Preview",
             "button_link": "",
             "color_button_backgroun": "#ffffff",
-            "color_button_label": "#342663",
+            "color_button_label": "#4d4d4e",
             "color_button_border": "#ffffff",
-            "hover_color_button_backgroun": "#342663",
-            "hover_color_button_border": "#342663",
+            "hover_color_button_backgroun": "#4d4d4e",
+            "hover_color_button_border": "#4d4d4e",
             "hover_color_button_label": "#ffffff"
           }
         }
@@ -356,7 +344,7 @@
         "1f3670eb-88ad-496a-a023-add186c6c536": {
           "type": "title",
           "settings": {
-            "title": "<em>Jeff  <\/em>Little",
+            "title": "Jeff<em> <\/em>Little",
             "color_title_label": "#383633"
           }
         },
@@ -373,7 +361,6 @@
         "1f3670eb-88ad-496a-a023-add186c6c536",
         "4a112e2b-53b4-4e06-8d29-0373e175870f"
       ],
-      "disabled": true,
       "settings": {
         "position_image": ""
       }

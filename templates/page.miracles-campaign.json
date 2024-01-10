@@ -123,7 +123,7 @@
         "9d372826-3176-4d23-b9b8-0e2bfb1cd958": {
           "type": "description",
           "settings": {
-            "description": "<p>A complete Miracles campaign includes all content and assets you need to run a church-wide campaign:<\/p><ul><li>8-Weeks of Message Content<\/li><li>All Promo Material<\/li><li>Digital Small Group Leader Guide<\/li><li>Kids Curriculum<\/li><li>50 Study Guide Books<\/li><\/ul><p>After purchasing, you will receive an email with a link to download all campaign files.<\/p>",
+            "description": "<p>A complete Miracles campaign includes all content and assets you need to run a church-wide campaign:<\/p><ul><li>8-Weeks of Message Content<\/li><li>All Promo Material<\/li><li>Digital Small Group Leader Guide<\/li><li>Kids Curriculum<\/li><li>50 Books<\/li><\/ul><p>After purchasing, you will receive an email with a link to download all campaign files.<\/p>",
             "color_description_label": "#1d2228"
           }
         },
@@ -182,20 +182,11 @@
         "hide_variants": false
       }
     },
-    "86d14725-e78c-41b7-b886-13b7bd9f2e38": {
-      "type": "section-tabs",
-      "settings": {
-        "title": "Purchase Campaign Elements Separately",
-        "color_title": "#383633",
-        "sub_title": "",
-        "color_sub_title": "#383633"
-      }
-    },
     "2af4e7bc-7041-4030-bb56-69b216f7f6ac": {
       "type": "individual-collection-section",
       "settings": {
         "section_collection": "miracles-campaign",
-        "section_header": ""
+        "section_header": "Purchase campaign elements separately"
       }
     },
     "main": {
@@ -212,7 +203,7 @@
         "524b7136-f35c-408a-8fa1-0e93a1ac5362": {
           "type": "sub-title",
           "settings": {
-            "sub_title": "This 8 week campaign includes two intro weeks to generate excitement about the series and provide time for people to join a small group.",
+            "sub_title": "This 8-week campaign includes two intro weeks to generate excitement about the series and provide time for people to join a small group.",
             "color_label": "#242833"
           }
         },
@@ -399,7 +390,6 @@
   "order": [
     "0c20b859-5668-4af5-a5ac-0c92eabf662a",
     "ee5d7643-9aae-4e94-adc8-d5a7f6b94e71",
-    "86d14725-e78c-41b7-b886-13b7bd9f2e38",
     "2af4e7bc-7041-4030-bb56-69b216f7f6ac",
     "main",
     "e1fed952-e66e-462c-b3d6-d4469cbb7762",

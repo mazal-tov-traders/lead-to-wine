@@ -13,7 +13,7 @@
       "settings": {
         "title": "Free <em>Downloads<\/em>",
         "color_title": "#383633",
-        "sub_title": "Forms, processes, and tools we use every day at Milestone Church",
+        "sub_title": "Forms, processes, and tools we use every day at Milestone Church.",
         "color_sub_title": "#918677"
       }
     },
@@ -38,7 +38,7 @@
             "row_content": "",
             "first_label": "Assimilation & Growth Track",
             "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Growth%20Track%20Free%20Downloads\/Leaders%20Gathering%20Assimilation%20Breakout%20Slides_For_Web.pdf",
-            "second_label": "Production",
+            "second_label": "Worship & Production",
             "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Worship%20Free%20Downloads\/LG%20Production%20Breakout%20Slides.pdf",
             "third_label": "NextGen",
             "third_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Kids%20Downloads\/Next%20Gen%20Leaders%20Gathering%20Slides.pdf"
@@ -50,7 +50,7 @@
         "51e455a0-118b-43b7-8f46-980b08fd07f3"
       ],
       "settings": {
-        "trigger": "<p>Breakout Slides<\/p>"
+        "trigger": "<p>Leaders Gathering<\/p><p>Breakout Slides<\/p>"
       }
     },
     "de168c7f-5447-4449-9e9c-dc92fac7500a": {
@@ -264,7 +264,7 @@
             "mobile_hide": false,
             "heading": "2023 Impact Video",
             "row_content": "",
-            "first_label": "Missions Impact Video",
+            "first_label": "Missions Impact brochure",
             "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Missions%20and%20Outreach\/Impact%20Brochure%202023.pdf",
             "second_label": "",
             "second_link": "",
@@ -328,24 +328,10 @@
           "type": "collapsible_row",
           "settings": {
             "mobile_hide": false,
-            "heading": "Weddings",
+            "heading": "Coming Soon",
             "row_content": "",
-            "first_label": "Wedding Policies & Procedures",
-            "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Pastoral%20Care%20Free%20Downloads\/Wedding%20&%20Procedures.pdf",
-            "second_label": "",
-            "second_link": "",
-            "third_label": "",
-            "third_link": ""
-          }
-        },
-        "1aef3910-b00b-4bde-80ee-1c82a6b8bec9": {
-          "type": "collapsible_row",
-          "settings": {
-            "mobile_hide": false,
-            "heading": "Funerals",
-            "row_content": "",
-            "first_label": "Funeral Policies & Procedures",
-            "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Pastoral%20Care%20Free%20Downloads\/Funeral%20Policies%20&%20Procedures.pdf",
+            "first_label": "",
+            "first_link": "",
             "second_label": "",
             "second_link": "",
             "third_label": "",
@@ -355,8 +341,7 @@
       },
       "block_order": [
         "b4e1e96e-b46f-4861-8039-497bff856eb8",
-        "a3334af6-f4fc-4bb9-9702-f8a10ccac3ad",
-        "1aef3910-b00b-4bde-80ee-1c82a6b8bec9"
+        "a3334af6-f4fc-4bb9-9702-f8a10ccac3ad"
       ],
       "settings": {
         "trigger": "<p>Pastoral Care<\/p>"
@@ -435,7 +420,7 @@
             "first_label": "Overview",
             "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Small%20Groups%20Free%20Downloads\/Small%20Groups%20Overview.pdf",
             "second_label": "Churchwide Campaigns",
-            "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Small%20Groups%20Free%20Downloads\/Churchwide%20Campaigns.pdf",
+            "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/%5BTest%5D%20Free%20Downloads\/THE%20CHURCHWIDE%20CAMPAIGN.pdf",
             "third_label": "Small Group Leader Application",
             "third_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Small%20Groups%20Free%20Downloads\/Example%20Small%20Group%20Leader%20Application.pdf"
           }
@@ -580,9 +565,9 @@
           "type": "collapsible_row",
           "settings": {
             "mobile_hide": false,
-            "heading": "Superseries Strategy",
+            "heading": "Super Series Strategy",
             "row_content": "",
-            "first_label": "Superseries Strategy",
+            "first_label": "Super Series Strategy",
             "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Super%20Series%20Strategy.pdf",
             "second_label": "",
             "second_link": "",
@@ -594,7 +579,7 @@
           "type": "collapsible_row",
           "settings": {
             "mobile_hide": false,
-            "heading": "Superseries Recap Stories",
+            "heading": "Super Series Recap Stories",
             "row_content": "",
             "first_label": "Recap Example 1",
             "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Super%20Series%20Recap%20(Example%201).pdf",

@@ -20,7 +20,7 @@
         "fe42e3fd-1bbd-4a42-ae51-f957516aded8": {
           "type": "description",
           "settings": {
-            "description": "<p>Discover Who God Created You to Be.<\/p>",
+            "description": "<p>Discover Who God Created You to Be<\/p>",
             "color_description_label": "#ffffff"
           }
         },
@@ -141,7 +141,7 @@
         "631378ed-1c98-4d64-b696-d5b4065b5032": {
           "type": "description",
           "settings": {
-            "description": "<p>Often it’s the first question we ask as a child and yet it’s never far from those about to take their last breath. We can avoid it, but deep down… every single one of us needs to answer this one simple question: Who Am I?<\/p>",
+            "description": "<p>Often it’s the first question we ask as a child and yet it’s never far from those about to take their last breath. We can avoid it, but deep down every single one of us needs to answer this one simple question: Who Am I?<\/p>",
             "color_description_label": "#1d2228"
           }
         },

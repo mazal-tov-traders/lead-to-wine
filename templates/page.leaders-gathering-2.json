@@ -17,7 +17,7 @@
         "template--17141571944678__7ab22397-c0ce-419d-805b-048388f513b8-icon-title-1": {
           "type": "icon-title",
           "settings": {
-            "image": "shopify:\/\/shop_images\/fi_2065223.svg",
+            "image": "shopify:\/\/shop_images\/fi_2065223_53a9a1bd-af28-44e7-a8a2-b64f7e6e0b7b.svg",
             "title": "Campaigns",
             "color_title_label": "#1d2228",
             "custom_url": ""
@@ -26,7 +26,7 @@
         "template--17141571944678__7ab22397-c0ce-419d-805b-048388f513b8-icon-title-2": {
           "type": "icon-title",
           "settings": {
-            "image": "shopify:\/\/shop_images\/fi_7773333.svg",
+            "image": "shopify:\/\/shop_images\/fi_7773333_1.svg",
             "title": "Free Downloads",
             "color_title_label": "#1d2228",
             "custom_url": ""
@@ -35,7 +35,7 @@
         "template--17141571944678__7ab22397-c0ce-419d-805b-048388f513b8-icon-title-3": {
           "type": "icon-title",
           "settings": {
-            "image": "shopify:\/\/shop_images\/fi_3532930.svg",
+            "image": "shopify:\/\/shop_images\/fi_3532930_1c43bd72-014b-4926-8727-6b65b74ed3f5.svg",
             "title": "Books & Study Guides",
             "color_title_label": "#1d2228",
             "custom_url": "shopify:\/\/products\/closer"
@@ -57,7 +57,7 @@
       ],
       "settings": {
         "include_margins": true,
-        "background": "shopify:\/\/shop_images\/Rectangle_4133714_5.jpg"
+        "background": "shopify:\/\/shop_images\/white-bg_fbe38d29-71b1-4cae-850e-fa1ff230cb21.jpg"
       }
     },
     "main": {

@@ -51,47 +51,6 @@
         "show_text_below": true
       }
     },
-    "599530d0-8352-441b-92cc-3db587f9d17e": {
-      "type": "quote-with-avatar",
-      "blocks": {
-        "eee09b2e-275d-4424-a011-b63c4dffe9b8": {
-          "type": "avatar",
-          "settings": {
-            "avatar": "shopify:\/\/shop_images\/image.png",
-            "quotes": "shopify:\/\/shop_images\/fi_107076.svg"
-          }
-        },
-        "198c77df-17b8-4e11-a73e-9eafc7c6a826": {
-          "type": "name",
-          "settings": {
-            "name": "FOREWORD BY JOHN MAXWELL",
-            "color_name_label": "#342663"
-          }
-        },
-        "60cfe272-5097-4546-8a4c-f7d0bd716fd9": {
-          "type": "text",
-          "settings": {
-            "text": "\"Closing the gap between information and action is challenging in every setting, but this is especially difficult for men in the Church. They know they’re supposed to participate, but they don’t know what to do. They know what to do at work, they know what to do in the gym, they know what to do when they’re spending the weekend on their hobbies…but they desperately need practical help in matters of life and faith. As coaches, our job is to prepare and inspire people to succeed in whatever they set their hands to.\"",
-            "color_text_label": "#383633"
-          }
-        },
-        "ab063952-226d-4403-8344-4ac88ef3c83f": {
-          "type": "quote-with-avatar",
-          "settings": {
-            "quote-with-avatar": "shopify:\/\/shop_images\/Vector.svg"
-          }
-        }
-      },
-      "block_order": [
-        "eee09b2e-275d-4424-a011-b63c4dffe9b8",
-        "198c77df-17b8-4e11-a73e-9eafc7c6a826",
-        "60cfe272-5097-4546-8a4c-f7d0bd716fd9",
-        "ab063952-226d-4403-8344-4ac88ef3c83f"
-      ],
-      "disabled": true,
-      "settings": {
-      }
-    },
     "main": {
       "type": "main-product",
       "disabled": true,
@@ -143,7 +102,7 @@
         "631378ed-1c98-4d64-b696-d5b4065b5032": {
           "type": "description",
           "settings": {
-            "description": "<p>Even the daily responsibilities and pressures of life can feel overwhelming when we trust in our own efforts. The good news is, we have a Savior in Jesus, who is the King of a different Kingdom and worthy of our trust. When we live according to His Kingdom and its principles, we’ll find that our lives in Him are unshakable.<\/p><p>Unshakable provides practical concepts, illustrations, context, bible verses, and questions. The Unshakable study also includes perforated memory cards that you can tear out and take with you through the week so you can learn God’s Word in a practical way.<\/p>",
+            "description": "<p>Even the daily responsibilities and pressures of life can feel overwhelming when we trust in our own efforts. The good news is, we have a Savior in Jesus, who is the King of a different Kingdom and worthy of our trust. When we live according to His Kingdom and its principles, we’ll find that our lives in Him are unshakable.<\/p><p>Unshakable provides practical concepts, illustrations, context, Bible verses, and questions. The Unshakable study also includes perforated memory cards that you can tear out and take with you through the week so you can learn God’s Word in a practical way.<\/p><p>Unshakable can be read as an individual, but also makes a great campaign.<\/p>",
             "color_description_label": "#1d2228"
           }
         },
@@ -423,7 +382,6 @@
   },
   "order": [
     "6e9571af-02a4-490e-9837-7096ab1d551c",
-    "599530d0-8352-441b-92cc-3db587f9d17e",
     "main",
     "related-products",
     "79c3192d-f71e-4ef0-bfad-ba58506b1890",

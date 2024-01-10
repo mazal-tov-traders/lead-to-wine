@@ -38,7 +38,7 @@
           "type": "icon-and-text",
           "settings": {
             "icon": "shopify:\/\/shop_images\/fi_4596368_539a9359-04f8-469e-a545-9820b76498bb.svg",
-            "text": "Small Group Leader Guide",
+            "text": "Group Leader Guide",
             "color_text_label": "#ffffff"
           }
         },
@@ -212,7 +212,7 @@
         "524b7136-f35c-408a-8fa1-0e93a1ac5362": {
           "type": "sub-title",
           "settings": {
-            "sub_title": "This 10 week campaign includes two intro weeks to generate excitement about the series and provide time for people to join a small group.",
+            "sub_title": "This 10-week campaign includes two intro weeks to generate excitement about the series and provide time for people to join a small group.",
             "color_label": "#242833"
           }
         },

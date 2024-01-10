@@ -38,7 +38,7 @@
           "type": "icon-and-text",
           "settings": {
             "icon": "shopify:\/\/shop_images\/fi_4596368_539a9359-04f8-469e-a545-9820b76498bb.svg",
-            "text": "Small Group Leader Guide",
+            "text": "Group Leader Guide",
             "color_text_label": "#ffffff"
           }
         },
@@ -182,20 +182,11 @@
         "hide_variants": false
       }
     },
-    "90c1f79f-2c8a-4184-8cb2-bbe87910540f": {
-      "type": "section-tabs",
-      "settings": {
-        "title": "Purchase Campaign Elements Separately",
-        "color_title": "#383633",
-        "sub_title": "",
-        "color_sub_title": "#383633"
-      }
-    },
     "2af4e7bc-7041-4030-bb56-69b216f7f6ac": {
       "type": "individual-collection-section",
       "settings": {
         "section_collection": "seeds-campaign",
-        "section_header": ""
+        "section_header": "Purchase Campaign Elements Separately"
       }
     },
     "main": {
@@ -212,7 +203,7 @@
         "524b7136-f35c-408a-8fa1-0e93a1ac5362": {
           "type": "sub-title",
           "settings": {
-            "sub_title": "This 8 week campaign includes two intro weeks to generate excitement about the series and provide time for people to join a small group.",
+            "sub_title": "This 8-week campaign includes two intro weeks to generate excitement about the series and provide time for people to join a small group.",
             "color_label": "#242833"
           }
         },
@@ -428,7 +419,6 @@
   "order": [
     "0c20b859-5668-4af5-a5ac-0c92eabf662a",
     "ee5d7643-9aae-4e94-adc8-d5a7f6b94e71",
-    "90c1f79f-2c8a-4184-8cb2-bbe87910540f",
     "2af4e7bc-7041-4030-bb56-69b216f7f6ac",
     "main",
     "e1fed952-e66e-462c-b3d6-d4469cbb7762",

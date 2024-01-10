@@ -13,7 +13,6 @@
     {%- endfor -%}
   }
 {%- endstyle -%}
-{{ 'custom-style-buttons.css' | asset_url | stylesheet_tag }}
 <section class="banner">
   {%- if section.settings.image != blank -%}
     <img
@@ -36,13 +35,13 @@
           {%- endif -%}
         {% when 'title' %}
           {%- if block.settings.title != blank -%}
-            <h1 class="banner__title" style=" color: {{ block.settings.color_title_label }};">
+            <h1 class="banner__title" style=" color: {{ block.settings.color_title_label }}; font-size: {{block.settings.font_size}}px;">
               {{ block.settings.title -}}
             </h1>
           {% endif %}
         {% when 'description' %}
           {%- if block.settings.description != blank -%}
-            <div class="banner__description" style=" color:{{ block.settings.color_description_label }};">
+            <div class="banner__description" style=" color:{{ block.settings.color_description_label }}; font-size: {{block.settings.font_size}}px;">
               {{ block.settings.description }}
             </div>
           {%- endif -%}
@@ -93,6 +92,11 @@
           "label": "Title"
         },
         {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
+        },
+        {
           "type": "color",
           "id": "color_title_label",
           "label": "Color Title Label",
@@ -109,6 +113,11 @@
           "type": "richtext",
           "id": "description",
           "label": "Description"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         },
         {
           "type": "color",

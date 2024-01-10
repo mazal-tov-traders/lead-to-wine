@@ -1,67 +1,67 @@
 @import "../variables-and-mixins.scss";
 
 .download-preview {
-	padding: 40px 0 80px;
-	position: relative;
+  padding: 40px 0 80px;
+  position: relative;
 
-	@media ($lg) {
-		padding: 65px 0;
-	}
+  @media ($lg) {
+    padding: 65px 0;
+  }
 
-	&__wrapper {
-		display: flex;
-		justify-content: center;
-		flex-wrap: wrap;
-		text-align: center;
-		gap: 30px 0;
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 30px 0;
 
-		@media ($lg) {
-			align-items: center;
-		}
-	}
+    @media ($lg) {
+      align-items: center;
+    }
+  }
 
-	&__left {
-		width: 100%;
-		max-width: 670px;
+  &__left {
+    width: 100%;
+    max-width: 670px;
 
-		@media ($lg) {
-			flex: 1 0 0;
+    @media ($lg) {
+      flex: 1 0 0;
 
-			img {
-				width: 133.6%;
-				max-width: 133.6%;
-			}
-		}
-	}
+      img {
+        width: 133.6%;
+        max-width: 133.6%;
+      }
+    }
+  }
 
-	&__right {
-		width: 100%;
-		max-width: 670px;
+  &__right {
+    width: 100%;
+    max-width: 670px;
 
-		@media ($lg) {
-			width: 48.77%;
-			margin-top: 1px;
-		}
+    @media ($lg) {
+      width: 48.77%;
+      margin-top: 1px;
+    }
 
-		img {
-			margin-bottom: 50px;
-		}
-	}
+    img {
+      margin-bottom: 50px;
+    }
+  }
 
-	.btn {
-		color: $color-dark-grey;
-		background: $color-colors-white;
-		border-color: $color-colors-white;
+  .btn {
+    color: var(--color-color-button-label);
+    border: 1px solid var(--color-color-button-border);
+    background: var(--color-button-background);
 
-		&:hover,
-		&:focus {
-			color: $color-colors-white;
-			background: transparent;
-			border: 1px solid $color-colors-white;
-		}
-	}
+    &:hover,
+    &:focus {
+      color: var(--hover-color-button-label);
+      background: var(--hover-color-button-background);
+      border: 1px solid var(--hover-color-button-border);
+    }
+  }
 
-	.object-fit-cove {
-		height: 100%;
-	}
+  .object-fit-cove {
+    height: 100%;
+  }
 }

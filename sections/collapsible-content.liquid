@@ -32,14 +32,17 @@
           style="text-align: {{ section.settings.heading_alignment }};"
         >
           {%- if section.settings.caption != blank -%}
-            <p class="caption-with-letter-spacing" style=" color:{{ section.settings.color_caption_label }};">
+            <p
+              class="caption-with-letter-spacing"
+              style=" color:{{ section.settings.color_caption_label }}; font-size: {{section.settings.font_size}}px;"
+            >
               {{ section.settings.caption | escape }}
             </p>
           {% endif %}
           {%- if section.settings.heading != blank -%}
             <h2
               class="collapsible-content__heading inline-richtext {{ section.settings.heading_size }}"
-              style=" color:{{ section.settings.color_heading_label }};"
+              style=" color:{{ section.settings.color_heading_label }}; font-size: {{section.settings.font_size1}}px;"
             >
               {{ section.settings.heading }}
             </h2>
@@ -94,7 +97,10 @@
                 >
                   <summary id="Summary-{{ block.id }}-{{ section.id }}" class="summary-custom">
                     {% render 'icon-accordion', icon: block.settings.icon %}
-                    <h3 class="accordion__title inline-richtext h4">
+                    <h3
+                      class="accordion__title inline-richtext h4"
+                      style=" font-size: {{ block.settings.font_size}}px;"
+                    >
                       {{ block.settings.heading | default: block.settings.page.title }}
                     </h3>
                     {% render 'icon-plus-custom' %}
@@ -105,6 +111,7 @@
                     id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
                     role="region"
                     aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
+                    
                   >
                     {{ block.settings.row_content }}
                     {{ block.settings.page.content }}
@@ -118,7 +125,13 @@
     </div>
   </div>
 </div>
-
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+      .accordion__content.rte p{
+        font-size: {{ section.settings.font_size2}}px;
+      }
+  }
+{%- endstyle -%}
 
 {% schema %}
 {
@@ -135,6 +148,11 @@
       "label": "t:sections.collapsible_content.settings.caption.label"
     },
     {
+      "type": "text",
+      "id": "font_size",
+      "label": "Font Size Enter Number"
+    },
+    {
       "type": "color",
       "id": "color_caption_label",
       "label": "Color Caption Label",
@@ -147,30 +165,15 @@
       "default": "Collapsible content"
     },
     {
+      "type": "text",
+      "id": "font_size1",
+      "label": "Font Size Enter Number"
+    },
+    {
       "type": "color",
       "id": "color_heading_label",
       "label": "Color Heading Label",
       "default": "#1D2228"
-    },
-    {
-      "type": "select",
-      "id": "heading_size",
-      "options": [
-        {
-          "value": "h2",
-          "label": "t:sections.all.heading_size.options__1.label"
-        },
-        {
-          "value": "h1",
-          "label": "t:sections.all.heading_size.options__2.label"
-        },
-        {
-          "value": "h0",
-          "label": "t:sections.all.heading_size.options__3.label"
-        }
-      ],
-      "default": "h1",
-      "label": "t:sections.all.heading_size.label"
     },
     {
       "type": "image_picker",
@@ -322,6 +325,11 @@
       "id": "color_row_content_label",
       "label": "Color Row Content Label",
       "default": "#383633"
+    },
+    {
+      "type": "text",
+      "id": "font_size2",
+      "label": "Font Size Enter Number"
     }
   ],
   "blocks": [
@@ -335,6 +343,11 @@
           "default": "Collapsible row",
           "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.heading.label",
           "info": "t:sections.collapsible_content.blocks.collapsible_row.settings.heading.info"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         },
         {
           "type": "select",
@@ -525,7 +538,6 @@
           "id": "row_content",
           "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.row_content.label"
         },
-
         {
           "type": "page",
           "id": "page",

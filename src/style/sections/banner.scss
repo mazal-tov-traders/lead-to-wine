@@ -1,79 +1,80 @@
 @import "../variables-and-mixins.scss";
 
 .banner {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	color: $color-colors-white;
-	min-height: 400px;
-	padding: 48px 0;
-	max-width: 1920px;
-	margin: 0 auto;
-	position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: $color-colors-white;
+  min-height: 400px;
+  padding: 48px 0;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
 
-	&_large {
-		padding: 60px 0;
-	}
+  &_large {
+    padding: 60px 0;
+  }
 
-	&__logo {
-		max-width: 246px;
-		margin: 0 auto 20px;
-	}
+  &__logo {
+    max-width: 246px;
+    margin: 0 auto 20px;
+  }
 
-	&__title {
-		@include text-style-text-headline-1;
+  &__title {
+    @include text-style-text-headline-1;
 
-		&:not(:last-child) {
-			margin-bottom: 20px;
-		}
-	}
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
 
-	&__logo + &__title {
-		font-size: 30px;
-		font-style: italic;
-		line-height: 41px;
-		letter-spacing: 0.2em;
-	}
+  &__logo + &__title {
+    font-size: 30px;
+    font-style: italic;
+    line-height: 41px;
+    letter-spacing: 0.2em;
+  }
 
-	&__sub-title {
-		@include text-style-text-headline-3;
+  &__sub-title {
+    @include text-style-text-headline-3;
 
-		max-width: 500px;
-		margin: 0 auto;
+    max-width: 500px;
+    margin: 0 auto;
 
-		&:not(:last-child) {
-			margin-bottom: 20px;
-		}
-	}
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
 
-	p {
-		@include text-style-text-text-main;
+  p {
+    @include text-style-text-text-main;
 
-		max-width: 470px;
-		text-wrap: balance;
-		margin: 0 auto;
+    max-width: 470px;
+    text-wrap: balance;
+    margin: 0 auto;
 
-		&:not(:last-child) {
-			margin-bottom: 20px;
-		}
-	}
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
 
-	&__btn {
-		text-align: center;
-		margin-top: 40px;
+  &__btn {
+    text-align: center;
+    margin-top: 40px;
 
-		.btn {
-			background: transparent;
-			border-color: $color-colors-white;
+    .btn {
+      color: var(--color-color-button-label);
+      background: var(--color-button-background);
+      border: 1px solid var(--color-color-button-border);
 
-			&:hover,
-			&:focus {
-				color: $color-text-link;
-				background: $color-colors-white;
-				border-color: $color-colors-white;
-			}
-		}
-	}
+      &:hover,
+      &:focus {
+        color: var(--hover-color-button-label);
+        background: var(--hover-color-button-background);
+        border: 1px solid var(--hover-color-button-border);
+      }
+    }
+  }
 }

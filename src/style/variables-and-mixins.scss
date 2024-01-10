@@ -27,18 +27,18 @@ $color-element-hover: #383633;
   position: relative;
 
   &::after {
-     content: "";
-     position: absolute;
-     bottom: -10%;
-     left: -3%;
-     width: 106%;
-     height: 100%;
-     border-radius: 100%;
-     border: 1px solid;
+    content: "";
+    position: absolute;
+    bottom: -10%;
+    left: -3%;
+    width: 106%;
+    height: 100%;
+    border-radius: 100%;
+    border: 1px solid;
 
-     @media ($md) {
-        border: 2px solid;
-     }
+    @media ($md) {
+      border: 2px solid;
+    }
   }
 }
 
@@ -52,7 +52,7 @@ $color-element-hover: #383633;
   text-transform: uppercase;
 
   strong {
-     @include round-stroke;
+    @include round-stroke;
   }
 }
 
@@ -66,18 +66,18 @@ $color-element-hover: #383633;
   text-transform: none;
 
   @media ($sm) {
-     font-size: 50px;
-     line-height: 69px;
+    font-size: 50px;
+    line-height: 69px;
   }
 
   .italic,
   i,
   em {
-     font-weight: 400;
+    font-weight: 400;
   }
 
   strong {
-     @include round-stroke;
+    @include round-stroke;
   }
 }
 
@@ -147,10 +147,10 @@ $color-element-hover: #383633;
   height: $height-element;
   line-height: 51px;
   padding: 0 33px;
-  color: $color-colors-white;
-  background: $color-colors-second;
+  color: var(--color-color-button-label);
+  background: var(--color-button-background);
   border-radius: 30px;
-  border: 1px solid $color-colors-second;
+  border: 1px solid var(--color-color-button-border);
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -158,18 +158,18 @@ $color-element-hover: #383633;
 
   &:hover,
   &:focus {
-     background: $color-colors-main;
-     border: 1px solid $color-colors-main;
-     text-decoration: none;
+    background: var(--hover-color-button-background);
+    border: 1px solid var(--hover-color-button-border);
+    text-decoration: none;
   }
 
   &[disabled] {
-     background: $color-colors-light-gray;
-     border: 1px solid $color-colors-light-gray;
-     color: $color-colors-89;
-     pointer-events: none;
-     outline: none;
-     opacity: 1;
+    background: $color-colors-light-gray;
+    border: 1px solid $color-colors-light-gray;
+    color: $color-colors-89;
+    pointer-events: none;
+    outline: none;
+    opacity: 1;
   }
 }
 
@@ -184,13 +184,13 @@ $color-element-hover: #383633;
 
   &:hover,
   &:focus {
-     gap: 10px;
-     text-shadow: 0 0 0;
-     text-decoration: none;
+    gap: 10px;
+    text-shadow: 0 0 0;
+    text-decoration: none;
   }
 
   svg {
-     flex-shrink: 0;
+    flex-shrink: 0;
   }
 }
 
@@ -240,12 +240,12 @@ $color-element-hover: #383633;
 
   &:hover,
   &:focus {
-     background: $color-colors-main;
+    background: $color-colors-main;
   }
 
   svg {
-     flex-shrink: 0;
-     margin-bottom: 1px;
+    flex-shrink: 0;
+    margin-bottom: 1px;
   }
 }
 
@@ -261,17 +261,13 @@ $color-element-hover: #383633;
   position: relative;
 
   &::after {
-     content: "";
-     position: absolute;
-     bottom: 0;
-     left: 0;
-     width: 20px;
-     height: 1px;
-     border-bottom: 1px solid;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20px;
+    height: 1px;
+    border-bottom: 1px solid;
+    font-size: 12px;
   }
 }
-
-
-
-
-

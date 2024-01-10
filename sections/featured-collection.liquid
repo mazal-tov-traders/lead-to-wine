@@ -1,3 +1,18 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'buttons' -%}
+      --color-button-background: {{ block.settings.color_button_backgroun }};
+      --color-color-button-label: {{ block.settings.color_button_label }};
+      --color-color-button-border: {{ block.settings.color_button_border }};
+      --hover-color-button-background: {{ block.settings.hover_color_button_backgroun }};
+      --hover-color-button-border: {{ block.settings.hover_color_button_border }};
+      --hover-color-button-label: {{ block.settings.hover_color_button_label }};
+      {%- endcase -%}
+    {%- endfor -%}
+  }
+{%- endstyle -%}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 
@@ -53,7 +68,9 @@
   <div class="collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
     <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
       {%- if section.settings.title != blank -%}
-        <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        <h2 class="title inline-richtext {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+        style=" color: {{ section.settings.color_title }}; font-size: {{ section.settings.font_size}}px;"
+        >
           {{ section.settings.title }}
         </h2>
       {%- endif -%}
@@ -61,7 +78,9 @@
         or section.settings.show_description
         and section.settings.collection.description != empty
       -%}
-        <div class="collection__description {{ section.settings.description_style }} rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        <div class="collection__description {{ section.settings.description_style }} rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          style=" color: {{ section.settings.color_description }}; font-size: {{ section.settings.font_size1 }}px;"
+        >
           {%- if section.settings.show_description -%}
             {{ section.settings.collection.description }}
           {%- else -%}
@@ -204,13 +223,6 @@
                 </div>
               </div>
             </li>
-
-
-
-
-
-
-
           {%- endfor -%}
         {%- endfor -%}
       </ul>
@@ -309,6 +321,17 @@
     },
     {
       "type": "text",
+      "id": "font_size",
+      "label": "Font Size Enter Number"
+    },
+    {
+      "type": "color",
+      "id": "color_title",
+      "label": "Color Title",
+      "default": "#383633"
+    },
+    {
+      "type": "text",
       "id": "class",
       "label": "Second class for backgroun"
     },
@@ -318,29 +341,20 @@
       "label": "Background image"
     },
     {
-      "type": "select",
-      "id": "heading_size",
-      "options": [
-        {
-          "value": "h2",
-          "label": "t:sections.all.heading_size.options__1.label"
-        },
-        {
-          "value": "h1",
-          "label": "t:sections.all.heading_size.options__2.label"
-        },
-        {
-          "value": "h0",
-          "label": "t:sections.all.heading_size.options__3.label"
-        }
-      ],
-      "default": "h1",
-      "label": "t:sections.all.heading_size.label"
-    },
-    {
       "type": "richtext",
       "id": "description",
       "label": "t:sections.featured-collection.settings.description.label"
+    },
+    {
+      "type": "text",
+      "id": "font_size1",
+      "label": "Font Size Enter Number"
+    },
+    {
+      "type": "color",
+      "id": "color_description",
+      "label": "Color Description",
+      "default": "#383633"
     },
     {
       "type": "checkbox",
@@ -593,6 +607,42 @@
           "type": "url",
           "id": "button_link_1",
           "label": "Button link"
+        },
+        {
+          "type": "color",
+          "id": "color_button_backgroun",
+          "label": "Button Background Color",
+          "default": "#383633"
+        },
+        {
+          "type": "color",
+          "id": "color_button_label",
+          "label": "Button Color Label",
+          "default": "#fff"
+        },
+        {
+          "type": "color",
+          "id": "color_button_border",
+          "label": "Button Color Border",
+          "default": "#fff"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_backgroun",
+          "label": "Hover Button Background Color",
+          "default": "#fff"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_border",
+          "label": "Hover Button Color Border",
+          "default": "#fff"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_label",
+          "label": "Hover Button Color Label",
+          "default": "#383633"
         }
       ]
     }

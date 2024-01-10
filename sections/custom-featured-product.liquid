@@ -67,27 +67,8 @@
   >
 {%- endif -%}
 <div
-  id="{{ section.settings.id_for_anchor }}"
-  class="single-product custom-featured-product {{ section.settings.class }}"
+  class="single-product custom-featured-product"
 >
-  {%- if section.settings.nubmer_navigat != blank -%}
-    <div class="custom-featured-product_num-navi">
-      <span
-        class="number-navigat"
-        style=" color: {{ section.settings.color_nubmer }}; background-color:{{ section.settings.color_backgroun_number }};"
-      >
-        {{- section.settings.nubmer_navigat -}}
-      </span>
-    </div>
-  {%- endif -%}
-  {%- if section.settings.purchase != blank -%}
-    <div
-      class="custom-featured-product_headingg pege-width"
-      style=" color: {{ section.settings.color_purchase_label }};"
-    >
-      {{ section.settings.purchase }}
-    </div>
-  {%- endif -%}
   <section class="color imag">
     <div class="page-width section-{{ section.id }}-padding">
       <div class="featured-product featured-product{{ section.settings.media_position }} product product-- grid grid--1-col  isolate {% if product.media.size > 0 or section.settings.product == blank %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
@@ -105,13 +86,13 @@
                 {%- when 'heading' -%}
                   <h2
                     class="custom-featured-product__heading"
-                    style=" color: {{ block.settings.color_heading_label }};"
+                    style=" color: {{ block.settings.color_heading_label }}; font-size: {{block.settings.font_size}}px;"
                   >
                     {{ block.settings.heading }}
                   </h2>
                 {%- when 'headline' -%}
                   {%- if block.settings.headline != blank -%}
-                    <h3>{{ block.settings.headline }}</h3>
+                    <h3 style=" color: {{ block.settings.color_headline_label }}; font-size: {{block.settings.font_size}}px;">{{ block.settings.headline }}</h3>
                   {% endif %}
                 {%- when 'description' -%}
                   {%- if block.settings.description != blank -%}
@@ -126,16 +107,16 @@
                   {%- if block.settings.text != blank -%}
                     <div
                       class="custom-featured-product__text"
-                      style=" color: {{ block.settings.color_text_label }};"
+                      style=" color: {{ block.settings.color_text_label }}; font-size: {{block.settings.font_size}}px;"
                     >
                       <p>{{ block.settings.text }}</p>
                     </div>
                   {%- endif -%}
                 {%- when 'title' -%}
                   <h2
-                    class="product__title {{ block.settings.heading_size }}"
+                    class="product__title"
                     {{ block.shopify_attributes }}
-                    style=" color: {{ block.settings.color_title_label }};"
+                    style=" color: {{ block.settings.color_title_label }}; font-size: {{block.settings.font_size}}px;"
                   >
                     {%- if product.title != blank -%}
                       {{ product.title | escape }}
@@ -168,7 +149,6 @@
                   {%- endif -%}
               {%- endcase -%}
             {%- endfor -%}
-            {% comment %} german {% endcomment %}
             <div class="wrapper-baton-and-quantity">
               {%- for block in section.blocks -%}
                 {%- case block.type -%}
@@ -423,7 +403,7 @@
                   {%- if block.settings.text_second != blank -%}
                     <div
                       class="product__text-second"
-                      style=" color: {{ block.settings.color_text_second_label }};"
+                      style=" color: {{ block.settings.color_text_second_label }}; font-size: {{block.settings.font_size}}px;"
                     >
                       <p>{{ block.settings.text_second }}</p>
                     </div>
@@ -482,8 +462,10 @@
                 {%- when 'media' -%}
                   {%- if block.settings.text != blank -%}
                     <div class="product__caption">
-                      <span style=" color: {{ block.settings.color_text_label }};">{{ block.settings.text }}</span>
-                      {% render "icon-arrow-pointer" %}
+                      <span style=" color: {{ block.settings.color_text_label }}; font-size: {{block.settings.font_size}}px;">
+                        {{- block.settings.text -}}
+                      </span>
+                      {% render 'icon-arrow-pointer' %}
                     </div>
                   {%- endif -%}
 
@@ -522,6 +504,23 @@
     </div>
   </section>
 </div>
+
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    {% for block in section.blocks %}
+      {% case block.type %}
+      {% when 'description' %}
+    .custom-featured-product__discription ul li {
+      font-size:{{ block.settings.font_size }}px;
+    }
+    {% when 'text' %}
+    .single-product .product .custom-featured-product__text p {
+      font-size:{{ block.settings.font_size }}px;
+    }
+    {% endcase %}
+  {% endfor %}
+  }
+{%- endstyle -%}
 
 <script src="{{ 'popup-video.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
@@ -675,24 +674,9 @@
           "default": "#1D2228"
         },
         {
-          "type": "select",
-          "id": "heading_size",
-          "options": [
-            {
-              "value": "h2",
-              "label": "t:sections.all.heading_size.options__1.label"
-            },
-            {
-              "value": "h1",
-              "label": "t:sections.all.heading_size.options__2.label"
-            },
-            {
-              "value": "h0",
-              "label": "t:sections.all.heading_size.options__3.label"
-            }
-          ],
-          "default": "h1",
-          "label": "t:sections.all.heading_size.label"
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         }
       ]
     },
@@ -723,7 +707,7 @@
           "type": "color",
           "id": "color_button_backgroun",
           "label": "Button Background Color",
-          "default": "#5491D6"
+          "default": "#383633"
         },
         {
           "type": "color",
@@ -735,25 +719,19 @@
           "type": "color",
           "id": "color_button_border",
           "label": "Button Color Border",
-          "default": "#5491D6"
+          "default": "#383633"
         },
         {
           "type": "color",
           "id": "hover_color_button_backgroun",
           "label": "Hover Button Background Color",
-          "default": "#5491D6"
+          "default": "#d5cfc4"
         },
         {
           "type": "color",
           "id": "hover_color_button_border",
           "label": "Hover Button Color Border",
-          "default": "#5491D6"
-        },
-        {
-          "type": "color",
-          "id": "hover_color_button_label",
-          "label": "Hover Button Color Label",
-          "default": "#fff"
+          "default": "#d5cfc4"
         }
       ]
     },
@@ -784,6 +762,11 @@
           "id": "color_text_label",
           "label": "Color Text Label",
           "default": "#D5CFC4"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         },
         {
           "type": "image_picker",
@@ -820,6 +803,11 @@
           "id": "color_heading_label",
           "label": "Color Heading Label",
           "default": "#1D2228"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         }
       ]
     },
@@ -839,6 +827,11 @@
           "id": "color_text_label",
           "label": "Color text Label",
           "default": "#1D2228"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         }
       ]
     },
@@ -857,6 +850,11 @@
           "id": "color_description_label",
           "label": "Color Description Label",
           "default": "#1D2228"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         }
       ]
     },
@@ -875,10 +873,14 @@
           "id": "color_headline_label",
           "label": "Color Headline Label",
           "default": "#1D2228"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         }
       ]
     },
-
     {
       "type": "text-second",
       "name": "Text Second",
@@ -895,6 +897,11 @@
           "id": "color_text_second_label",
           "label": "Color Text Second Label",
           "default": "#1D2228"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         }
       ]
     },
@@ -975,11 +982,6 @@
       "default": " ",
       "label": "t:sections.featured-product.settings.media_position.label",
       "info": "t:sections.featured-product.settings.media_position.info"
-    },
-    {
-      "type": "inline_richtext",
-      "id": "nubmer_navigat",
-      "label": "Section number for navigation"
     },
     {
       "type": "checkbox",

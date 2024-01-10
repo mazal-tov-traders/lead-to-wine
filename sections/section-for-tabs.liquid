@@ -7,12 +7,18 @@
 
     <div class="heading-wrapper">
       {%- if section.settings.title != blank -%}
-        <h2 class="title" style=" color: {{ section.settings.color_title }};">
+        <h2
+          class="title"
+          style=" color: {{ section.settings.color_title }}; font-size: {{section.settings.font_size}}px;"
+        >
           {{ section.settings.title -}}
         </h2>
       {%- endif -%}
       {%- if section.settings.sub_title != blank -%}
-        <div class="sub-title" style=" color: {{ section.settings.color_sub_title }};">
+        <div
+          class="sub-title"
+          style=" color: {{ section.settings.color_sub_title }}; font-size: {{section.settings.font_size1}}px;"
+        >
           {{ section.settings.sub_title -}}
         </div>
       {%- endif -%}
@@ -32,12 +38,18 @@
               {% endif %}
               <div class="section-tab__title-wrapper">
                 {%- if block.settings.title != blank -%}
-                  <div class="title" style=" color: {{ section.settings.color_title }};">
+                  <div
+                    class="title"
+                    style=" color: {{ section.settings.color_title }}; font-size: {{block.settings.font_size}}px;"
+                  >
                     {{ block.settings.title }}
                   </div>
                 {% endif %}
                 {%- if block.settings.content != blank -%}
-                  <div class="content" style=" color: {{ section.settings.color_content }};">
+                  <div
+                    class="content"
+                    style=" color: {{ section.settings.color_content }}; font-size: {{block.settings.font_size1}}px;"
+                  >
                     {{ block.settings.content }}
                   </div>
                 {% endif %}
@@ -57,7 +69,7 @@
               >
                 <summary id="Summary-{{ block.id }}-{{ section.id }}" class="summary-custom">
                   {% render 'icon-accordion', icon: block.settings.icon %}
-                  <h3 class="accordion__title inline-richtext h4">
+                  <h3 class="accordion__title inline-richtext h4" style="font-size: {{block.settings.font_size}}px;">
                     {{ block.settings.heading | default: block.settings.page.title }}
                   </h3>
                   {% render 'icon-plus-custom' %}
@@ -68,6 +80,7 @@
                   id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
                   role="region"
                   aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
+                  style="font-size: {{block.settings.font_size1}}px;"
                 >
                   {{ block.settings.row_content }}
                   {% comment %}  {% endcomment %}
@@ -81,6 +94,7 @@
                           href="{{ block.settings.first_link }}"
                         {% endif %}
                         class="link"
+                        style="font-size: {{block.settings.font_size2}}px;"
                       >
                         {{- block.settings.first_label | escape -}}
                       </a>
@@ -97,6 +111,7 @@
                           href="{{ block.settings.second_link }}"
                         {% endif %}
                         class="link"
+                        style="font-size: {{block.settings.font_size3}}px;"
                       >
                         {{- block.settings.second_label | escape -}}
                       </a>
@@ -113,6 +128,7 @@
                           href="{{ block.settings.third_link }}"
                         {% endif %}
                         class="link"
+                        style="font-size: {{block.settings.font_size4}}px;"
                       >
                         {{- block.settings.third_label | escape -}}
                       </a>
@@ -126,6 +142,13 @@
     </div>
   </div>
 </section>
+{%- style -%}
+    #shopify-section-{{ section.id }} {
+      .tab-trigger{
+        font-size: {{section.settings.font_size}}px !important;
+      }
+    }
+{%- endstyle -%}
 
 {% schema %}
 {
@@ -137,6 +160,11 @@
       "type": "richtext",
       "id": "trigger",
       "label": "Tab Name"
+    },
+    {
+      "type": "text",
+      "id": "font_size",
+      "label": "Font Size Enter Number"
     }
   ],
   "blocks": [
@@ -155,6 +183,11 @@
           "label": "Title"
         },
         {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
+        },
+        {
           "type": "color",
           "id": "color_title",
           "label": "Color Title",
@@ -164,6 +197,11 @@
           "type": "text",
           "id": "content",
           "label": "Content"
+        },
+        {
+          "type": "text",
+          "id": "font_size1",
+          "label": "Font Size Enter Number"
         },
         {
           "type": "color",
@@ -191,14 +229,29 @@
           "info": "t:sections.collapsible_content.blocks.collapsible_row.settings.heading.info"
         },
         {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
+        },
+        {
           "type": "richtext",
           "id": "row_content",
           "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.row_content.label"
         },
         {
           "type": "text",
+          "id": "font_size1",
+          "label": "Font Size Enter Number"
+        },
+        {
+          "type": "text",
           "id": "first_label",
           "label": "label First Link"
+        },
+        {
+          "type": "text",
+          "id": "font_size2",
+          "label": "Font Size Enter Number"
         },
         {
           "type": "url",
@@ -211,6 +264,11 @@
           "label": "label Second Link"
         },
         {
+          "type": "text",
+          "id": "font_size3",
+          "label": "Font Size Enter Number"
+        },
+        {
           "type": "url",
           "id": "second_link",
           "label": "Second Link"
@@ -219,6 +277,11 @@
           "type": "text",
           "id": "third_label",
           "label": "label Third Link"
+        },
+        {
+          "type": "text",
+          "id": "font_size4",
+          "label": "Font Size Enter Number"
         },
         {
           "type": "url",

@@ -6,13 +6,13 @@
           {% case block.type %}
             {% when 'heading' %}
               {%- if block.settings.heading != blank -%}
-                <h2 class="title" style=" color: {{ block.settings.color_heading_label }};">
+                <h2 class="title" style=" color: {{ block.settings.color_heading_label }}; font-size: {{block.settings.font_size}}px;">
                   {{ block.settings.heading -}}
                 </h2>
               {%- endif -%}
             {% when 'description' %}
               {%- if block.settings.description != blank -%}
-                <ol class="description" style=" color: {{ block.settings.color_title_label }};">
+                <ol class="description" style=" color: {{ block.settings.color_title_label }}; font-size: {{block.settings.font_size}}px;">
                   {{ block.settings.description -}}
                 </ol>
               {%- endif -%}
@@ -24,7 +24,7 @@
           {% case block.type %}
             {% when 'content' %}
               {%- if block.settings.content != blank -%}
-                <h3 class="get-started__sub-title" style=" color: {{ block.settings.color_content_label }};">
+                <h3 class="get-started__sub-title" style=" color: {{ block.settings.color_content_label }}; font-size: {{block.settings.font_size}}px;">
                   {{ block.settings.content -}}
                 </h3>
               {%- endif -%}
@@ -33,11 +33,11 @@
                 <div class="get-started__item" style=" background: {{ block.settings.background_block }};">
                   <h4
                     class="get-started__item-title"
-                    style=" color: {{ block.settings.color_label }}; background: {{ block.settings.background-label }};"
+                    style=" color: {{ block.settings.color_label }}; background: {{ block.settings.background-label }}; font-size: {{block.settings.font_size}}px;"
                   >
                     {{ block.settings.label }}
                   </h4>
-                  <div style=" color: {{ block.settings.color_content_label }};">
+                  <div class="get-started__text" style=" color: {{ block.settings.color_content_label }};">
                     {{ block.settings.content }}
                   </div>
                 </div>
@@ -48,6 +48,20 @@
     </div>
   </div>
 </section>
+
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    {% for block in section.blocks %}
+      {% case block.type %}
+      {% when 'section' %}
+    .get-started__text p{
+      font-size:{{ block.settings.font_size1 }}px;
+    }
+ 
+    {% endcase %}
+  {% endfor %}
+  }
+{%- endstyle -%}
 
 {% schema %}
 {
@@ -71,10 +85,14 @@
           "id": "color_heading_label",
           "label": "Color Heading Label",
           "default": "#383633"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         }
       ]
     },
-
     {
       "type": "description",
       "name": "Description",
@@ -90,6 +108,11 @@
           "id": "color_description_label",
           "label": "Color Description Label",
           "default": "#383633"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         }
       ]
     },
@@ -108,6 +131,11 @@
           "id": "color_content_label",
           "label": "Color Content Label",
           "default": "#342663"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         }
       ]
     },
@@ -127,6 +155,11 @@
           "label": "Label"
         },
         {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
+        },
+        {
           "type": "color",
           "id": "color_label",
           "label": "Color Label",
@@ -142,6 +175,11 @@
           "type": "richtext",
           "id": "content",
           "label": "Content"
+        },
+        {
+          "type": "text",
+          "id": "font_size1",
+          "label": "Font Size Enter Number"
         },
         {
           "type": "color",

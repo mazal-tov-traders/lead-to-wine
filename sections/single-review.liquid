@@ -14,13 +14,13 @@
                 {% endif %}
                 <div class="single-review__content">
                     {% if block.settings.title-one %}
-                        <h2 style="color:{{ block.settings.color_name }}" class="single-review__name">{{ block.settings.title-one }}</h2>
+                        <h2 style="color:{{ block.settings.color_name }}; font-size: {{block.settings.font_size}}px;" class="single-review__name">{{ block.settings.title-one }}</h2>
                     {% endif %}
                     {% if block.settings.title-two %}
-                        <h3 style="color:{{ block.settings.color_text }}" class="single-review__position">{{ block.settings.title-two }}</h3>
+                        <h3 style="color:{{ block.settings.color_text }}; font-size: {{block.settings.font_size1}}px;" class="single-review__position">{{ block.settings.title-two }}</h3>
                     {% endif %}
                     {% if block.settings.title-three %}
-                        <p style="color:{{ block.settings.color_text_1 }}">{{ block.settings.title-three }}</p>
+                        <p style="color:{{ block.settings.color_text_1 }};">{{ block.settings.title-three }}</p>
                     {% endif %}
                     {% if block.settings.title-4 %}
                         <p style="color:{{ block.settings.color_title_label }}">{{ block.settings.title-4 }}</p>

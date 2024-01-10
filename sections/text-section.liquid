@@ -4,13 +4,19 @@
       {% case block.type %}
         {% when 'title' %}
           {%- if block.settings.title != blank -%}
-            <h2 class="title" style=" color: {{ block.settings.color_title_label }};">
+            <h2
+              class="title"
+              style=" color: {{ block.settings.color_title_label }}; font-size: {{block.settings.font_size}}px;"
+            >
               {{ block.settings.title -}}
             </h2>
           {%- endif -%}
         {% when 'description' %}
           {%- if block.settings.description != blank -%}
-            <p class="image-content__description" style=" color:{{ block.settings.color_description_label }};">
+            <p
+              class="image-content__description"
+              
+            >
               {{ block.settings.description }}
             </p>
           {%- endif -%}
@@ -18,6 +24,20 @@
     {% endfor %}
   </div>
 </section>
+
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'description' %}
+    p{
+      font-size: {{block.settings.font_size}}px !important;
+      color: {{ block.settings.color_description_label }} !important;
+    }
+  {% endcase %}
+  {% endfor %}
+  }
+{%- endstyle -%}
 
 {% schema %}
 {
@@ -41,6 +61,11 @@
           "id": "color_title_label",
           "label": "Color Title Label",
           "default": "#383633"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         }
       ]
     },
@@ -59,6 +84,11 @@
           "id": "color_description_label",
           "label": "Color Description Label",
           "default": "#918677"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         }
       ]
     }

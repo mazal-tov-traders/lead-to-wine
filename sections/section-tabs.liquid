@@ -2,12 +2,12 @@
   <div class="page-width">
     <div class="heading-wrapper">
       {%- if section.settings.title != blank -%}
-        <h2 class="title" style=" color: {{ section.settings.color_title }};">
+        <h2 class="title" style=" color: {{ section.settings.color_title }}; font-size: {{section.settings.font_size}}px;">
           {{ section.settings.title -}}
         </h2>
       {%- endif -%}
       {%- if section.settings.sub_title != blank -%}
-        <div class="sub-title" style=" color: {{ section.settings.color_sub_title }};">
+        <div class="sub-title" style=" color: {{ section.settings.color_sub_title }}; font-size: {{section.settings.font_size1}}px;">
           {{ section.settings.sub_title -}}
         </div>
       {%- endif -%}
@@ -30,6 +30,11 @@
       "label": "Title"
     },
     {
+      "type": "text",
+      "id": "font_size",
+      "label": "Font Size Enter Number"
+    },
+    {
       "type": "color",
       "id": "color_title",
       "label": "Color Title",
@@ -39,6 +44,11 @@
       "type": "inline_richtext",
       "id": "sub_title",
       "label": "Sub Title"
+    },
+    {
+      "type": "text",
+      "id": "font_size1",
+      "label": "Font Size Enter Number"
     },
     {
       "type": "color",

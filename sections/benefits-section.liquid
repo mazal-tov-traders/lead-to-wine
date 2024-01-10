@@ -20,7 +20,10 @@
       {% case block.type %}
         {% when 'title' %}
           {%- if block.settings.title != blank -%}
-            <h2 class="title" style=" color: {{ block.settings.color_title_label }};">
+            <h2
+              class="title"
+              style=" color: {{ block.settings.color_title_label }}; font-size: {{block.settings.font_size}}px;"
+            >
               {{ block.settings.title -}}
             </h2>
           {%- endif -%}
@@ -41,10 +44,14 @@
               {%- endif -%}
               <div class="benefits__content">
                 {%- if block.settings.heading != blank -%}
-                  <h3 style=" color: {{ block.settings.color_heading_label }};">{{ block.settings.heading }}</h3>
+                  <h3 class="benefits__content__heading">
+                    {{ block.settings.heading }}
+                  </h3>
                 {%- endif -%}
                 {%- if block.settings.content != blank -%}
-                  <div style=" color: {{ block.settings.color_content_label }};">{{ block.settings.content }}</div>
+                  <div  class="benefits__content__content">
+                    {{ block.settings.content }}
+                  </div>
                 {%- endif -%}
               </div>
             </div>
@@ -74,6 +81,23 @@
     {%- endfor -%}
   </div>
 </section>
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'benefits-item' %}
+     strong{
+      font-size: {{block.settings.font_size}}px;
+      color: {{ block.settings.color_heading_label }};
+    }
+    .benefits__content__content p{
+      font-size: {{block.settings.font_size1}}px;
+      color: {{ block.settings.color_content_label }};
+    }
+  {%- endcase -%}
+  {%- endfor -%}
+  }
+{%- endstyle -%}
 
 {% schema %}
 {
@@ -97,6 +121,11 @@
           "id": "color_title_label",
           "label": "Color Title Label",
           "default": "#383633"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         }
       ]
     },
@@ -122,6 +151,11 @@
           "default": "#383633"
         },
         {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
+        },
+        {
           "type": "richtext",
           "id": "content",
           "label": "Content"
@@ -131,6 +165,11 @@
           "id": "color_content_label",
           "label": "Color Content Label",
           "default": "#383633"
+        },
+        {
+          "type": "text",
+          "id": "font_size1",
+          "label": "Font Size Enter Number"
         }
       ]
     },

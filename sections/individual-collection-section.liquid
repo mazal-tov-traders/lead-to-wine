@@ -1,3 +1,12 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+      --color-button-background: {{ block.settings.color_button_backgroun }};
+      --color-color-button-label: {{ block.settings.color_button_label }};
+      --hover-color-button-background: {{ block.settings.hover_color_button_backgroun }};
+      --hover-color-button-label: {{ block.settings.hover_color_button_label }};
+
+  }
+{%- endstyle -%}
 <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'price-per-item.js' | asset_url }}" defer="defer"></script>
 
@@ -5,7 +14,7 @@
 <section class="product-collection">
   <div class="page-width">
     {% if section.settings.section_header != blank %}
-    <h2 class="title">{{section.settings.section_header}}</h2>
+    <h2 class="title" style='color: {{section.settings.color_text }}; font-size: {{section.settings.font_size}}px;'>{{section.settings.section_header}}</h2>
     {% endif %}
     <div class="product-collection__wrapper">
       {% for product in collection.products %}
@@ -100,6 +109,17 @@
       "type": "text",
       "id": "section_header",
       "label": "Section Header"
+    },
+    {
+      "type": "text",
+      "id": "font_size",
+      "label": "Font Size Enter Number"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "Color Text Label",
+      "default": "#383633"
     }
   ],
   "presets": [

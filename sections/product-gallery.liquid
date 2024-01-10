@@ -1,3 +1,18 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'button' -%}
+      --color-button-background: {{ block.settings.color_button_backgroun }};
+      --color-color-button-label: {{ block.settings.color_button_label }};
+      --color-color-button-border: {{ block.settings.color_button_border }};
+      --hover-color-button-background: {{ block.settings.hover_color_button_backgroun }};
+      --hover-color-button-border: {{ block.settings.hover_color_button_border }};
+      --hover-color-button-label: {{ block.settings.hover_color_button_label }};
+      {%- endcase -%}
+    {%- endfor -%}
+  }
+{%- endstyle -%}
 {{ 'video-section.css' | asset_url | stylesheet_tag }}
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 {% for block in section.blocks %}
@@ -42,7 +57,7 @@
       </div>
       <div class="product-gallery__content">
         {%- if section.settings.title != blank -%}
-          <h1 class="title" style=" color: {{ section.settings.color_title_label }};">
+          <h1 class="title" style=" color: {{ section.settings.color_title_label }}; font-size: {{ section.settings.font_size}}px;">
             {{ section.settings.title -}}
           </h1>
         {%- endif -%}
@@ -57,7 +72,7 @@
             {% case block.type %}
               {% when 'sub-title' %}
                 {%- if block.settings.sub_title != blank -%}
-                  <h2 class="product-gallery__sub-title" style=" color: {{ section.settings.color_sub_title_label }};">
+                  <h2 class="product-gallery__sub-title" style=" color: {{ block.settings.color_sub_title_label }}; font-size: {{block.settings.font_size}}px;">
                     {{ block.settings.sub_title }}
                   </h2>
                 {% endif %}
@@ -72,7 +87,7 @@
                       >
                     {% endif %}
                     {%- if block.settings.text != blank -%}
-                      <span style=" color: {{block.settings.color_text_label }};">{{ block.settings.text }}</span>
+                      <span style=" color: {{block.settings.color_text_label }}; font-size: {{block.settings.font_size}}px;">{{ block.settings.text }}</span>
                     {% endif %}
                   </li>
                 </ul>
@@ -104,6 +119,14 @@
     {% endfor %}
   </div>
 </section>
+
+{%- style -%}
+    #shopify-section-{{ section.id }} {
+      .product-gallery__description p{
+        font-size: {{section.settings.font_size1}}px !important;
+      }
+    }
+{%- endstyle -%}
 
 {% comment %} <script>
   document.addEventListener('DOMContentLoaded', function () {
@@ -203,6 +226,11 @@
       "default": "#fff"
     },
     {
+      "type": "text",
+      "id": "font_size",
+      "label": "Font Size Enter Number"
+    },
+    {
       "type": "richtext",
       "id": "description",
       "label": "Description"
@@ -212,6 +240,11 @@
       "id": "color_description_label",
       "label": "Color Description Label",
       "default": "#fff"
+    },
+    {
+      "type": "text",
+      "id": "font_size1",
+      "label": "Font Size Enter Number"
     }
   ],
   "blocks": [
@@ -256,6 +289,11 @@
           "id": "color_sub_title_label",
           "label": "Color Sub Title Label",
           "default": "#fff"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         }
       ]
     },
@@ -278,6 +316,11 @@
           "id": "color_text_label",
           "label": "Color Text Label",
           "default": "#fff"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         }
       ]
     },
@@ -295,6 +338,42 @@
           "type": "url",
           "id": "link",
           "label": "Link"
+        },
+        {
+          "type": "color",
+          "id": "color_button_backgroun",
+          "label": "Button Background Color",
+          "default": "#383633"
+        },
+        {
+          "type": "color",
+          "id": "color_button_label",
+          "label": "Button Color Label",
+          "default": "#fff"
+        },
+        {
+          "type": "color",
+          "id": "color_button_border",
+          "label": "Button Color Border",
+          "default": "#fff"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_backgroun",
+          "label": "Hover Button Background Color",
+          "default": "#fff"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_border",
+          "label": "Hover Button Color Border",
+          "default": "#fff"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_label",
+          "label": "Hover Button Color Label",
+          "default": "#383633"
         }
       ]
     }

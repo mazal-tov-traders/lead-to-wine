@@ -52,12 +52,12 @@
           {%- case block.type -%}
             {%- when 'content' -%}
               {% if block.settings.title != blank %}
-                <h2 class="title" style=" color: {{ block.settings.color_title_label }};">
+                <h2 class="title" style=" color: {{ block.settings.color_title_label }}; font-size: {{block.settings.font_size}}px;">
                   {{ block.settings.title }}
                 </h2>
               {% endif %}
               {% if block.settings.sub_title != blank %}
-                <p class="video-text__sub-title" style=" color: {{ block.settings.color_sub_title }};">
+                <p class="video-text__sub-title" style=" color: {{ block.settings.color_sub_title }}; font-size: {{block.settings.font_size1}}px;">
                   {{ block.settings.sub_title }}
                 </p>
               {% endif %}
@@ -103,6 +103,11 @@
           "label": "Title"
         },
         {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
+        },
+        {
           "type": "color",
           "id": "color_title_label",
           "label": "Color Title Label",
@@ -112,6 +117,11 @@
           "type": "text",
           "id": "sub_title",
           "label": "Sub Title"
+        },
+        {
+          "type": "text",
+          "id": "font_size1",
+          "label": "Font Size Enter Number"
         },
         {
           "type": "color",

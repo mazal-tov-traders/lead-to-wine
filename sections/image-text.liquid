@@ -19,7 +19,7 @@
           {% case block.type %}
             {% when 'title' %}
               {%- if block.settings.title != blank -%}
-                <h2 class="title" style=" color: {{ block.settings.color_title_label }};">
+                <h2 class="title" style=" color: {{ block.settings.color_title_label }}; font-size: {{block.settings.font_size}}px;">
                   {{ block.settings.title -}}
                 </h2>
               {%- endif -%}
@@ -108,6 +108,11 @@
           "id": "color_title_label",
           "label": "Color Title Label",
           "default": "#383633"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         }
       ]
     },

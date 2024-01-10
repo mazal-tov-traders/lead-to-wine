@@ -1,6 +1,6 @@
 <section class="reviews-slider">
   <div class="page-width">
-    <h2 class="title" style=" color:{{ section.settings.color_title_label }};">{{ section.settings.title }}</h2>
+    <h2 class="title" style=" color:{{ section.settings.color_title_label }}; font-size: {{section.settings.font_size}}px;">{{ section.settings.title }}</h2>
     <div class="splide" id="reviews-slider">
       <div class="splide__track">
         <ul class="splide__list">
@@ -20,17 +20,17 @@
                       </div>
                       <div class="review__content">
                         {%- if block.settings.name != blank -%}
-                          <h3 class="review__name" style=" color:{{ block.settings.color_name_label }};">
+                          <h3 class="review__name" style=" color:{{ block.settings.color_name_label }}; font-size: {{block.settings.font_size}}px;">
                             {{ block.settings.name }}
                           </h3>
                         {% endif %}
                         {%- if block.settings.position != blank -%}
-                          <h4 class="review__position" style=" color:{{ block.settings.color_position_label }};">
+                          <h4 class="review__position" style=" color:{{ block.settings.color_position_label }}; font-size: {{block.settings.font_size1}}px;">
                             {{ block.settings.position }}
                           </h4>
                         {% endif %}
                         {%- if block.settings.content != blank -%}
-                          <p style=" color:{{ block.settings.color_content_label }};">
+                          <p style=" color:{{ block.settings.color_content_label }}; font-size: {{block.settings.font_size2}}px;">
                             {{ block.settings.content }}
                           </p>
                         {% endif %}
@@ -97,6 +97,11 @@
       "id": "color_title_label",
       "label": "Color Title Label",
       "default": "#383633"
+    },
+    {
+      "type": "text",
+      "id": "font_size",
+      "label": "Font Size Enter Number"
     }
   ],
   "blocks": [
@@ -115,6 +120,11 @@
           "label": "Name"
         },
         {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
+        },
+        {
           "type": "color",
           "id": "color_name_label",
           "label": "Color Name Label",
@@ -126,6 +136,11 @@
           "label": "position"
         },
         {
+          "type": "text",
+          "id": "font_size1",
+          "label": "Font Size Enter Number"
+        },
+        {
           "type": "color",
           "id": "color_position_label",
           "label": "Color Position Label",
@@ -135,6 +150,11 @@
           "type": "text",
           "id": "content",
           "label": "Content"
+        },
+        {
+          "type": "text",
+          "id": "font_size2",
+          "label": "Font Size Enter Number"
         },
         {
           "type": "color",

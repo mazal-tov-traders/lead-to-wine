@@ -6,25 +6,6 @@
     <button type="button" class="tab-trigger"
       style=" color: {{ section.settings.color_trigger }}; font-size: {{section.settings.font_size}}px;"
     >{{ section.settings.trigger }}</button>
-
-    {% comment %} <div class="heading-wrapper">
-      {%- if section.settings.title != blank -%}
-        <h2
-          class="title"
-          style=" color: {{ section.settings.color_title }}; font-size: {{section.settings.font_size}}px;"
-        >
-          {{ section.settings.title -}}
-        </h2>
-      {%- endif -%}
-      {%- if section.settings.sub_title != blank -%}
-        <div
-          class="sub-title"
-          style=" color: {{ section.settings.color_sub_title }}; font-size: {{section.settings.font_size1}}px;"
-        >
-          {{ section.settings.sub_title -}}
-        </div>
-      {%- endif -%}
-    </div> {% endcomment %}
     <div class="section-tab__wrapper">
       {% for block in section.blocks %}
         {% case block.type %}
@@ -153,7 +134,7 @@
     </div>
   </div>
 </section>
-{% comment %} {%- style -%}
+ {% comment %} {%- style -%}
     #shopify-section-{{ section.id }} {
       .tab-trigger{
         font-size: {{section.settings.font_size}}px !important;
@@ -162,7 +143,7 @@
     .tab-trigger p{
 
     }
-{%- endstyle -%} {% endcomment %}
+{%- endstyle -%}  {% endcomment %}
 
 {% schema %}
 {

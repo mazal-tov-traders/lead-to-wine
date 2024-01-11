@@ -3,112 +3,127 @@
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when 'services-card' -%}
+          #services-item-{{ forloop.index }}{
       --color-button-background: {{ block.settings.color_button_backgroun }};
-      --color-color-button-labservices-cardel: {{ block.settings.color_button_label }};
+      --color-color-button-label: {{ block.settings.color_button_label }};
       --color-color-button-border: {{ block.settings.color_button_border }};
       --hover-color-button-background: {{ block.settings.hover_color_button_backgroun }};
       --hover-color-button-border: {{ block.settings.hover_color_button_border }};
       --hover-color-button-label: {{ block.settings.hover_color_button_label }};
-      
+        }
       {%- endcase -%}
     {%- endfor -%}
   }
 {%- endstyle -%}
 
 <section class="services">
-	<div class="page-width inner">
-		<div class="services__wrapper">
+  <div class="page-width inner">
+    <div class="services__wrapper">
       {% for block in section.blocks %}
-        {% if block.type == "services-card" %}
-            <div class="services__item">
-                <img src="{{ block.settings.icon | image_url }}" alt="">
-                <h2 style="color:{{ block.settings.color_title_label }}; font-size: {{ block.settings.font_size }}px;" class="services__title">{{ block.settings.title }}</h2>
-                
-                {% if block.settings.texxt %}
-                    <p style="color:{{ block.settings.color_text }}; font-size: {{ block.settings.font_size-2}}px;">{{ block.settings.texxt }}</p>
-                {% endif %}
-                
-                {% if block.settings.button_link and block.settings.texxt-btn %}
-             
-                    <p><a style="font-size: {{ block.settings.font_size-3}}px;" href="{{ block.settings.button_link | url }}" class="btn">{{ block.settings.texxt-btn }}</a></p>
-                {% endif %}
-            </div>
+        {% if block.type == 'services-card' %}
+          <div class="services__item" id="services-item-{{ forloop.index }}">
+            <img src="{{ block.settings.icon | image_url }}" alt="">
+            <h2
+              style="color:{{ block.settings.color_title_label }}; font-size: {{ block.settings.font_size }}px;"
+              class="services__title"
+            >
+              {{ block.settings.title }}
+            </h2>
+
+            {% if block.settings.texxt %}
+              <p style="color:{{ block.settings.color_text }}; font-size: {{ block.settings.font_size-2}}px;">
+                {{ block.settings.texxt }}
+              </p>
+            {% endif %}
+
+            {% if block.settings.button_link and block.settings['texxt-btn'] %}
+              <p>
+                <a
+                  style="font-size: {{ block.settings.font_size-3}}px;"
+                  href="{{ block.settings.button_link | url }}"
+                  class="btn"
+                >
+                  {{- block.settings['texxt-btn'] -}}
+                </a>
+              </p>
+            {% endif %}
+          </div>
         {% endif %}
-    {% endfor %}
-		</div>
-	</div>
+      {% endfor %}
+    </div>
+  </div>
 </section>
 
 {% schema %}
+{
+  "name": "services",
+  "tag": "section",
+  "class": "section services",
+  "settings": [
     {
+      "type": "checkbox",
+      "id": "include_margins",
+      "default": true,
+      "label": "t:sections.apps.settings.include_margins.label"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "services-card",
       "name": "services",
-      "tag": "section",
-      "class": "section services",
+      "limit": 25,
       "settings": [
         {
-          "type": "checkbox",
-          "id": "include_margins",
-          "default": true,
-          "label": "t:sections.apps.settings.include_margins.label"
-        }
-      ],
-      "blocks": [
-          {
-        "type": "services-card",
-        "name": "services",
-        "limit": 25,
-        "settings": [
-            {
-            "type": "image_picker",
-            "id": "icon",
-            "label": "Image"
-          },
-          {
-            "type": "inline_richtext",
-            "id": "title",
-            "label": "title"
-          },
-          {
-            "type": "color",
-            "id": "color_title_label",
-            "label": "Color Title Label",
-            "default": "#383633"
-          },
-          {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Image"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "label": "title"
+        },
+        {
+          "type": "color",
+          "id": "color_title_label",
+          "label": "Color Title Label",
+          "default": "#383633"
+        },
+        {
           "type": "text",
           "id": "font_size",
           "label": "Font Size Enter Number"
         },
-          {
-            "type": "inline_richtext",
-            "id": "texxt",
-            "label": "text"
-          },
-          {
-            "type": "color",
-            "id": "color_text",
-            "label": "Color Text Label",
-            "default": "#383633"
-          },
-          {
+        {
+          "type": "inline_richtext",
+          "id": "texxt",
+          "label": "text"
+        },
+        {
+          "type": "color",
+          "id": "color_text",
+          "label": "Color Text Label",
+          "default": "#383633"
+        },
+        {
           "type": "text",
           "id": "font_size-2",
           "label": "Font Size Enter Number"
         },
-          {
-            "type": "inline_richtext",
-            "id": "texxt-btn",
-            "label": "button label"
-          },
-          {
+        {
+          "type": "inline_richtext",
+          "id": "texxt-btn",
+          "label": "button label"
+        },
+        {
           "type": "text",
           "id": "font_size-3",
           "label": "Font Size Enter Number"
         },
-          {
-            "type": "url",
-            "id": "button_link",
-            "label": "Button link"
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
         },
         {
           "type": "color",
@@ -146,24 +161,24 @@
           "label": "Hover Button Color Label",
           "default": "#5491D6"
         }
-        ]
-      }
-      ],
-      "presets": [
-        {
-          "name": "services",
-          "blocks": [
-            {"type": "services-card"},
-            {"type": "services-card"},
-            {"type": "services-card"},
-            {"type": "services-card"},
-            {"type": "services-card"},
-            {"type": "services-card"},
-            {"type": "services-card"},
-            {"type": "services-card"},
-            {"type": "services-card"}         
-          ]
-        }
       ]
     }
-    {% endschema %}
+  ],
+  "presets": [
+    {
+      "name": "services",
+      "blocks": [
+        { "type": "services-card" },
+        { "type": "services-card" },
+        { "type": "services-card" },
+        { "type": "services-card" },
+        { "type": "services-card" },
+        { "type": "services-card" },
+        { "type": "services-card" },
+        { "type": "services-card" },
+        { "type": "services-card" }
+      ]
+    }
+  ]
+}
+{% endschema %}

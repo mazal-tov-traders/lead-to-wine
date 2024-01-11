@@ -20,15 +20,8 @@
 		box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
 		padding: 40px 30px;
 		position: relative;
-		text-align: center;
-
-		@media ($xs) {
-			text-align: left;
-		}
 
 		@media ($md) {
-			display: flex;
-			flex-direction: column;
 			padding: 50px 45px;
 			width: calc(50% - 15px);
 		}
@@ -39,14 +32,7 @@
 
 		img {
 			display: block;
-			height: 100px;
-			width: fit-content;
-			object-fit: contain;
-			margin: 0 auto 30px;
-
-			@media ($xs) {
-				margin: 0 0 30px;
-			}
+			margin-bottom: 30px;
 		}
 	}
 
@@ -57,10 +43,6 @@
 		font-style: normal;
 		line-height: normal;
 		margin-bottom: 20px;
-
-		+ p {
-			flex: 1 0 0;
-		}
 	}
 
 	p {
@@ -72,15 +54,23 @@
 	}
 
 	.btn {
-		background: transparent;
-		color: #4d4d4e;
-		border-color: #4d4d4e;
-
+		
+		// background: transparent;
+		// color: $color-colors-main;
+		// border-color: $color-colors-main;
+		background: var(--color-button-background);
+		color: var(--color-color-button-label);
+		border-color:  var(--color-color-button-border);
+		
 		&:hover,
 		&:focus {
-			color: $color-colors-white;
-			background: #4d4d4e;
-			border-color: #4d4d4e;
+		background: var(--hover-color-button-background);
+		border-color: var(--hover-color-button-border);
+		color: var(--hover-color-button-label);
+			// color: $color-colors-white;
+			// background: $color-colors-main;
+			// border-color: $color-colors-main;
+
 		}
 
 		&::after {

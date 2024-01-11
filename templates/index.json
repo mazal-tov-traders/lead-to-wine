@@ -5,9 +5,12 @@
       "disabled": true,
       "settings": {
         "title": "Featured collection",
+        "font_size": "",
+        "color_title": "#383633",
         "class": "",
-        "heading_size": "h1",
         "description": "",
+        "font_size1": "",
+        "color_description": "#383633",
         "show_description": false,
         "description_style": "body",
         "collection": "frontpage",
@@ -27,7 +30,12 @@
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 52,
-        "padding_bottom": 100
+        "padding_bottom": 100,
+        "color_button_backgroun": "#383633",
+        "color_button_label": "#fff",
+        "hover_color_button_backgroun": "#fff",
+        "hover_color_button_label": "#d5cfc4",
+        "color_text": "#383633"
       }
     },
     "83b9d9c3-5754-4632-b554-7498973a8822": {
@@ -38,6 +46,7 @@
           "settings": {
             "title-one": "<p>Coaching & <strong>Development <\/strong>in Life & Faith<\/p>",
             "color_title_label": "#eae9e5",
+            "font_size": "12",
             "align_content": "right"
           }
         }
@@ -56,7 +65,8 @@
       "settings": {
         "include_margins": false,
         "title-one": "<strong>Lead to Win<\/strong> exists to gather, coach, and resource leaders to win at what matters most.",
-        "color_title_label": "#4d4d4e"
+        "color_title_label": "#4d4d4e",
+        "font_size": ""
       }
     },
     "cffa4dce-b708-40de-a035-cf7a78b97a83": {
@@ -67,13 +77,17 @@
           "settings": {
             "photo": "shopify:\/\/shop_images\/Ellipse_4.jpg",
             "title-one": "Chris Hodges",
-            "color_name": "#4d4d4e",
+            "color_name": "#dd1d1d",
+            "font_size": "12",
             "title-two": "Church of the Highlands",
-            "color_text": "#d5cfc4",
+            "color_text": "#dd1d1d",
+            "font_size-2": "12",
             "title-three": "\"Every leader benefits from coaching. Coaches help us see things we can't, give us confidence to enlarge our vision, and provide permission to prioritize the things that matter the most. My friend Jeff Little is one of the finest leaders and coaches I know, and I'm certain you will greatly benefit from his strategic thinking and biblical encouragement. He has a unique ability to help leaders win on the scoreboards that truly matter.\"",
-            "color_text_1": "#4d4d4e",
-            "title-4": "",
-            "color_title_label": "#4d4d4e"
+            "color_text_1": "#dd1d1d",
+            "font_size-3": "12",
+            "title-4": "1212",
+            "color_title_label": "#dd1d1d",
+            "font_size-4": "12"
           }
         }
       },
@@ -149,13 +163,20 @@
           "settings": {
             "icon": "shopify:\/\/shop_images\/services-1.svg",
             "title": "Gatherings",
-            "texxt": "Connect with other leaders and receive practical tools for growth and development.",
             "color_title_label": "#4d4d4e",
+            "font_size": "",
+            "texxt": "Connect with other leaders and receive practical tools for growth and development.",
             "color_text": "#4d4d4e",
+            "font_size-2": "",
             "texxt-btn": "",
+            "font_size-3": "",
             "button_link": "shopify:\/\/pages\/leaders-gathering",
-            "color_text-lb": "#4d4d4e",
-            "color_text_btn": "#4d4d4e"
+            "color_button_backgroun": "#fff",
+            "color_button_label": "#4D4D4E",
+            "color_button_border": "#383633",
+            "hover_color_button_backgroun": "#fff",
+            "hover_color_button_border": "#fff",
+            "hover_color_button_label": "#5491D6"
           }
         },
         "template--17127585513702__9cd67dd3-24ec-4a6c-932b-1b8cf7511904-services-card-2": {
@@ -163,13 +184,20 @@
           "settings": {
             "icon": "shopify:\/\/shop_images\/icon.png",
             "title": "Coaching",
-            "texxt": "Lead pastor coaching and digital trainings to equip leaders to go further in what matters most.",
             "color_title_label": "#4d4d4e",
+            "font_size": "",
+            "texxt": "Lead pastor coaching and digital trainings to equip leaders to go further in what matters most.",
             "color_text": "#4d4d4e",
+            "font_size-2": "",
             "texxt-btn": "",
+            "font_size-3": "",
             "button_link": "shopify:\/\/products\/seeds-kids-curriculum",
-            "color_text-lb": "#4d4d4e",
-            "color_text_btn": "#4d4d4e"
+            "color_button_backgroun": "#fff",
+            "color_button_label": "#4D4D4E",
+            "color_button_border": "#383633",
+            "hover_color_button_backgroun": "#fff",
+            "hover_color_button_border": "#fff",
+            "hover_color_button_label": "#5491D6"
           }
         },
         "template--17127585513702__9cd67dd3-24ec-4a6c-932b-1b8cf7511904-services-card-3": {
@@ -177,13 +205,20 @@
           "settings": {
             "icon": "shopify:\/\/shop_images\/Vector_Smart_Object_bbe40eb1-226e-4ecc-969c-4bca63821a0a.svg",
             "title": "Resources",
-            "texxt": "Campaigns, message series, books, and study guides created to take people on a spiritual journey.",
             "color_title_label": "#4d4d4e",
+            "font_size": "",
+            "texxt": "Campaigns, message series, books, and study guides created to take people on a spiritual journey.",
             "color_text": "#4d4d4e",
+            "font_size-2": "",
             "texxt-btn": "",
+            "font_size-3": "",
             "button_link": "shopify:\/\/products\/promises-series-kit",
-            "color_text-lb": "#4d4d4e",
-            "color_text_btn": "#4d4d4e"
+            "color_button_backgroun": "#fff",
+            "color_button_label": "#4D4D4E",
+            "color_button_border": "#383633",
+            "hover_color_button_backgroun": "#fff",
+            "hover_color_button_border": "#fff",
+            "hover_color_button_label": "#5491D6"
           }
         },
         "template--17127585513702__9cd67dd3-24ec-4a6c-932b-1b8cf7511904-services-card-4": {
@@ -192,13 +227,20 @@
           "settings": {
             "icon": "shopify:\/\/shop_images\/Vector_Smart_Object_1.svg",
             "title": "Resources",
-            "texxt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
             "color_title_label": "#383633",
+            "font_size": "",
+            "texxt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
             "color_text": "#383633",
+            "font_size-2": "",
             "texxt-btn": "learn more",
+            "font_size-3": "",
             "button_link": "shopify:\/\/pages\/contact",
-            "color_text-lb": "#383633",
-            "color_text_btn": "#383633"
+            "color_button_backgroun": "#fff",
+            "color_button_label": "#4D4D4E",
+            "color_button_border": "#383633",
+            "hover_color_button_backgroun": "#fff",
+            "hover_color_button_border": "#fff",
+            "hover_color_button_label": "#5491D6"
           }
         }
       },
@@ -209,8 +251,7 @@
         "template--17127585513702__9cd67dd3-24ec-4a6c-932b-1b8cf7511904-services-card-4"
       ],
       "custom_css": [
-        "img {height: 100px;}",
-        ".services .btn:focus,.services .btn:hover {background: #4d4d4e; border-color: #4d4d4e;}"
+        "img {height: 100px;}"
       ],
       "settings": {
         "include_margins": true
@@ -226,12 +267,16 @@
             "logo": "shopify:\/\/shop_images\/MSresources021.jpg",
             "slide-title": "",
             "slider-title-color": "#4d4d4e",
+            "font_size": "",
             "slide-text": "\"I can't encourage you enough, grab a few copies of The Way to Win, get some guys around you, and just watch the impact it will have on them and your church.\"",
             "slide-text-color": "#4d4d4e",
+            "font_size-2": "",
             "rev-name": "Adam Henderson",
             "name-color": "#4d4d4e",
+            "font_size-3": "",
             "location": "Radiant Church",
-            "location-color": "#d5cfc4"
+            "location-color": "#d5cfc4",
+            "font_size-4": ""
           }
         },
         "template--17140783972582__7d43acf7-e204-45ea-b598-a020006b59ae-card-2": {
@@ -241,12 +286,16 @@
             "logo": "shopify:\/\/shop_images\/Promises1_70420de4-5ef8-42a9-b686-2b2e18e17686.jpg",
             "slide-title": "",
             "slider-title-color": "#4d4d4e",
+            "font_size": "",
             "slide-text": "\"Promises is not only an absolutely stunning study guide, but it is foundational and life-giving. I loved going through this study with my small group and understanding God's promises to us in our most important relationships and biggest struggles. I understood God in a way I hadn't ever grasped before; it brought me closer to Him.\"",
             "slide-text-color": "#4d4d4e",
+            "font_size-2": "",
             "rev-name": "Taelor Martinez",
             "name-color": "#4d4d4e",
+            "font_size-3": "",
             "location": "Milestone Church",
-            "location-color": "#d5cfc4"
+            "location-color": "#d5cfc4",
+            "font_size-4": ""
           }
         },
         "template--17140783972582__7d43acf7-e204-45ea-b598-a020006b59ae-card-3": {
@@ -256,12 +305,16 @@
             "logo": "shopify:\/\/shop_images\/WTW1_4fc18698-241b-4279-8907-bee710980e29.jpg",
             "slide-title": "",
             "slider-title-color": "#4d4d4e",
+            "font_size": "",
             "slide-text": "\"I had been wanting to pour into a group of men in my church for a while, the problem was finding the right resource. I love how The Way to Win sets me up to win as a pastor  at discipling the men in my church.\"",
             "slide-text-color": "#4d4d4e",
+            "font_size-2": "",
             "rev-name": "Brandon Cormier",
             "name-color": "#4d4d4e",
+            "font_size-3": "",
             "location": "Zeal Church, Colorado Springs",
-            "location-color": "#d5cfc4"
+            "location-color": "#d5cfc4",
+            "font_size-4": ""
           }
         }
       },
@@ -273,7 +326,8 @@
       "settings": {
         "include_margins": true,
         "section-title": "",
-        "color_title_label": "#383633"
+        "color_title_label": "#383633",
+        "font_size": ""
       }
     },
     "dc3ddbd5-59ca-45d9-aaf4-b83b99d70a0d": {
@@ -283,7 +337,8 @@
           "type": "title",
           "settings": {
             "title": "About Jeff Little",
-            "color_title_label": "#383633"
+            "color_title_label": "#383633",
+            "font_size": ""
           }
         },
         "30e9acd3-f407-4789-8280-0c682be5bec8": {
@@ -296,14 +351,17 @@
           "type": "text",
           "settings": {
             "text": "<p>I was raised in Northeast Texas by wonderful parents who modeled a strong faith and character that is the foundation of my life today. After completing high school, I attended Baylor University and graduated in 1996 with a Bachelor of Arts in Religion. I completed my master’s degree at Southwestern Baptist Theological Seminary in 2006 and earned a doctorate from Southeastern University in 2022. <\/p><p>After pastoring several established congregations, God began to stir my heart with the dream of planting a life-giving, spirit-filled, community church, but I was not sure where! Through much prayer and consultation, the Lord spoke to me clearly that I was to go to Keller, TX to start a church.<\/p>",
-            "color_description_label": "#383633"
+            "color_description_label": "#383633",
+            "font_size": ""
           }
         },
         "a5475cd8-a97d-414d-a455-801907e0b395": {
           "type": "link",
           "settings": {
             "label_link": "read more",
-            "link": "shopify:\/\/pages\/about"
+            "link": "shopify:\/\/pages\/about",
+            "font_size": "",
+            "color_heading_label": "#383633"
           }
         }
       },

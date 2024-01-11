@@ -22,11 +22,11 @@
           {%- case block.type -%}
             {%- when 'heading' -%}
               <h2
-                class="rich-text__heading rte inline-richtext {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                class="rich-text__heading rte inline-richtext {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
-                  style="--animation-order: {{ forloop.index }};"
+                  style="--animation-order: {{ forloop.index }}; font-size: {{ block.settings.font_size }}px;"
                 {% endif %}
               >
                 {{ block.settings.heading }}
@@ -93,7 +93,20 @@
     </div>
   </div>
 </div>
+{%- style -%}
+  #shopify-section-{{ section.id }} { 
+    {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'text' %}
+    
+    .rich-text__text p {
+      font-size:{{ block.settings.font_size }}px;
+    }
+    {% endcase %}
+  {% endfor %}
+  }
 
+{%- endstyle -%}
 {% schema %}
 {
   "name": "t:sections.rich-text.name",
@@ -194,29 +207,11 @@
           "label": "t:sections.rich-text.blocks.heading.settings.heading.label"
         },
         {
-          "type": "select",
-          "id": "heading_size",
-          "options": [
-            {
-              "value": "h2",
-              "label": "t:sections.all.heading_size.options__1.label"
-            },
-            {
-              "value": "h1",
-              "label": "t:sections.all.heading_size.options__2.label"
-            },
-            {
-              "value": "h0",
-              "label": "t:sections.all.heading_size.options__3.label"
-            },
-            {
-              "value": "hxl",
-              "label": "t:sections.all.heading_size.options__4.label"
-            }
-          ],
-          "default": "h1",
-          "label": "t:sections.all.heading_size.label"
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         }
+     
       ]
     },
     {
@@ -278,6 +273,11 @@
           "id": "text",
           "default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
           "label": "t:sections.rich-text.blocks.text.settings.text.label"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         }
       ]
     },

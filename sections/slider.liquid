@@ -13,10 +13,10 @@
                                 </div>
                                 <div class="review__wrapper">
                                     {% if block.settings.slide-title %}
-                                        <h2 style="color: {{ block.settings.slider-title-color }};" class="review__title">{{ block.settings.slide-title }}</h2>
+                                        <h2 style="color: {{ block.settings.slider-title-color }}; font-size:{{ block.settings.font_size }}px;" class="review__title">{{ block.settings.slide-title }}</h2>
                                     {% endif %}
                                     {% if block.settings.slide-text %}
-                                        <p style="color: {{ block.settings.slide-text-color }};">{{ block.settings.slide-text }}</p>
+                                        <p style="color: {{ block.settings.slide-text-color }}; font-size:{{ block.settings.font_size-2}}px;">{{ block.settings.slide-text }}</p>
                                     {% endif %}
                                     <div class="review__author">
                                         <div class="review__avatar">
@@ -26,10 +26,10 @@
                                         </div>
                                         <div class="review__content">
                                             {% if block.settings.rev-name %}
-                                                <h3 style="color: {{ block.settings.name-color }};" class="review__name">{{ block.settings.rev-name }}</h3>
+                                                <h3 style="color: {{ block.settings.name-color }}; font-size:{{ block.settings.font_size-3 }}px;" class="review__name">{{ block.settings.rev-name }}</h3>
                                             {% endif %}
                                             {% if block.settings.location %}
-                                                <h4 style="color: {{ block.settings.location-color }};" class="review__location">{{ block.settings.location }}</h4>
+                                                <h4 style="color: {{ block.settings.location-color }}; font-size:{{ block.settings.font_size-4 }}px;" class="review__location">{{ block.settings.location }}</h4>
                                             {% endif %}
                                         </div>
                                     </div>
@@ -87,7 +87,12 @@
         "id": "color_title_label",
         "label": "title color",
         "default": "#383633"
-      }
+      },
+      {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
+        }
     ],
     "blocks": [
       {
@@ -118,6 +123,11 @@
             "default": "#383633"
           },
           {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
+        },
+          {
             "type": "inline_richtext",
             "id": "slide-text",
             "label": "slide text"
@@ -128,6 +138,11 @@
             "label": "text color",
             "default": "#383633"
           },
+          {
+          "type": "text",
+          "id": "font_size-2",
+          "label": "Font Size Enter Number"
+        },
           {
             "type": "image_picker",
             "id": "avatar",
@@ -145,6 +160,11 @@
             "default": "#383633"
           },
           {
+          "type": "text",
+          "id": "font_size-3",
+          "label": "Font Size Enter Number"
+        },
+          {
             "type": "inline_richtext",
             "id": "location",
             "label": "location"
@@ -154,7 +174,12 @@
             "id": "location-color",
             "label": "location color",
             "default": "#918677"
-          }
+          },
+          {
+          "type": "text",
+          "id": "font_size-4",
+          "label": "Font Size Enter Number"
+        }
         ]
       }
     ],

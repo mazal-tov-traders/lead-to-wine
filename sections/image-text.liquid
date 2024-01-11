@@ -19,43 +19,43 @@
           {% case block.type %}
             {% when 'title' %}
               {%- if block.settings.title != blank -%}
-                <h2 class="title" style=" color: {{ block.settings.color_title_label }}; font-size: {{block.settings.font_size}}px;">
+                <h2 class="title" style=" color:{{ block.settings.color_title_label }}; font-size:{{ block.settings.font_size }}px;">
                   {{ block.settings.title -}}
                 </h2>
               {%- endif -%}
             {% when 'heading' %}
               {%- if block.settings.heading != blank -%}
-                <h2 class="heading" style=" color: {{ block.settings.color_title_label }};">
+                <h2 class="heading" style=" color: {{ block.settings.color_title_label }}; font-size:{{ block.settings.font_size }}px;">
                   {{ block.settings.heading -}}
                 </h2>
               {%- endif -%}
             {% when 'text' %}
               {%- if block.settings.text != blank -%}
-                <div class="text" style=" color: {{ block.settings.color_title_label }};">
+                <div class="text" style=" color: {{ block.settings.color_title_label }}; ">
                   {{ block.settings.text -}}
                 </div>
               {%- endif -%}
             {% when 'description' %}
               {%- if block.settings.description != blank -%}
-                <div class="description" style=" color: {{ block.settings.color_title_label }};">
+                <div class="description" style=" color:{{ block.settings.color_title_label }}; font-size:{{ block.settings.font_size }}px;">
                   {{ block.settings.description -}}
                 </div>
               {%- endif -%}
             {% when 'content' %}
               {%- if block.settings.content != blank -%}
-                <div class="content" style=" color: {{ block.settings.color_title_label }};">
+                <div class="content" style="color:{{ block.settings.color_title_label }}; font-size:{{ block.settings.font_size }}px !important;">
                   {{ block.settings.content -}}
                 </div>
               {%- endif -%}
             {% when 'link' %}
               {%- if block.settings.label_link != blank -%}
-                <a
+                <a 
                   {% if block.settings.link == blank %}
                     role="link" aria-disabled="true"
                   {% else %}
                     href="{{ block.settings.link }}"
                   {% endif %}
-
+                  style="font-size:{{ block.settings.font_size }}px;"
                   class="link"
                 >
                   {{- block.settings.label_link | escape -}}
@@ -68,6 +68,20 @@
     </div>
   </div>
 </section>
+{%- style -%}
+  #shopify-section-{{ section.id }} { 
+    {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'text' %}
+    
+    .text p {
+      font-size:{{ block.settings.font_size }}px;
+    }
+    {% endcase %}
+  {% endfor %}
+  }
+
+{%- endstyle -%}
 
 {% schema %}
 {
@@ -131,6 +145,11 @@
           "id": "color_description_label",
           "label": "Color Description Label",
           "default": "#383633"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         }
       ]
     },
@@ -149,6 +168,11 @@
           "id": "color_description_label",
           "label": "Color Description Label",
           "default": "#383633"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         }
       ]
     },
@@ -167,6 +191,11 @@
           "id": "color_heading_label",
           "label": "Color Heading Label",
           "default": "#383633"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         }
       ]
     },
@@ -185,6 +214,11 @@
           "id": "color_content_label",
           "label": "Color Content Label",
           "default": "#383633"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         }
       ]
     },
@@ -202,6 +236,11 @@
           "type": "url",
           "id": "link",
           "label": "Link"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         }
       ]
     },

@@ -1,5 +1,5 @@
 <div class="page-width">
-    <h2 class="title">{{ section.settings.section-title }}</h2>
+    <h2 class="title" style="color:{{ section.settings.color_title_label }}; font-size:{{ section.settings.font_size }}px;">{{ section.settings.section-title }}</h2>
     <div class="faq-form-wraper">
       <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
       <script>
@@ -34,6 +34,11 @@
           "id": "color_title_label",
           "label": "Color Title Label",
           "default": "#383633"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         }
       ],
       "blocks": [

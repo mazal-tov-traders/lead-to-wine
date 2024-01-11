@@ -20,7 +20,7 @@
           {% case block.type %}
             {% when 'title' %}
               {%- if block.settings.title != blank -%}
-                <h2 class="title" style=" color: {{ block.settings.color_title_label }};">
+                <h2 class="title" style=" color: {{ block.settings.color_title_label }}; font-size:{{ block.settings.font_size }}px;">
                   {{ block.settings.title -}}
                 </h2>
               {%- endif -%}
@@ -46,8 +46,7 @@
                     {% else %}
                       href="{{ block.settings.link }}"
                     {% endif %}
-                    style=" color:{{ block.settings.color_link_label }};"
-                    
+                    style=" color:{{ block.settings.color_link_label }}; font-size:{{ block.settings.font_size }}px;"
                     class="image-content__link"
                   >
                     {{- block.settings.link_label | escape -}}
@@ -77,6 +76,34 @@
 });
 
 </script>
+{%- style -%}
+  #shopify-section-{{ section.id }} { 
+    {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'description' %}
+    
+    .image-content__description p {
+      font-size:{{ block.settings.font_size }}px;
+    }
+    {% when 'description-list' %}
+      .image-content__list h3 {
+      font-size:{{ block.settings.font_size }}px;
+
+    }
+    .image-content__list p {
+      font-size:{{ block.settings.font_size }}px;
+
+    }
+    .image-content__list li {
+      font-size:{{ block.settings.font_size }}px;
+
+    }
+    {% endcase %}
+  {% endfor %}
+  }
+
+{%- endstyle -%}
+
 {% schema %}
 {
   "name": "image-content",
@@ -152,6 +179,11 @@
           "id": "color_title_label",
           "label": "Color Title Label",
           "default": "#383633"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         }
       ]
     },
@@ -170,6 +202,11 @@
           "id": "color_description_label",
           "label": "Color Description Label",
           "default": "#918677"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         }
       ]
     },
@@ -188,7 +225,13 @@
           "id": "color_list",
           "label": "Color Description Label",
           "default": "#383633"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         }
+        
       ]
     },
     {
@@ -206,6 +249,11 @@
           "id": "color_heading_label",
           "label": "Color Heading Label",
           "default": "#383633"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         }
       ]
     },
@@ -224,6 +272,11 @@
           "id": "color_content_label",
           "label": "Color Content Label",
           "default": "#383633"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         }
       ]
     },
@@ -247,6 +300,11 @@
           "id": "color_link_label",
           "label": "Color Link Label",
           "default": "#383633"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         }
       ]
     },

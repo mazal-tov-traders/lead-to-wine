@@ -1,16 +1,16 @@
 <div class="page-width">
-    <h2 class="title">{{ section.settings.section-title }}</h2>
+    <h2 class="title" style="color:{{ section.settings.color_title_label }}; font-size:{{ section.settings.font_size }}px;">{{ section.settings.section-title }}</h2>
     <div class="topics__wrapper">
         {% for block in section.blocks %}
             <div class="topics__item">
                 <div class="topics__image">
                     <img src="{{ block.settings.icon |  image_url }}" alt="image">
-                    <span style="background-color: {{ block.settings.color_category_back }}; color:{{ block.settings.color_category_label }}" class="topics__category">{{ block.settings.categoty }}</span>
+                    <span style="background-color: {{ block.settings.color_category_back }}; color:{{ block.settings.color_category_label }}; font-size:{{ block.settings.font_size }}px;" class="topics__category">{{ block.settings.categoty }}</span>
                 </div>
                 <div class="topics__content">
-                    <h3 style="color:{{ block.settings.color_title_label }}" class="topics__sub-title">{{ block.settings.title }}</h3>
+                    <h3 style="color:{{ block.settings.color_title_label }}; font-size:{{ block.settings.font_size-2 }}px;" class="topics__sub-title">{{ block.settings.title }}</h3>
                     <div class="topics__description">
-                        <p style="color:{{ block.settings.color_text_label }}">{{ block.settings.text }}</p>
+                        <p style="color:{{ block.settings.color_text_label }}; font-size:{{ block.settings.font_size-3 }}px;">{{ block.settings.text }}</p>
                     </div>
                     <div class="topics__btn-wrap">
                         <a class="topics__btn" href="{{ block.settings.button_link }}">{{ block.settings.button-label }}</a>
@@ -43,6 +43,11 @@
           "id": "color_title_label",
           "label": "Color Title Label",
           "default": "#383633"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         }
       ],
       "blocks": [
@@ -74,6 +79,11 @@
               "default": "#342663"
             },
             {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
+        },
+            {
               "type": "inline_richtext",
               "id": "title",
               "label": "title"
@@ -84,6 +94,11 @@
               "label": "Color Title Label",
               "default": "#383633"
             },
+            {
+          "type": "text",
+          "id": "font_size-2",
+          "label": "Font Size Enter Number"
+          },
             {
               "type": "inline_richtext",
               "id": "text",
@@ -97,22 +112,18 @@
               "default": "#383633"
             },
             {
+          "type": "text",
+          "id": "font_size-3",
+          "label": "Font Size Enter Number"
+           },
+            
+            
+            {
               "type": "inline_richtext",
               "id": "button-label",
               "label": "button label"
             },
-            {
-              "type": "color",
-              "id": "color_hover_btn",
-              "label": "Color button Label",
-              "default": "#383633"
-            },
-            {
-              "type": "color",
-              "id": "color_link_back",
-              "label": "category link background",
-              "default": "#342663"
-            },
+          
             {
             "type": "url",
             "id": "button_link",

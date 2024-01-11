@@ -1,5 +1,5 @@
 <div class="page-width">
-    <h2 style="color:{{ section.settings.color_title_label }}" class="title">{{ section.settings.section-title }}</h2>
+    <h2 style="color:{{ section.settings.color_title_label }}; font-size: {{ section.settings.font_size }}px;" class="title">{{ section.settings.section-title }}</h2>
     <div class="campaign-includes__wrapper">
         {% for block in section.blocks %}
             {% if block.type == "card" %}
@@ -8,7 +8,7 @@
                         <div class="campaign-includes__image">
                             <img src="{{ block.settings.icon |  image_url }}" alt="">
                         </div>
-                        <h3 style="color:{{ block.settings.color_title_label }}" class="campaign-includes__sub-title">{{ block.settings.title }}</h3>
+                        <h3 style="color:{{ block.settings.color_title_label }}; font-size: {{ block.settings.font_size }}px;" class="campaign-includes__sub-title">{{ block.settings.title }}</h3>
                     </div>
                 {% endif %}
             {% endif %}
@@ -37,6 +37,11 @@
           "id": "color_title_label",
           "label": "Color Title Label",
           "default": "#383633"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         }
       ],
       "blocks": [
@@ -60,7 +65,12 @@
               "id": "color_title_label",
               "label": "Color Title Label",
               "default": "#383633"
-            }
+            },
+            {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
+        }
           ]
         }
       ],

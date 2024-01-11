@@ -1,6 +1,6 @@
 <section class="quote">
 	<div class="page-width inner">
-		<h2 style="color:{{ section.settings.color_title_label }}" class="quote__title">{{ section.settings.title-one }}</h2>
+		<h2 style="color:{{ section.settings.color_title_label }}; font-size:{{ section.settings.font_size }}px;" class="quote__title">{{ section.settings.title-one }}</h2>
 	</div>
 </section>
   {% schema %}
@@ -25,6 +25,11 @@
           "id": "color_title_label",
           "label": "Color Title Label",
           "default": "#383633"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         }
     ],
     "presets": [

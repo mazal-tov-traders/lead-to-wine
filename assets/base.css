@@ -3512,6 +3512,8 @@ details-disclosure > details {
   --color-open-heading-label: var(--color-open-heading-label);
   --color-row-content-label: var(--color-row-content-label);
 
+  --color-price: var(--color-price);
+
 
   --color-button-background: var(--color-button-background);
   --color-color-button-label: var(--color-color-button-label);
@@ -3519,4 +3521,11 @@ details-disclosure > details {
   --hover-color-button-background: var(--hover-color-button-background);
   --hover-color-button-border: var(--hover-color-button-border);
   --hover-color-button-label: var(--hover-color-button-label);
+
+  --button-background: var(--button-background);
+  --color-button-label: var(--color-button-label);
+  --hover-button-background: var(--hover-button-background);
+  --hover-color-label: var(--hover-color-label);
+
+  --color-text: var(--color-text);
 }

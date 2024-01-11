@@ -73,11 +73,11 @@
 		text-align: center;
 
 		.btn {
-			background: $color-colors-second;
+			background-color:  var(--color-button-background);
 
 			&:hover,
 			&:focus {
-				background: $color-colors-main;
+				background-color: var(--hover-color-button-background);
 			}
 		}
 	}

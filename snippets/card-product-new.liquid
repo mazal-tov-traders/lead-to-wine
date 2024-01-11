@@ -34,8 +34,10 @@
       <h2
         class="product__title {{ block.settings.heading_size }}"
         {{ block.shopify_attributes }}
-        style=" color: {{ block.settings.color_title_label }}; 
-        background: {{ product.metafields.custom.background_title | escape  }};"
+        style=" color: {{ section.settings.color_heading }}; 
+        background: {{ product.metafields.custom.background_title | escape  }};
+        font-size: {{section.settings.font_size4}}px;
+        "
       >
         {%- if product.title != blank -%}
           {{ product.title | escape }}
@@ -48,13 +50,13 @@
           {% for object in product.metafields.custom.discription_list.value %}
             <div class="card-item__metafields-inner">
               <img class="image" src="{{ object.image.value | img_url : 'master' }}">
-              <p class="description">{{ object.text }}</p>
+              <p class="description" style="color: {{ section.settings.color_item }}; font-size: {{section.settings.font_size3}}px;">{{ object.text }}</p>
             </div>
           {% endfor %}
         </div>
-        <div class="card-item__description">{{ product.metafields.custom.text | escape }}</div>
-        <div class="card-item__text">{{ product.metafields.custom.proposal_product | escape }}</div>
-        <div class="card-item__text">{{ product.metafields.custom.offer | escape }}</div>
+        <div class="card-item__description" style=" color:{{section.settings.color_description }}; font-size: {{section.settings.font_size2}}px;">{{ product.metafields.custom.text | escape }}</div>
+        <div class="card-item__text" style=" color:{{section.settings.color_text }}; font-size: {{section.settings.font_size1}}px;">{{ product.metafields.custom.proposal_product | escape }}</div>
+        <div class="card-item__text" style=" color:{{section.settings.color_text }}; font-size: {{section.settings.font_size1}}px;">{{ product.metafields.custom.offer | escape }}</div>
         <div class="card-item__wrap">
           <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
             {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}

@@ -1,10 +1,27 @@
 {%- style -%}
-  #shopify-section-{{ section.id }} {
-      --color-button-background: {{ block.settings.color_button_backgroun }};
-      --color-color-button-label: {{ block.settings.color_button_label }};
-      --hover-color-button-background: {{ block.settings.hover_color_button_backgroun }};
-      --hover-color-button-label: {{ block.settings.hover_color_button_label }};
+    #shopify-section-{{ section.id }} {
 
+        --button-background: {{ section.settings.color_button_backgroun }};
+        --color-button-label: {{ section.settings.color_button_label }};
+        --hover-button-background: {{ section.settings.hover_color_button_backgroun }};
+        --hover-color-label: {{ section.settings.hover_color_button_label }};
+
+        --color-text: {{ section.settings.color_text }};
+    }
+  .products .card__heading a:hover {
+    color: var(--color-text);
+  }
+  .products .card__heading a {
+    color: var(--color-text);
+  }
+  .card__description.truncate_description{
+    color: var(--color-text);
+  }
+  .card-information>.price {
+    color: var(--color-text) !important;
+  }
+  .price-item.price-item--regular{
+    color: var(--color-text) !important;
   }
 {%- endstyle -%}
 <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
@@ -14,7 +31,7 @@
 <section class="product-collection">
   <div class="page-width">
     {% if section.settings.section_header != blank %}
-    <h2 class="title" style='color: {{section.settings.color_text }}; font-size: {{section.settings.font_size}}px;'>{{section.settings.section_header}}</h2>
+    <h2 class="title" style='color: {{section.settings.color_title }}; font-size: {{section.settings.font_size}}px;'>{{section.settings.section_header}}</h2>
     {% endif %}
     <div class="product-collection__wrapper">
       {% for product in collection.products %}
@@ -117,10 +134,78 @@
     },
     {
       "type": "color",
-      "id": "color_text",
-      "label": "Color Text Label",
+      "id": "color_title",
+      "label": "Color Title Label",
       "default": "#383633"
-    }
+    },
+    {
+      "type": "color",
+      "id": "color_heading",
+      "label": "Color Heading Card",
+      "default": "#fff"
+    },
+    {
+      "type": "text",
+      "id": "font_size4",
+      "label": "Font Size Text"
+    },
+    {
+      "type": "color",
+      "id": "color_item",
+      "label": "Color item",
+      "default": "#383633"
+    },
+    {
+      "type": "text",
+      "id": "font_size3",
+      "label": "Font Size Text"
+    },
+    {
+      "type": "color",
+      "id": "color_description",
+      "label": "Color Description",
+      "default": "#d5cfc4"
+    },
+    {
+      "type": "text",
+      "id": "font_size2",
+      "label": "Font Size Text"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "Color Text",
+      "default": "#383633"
+    },
+    {
+      "type": "text",
+      "id": "font_size1",
+      "label": "Font Size Text"
+    },
+    {
+      "type": "color",
+      "id": "color_button_backgroun",
+      "label": "Button Background Color",
+      "default": "#383633"
+    },
+    {
+      "type": "color",
+      "id": "color_button_label",
+      "label": "Button Color Label",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "hover_color_button_backgroun",
+      "label": "Hover Button Background Color",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "hover_color_button_label",
+      "label": "Hover Button Color Label",
+      "default": "#d5cfc4"
+    } 
   ],
   "presets": [
     {

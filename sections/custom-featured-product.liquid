@@ -11,6 +11,9 @@
       --hover-color-button-label: {{ block.settings.hover_color_button_label }};
       {%- when 'price' -%}
         --color-price: {{ block.settings.color_price_label }};
+        .price-item.price-item--regular{
+          color: var(--color-price);
+        }
       {%- endcase -%}
     {%- endfor -%}
   }

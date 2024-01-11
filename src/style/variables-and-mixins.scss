@@ -226,7 +226,8 @@ $color-element-hover: #383633;
   font-style: normal;
   line-height: 17px;
   letter-spacing: -0.04em;
-  color: $color-colors-white;
+  color: var(--color-button-label);
+  background: var(--button-background);
   text-decoration: none;
   text-transform: uppercase;
   display: flex;
@@ -234,13 +235,13 @@ $color-element-hover: #383633;
   justify-content: center;
   gap: 8px;
   padding: 9px 17px;
-  background: $color-colors-second;
   border: none;
   transition: background 0.3s;
 
   &:hover,
   &:focus {
-    background: $color-colors-main;
+    background: var(--hover-button-background);
+    color: var(--hover-color-label);
   }
 
   svg {

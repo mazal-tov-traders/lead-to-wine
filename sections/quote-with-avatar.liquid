@@ -22,13 +22,13 @@
             </div>
           {% when 'name' %}
             {%- if block.settings.name != blank -%}
-              <p class="quote-with-avatar__author" style=" color: {{ block.settings.color_name_label }};">
+              <p class="quote-with-avatar__author" style=" color: {{ block.settings.color_name_label }}; font-size: {{block.settings.font_size}}px;">
                 {{ block.settings.name }}
               </p>
             {% endif %}
           {% when 'text' %}
             {%- if block.settings.text != blank -%}
-              <p class="quote-with-avatar__text">
+              <p class="quote-with-avatar__text" style=" color: {{ block.settings.color_text_label }}; font-size: {{block.settings.font_size}}px;">
                 {{ block.settings.text }}
               </p>
             {% endif %}
@@ -82,6 +82,11 @@
           "label": "name"
         },
         {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
+        },
+        {
           "type": "color",
           "id": "color_name_label",
           "label": "Color Name Label",
@@ -98,6 +103,11 @@
           "type": "text",
           "id": "text",
           "label": "text"
+        },
+        {
+          "type": "text",
+          "id": "font_size",
+          "label": "Font Size Enter Number"
         },
         {
           "type": "color",

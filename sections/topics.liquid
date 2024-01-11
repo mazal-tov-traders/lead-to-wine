@@ -1,3 +1,21 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'card' -%}
+          #services-item-{{ forloop.index }}{
+      --color-button-background: {{ block.settings.color_button_backgroun }};
+      --color-color-button-label: {{ block.settings.color_button_label }};
+      --color-color-button-border: {{ block.settings.color_button_border }};
+      --hover-color-button-background: {{ block.settings.hover_color_button_backgroun }};
+      --hover-color-button-border: {{ block.settings.hover_color_button_border }};
+      --hover-color-button-label: {{ block.settings.hover_color_button_label }};
+        }
+      {%- endcase -%}
+    {%- endfor -%}
+  }
+{%- endstyle -%}
+
 <div class="page-width">
     <h2 class="title" style="color:{{ section.settings.color_title_label }}; font-size:{{ section.settings.font_size }}px;">{{ section.settings.section-title }}</h2>
     <div class="topics__wrapper">
@@ -12,7 +30,7 @@
                     <div class="topics__description">
                         <p style="color:{{ block.settings.color_text_label }}; font-size:{{ block.settings.font_size-3 }}px;">{{ block.settings.text }}</p>
                     </div>
-                    <div class="topics__btn-wrap">
+                    <div class="topics__btn-wrap" id="services-item-{{ forloop.index }}">
                         <a class="topics__btn" href="{{ block.settings.button_link }}">{{ block.settings.button-label }}</a>
                     </div>
                 </div>
@@ -128,7 +146,43 @@
             "type": "url",
             "id": "button_link",
             "label": "Button link"
-            }
+            },
+            {
+          "type": "color",
+          "id": "color_button_backgroun",
+          "label": "Button Background Color",
+          "default": "#383633"
+        },
+        {
+          "type": "color",
+          "id": "color_button_label",
+          "label": "Button Color Label",
+          "default": "#FFF"
+        },
+        {
+          "type": "color",
+          "id": "color_button_border",
+          "label": "Button Color Border",
+          "default": "#383633"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_backgroun",
+          "label": "Hover Button Background Color",
+          "default": "#d5cfc4"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_border",
+          "label": "Hover Button Color Border",
+          "default": "#d5cfc4"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_label",
+          "label": "Hover Button Color Label",
+          "default": "#fff"
+        }
           ]
         }
       ],

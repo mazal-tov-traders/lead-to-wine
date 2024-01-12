@@ -7,7 +7,8 @@
           "type": "sub-title",
           "settings": {
             "sub_title": "Your Seeds campaign includes:",
-            "color_sub_title_label": "#ffffff"
+            "color_sub_title_label": "#ffffff",
+            "font_size": ""
           }
         },
         "5ab2fd70-9256-46c8-9ead-d0b622fdcfc1": {
@@ -15,7 +16,8 @@
           "settings": {
             "icon": "shopify:\/\/shop_images\/fi_10812361.svg",
             "text": "8 Messages",
-            "color_text_label": "#ffffff"
+            "color_text_label": "#ffffff",
+            "font_size": ""
           }
         },
         "a583b134-85e8-475e-8eb6-9d81b594d0c4": {
@@ -23,7 +25,8 @@
           "settings": {
             "icon": "shopify:\/\/shop_images\/fi_6490828_d618671d-cf0a-4931-94be-5ac7cf1088bd.svg",
             "text": "Promo Material",
-            "color_text_label": "#ffffff"
+            "color_text_label": "#ffffff",
+            "font_size": ""
           }
         },
         "fbce13a9-7b88-49ae-af8c-745e7076b802": {
@@ -31,7 +34,8 @@
           "settings": {
             "icon": "shopify:\/\/shop_images\/fi_7456976_8071fb4c-f557-457e-961d-2533261e439b.svg",
             "text": "Kids Curriculum",
-            "color_text_label": "#ffffff"
+            "color_text_label": "#ffffff",
+            "font_size": ""
           }
         },
         "803601f5-f386-470e-9318-dad598ec3a9f": {
@@ -39,7 +43,8 @@
           "settings": {
             "icon": "shopify:\/\/shop_images\/fi_4596368_539a9359-04f8-469e-a545-9820b76498bb.svg",
             "text": "Group Leader Guide",
-            "color_text_label": "#ffffff"
+            "color_text_label": "#ffffff",
+            "font_size": ""
           }
         },
         "198c2e99-c95d-4b1e-aab2-02a3527ac9c2": {
@@ -47,7 +52,8 @@
           "settings": {
             "icon": "shopify:\/\/shop_images\/fi_6391516_2fd7df91-4e35-4b1e-bae8-70f85ebc9f11.svg",
             "text": "Study Guide",
-            "color_text_label": "#ffffff"
+            "color_text_label": "#ffffff",
+            "font_size": ""
           }
         },
         "010470b0-00b6-44ba-97f3-cbdad1b0c304": {
@@ -106,8 +112,10 @@
         "background": "shopify:\/\/shop_images\/product-gallery-bg.jpg",
         "title": "Seeds Campaign",
         "color_title_label": "#ffffff",
+        "font_size": "",
         "description": "<p><em>Take your church on a journey on one of God’s primary building blocks, the seed.<\/em><\/p><p>Growth doesn’t happen overnight – our Seeds series is focused on topics like potential, momentum, multiplication, and legacy so your church can grow in the areas of life they need it most.<\/p>",
-        "color_description_label": "#ffffff"
+        "color_description_label": "#ffffff",
+        "font_size1": ""
       }
     },
     "ee5d7643-9aae-4e94-adc8-d5a7f6b94e71": {
@@ -117,14 +125,15 @@
           "type": "title",
           "settings": {
             "color_title_label": "#1d2228",
-            "heading_size": "h1"
+            "font_size": ""
           }
         },
         "9d372826-3176-4d23-b9b8-0e2bfb1cd958": {
           "type": "description",
           "settings": {
             "description": "<p>A complete Seeds campaign includes all content and assets you need to run a church-wide campaign:<\/p><ul><li>8-Weeks of Message Content<\/li><li>All Promo Material<\/li><li>Digital Small Group Leader Guide<\/li><li>Kids Curriculum<\/li><li>50 Study Guides<\/li><\/ul><p>Immediately after purchasing, you will receive an email with a link to download all campaign files.<\/p>",
-            "color_description_label": "#1d2228"
+            "color_description_label": "#1d2228",
+            "font_size": ""
           }
         },
         "template--17155897098470__ee5d7643-9aae-4e94-adc8-d5a7f6b94e71-price-1": {
@@ -145,8 +154,7 @@
             "color_button_label": "#ffffff",
             "color_button_border": "#5491d6",
             "hover_color_button_backgroun": "#5491d6",
-            "hover_color_button_border": "#5491d6",
-            "hover_color_button_label": "#ffffff"
+            "hover_color_button_border": "#5491d6"
           }
         },
         "9416f00d-a63b-4256-abcd-1c34f38b2029": {
@@ -160,7 +168,8 @@
           "disabled": true,
           "settings": {
             "text_second": "See below for options to purchase Message Series, Kids Curriculum, or Study Guides seperately.",
-            "color_text_second_label": "#1d2228"
+            "color_text_second_label": "#1d2228",
+            "font_size": ""
           }
         }
       },
@@ -178,7 +187,6 @@
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "media_position": "",
-        "nubmer_navigat": "",
         "hide_variants": false
       }
     },
@@ -186,7 +194,21 @@
       "type": "individual-collection-section",
       "settings": {
         "section_collection": "seeds-campaign",
-        "section_header": "Purchase Campaign Elements Separately"
+        "section_header": "Purchase Campaign Elements Separately",
+        "font_size": "",
+        "color_title": "#383633",
+        "color_heading": "#fff",
+        "font_size4": "",
+        "color_item": "#383633",
+        "font_size3": "",
+        "color_description": "#d5cfc4",
+        "font_size2": "",
+        "color_text": "#383633",
+        "font_size1": "",
+        "color_button_backgroun": "#383633",
+        "color_button_label": "#fff",
+        "hover_color_button_backgroun": "#d5cfc4",
+        "hover_color_button_label": "#fff"
       }
     },
     "main": {
@@ -335,8 +357,10 @@
           "type": "content",
           "settings": {
             "title": "Promo Video",
+            "font_size": "",
             "color_title_label": "#383633",
             "sub_title": "",
+            "font_size1": "",
             "color_sub_title": "#918677"
           }
         },
@@ -364,8 +388,10 @@
           "type": "content",
           "settings": {
             "title": "Kids Song & Lyric Video",
+            "font_size": "",
             "color_title_label": "#383633",
             "sub_title": "",
+            "font_size1": "",
             "color_sub_title": "#918677"
           }
         },
@@ -393,8 +419,10 @@
           "type": "content",
           "settings": {
             "title": "Message Bumper",
+            "font_size": "",
             "color_title_label": "#383633",
             "sub_title": "",
+            "font_size1": "",
             "color_sub_title": "#918677"
           }
         },

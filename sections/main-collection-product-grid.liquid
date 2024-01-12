@@ -1,3 +1,25 @@
+{%- style -%}
+    #shopify-section-{{ section.id }} {
+        --button-background: {{ section.settings.color_button_backgroun }};
+        --color-button-label: {{ section.settings.color_button_label }};
+        --hover-button-background: {{ section.settings.hover_color_button_backgroun }};
+        --hover-color-label: {{ section.settings.hover_color_button_label }};
+
+        --color-text: {{ section.settings.color_text }};
+    }
+  .products .card__heading a:hover {
+    color: var(--color-text);
+  }
+  .products .card__heading a {
+    color: var(--color-text);
+  }
+  .card__description.truncate_description{
+    color: var(--color-text);
+  }
+  .card-information>.price {
+    color: var(--color-text) !important;
+  }
+{%- endstyle -%}
 {{ 'template-collection.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
@@ -111,7 +133,7 @@
       {%- endif -%}
 
       <div
-        class="product-grid-container{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+        class="product-grid-container{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} my-styles-for-collection"
         id="ProductGridContainer"
         {% if settings.animations_reveal_on_scroll %}
           data-cascade
@@ -139,7 +161,7 @@
               data-id="{{ section.id }}"
               class="
                 grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
-                grid--{{ section.settings.columns_desktop }}-col-desktop
+                grid--{{ section.settings.columns_desktop }}-col-desktop products
               "
             >
               {%- for product in collection.products -%}
@@ -147,8 +169,9 @@
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
+                {% comment %}grid__item забрал у LI  {% endcomment %}
                 <li
-                  class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                  class="product {% if settings.animations_reveal_on_scroll %}scroll-trigger animate--slide-in{% endif %}"
                   {% if settings.animations_reveal_on_scroll %}
                     data-cascade
                     style="--animation-order: {{ forloop.index }};"
@@ -383,6 +406,36 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "color",
+      "id": "color_button_backgroun",
+      "label": "Button Background Color",
+      "default": "#383633"
+    },
+    {
+      "type": "color",
+      "id": "color_button_label",
+      "label": "Button Color Label",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "hover_color_button_backgroun",
+      "label": "Hover Button Background Color",
+      "default": "#D5CFC4"
+    },
+    {
+      "type": "color",
+      "id": "hover_color_button_label",
+      "label": "Hover Button Color Label",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "Color Text",
+      "default": "#383633"
     }
   ],
   "presets": [

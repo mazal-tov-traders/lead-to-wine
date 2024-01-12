@@ -108,15 +108,18 @@
 	&__btn {
 		display: inline-block;
 		width: 100%;
-		background: $color-colors-second;
-		border: 1px solid $color-colors-second;
+		background: var(--color-button-background);
+		color: var(--color-color-button-label);
+		border-color:  var(--color-color-button-border);
+		// background: $color-colors-second;
+		// border: 1px solid $color-colors-second;
 		padding: 8px 15px;
 		font-family: $font-family-global;
 		font-weight: 700;
 		font-size: 14px;
 		line-height: 17px;
 		letter-spacing: -0.05em;
-		color: $color-colors-white;
+		// color: $color-colors-white;
 		text-align: center;
 		text-decoration: none;
 		text-transform: uppercase;
@@ -125,9 +128,12 @@
 
 		&:hover,
 		&:focus {
-			background: $color-colors-main;
-			border: 1px solid $color-colors-main;
+			// background: $color-colors-main;
+			// border: 1px solid $color-colors-main;
 			text-decoration: none;
+			background: var(--hover-color-button-background);
+			border-color: var(--hover-color-button-border);
+			color: var(--hover-color-button-label);
 		}
 
 		&::after {

@@ -46,11 +46,12 @@
               class="facets__wrapper"
             {% endif %}
           >
-            {%- if filter_type == 'horizontal' and results.filters != empty -%}
+            {% comment %} german {% endcomment %}
+            {% comment %} {%- if filter_type == 'horizontal' and results.filters != empty -%}
               <h2 class="facets__heading caption-large text-body" id="verticalTitle" tabindex="-1">
                 {{ 'products.facets.filter_by_label' | t }}
               </h2>
-            {%- endif -%}
+            {%- endif -%} {% endcomment %}
             {% comment %} Pills are right below the title for filter type vertical {% endcomment %}
             {%- if filter_type == 'vertical' -%}
               <div class="active-facets active-facets-desktop">
@@ -519,9 +520,10 @@
           {%- if enable_sorting -%}
             <div class="facet-filters sorting caption">
               <div class="facet-filters__field">
-                <h2 class="facet-filters__label caption-large text-body">
+                {% comment %} german {% endcomment %}
+                {% comment %} <h2 class="facet-filters__label caption-large text-body">
                   <label for="SortBy">{{ 'products.facets.sort_by_label' | t }}</label>
-                </h2>
+                </h2> {% endcomment %}
                 <div class="select">
                   {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
                   <select
@@ -553,7 +555,8 @@
             </div>
           {%- endif -%}
           <div class="product-count light" role="status">
-            <h2 class="product-count__text text-body">
+            {% comment %} german {% endcomment %}
+            {% comment %} <h2 class="product-count__text text-body">
               <span id="ProductCountDesktop">
                 {%- if results.results_count -%}
                   {{ 'templates.search.results_with_count' | t: terms: results.terms, count: results.results_count }}
@@ -566,7 +569,7 @@
                   }}
                 {%- endif -%}
               </span>
-            </h2>
+            </h2> {% endcomment %}
             {%- render 'loading-spinner' -%}
           </div>
         {%- endif -%}
@@ -596,7 +599,7 @@
                         selected="selected"
                       {% endif %}
                     >
-                      {{ option.name | escape }}
+                    {{ option.name | escape }}
                     </option>
                   {%- endfor -%}
                 </select>
@@ -1121,7 +1124,8 @@
     class="product-count light{% if filter_type == 'vertical' or filter_type == 'horizontal' %} medium-hide large-up-hide{% endif %}"
     role="status"
   >
-    <h2 class="product-count__text text-body">
+    {% comment %} german {% endcomment %}
+    {% comment %} <h2 class="product-count__text text-body">
       <span id="ProductCount">
         {%- if results.results_count -%}
           {{ 'templates.search.results_with_count' | t: terms: results.terms, count: results.results_count }}
@@ -1134,7 +1138,7 @@
           }}
         {%- endif -%}
       </span>
-    </h2>
+    </h2> {% endcomment %}
     {%- render 'loading-spinner' -%}
   </div>
   {%- if filter_type == 'drawer' -%}

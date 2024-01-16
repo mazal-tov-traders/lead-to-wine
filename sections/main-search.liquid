@@ -295,6 +295,9 @@
                         %}
                       {%- when 'page' -%}
                         <div class="article-card-wrapper card-wrapper underline-links-hover">
+                          {% if item.metafields.custom.image_page  %}
+                            <img class="metafields__page-image" src="{{ item.metafields.custom.image_page | img_url : 'master' }}">
+                          {% endif %}
                           <div
                             class="card card--card card--text ratio color-{{ settings.blog_card_color_scheme }}"
                             style="--ratio-percent: 100%;"
@@ -302,7 +305,7 @@
                             <div class="card__content">
                               <div class="card__information">
                                 <h3 class="card__heading">
-                                  <a href="{{ item.url }}" class="full-unstyled-link">
+                                  <a href="{{ item.url }}" class="full-unstyled-link page-title">
                                     {{ item.title | truncate: 50 | escape }}
                                   </a>
                                 </h3>

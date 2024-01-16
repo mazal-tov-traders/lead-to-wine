@@ -1,198 +1,210 @@
 <div class="page-width">
-    <div class="splide" id="reviews-slider-with-image">
-        <div class="splide__track">
-            <ul class="splide__list">
-                {% for block in section.blocks %}
-                    {% if block.settings %}
-                        <li class="splide__slide">
-                            <div class="review" style="background: {{ block.settings.slider-background }}">
-                                <div class="review__image">
-                                    {% if block.settings.logo %}
-                                        <img src="{{ block.settings.logo | image_url }}" alt="logo">
-                                    {% endif %}
-                                </div>
-                                <div class="review__wrapper">
-                                    {% if block.settings.slide-title %}
-                                        <h2 style="color: {{ block.settings.slider-title-color }}; font-size:{{ block.settings.font_size }}px;" class="review__title">{{ block.settings.slide-title }}</h2>
-                                    {% endif %}
-                                    {% if block.settings.slide-text %}
-                                        <p style="color: {{ block.settings.slide-text-color }}; font-size:{{ block.settings.font_size-2}}px;">{{ block.settings.slide-text }}</p>
-                                    {% endif %}
-                                    <div class="review__author">
-                                        <div class="review__avatar">
-                                            {% if block.settings.avatar %}
-                                                <img src="{{ block.settings.avatar | image_url }}" alt="avatar">
-                                            {% endif %}
-                                        </div>
-                                        <div class="review__content">
-                                            {% if block.settings.rev-name %}
-                                                <h3 style="color: {{ block.settings.name-color }}; font-size:{{ block.settings.font_size-3 }}px;" class="review__name">{{ block.settings.rev-name }}</h3>
-                                            {% endif %}
-                                            {% if block.settings.location %}
-                                                <h4 style="color: {{ block.settings.location-color }}; font-size:{{ block.settings.font_size-4 }}px;" class="review__location">{{ block.settings.location }}</h4>
-                                            {% endif %}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-        </div>
+  <div class="splide" id="reviews-slider-with-image">
+    <div class="splide__track">
+      <ul class="splide__list">
+        {% for block in section.blocks %}
+          {% if block.settings %}
+            <li class="splide__slide">
+              <div class="review" style="background: {{ block.settings.slider-background }}">
+                <div class="review__image">
+                  {% if block.settings.logo %}
+                    <img src="{{ block.settings.logo | image_url }}" alt="logo">
+                  {% endif %}
+                </div>
+                <div class="review__wrapper">
+                  {% if block.settings['slide-title'] %}
+                    <h2
+                      style="color: {{ block.settings.slider-title-color }}; font-size:{{ block.settings.font_size }}px;"
+                      class="review__title"
+                    >
+                      {{ block.settings['slide-title'] }}
+                    </h2>
+                  {% endif %}
+                  {% if block.settings['slide-text'] %}
+                    <p style="color: {{ block.settings.slide-text-color }}; font-size:{{ block.settings.font_size-2}}px;">
+                      {{ block.settings['slide-text'] }}
+                    </p>
+                  {% endif %}
+                  <div class="review__author">
+                    <div class="review__avatar">
+                      {% if block.settings.avatar %}
+                        <img src="{{ block.settings.avatar | image_url }}" alt="avatar">
+                      {% endif %}
+                    </div>
+                    <div class="review__content">
+                      {% if block.settings['rev-name'] %}
+                        <h3
+                          style="color: {{ block.settings.name-color }}; font-size:{{ block.settings.font_size-3 }}px;"
+                          class="review__name"
+                        >
+                          {{ block.settings['rev-name'] }}
+                        </h3>
+                      {% endif %}
+                      {% if block.settings.location %}
+                        <h4
+                          style="color: {{ block.settings.location-color }}; font-size:{{ block.settings.font_size-4 }}px;"
+                          class="review__location"
+                        >
+                          {{ block.settings.location }}
+                        </h4>
+                      {% endif %}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
     </div>
+  </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 <script>
-    const reviewsSliderWithImage = document.querySelector('#reviews-slider-with-image');
+  const reviewsSliderWithImage = document.querySelector('#reviews-slider-with-image');
 
-    if (reviewsSliderWithImage) {
-        reviewsSliderWithImage.classList.add('splide_ready');
+  if (reviewsSliderWithImage) {
+    reviewsSliderWithImage.classList.add('splide_ready');
 
-        new Splide('#reviews-slider-with-image', {
-            type: 'loop',
-            perPage: 1,
-            gap: 30,
-            autoplay: true,
-            interval: 7000,
-            speed: 2000,
-            easing: 'ease-out',
-            arrows: true,
-            pauseOnHover: true,
-            pagination: true,
-        }).mount();
-    }
+    new Splide('#reviews-slider-with-image', {
+      type: 'loop',
+      perPage: 1,
+      gap: 30,
+      autoplay: true,
+      interval: 7000,
+      speed: 2000,
+      easing: 'ease-out',
+      arrows: true,
+      pauseOnHover: true,
+      pagination: true,
+    }).mount();
+  }
 </script>
-          
+
 {% schema %}
-  {
-    "name": "slider",
-    "tag": "section",
-    "class": "section reviews-slider-with-image",
-    "settings": [
-      {
-        "type": "checkbox",
-        "id": "include_margins",
-        "default": true,
-        "label": "t:sections.apps.settings.include_margins.label"
-      },
-      {
-        "type": "inline_richtext",
-        "id": "section-title",
-        "label": "slider title"
-      },
-      {
-        "type": "color",
-        "id": "color_title_label",
-        "label": "title color",
-        "default": "#383633"
-      },
-      {
-          "type": "text",
-          "id": "font_size",
-          "label": "Font Size Enter Number"
-        }
-    ],
-    "blocks": [
-      {
-        "type": "card",
-        "name": "card",
-        "limit": 25,
-        "settings": [
-          {
-            "type": "color",
-            "id": "slider-background",
-            "label": "background color",
-            "default": "#e2e2e2"
-          },
-          {
-            "type": "image_picker",
-            "id": "logo",
-            "label": "logo Image"
-          },
-          {
-            "type": "inline_richtext",
-            "id": "slide-title",
-            "label": "title"
-          },
-          {
-            "type": "color",
-            "id": "slider-title-color",
-            "label": "title color",
-            "default": "#383633"
-          },
-          {
+{
+  "name": "slider",
+  "tag": "section",
+  "class": "section reviews-slider-with-image",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "include_margins",
+      "default": true,
+      "label": "t:sections.apps.settings.include_margins.label"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "section-title",
+      "label": "slider title"
+    },
+    {
+      "type": "color",
+      "id": "color_title_label",
+      "label": "title color",
+      "default": "#383633"
+    },
+    {
+      "type": "text",
+      "id": "font_size",
+      "label": "Font Size Enter Number"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "card",
+      "limit": 25,
+      "settings": [
+        {
+          "type": "color",
+          "id": "slider-background",
+          "label": "background color",
+          "default": "#e2e2e2"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "logo Image"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "slide-title",
+          "label": "title"
+        },
+        {
+          "type": "color",
+          "id": "slider-title-color",
+          "label": "title color",
+          "default": "#383633"
+        },
+        {
           "type": "text",
           "id": "font_size",
           "label": "Font Size Enter Number"
         },
-          {
-            "type": "inline_richtext",
-            "id": "slide-text",
-            "label": "slide text"
-          },
-          {
-            "type": "color",
-            "id": "slide-text-color",
-            "label": "text color",
-            "default": "#383633"
-          },
-          {
+        {
+          "type": "inline_richtext",
+          "id": "slide-text",
+          "label": "slide text"
+        },
+        {
+          "type": "color",
+          "id": "slide-text-color",
+          "label": "text color",
+          "default": "#383633"
+        },
+        {
           "type": "text",
           "id": "font_size-2",
           "label": "Font Size Enter Number"
         },
-          {
-            "type": "image_picker",
-            "id": "avatar",
-            "label": "avatar image"
-          },
-          {
-            "type": "inline_richtext",
-            "id": "rev-name",
-            "label": "review name"
-          },
-          {
-            "type": "color",
-            "id": "name-color",
-            "label": "name color",
-            "default": "#383633"
-          },
-          {
+        {
+          "type": "image_picker",
+          "id": "avatar",
+          "label": "avatar image"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "rev-name",
+          "label": "review name"
+        },
+        {
+          "type": "color",
+          "id": "name-color",
+          "label": "name color",
+          "default": "#383633"
+        },
+        {
           "type": "text",
           "id": "font_size-3",
           "label": "Font Size Enter Number"
         },
-          {
-            "type": "inline_richtext",
-            "id": "location",
-            "label": "location"
-          },
-          {
-            "type": "color",
-            "id": "location-color",
-            "label": "location color",
-            "default": "#918677"
-          },
-          {
+        {
+          "type": "inline_richtext",
+          "id": "location",
+          "label": "location"
+        },
+        {
+          "type": "color",
+          "id": "location-color",
+          "label": "location color",
+          "default": "#918677"
+        },
+        {
           "type": "text",
           "id": "font_size-4",
           "label": "Font Size Enter Number"
         }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "slider",
-        "blocks": [
-          {"type": "card"},
-          {"type": "card"},
-          {"type": "card"},
-          {"type": "card"}     
-        ]
-      }
-    ]
-  }
-  {% endschema %}
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "slider",
+      "blocks": [{ "type": "card" }, { "type": "card" }, { "type": "card" }, { "type": "card" }]
+    }
+  ]
+}
+{% endschema %}

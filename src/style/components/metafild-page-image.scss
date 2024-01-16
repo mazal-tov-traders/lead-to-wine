@@ -1,0 +1,32 @@
+@import "../variables-and-mixins.scss";
+
+.template-search__results {
+  .metafields__page-image {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card__badge {
+    z-index: 2;
+    position: fixed;
+  }
+  .full-unstyled-link.page-title {
+    font-family: $font-family-Awesome-Serif;
+    font-weight: 400;
+    color: $color-text-main;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 18px;
+    padding: 12px 15px;
+    position: absolute;
+    top: 1px;
+    z-index: 2;
+    left: 1px;
+  }
+}

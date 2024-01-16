@@ -148,12 +148,12 @@
         border: none;
         padding: 0;
         transition: 0.3s;
-		opacity: 1 !important;
+        opacity: 1 !important;
 
         &.is-active {
           width: 12px;
           height: 12px;
-		  background-color: #fff;
+          background-color: #fff;
         }
       }
     }

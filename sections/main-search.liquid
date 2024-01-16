@@ -294,7 +294,7 @@
                           lazy_load: lazy_load
                         %}
                       {%- when 'page' -%}
-                        <div class="article-card-wrapper card-wrapper underline-links-hover">
+                        <div class="article-card-wrapper card-wrapper underline-links-hover metafields__img_hover">
                           {% if item.metafields.custom.image_page  %}
                             <img class="metafields__page-image" src="{{ item.metafields.custom.image_page | img_url : 'master' }}">
                           {% endif %}

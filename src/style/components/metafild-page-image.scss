@@ -30,3 +30,14 @@
     left: 1px;
   }
 }
+
+.metafields__img_hover{
+  overflow: hidden;
+  &:hover img {
+    transform: scale(1.1);
+  }
+  .metafields__page-image{
+    transition: transform 1.2s ease;
+  }
+  
+}

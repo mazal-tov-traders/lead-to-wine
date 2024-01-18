@@ -121,8 +121,7 @@
             "color_button_label": "#ffffff",
             "color_button_border": "#5491d6",
             "hover_color_button_backgroun": "#5491d6",
-            "hover_color_button_border": "#5491d6",
-            "hover_color_button_label": "#ffffff"
+            "hover_color_button_border": "#5491d6"
           }
         },
         "2e67b85d-a844-41be-9f38-51091714bcd3": {
@@ -150,9 +149,9 @@
           "type": "button-link",
           "disabled": true,
           "settings": {
-            "button_link1": "shopify:\/\/products\/the-way-to-win-intensive-1",
+            "button_link1": "shopify:\/\/products\/the-way-to-win-intensive",
             "icon_button1": "shopify:\/\/shop_images\/image_8.svg",
-            "button_link2": "shopify:\/\/products\/the-way-to-win-intensive-1",
+            "button_link2": "shopify:\/\/products\/the-way-to-win-intensive",
             "icon_button2": "shopify:\/\/shop_images\/image_2.svg"
           }
         }
@@ -173,7 +172,6 @@
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "media_position": "right",
-        "nubmer_navigat": "",
         "hide_variants": false
       }
     }

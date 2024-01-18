@@ -1,0 +1,41 @@
+@import "../variables-and-mixins.scss";
+
+.collection-inner {
+  margin: 0 auto;
+  max-width: 1920px;
+  min-height: 93px;
+  background: #383633;
+  padding: 36px 0 36px 0;
+  .my-collection-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 60px;
+    row-gap: 20px;
+
+    .collection-list__item {
+      list-style: none;
+      max-width: max-content;
+      .card__content {
+        padding: 0;
+        .card__information {
+          padding: 0;
+          .full-unstyled-link {
+            color: #eae9e5;
+            @include text-style-text-text-3;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// 
+
+.filter-dropdown-style{
+    .collection-list__item{
+       
+    }
+}

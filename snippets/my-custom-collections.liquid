@@ -1,0 +1,33 @@
+<div class="card-wrapper {% if wrapper_class and wrapper_class != 'none' %}{{ wrapper_class }}{% else %}collection-card-wrapper{% endif %}">
+  <div class="card__content">
+    <div class="card__information">
+      <h3 class="card__heading">
+        <a
+          {% if card_collection == blank %}
+            role="link" aria-disabled="true"
+          {% else %}
+            href="{{ card_collection.url }}"
+          {% endif %}
+          class="full-unstyled-link"
+        >
+          {%- if card_collection.title != blank -%}
+            {{- card_collection.title | escape -}}
+          {%- else -%}
+            {{ 'onboarding.collection_title' | t }}
+          {%- endif -%}
+        </a>
+      </h3>
+    </div>
+  </div>
+  {%- if card_collection == blank -%}
+    <div class="card__content">
+      <div class="card__information">
+        <h3 class="card__heading card__heading--placeholder">
+          <a role="link" aria-disabled="true" class="full-unstyled-link">
+            {{ 'onboarding.collection_title' | t }}
+          </a>
+        </h3>
+      </div>
+    </div>
+  {%- endif -%}
+</div>

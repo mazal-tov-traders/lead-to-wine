@@ -47,9 +47,29 @@
     }
   }
 {%- endstyle -%}
+{% comment %} start вывод колекций {% endcomment %}
+{{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
+  <div class="collection-inner">
+    <ul
+      class="collection-list my-collection-list page-width "
+      role="list"
+    >
+      {%- for collection in collections -%}
+        <li
+          class="collection-list__item grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          {% if settings.animations_reveal_on_scroll %}
+            data-cascade
+            style="--animation-order: {{ forloop.index }};"
+          {% endif %}
+        >
+          {% render 'my-custom-collections', card_collection: collection %}
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+{% comment %} end вывод колекций {% endcomment %}
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
-  
   {%- paginate collection.products by section.settings.products_per_page -%}
     {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
     {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}

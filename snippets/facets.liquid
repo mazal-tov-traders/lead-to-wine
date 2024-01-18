@@ -47,11 +47,13 @@
             {% endif %}
           >
             {% comment %} german {% endcomment %}
-            {% comment %} {%- if filter_type == 'horizontal' and results.filters != empty -%}
-              <h2 class="facets__heading caption-large text-body" id="verticalTitle" tabindex="-1">
-                {{ 'products.facets.filter_by_label' | t }}
-              </h2>
-            {%- endif -%} {% endcomment %}
+            {% comment %}
+              {%- if filter_type == 'horizontal' and results.filters != empty -%}
+                <h2 class="facets__heading caption-large text-body" id="verticalTitle" tabindex="-1">
+                  {{ 'products.facets.filter_by_label' | t }}
+                </h2>
+              {%- endif -%}
+            {% endcomment %}
             {% comment %} Pills are right below the title for filter type vertical {% endcomment %}
             {%- if filter_type == 'vertical' -%}
               <div class="active-facets active-facets-desktop">
@@ -112,6 +114,97 @@
 
             <script src="{{ 'show-more.js' | asset_url }}" defer="defer"></script>
             {% comment %} Filters for both horizontal and vertical filter {% endcomment %}
+
+             {% comment %} start  my filter collection  {% endcomment %}
+              <details
+                id="Details-{{ forloop.index }}-{{ section.id }}"
+                class="filter-dropdown-style {% if filter_type == 'horizontal' %}disclosure-has-popup facets__disclosure{% else %} facets__disclosure-vertical{% endif %} js-filter"
+                data-index="{{ forloop.index }}"
+                {% if filter_type == 'vertical' and forloop.index == 1 %}
+                  open
+                {% endif %}
+              >
+                <summary
+                  class="facets__summary caption-large focus-offset"
+                  aria-label="{{ selected_collection.title }} ({{ 'selected_collection.title' | t: count: filter.active_values.size }})"
+                >
+
+                  <div>
+                    <span class="facets__summary-label">
+                      {{- filter.label | escape }}
+                      {%- if filter_type == 'vertical' -%}
+                        <span class="facets__selected no-js-hidden{% if filter.active_values.size == 0 %} hidden{% endif %}">
+                          ({{ selected_collection.title }})</span
+                        >
+                      {%- endif -%}
+                    </span>
+                    {%- if filter_type == 'vertical' and filter.operator == 'AND' -%}
+                      <span class="facets__and-helptext">
+                        {{ selected_collection.title }}
+                      </span>
+                    {%- endif -%}
+                    {% render 'icon-caret' %}
+                  </div>
+                </summary>
+                <div
+                  id="Facet-{{ forloop.index }}-{{ section.id }}"
+                  class="parent-display {% if filter_type == 'horizontal' %}facets__display{% else %}facets__display-vertical{% endif %}"
+                >
+                <fieldset class="facets-wrap parent-wrap {% if filter_type == 'vertical' %} facets-wrap-vertical{% endif %}">
+                  <legend class="visually-hidden">{{ filter.label | escape }}</legend>
+                  <ul
+                    class="{{ visual_layout_class }}{% if filter_type == 'vertical' %} facets__list--vertical{% else %} facets__list{% endif %} list-unstyled no-js-hidden"
+                    role="list"
+                  >
+                    {%- liquid
+                      assign sorted_values = filter.values
+                      # Keep the selected values grouped together when operator is AND
+                      if filter.operator == 'AND'
+                        assign active_filter_values = filter.values | where: 'active', true
+                        assign inactive_filter_values = filter.values | where: 'active', false
+                        assign sorted_values = active_filter_values | concat: inactive_filter_values
+                      endif
+                    -%}
+                    
+
+                      {%- for collection in collections -%}
+                        <span
+                          class="collection-list__item grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                          {% if settings.animations_reveal_on_scroll %}
+                            data-cascade
+                            style="--animation-order: {{ forloop.index }};"
+                          {% endif %}
+                        >
+                          {% render 'my-custom-collections', card_collection: collection %}
+                        </span>
+                      {%- endfor -%}
+                   
+                  </ul>
+                </fieldset>
+                {% comment %} 
+                {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
+                  <select
+                    name="sort_by"
+                    class="facet-filters__sort select__select caption-large"
+                    id="SortBy"
+                    aria-describedby="a11y-refresh-page-message"
+                  >
+                    {%- for option in results.sort_options -%}
+                      <option
+                        value="{{ option.value | escape }}"
+                        {% if option.value == sort_by %}
+                          selected="selected"
+                        {% endif %}
+                      >
+                        {{ option.name | escape }}
+                      </option>
+                    {%- endfor -%}
+                  </select>
+               {% endcomment %}
+              </div>
+              </details>
+              {% comment %} end  my filter collection {% endcomment %}
+
             {%- for filter in results.filters -%}
               {% liquid
                 assign total_active_values = total_active_values | plus: filter.active_values.size
@@ -126,8 +219,9 @@
                     assign show_more_number = 10
                 endcase
               %}
-
               {% case filter.type %}
+                 
+
                 {% when 'boolean', 'list' %}
                   <details
                     id="Details-{{ forloop.index }}-{{ section.id }}"
@@ -521,9 +615,11 @@
             <div class="facet-filters sorting caption">
               <div class="facet-filters__field">
                 {% comment %} german {% endcomment %}
-                {% comment %} <h2 class="facet-filters__label caption-large text-body">
-                  <label for="SortBy">{{ 'products.facets.sort_by_label' | t }}</label>
-                </h2> {% endcomment %}
+                {% comment %}
+                  <h2 class="facet-filters__label caption-large text-body">
+                    <label for="SortBy">{{ 'products.facets.sort_by_label' | t }}</label>
+                  </h2>
+                {% endcomment %}
                 <div class="select">
                   {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
                   <select
@@ -556,20 +652,22 @@
           {%- endif -%}
           <div class="product-count light" role="status">
             {% comment %} german {% endcomment %}
-            {% comment %} <h2 class="product-count__text text-body">
-              <span id="ProductCountDesktop">
-                {%- if results.results_count -%}
-                  {{ 'templates.search.results_with_count' | t: terms: results.terms, count: results.results_count }}
-                {%- elsif results.products_count == results.all_products_count -%}
-                  {{ 'products.facets.product_count_simple' | t: count: results.products_count }}
-                {%- else -%}
-                  {{
-                    'products.facets.product_count'
-                    | t: product_count: results.products_count, count: results.all_products_count
-                  }}
-                {%- endif -%}
-              </span>
-            </h2> {% endcomment %}
+            {% comment %}
+              <h2 class="product-count__text text-body">
+                <span id="ProductCountDesktop">
+                  {%- if results.results_count -%}
+                    {{ 'templates.search.results_with_count' | t: terms: results.terms, count: results.results_count }}
+                  {%- elsif results.products_count == results.all_products_count -%}
+                    {{ 'products.facets.product_count_simple' | t: count: results.products_count }}
+                  {%- else -%}
+                    {{
+                      'products.facets.product_count'
+                      | t: product_count: results.products_count, count: results.all_products_count
+                    }}
+                  {%- endif -%}
+                </span>
+              </h2>
+            {% endcomment %}
             {% comment %} {%- render 'loading-spinner' -%} {% endcomment %}
           </div>
         {%- endif -%}
@@ -599,7 +697,7 @@
                         selected="selected"
                       {% endif %}
                     >
-                    {{ option.name | escape }}
+                      {{ option.name | escape }}
                     </option>
                   {%- endfor -%}
                 </select>
@@ -1125,20 +1223,22 @@
     role="status"
   >
     {% comment %} german {% endcomment %}
-    {% comment %} <h2 class="product-count__text text-body">
-      <span id="ProductCount">
-        {%- if results.results_count -%}
-          {{ 'templates.search.results_with_count' | t: terms: results.terms, count: results.results_count }}
-        {%- elsif results.products_count == results.all_products_count -%}
-          {{ 'products.facets.product_count_simple' | t: count: results.products_count }}
-        {%- else -%}
-          {{
-            'products.facets.product_count'
-            | t: product_count: results.products_count, count: results.all_products_count
-          }}
-        {%- endif -%}
-      </span>
-    </h2> {% endcomment %}
+    {% comment %}
+      <h2 class="product-count__text text-body">
+        <span id="ProductCount">
+          {%- if results.results_count -%}
+            {{ 'templates.search.results_with_count' | t: terms: results.terms, count: results.results_count }}
+          {%- elsif results.products_count == results.all_products_count -%}
+            {{ 'products.facets.product_count_simple' | t: count: results.products_count }}
+          {%- else -%}
+            {{
+              'products.facets.product_count'
+              | t: product_count: results.products_count, count: results.all_products_count
+            }}
+          {%- endif -%}
+        </span>
+      </h2>
+    {% endcomment %}
     {% comment %} {%- render 'loading-spinner' -%} {% endcomment %}
   </div>
   {%- if filter_type == 'drawer' -%}

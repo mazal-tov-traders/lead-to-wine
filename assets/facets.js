@@ -323,3 +323,25 @@ class FacetRemove extends HTMLElement {
 }
 
 customElements.define('facet-remove', FacetRemove);
+// aaa
+// const updateActualeCollection = function (){
+//   const collectionSelectButtons = document.querySelectorAll('.collection-list__item');
+//   const selectedCollectionSpan = document.querySelector('.current-collection');
+
+//   const savedCollectionName = localStorage.getItem('selectedCollection');
+//   if (savedCollectionName) {
+//     selectedCollectionSpan.textContent = savedCollectionName;
+//   }
+
+//   collectionSelectButtons.forEach((button) => {
+//     button.addEventListener('click', () => {
+//       const selectedCollectionName = button.textContent;
+//       selectedCollectionSpan.textContent = selectedCollectionName;
+
+//       localStorage.setItem('selectedCollection', selectedCollectionName);
+//     });
+//   });
+// }
+// document.addEventListener('DOMContentLoaded', () => {
+//   updateActualeCollection();
+// });

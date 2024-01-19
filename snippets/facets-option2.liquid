@@ -1,0 +1,126 @@
+{{ 'component-show-more.css' | asset_url | stylesheet_tag }}
+{{ 'component-visual-display.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign sort_by = results.sort_by | default: results.default_sort_by
+  assign total_active_values = 0
+  if results.url
+    assign results_url = results.url
+  else
+    assign terms = results.terms | escape
+    assign results_url = '?q=' | append: terms | append: '&options%5Bprefix%5D=last&sort_by=' | append: sort_by
+  endif
+-%}
+
+<div class="facets-container{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+  <facet-filters-form class="facets">
+    <form
+      id="FacetFiltersForm"
+      class="facets__form"
+    >
+      {%- if results.terms -%}
+        <input type="hidden" name="q" value="{{ results.terms | escape }}">
+        <input name="options[prefix]" type="hidden" value="last">
+      {%- endif -%}
+      {% if enable_filtering %}
+        <div
+          id="FacetsWrapperDesktop"
+          class="facets__wrapper"
+        >
+          {% comment %} start  my filter collection  {% endcomment %}
+          {%- if request.page_type != 'search' -%}
+            <details
+              id="Details-{{ forloop.index }}-{{ section.id }}"
+              class="filter-dropdown-style disclosure-has-popup facets__disclosure js-filter"
+              data-index="{{ forloop.index }}"
+              {% if filter_type == 'vertical' and forloop.index == 1 %}
+                open
+              {% endif %}
+            >
+              <summary class="facets__summary caption-large focus-offset">
+                <div>
+                  <span class="facets__summary-label">
+                    <span class="current-collection facets__selected no-js-hidden{% if filter.active_values.size == 0 %} hidden{% endif %}">
+                      {{- collection.title -}}
+                    </span>
+                  </span>
+                  {% render 'icon-caret' %}
+                </div>
+              </summary>
+              <div
+                id="Facet-{{ forloop.index }}-{{ section.id }}"
+                class="parent-display {% if filter_type == 'horizontal' %}facets__display{% else %}facets__display-vertical{% endif %}"
+              >
+                {%- for collection in collections -%}
+                  <span
+                    class="collection-list__item grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                    {% if settings.animations_reveal_on_scroll %}
+                      data-cascade
+                      style="--animation-order: {{ forloop.index }};"
+                    {% endif %}
+                  >
+                    {% render 'my-custom-collections', card_collection: collection %}
+                  </span>
+                {%- endfor -%}
+              </div>
+            </details>
+          {% endif %}
+          {% comment %} end  my filter collection {% endcomment %}
+
+          {%- for filter in results.filters -%}
+            {% liquid
+              assign total_active_values = total_active_values | plus: filter.active_values.size
+              case filter.presentation
+                when 'swatch'
+                  assign has_visual_display = true
+                  assign show_more_number = 15
+                  assign visual_layout_class = 'facets-layout-grid facets-layout-grid--' | append: filter.presentation
+                else
+                  assign has_visual_display = false
+                  assign visual_layout_class = 'facets-layout-list'
+                  assign show_more_number = 10
+              endcase
+            %}
+
+            <select id="sort-by">
+              {% assign sort_by = collection.sort_by | default: collection.default_sort_by %}
+
+              {% for option in collection.sort_options %}
+                <option
+                  value="{{ option.value }}"
+                  {% if option.value == sort_by %}
+                    selected="selected"
+                  {% endif %}
+                >
+                  {{ option.name }}
+                </option>
+              {% endfor %}
+            </select>
+            <script>
+              Shopify.queryParams = {};
+
+              if (location.search.length) {
+                var params = location.search.substr(1).split('&');
+
+                for (var i = 0; i < params.length; i++) {
+                  var keyValue = params[i].split('=');
+
+                  if (keyValue.length) {
+                    Shopify.queryParams[decodeURIComponent(keyValue[0])] = decodeURIComponent(keyValue[1]);
+                  }
+                }
+              }
+
+              document.querySelector('#sort-by').addEventListener('change', function (e) {
+                var value = e.target.value;
+
+                Shopify.queryParams.sort_by = value;
+                location.search = new URLSearchParams(Shopify.queryParams).toString();
+              });
+            </script>
+          {%- endfor -%}
+        </div>
+      {% endif %}
+    </form>
+  </facet-filters-form>
+</div>

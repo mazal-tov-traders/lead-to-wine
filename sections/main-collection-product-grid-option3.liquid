@@ -122,7 +122,7 @@
           id="main-collection-filters"
           data-id="{{ section.id }}"
         >
-          {% render 'facets-option2',
+          {% render 'facets-option3',
             results: collection,
             enable_filtering: section.settings.enable_filtering,
             enable_sorting: section.settings.enable_sorting,
@@ -207,8 +207,8 @@
 
 {% schema %}
 {
-  "name": "Collection Option 2",
-  "class": "collection-option-2",
+  "name": "Collection Option 3",
+  "class": "collection-option-3",
   "settings": [
     {
       "type": "range",
@@ -388,7 +388,7 @@
   ],
   "presets": [
     {
-      "name": "Collection Option 2"
+      "name": "Collection Option 3"
     }
   ]
 }

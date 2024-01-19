@@ -64,7 +64,7 @@ class FacetFiltersForm extends HTMLElement {
         FacetFiltersForm.filterData = [...FacetFiltersForm.filterData, { html, url }];
         FacetFiltersForm.renderFilters(html, event);
         FacetFiltersForm.renderProductGridContainer(html);
-        FacetFiltersForm.renderProductCount(html);
+        // FacetFiltersForm.renderProductCount(html);
         if (typeof initializeScrollAnimationTrigger === 'function') initializeScrollAnimationTrigger(html.innerHTML);
       });
   }
@@ -73,7 +73,7 @@ class FacetFiltersForm extends HTMLElement {
     const html = FacetFiltersForm.filterData.find(filterDataUrl).html;
     FacetFiltersForm.renderFilters(html, event);
     FacetFiltersForm.renderProductGridContainer(html);
-    FacetFiltersForm.renderProductCount(html);
+    // FacetFiltersForm.renderProductCount(html);
     if (typeof initializeScrollAnimationTrigger === 'function') initializeScrollAnimationTrigger(html.innerHTML);
   }
 
@@ -90,19 +90,19 @@ class FacetFiltersForm extends HTMLElement {
       });
   }
 
-  static renderProductCount(html) {
-    const count = new DOMParser().parseFromString(html, 'text/html').getElementById('ProductCount').innerHTML;
-    const container = document.getElementById('ProductCount');
-    const containerDesktop = document.getElementById('ProductCountDesktop');
-    container.innerHTML = count;
-    container.classList.remove('loading');
-    if (containerDesktop) {
-      containerDesktop.innerHTML = count;
-      containerDesktop.classList.remove('loading');
-    }
-    const loadingSpinners = document.querySelectorAll('.facets-container .loading__spinner, facet-filters-form .loading__spinner');
-    loadingSpinners.forEach((spinner) => spinner.classList.add('hidden'));
-  }
+  // static renderProductCount(html) {
+  //   const count = new DOMParser().parseFromString(html, 'text/html').getElementById('ProductCount').innerHTML;
+  //   const container = document.getElementById('ProductCount');
+  //   const containerDesktop = document.getElementById('ProductCountDesktop');
+  //   container.innerHTML = count;
+  //   container.classList.remove('loading');
+  //   if (containerDesktop) {
+  //     containerDesktop.innerHTML = count;
+  //     containerDesktop.classList.remove('loading');
+  //   }
+  //   const loadingSpinners = document.querySelectorAll('.facets-container .loading__spinner, facet-filters-form .loading__spinner');
+  //   loadingSpinners.forEach((spinner) => spinner.classList.add('hidden'));
+  // }
 
   static renderFilters(html, event) {
     const parsedHTML = new DOMParser().parseFromString(html, 'text/html');
@@ -122,7 +122,7 @@ class FacetFiltersForm extends HTMLElement {
     });
 
     FacetFiltersForm.renderActiveFacets(parsedHTML);
-    FacetFiltersForm.renderAdditionalElements(parsedHTML);
+    // FacetFiltersForm.renderAdditionalElements(parsedHTML);
 
     if (countsToRender) {
       const closestJSFilterID = event.target.closest('.js-filter').id;
@@ -154,16 +154,16 @@ class FacetFiltersForm extends HTMLElement {
     FacetFiltersForm.toggleActiveFacets(false);
   }
 
-  static renderAdditionalElements(html) {
-    const mobileElementSelectors = ['.mobile-facets__open', '.mobile-facets__count', '.sorting'];
+  // static renderAdditionalElements(html) {
+  //   const mobileElementSelectors = ['.mobile-facets__open', '.mobile-facets__count', '.sorting'];
 
-    mobileElementSelectors.forEach((selector) => {
-      if (!html.querySelector(selector)) return;
-      document.querySelector(selector).innerHTML = html.querySelector(selector).innerHTML;
-    });
+  //   mobileElementSelectors.forEach((selector) => {
+  //     if (!html.querySelector(selector)) return;
+  //     document.querySelector(selector).innerHTML = html.querySelector(selector).innerHTML;
+  //   });
 
-    document.getElementById('FacetFiltersFormMobile').closest('menu-drawer').bindEvents();
-  }
+  //   document.getElementById('FacetFiltersFormMobile').closest('menu-drawer').bindEvents();
+  // }
 
   static renderCounts(source, target) {
     const targetSummary = target.querySelector('.facets__summary');
@@ -323,25 +323,3 @@ class FacetRemove extends HTMLElement {
 }
 
 customElements.define('facet-remove', FacetRemove);
-// aaa
-// const updateActualeCollection = function (){
-//   const collectionSelectButtons = document.querySelectorAll('.collection-list__item');
-//   const selectedCollectionSpan = document.querySelector('.current-collection');
-
-//   const savedCollectionName = localStorage.getItem('selectedCollection');
-//   if (savedCollectionName) {
-//     selectedCollectionSpan.textContent = savedCollectionName;
-//   }
-
-//   collectionSelectButtons.forEach((button) => {
-//     button.addEventListener('click', () => {
-//       const selectedCollectionName = button.textContent;
-//       selectedCollectionSpan.textContent = selectedCollectionName;
-
-//       localStorage.setItem('selectedCollection', selectedCollectionName);
-//     });
-//   });
-// }
-// document.addEventListener('DOMContentLoaded', () => {
-//   updateActualeCollection();
-// });

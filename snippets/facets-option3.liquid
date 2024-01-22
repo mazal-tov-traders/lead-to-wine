@@ -50,7 +50,6 @@
                 <fieldset class="facets-wrap parent-wrap {% if filter_type == 'vertical' %} facets-wrap-vertical{% endif %}">
                   {% comment %} <legend class="visually-hidden">{{ filter.label | escape }}</legend> {% endcomment %}
                   <div class="splide" id="reviews-slider">
-                    
                       <ul
                         class="splide__list {{ visual_layout_class }}{% if filter_type == 'vertical' %} facets__list--vertical{% else %} facets__list{% endif %} list-unstyled no-js-hidden"
                         role="list"
@@ -107,9 +106,7 @@
                           </li>
                         {%- endfor -%}
                       </ul>
-                    
                   </div>
-                  <div id="nextBtn">Next</div>
                 </fieldset>
                
                 {%- if filter.values.size > show_more_number and filter_type == 'vertical' -%}
@@ -133,7 +130,7 @@
             {% comment %} end custom filter by tags {% endcomment %}
         {% endcase %}
       {%- endfor -%}
-
+      
       {% comment %} start collection {% endcomment %}
       {% if enable_filtering %}
         <div
@@ -185,6 +182,7 @@
       {% endif %}
       {% comment %} end collection  {% endcomment %}
     </form>
+    <div id="nextBtn">Next</div>
     {% comment %} remov tag  {% endcomment %}
     <div class="active-facets active-facets-desktop">
       {%- for filter in results.filters -%}
@@ -229,3 +227,4 @@
     }
   });
 </script>
+

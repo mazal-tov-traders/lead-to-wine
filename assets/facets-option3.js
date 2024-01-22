@@ -6,7 +6,6 @@ class FacetFiltersForm extends HTMLElement {
     this.debouncedOnSubmit = debounce((event) => {
       this.onSubmitHandler(event);
     }, 500);
-
     const facetForm = this.querySelector('form');
     facetForm.addEventListener('input', this.debouncedOnSubmit.bind(this));
 
@@ -307,15 +306,22 @@ class FacetRemove extends HTMLElement {
   constructor() {
     super();
     const facetLink = this.querySelector('a');
-    // facetLink.setAttribute('role', 'button');
-    // facetLink.addEventListener('click', this.closeFilter.bind(this));
-    // facetLink.addEventListener('keyup', (event) => {
-    //   event.preventDefault();
-    //   if (event.code.toUpperCase() === 'SPACE') this.closeFilter(event);
-    // });
+    facetLink.setAttribute('role', 'button');
+    facetLink.addEventListener('click', this.closeFilter.bind(this));
+    facetLink.addEventListener('keyup', (event) => {
+      event.preventDefault();  // Add this line
+      if (event.code.toUpperCase() === 'SPACE') this.closeFilter(event);
+    });
+    
   }
 
+  // closeFilter(event) {
+  //   event.preventDefault();
+  //   const form = this.closest('facet-filters-form') || document.querySelector('facet-filters-form');
+  //   form.onActiveFilterClick(event);
+  // }
   closeFilter(event) {
+    console.log('closeFilter called');
     event.preventDefault();
     const form = this.closest('facet-filters-form') || document.querySelector('facet-filters-form');
     form.onActiveFilterClick(event);

@@ -68,6 +68,30 @@
     position: unset !important;
     
   }
+  #reviews-slider {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .splide__list {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .splide__slide {
+    max-width: max-content;
+    box-sizing: border-box;
+  }
+  
+  #nextBtn {
+    position: absolute;
+    top: 50%;
+    right: -110px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
 }
 .facets__label.facet-checkbox.active{
   background-color: #ebe3d8;
@@ -80,27 +104,3 @@
 
 
 
-#reviews-slider {
-  width: 1000px;
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-}
-
-.splide__list {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.splide__slide {
-  max-width: max-content;
-  box-sizing: border-box;
-}
-
-#nextBtn {
-  position: absolute;
-  top: 50%;
-  right: -110px;
-  transform: translateY(-50%);
-  cursor: pointer;
-}

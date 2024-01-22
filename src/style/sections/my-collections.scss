@@ -45,13 +45,12 @@
 }
 
 // collection option 3
-.item-checkbox{
-  input[type=checkbox] {
-  -webkit-appearance: none;
-  }
+.tag-filters__item{
+  background-color: #e2d1b8;
 }
-
-
+.tag-filters__item.active{
+  background: rgb(188, 214, 150);
+}
 
 .filter-wrapper {
   display: flex;
@@ -61,52 +60,47 @@
     gap: 10px;
   }
 }
+.custom-container-filter.facets__disclosure{
+  border: none;
+    border-radius: 0;
+    padding: 0;
+  .custom-filter-tag{
+    position: unset !important;
+    
+  }
+}
+.facets__label.facet-checkbox.active{
+  background-color: #ebe3d8;
+  opacity: 0.8;
+}
+.facets__disclosure {
+   margin-right: 0px !important; 
+}
 
 
-.tags-wrapper {
+
+
+#reviews-slider {
+  width: 1000px;
+  margin: 0 auto;
   overflow: hidden;
   position: relative;
 }
 
-.slider-container {
+.splide__list {
   display: flex;
-  overflow: hidden;
-  max-width: 1000px;
+  transition: transform 0.5s ease;
 }
 
-.slider {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
+.splide__slide {
+  max-width: max-content;
+  box-sizing: border-box;
 }
-
-.slider-item {
-  max-width: 100px;
-}
-
-.slider-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  font-size: 20px;
-  outline: none;
-}
-
 
 #nextBtn {
-  right: 10px;
-}
-
-
-.slider {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.slider-item {
-  flex: 0 0 auto;
-  width: 100%;
-  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  right: -110px;
+  transform: translateY(-50%);
+  cursor: pointer;
 }

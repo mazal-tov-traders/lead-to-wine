@@ -12,8 +12,10 @@
       "type": "section-tabs",
       "settings": {
         "title": "Free <em>Downloads<\/em>",
+        "font_size": "",
         "color_title": "#383633",
         "sub_title": "Forms, processes, and tools we use every day at Milestone Church.",
+        "font_size1": "",
         "color_sub_title": "#918677"
       }
     },
@@ -25,8 +27,10 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/2025_Leaders_gathering_1.png",
             "title": "",
+            "font_size": "",
             "color_title": "#383633",
             "content": "",
+            "font_size1": "",
             "color_content": "#383633"
           }
         },
@@ -35,12 +39,22 @@
           "settings": {
             "mobile_hide": false,
             "heading": "Breakout Session Slide Decks",
+            "color_title": "#383633",
+            "font_size": "",
             "row_content": "",
+            "color_row_content": "#383633",
+            "font_size1": "",
             "first_label": "Assimilation & Growth Track",
+            "font_size2": "",
+            "color_link": "#383633",
             "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Growth%20Track%20Free%20Downloads\/Leaders%20Gathering%20Assimilation%20Breakout%20Slides_For_Web.pdf",
             "second_label": "Worship & Production",
-            "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Worship%20Free%20Downloads\/LG%20Production%20Breakout%20Slides.pdf",
+            "font_size3": "",
+            "color_link1": "#383633",
+            "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/2024%20Leaders%20Gathering%20Worship%20&%20Production%20Breakout%20Slides.zip",
             "third_label": "NextGen",
+            "font_size4": "",
+            "color_link2": "#383633",
             "third_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Kids%20Downloads\/Next%20Gen%20Leaders%20Gathering%20Slides.pdf"
           }
         }
@@ -50,7 +64,9 @@
         "51e455a0-118b-43b7-8f46-980b08fd07f3"
       ],
       "settings": {
-        "trigger": "<p>Leaders Gathering<\/p><p>Breakout Slides<\/p>"
+        "trigger": "<p>Leaders Gathering<\/p><p>Breakout Slides<\/p>",
+        "color_trigger": "#383633",
+        "font_size": ""
       }
     },
     "de168c7f-5447-4449-9e9c-dc92fac7500a": {
@@ -61,8 +77,10 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Growth_Track.jpg",
             "title": "Assimilation & Growth Track",
+            "font_size": "",
             "color_title": "#383633",
             "content": "The processes and tools behind the main method we use to connect people to the vision & values of Milestone Church",
+            "font_size1": "",
             "color_content": "#383633"
           }
         },
@@ -71,12 +89,22 @@
           "settings": {
             "mobile_hide": false,
             "heading": "Overview",
+            "color_title": "#383633",
+            "font_size": "",
             "row_content": "",
+            "color_row_content": "#383633",
+            "font_size1": "",
             "first_label": "Overview of the Growth Track",
+            "font_size2": "",
+            "color_link": "#383633",
             "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Growth%20Track%20Free%20Downloads\/Growth_Track_Overview.pdf",
             "second_label": "Growth Track People Board",
+            "font_size3": "",
+            "color_link1": "#383633",
             "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Growth%20Track%20Free%20Downloads\/Growth_Track_People_Board_Overview.pdf",
             "third_label": "People Board Shopping List",
+            "font_size4": "",
+            "color_link2": "#383633",
             "third_link": "https:\/\/a.co\/g5KGPcv"
           }
         },
@@ -85,12 +113,22 @@
           "settings": {
             "mobile_hide": false,
             "heading": "Discovery 101",
+            "color_title": "#383633",
+            "font_size": "",
             "row_content": "",
+            "color_row_content": "#383633",
+            "font_size1": "",
             "first_label": "Membership Agreement",
+            "font_size2": "",
+            "color_link": "#383633",
             "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Growth%20Track%20Free%20Downloads\/Membership%20Agreement.pdf",
             "second_label": "Discovery 101 Booklet",
+            "font_size3": "",
+            "color_link1": "#383633",
             "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Growth%20Track%20Free%20Downloads\/Discovery101Booklet.pdf",
             "third_label": "101 Connector Notes",
+            "font_size4": "",
+            "color_link2": "#383633",
             "third_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Growth%20Track%20Free%20Downloads\/101%20Connector%20Notes.pdf"
           }
         },
@@ -99,12 +137,22 @@
           "settings": {
             "mobile_hide": false,
             "heading": "Serve Team 201",
+            "color_title": "#383633",
+            "font_size": "",
             "row_content": "",
+            "color_row_content": "#383633",
+            "font_size1": "",
             "first_label": "Serve Team 201 Booklet",
+            "font_size2": "",
+            "color_link": "#383633",
             "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Growth%20Track%20Free%20Downloads\/ServeTeam201Booklet.pdf",
             "second_label": "Serve Team Application",
+            "font_size3": "",
+            "color_link1": "#383633",
             "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Growth%20Track%20Free%20Downloads\/201%20Form.pdf",
             "third_label": "Volunteer Application",
+            "font_size4": "",
+            "color_link2": "#383633",
             "third_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Growth%20Track%20Free%20Downloads\/201%20Volunteer%20Application%20Form.pdf"
           }
         },
@@ -113,12 +161,22 @@
           "settings": {
             "mobile_hide": false,
             "heading": "Values 301",
+            "color_title": "#383633",
+            "font_size": "",
             "row_content": "",
+            "color_row_content": "#383633",
+            "font_size1": "",
             "first_label": "Values 301 Booklet",
+            "font_size2": "",
+            "color_link": "#383633",
             "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Growth%20Track%20Free%20Downloads\/Values301Booklet.pdf",
             "second_label": "301 Leader Survey Form - Example",
+            "font_size3": "",
+            "color_link1": "#383633",
             "second_link": "https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLScPD_6VV1r4m9bfPv0_G2EfFvSUB_9lx--5D1wsnjnVrHLz6Q\/viewform?usp=sf_link",
             "third_label": "301 Next Steps Form",
+            "font_size4": "",
+            "color_link2": "#383633",
             "third_link": "https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLSc0fKRvgJ_O8QsHGGAJ4ksV2Li6kYLDDK1NuFwWJj_6sQn1ug\/viewform?usp=sf_link"
           }
         }
@@ -131,7 +189,9 @@
         "d7e24830-02bb-445d-9b00-adfa80b36f4e"
       ],
       "settings": {
-        "trigger": "<p>Assimilation &<\/p><p>Growth Track<\/p>"
+        "trigger": "<p>Assimilation &<\/p><p>Growth Track<\/p>",
+        "color_trigger": "#383633",
+        "font_size": ""
       }
     },
     "71c0728f-2eb0-4a87-b205-4b943806ca22": {
@@ -142,8 +202,10 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Milestone_Kids.jpg",
             "title": "Kids",
+            "font_size": "",
             "color_title": "#383633",
             "content": "At Milestone Kids, You Don't Have to Wait to Be  GREAT!",
+            "font_size1": "",
             "color_content": "#383633"
           }
         },
@@ -152,12 +214,22 @@
           "settings": {
             "mobile_hide": false,
             "heading": "Kids Overview Documents",
+            "color_title": "#383633",
+            "font_size": "",
             "row_content": "",
+            "color_row_content": "#383633",
+            "font_size1": "",
             "first_label": "Milestone Kids Core Values",
+            "font_size2": "",
+            "color_link": "#383633",
             "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Kids%20Downloads\/Milestone_Core_Values.pdf",
             "second_label": "Salvation & Baptism Resource",
+            "font_size3": "",
+            "color_link1": "#383633",
             "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Kids%20Downloads\/Kids_Baptism_Resource.pdf",
             "third_label": "5 Ways to Pray for Your Child",
+            "font_size4": "",
+            "color_link2": "#383633",
             "third_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Kids%20Downloads\/5_Ways_2_Pray_Resource.pdf"
           }
         },
@@ -166,12 +238,22 @@
           "settings": {
             "mobile_hide": false,
             "heading": "Weekend Services",
+            "color_title": "#383633",
+            "font_size": "",
             "row_content": "",
+            "color_row_content": "#383633",
+            "font_size1": "",
             "first_label": "Message Map Template",
+            "font_size2": "",
+            "color_link": "#383633",
             "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Kids%20Downloads\/Message%20Map%20Template.xlsx",
             "second_label": "Message Outline Guide",
+            "font_size3": "",
+            "color_link1": "#383633",
             "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Kids%20Downloads\/Message%20Outline.pdf",
             "third_label": "Service Order Example",
+            "font_size4": "",
+            "color_link2": "#383633",
             "third_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Kids%20Downloads\/Service%20Order%20Example.pdf"
           }
         },
@@ -180,12 +262,22 @@
           "settings": {
             "mobile_hide": false,
             "heading": "Weekend Metrics",
+            "color_title": "#383633",
+            "font_size": "",
             "row_content": "",
+            "color_row_content": "#383633",
+            "font_size1": "",
             "first_label": "Weekend Metrics Spreadsheet",
+            "font_size2": "",
+            "color_link": "#383633",
             "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Kids%20Downloads\/Weekend%20Metrics.xlsx",
             "second_label": "",
+            "font_size3": "",
+            "color_link1": "#383633",
             "second_link": "",
             "third_label": "",
+            "font_size4": "",
+            "color_link2": "#383633",
             "third_link": ""
           }
         },
@@ -194,12 +286,22 @@
           "settings": {
             "mobile_hide": false,
             "heading": "Small Group Leader Training",
+            "color_title": "#383633",
+            "font_size": "",
             "row_content": "",
+            "color_row_content": "#383633",
+            "font_size1": "",
             "first_label": "Small Group Leader Training",
+            "font_size2": "",
+            "color_link": "#383633",
             "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Kids%20Downloads\/Kids%20Small%20Group%20Leader%20Training.pdf",
             "second_label": "",
+            "font_size3": "",
+            "color_link1": "#383633",
             "second_link": "",
             "third_label": "",
+            "font_size4": "",
+            "color_link2": "#383633",
             "third_link": ""
           }
         },
@@ -208,12 +310,22 @@
           "settings": {
             "mobile_hide": false,
             "heading": "Volunteer Application & Onboarding",
+            "color_title": "#383633",
+            "font_size": "",
             "row_content": "",
+            "color_row_content": "#383633",
+            "font_size1": "",
             "first_label": "Youth Volunteer Application",
+            "font_size2": "",
+            "color_link": "#383633",
             "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Kids%20Downloads\/Youth%20Volunteer%20Application.pdf",
             "second_label": "Volunteer Onboarding",
+            "font_size3": "",
+            "color_link1": "#383633",
             "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Kids%20Downloads\/Volunteer%20Onboarding%20Process.pdf",
             "third_label": "",
+            "font_size4": "",
+            "color_link2": "#383633",
             "third_link": ""
           }
         },
@@ -222,12 +334,22 @@
           "settings": {
             "mobile_hide": false,
             "heading": "Volunteer Observer Documents",
+            "color_title": "#383633",
+            "font_size": "",
             "row_content": "",
+            "color_row_content": "#383633",
+            "font_size1": "",
             "first_label": "Elementary Volunteer Observer Sheets",
+            "font_size2": "",
+            "color_link": "#383633",
             "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Kids%20Downloads\/Elementary%20Observation%20Form.pdf",
             "second_label": "Preschool Volunteer Observer Sheets",
+            "font_size3": "",
+            "color_link1": "#383633",
             "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Kids%20Downloads\/Preschool%20Observation%20Form.pdf",
             "third_label": "",
+            "font_size4": "",
+            "color_link2": "#383633",
             "third_link": ""
           }
         }
@@ -242,7 +364,9 @@
         "dd01c478-3713-4189-9598-5a68b5807773"
       ],
       "settings": {
-        "trigger": "<p>Kids<\/p>"
+        "trigger": "<p>Kids<\/p>",
+        "color_trigger": "#383633",
+        "font_size": ""
       }
     },
     "b93f4efb-baed-4a3a-aa9e-aba70b43d227": {
@@ -253,8 +377,10 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Serve_Team.jpg",
             "title": "Local Outreach & Global Missions",
+            "font_size": "",
             "color_title": "#383633",
             "content": "",
+            "font_size1": "",
             "color_content": "#383633"
           }
         },
@@ -263,12 +389,22 @@
           "settings": {
             "mobile_hide": false,
             "heading": "2023 Impact Video",
+            "color_title": "#383633",
+            "font_size": "",
             "row_content": "",
+            "color_row_content": "#383633",
+            "font_size1": "",
             "first_label": "Missions Impact brochure",
+            "font_size2": "",
+            "color_link": "#383633",
             "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Missions%20and%20Outreach\/Impact%20Brochure%202023.pdf",
             "second_label": "",
+            "font_size3": "",
+            "color_link1": "#383633",
             "second_link": "",
             "third_label": "",
+            "font_size4": "",
+            "color_link2": "#383633",
             "third_link": ""
           }
         },
@@ -277,12 +413,22 @@
           "settings": {
             "mobile_hide": false,
             "heading": "Mission Trips",
+            "color_title": "#383633",
+            "font_size": "",
             "row_content": "",
+            "color_row_content": "#383633",
+            "font_size1": "",
             "first_label": "Mission Team Training Manual",
+            "font_size2": "",
+            "color_link": "#383633",
             "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Missions%20and%20Outreach\/mission_team_training_manual.pdf",
             "second_label": "Mission Trip Consent Form",
+            "font_size3": "",
+            "color_link1": "#383633",
             "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Missions%20and%20Outreach\/milestone_mission_trip_consent.pdf",
             "third_label": "Minor Consent Form",
+            "font_size4": "",
+            "color_link2": "#383633",
             "third_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Missions%20and%20Outreach\/missions_minor_consent.pdf"
           }
         },
@@ -291,12 +437,22 @@
           "settings": {
             "mobile_hide": false,
             "heading": "Serve Day",
+            "color_title": "#383633",
+            "font_size": "",
             "row_content": "",
+            "color_row_content": "#383633",
+            "font_size1": "",
             "first_label": "Playbook",
+            "font_size2": "",
+            "color_link": "#383633",
             "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Missions%20and%20Outreach\/serve_day_playbook.pdf",
             "second_label": "Project Guidelines",
+            "font_size3": "",
+            "color_link1": "#383633",
             "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Missions%20and%20Outreach\/serve_day_project_guidelines.pdf",
             "third_label": "",
+            "font_size4": "",
+            "color_link2": "#383633",
             "third_link": ""
           }
         }
@@ -308,7 +464,9 @@
         "eb01a133-fe7c-45f0-a1eb-1ecfc5268634"
       ],
       "settings": {
-        "trigger": "<p>Local Outreach & <\/p><p>Global Missions<\/p>"
+        "trigger": "<p>Local Outreach & <\/p><p>Global Missions<\/p>",
+        "color_trigger": "#383633",
+        "font_size": ""
       }
     },
     "6e92c376-4cd0-4342-8fc5-22e93830634e": {
@@ -319,8 +477,10 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Pastoral_Care.jpg",
             "title": "Pastoral Care",
+            "font_size": "",
             "color_title": "#383633",
             "content": "",
+            "font_size1": "",
             "color_content": "#383633"
           }
         },
@@ -329,12 +489,22 @@
           "settings": {
             "mobile_hide": false,
             "heading": "Coming Soon",
+            "color_title": "#383633",
+            "font_size": "",
             "row_content": "",
+            "color_row_content": "#383633",
+            "font_size1": "",
             "first_label": "",
+            "font_size2": "",
+            "color_link": "#383633",
             "first_link": "",
             "second_label": "",
+            "font_size3": "",
+            "color_link1": "#383633",
             "second_link": "",
             "third_label": "",
+            "font_size4": "",
+            "color_link2": "#383633",
             "third_link": ""
           }
         }
@@ -344,7 +514,9 @@
         "a3334af6-f4fc-4bb9-9702-f8a10ccac3ad"
       ],
       "settings": {
-        "trigger": "<p>Pastoral Care<\/p>"
+        "trigger": "<p>Pastoral Care<\/p>",
+        "color_trigger": "#383633",
+        "font_size": ""
       }
     },
     "ccc074f7-0edf-46b5-8a69-32e60c42bd4e": {
@@ -355,8 +527,10 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/First_Impressions.jpg",
             "title": "Serve Team",
+            "font_size": "",
             "color_title": "#383633",
             "content": "",
+            "font_size1": "",
             "color_content": "#383633"
           }
         },
@@ -365,12 +539,22 @@
           "settings": {
             "mobile_hide": false,
             "heading": "Serve Team 201 Booklet",
+            "color_title": "#383633",
+            "font_size": "",
             "row_content": "",
+            "color_row_content": "#383633",
+            "font_size1": "",
             "first_label": "201 Booklet",
+            "font_size2": "",
+            "color_link": "#383633",
             "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Growth%20Track%20Free%20Downloads\/ServeTeam201Booklet.pdf",
             "second_label": "",
+            "font_size3": "",
+            "color_link1": "#383633",
             "second_link": "",
             "third_label": "",
+            "font_size4": "",
+            "color_link2": "#383633",
             "third_link": ""
           }
         },
@@ -379,12 +563,22 @@
           "settings": {
             "mobile_hide": false,
             "heading": "Serve Team 201 Forms",
+            "color_title": "#383633",
+            "font_size": "",
             "row_content": "",
+            "color_row_content": "#383633",
+            "font_size1": "",
             "first_label": "Serve Team Application",
+            "font_size2": "",
+            "color_link": "#383633",
             "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Growth%20Track%20Free%20Downloads\/201%20Form.pdf",
             "second_label": "Volunteer Application",
+            "font_size3": "",
+            "color_link1": "#383633",
             "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Growth%20Track%20Free%20Downloads\/201%20Volunteer%20Application%20Form.pdf",
             "third_label": "Connector Notes",
+            "font_size4": "",
+            "color_link2": "#383633",
             "third_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Growth%20Track%20Free%20Downloads\/201%20Connector%20Notes.pdf"
           }
         }
@@ -395,7 +589,9 @@
         "a8b0d878-b528-41ef-8741-23689414857b"
       ],
       "settings": {
-        "trigger": "<p>Serve Team<\/p>"
+        "trigger": "<p>Serve Team<\/p>",
+        "color_trigger": "#383633",
+        "font_size": ""
       }
     },
     "a3d11579-fa60-406e-b5cd-e71cdaed0145": {
@@ -406,8 +602,10 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Screenshot_2024-01-08_at_11.02.34_PM.png",
             "title": "Small Groups",
+            "font_size": "",
             "color_title": "#383633",
             "content": "",
+            "font_size1": "",
             "color_content": "#383633"
           }
         },
@@ -416,12 +614,22 @@
           "settings": {
             "mobile_hide": false,
             "heading": "Small Groups General Documents",
+            "color_title": "#383633",
+            "font_size": "",
             "row_content": "",
+            "color_row_content": "#383633",
+            "font_size1": "",
             "first_label": "Overview",
+            "font_size2": "",
+            "color_link": "#383633",
             "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Small%20Groups%20Free%20Downloads\/Small%20Groups%20Overview.pdf",
             "second_label": "Churchwide Campaigns",
+            "font_size3": "",
+            "color_link1": "#383633",
             "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/%5BTest%5D%20Free%20Downloads\/THE%20CHURCHWIDE%20CAMPAIGN.pdf",
             "third_label": "Small Group Leader Application",
+            "font_size4": "",
+            "color_link2": "#383633",
             "third_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Small%20Groups%20Free%20Downloads\/Example%20Small%20Group%20Leader%20Application.pdf"
           }
         },
@@ -430,12 +638,22 @@
           "settings": {
             "mobile_hide": false,
             "heading": "New Leader Onboarding",
+            "color_title": "#383633",
+            "font_size": "",
             "row_content": "",
+            "color_row_content": "#383633",
+            "font_size1": "",
             "first_label": "New Leader Onboarding Website",
+            "font_size2": "",
+            "color_link": "#383633",
             "first_link": "https:\/\/milestonechurch.com\/connect\/small-groups\/new-leader-onboarding\/#Apply",
             "second_label": "",
+            "font_size3": "",
+            "color_link1": "#383633",
             "second_link": "",
             "third_label": "",
+            "font_size4": "",
+            "color_link2": "#383633",
             "third_link": ""
           }
         },
@@ -444,12 +662,22 @@
           "settings": {
             "mobile_hide": false,
             "heading": "Small Group Coaching",
+            "color_title": "#383633",
+            "font_size": "",
             "row_content": "",
+            "color_row_content": "#383633",
+            "font_size1": "",
             "first_label": "Small Group Coaching Website",
+            "font_size2": "",
+            "color_link": "#383633",
             "first_link": "https:\/\/milestonechurch.com\/sgcoach\/",
             "second_label": "",
+            "font_size3": "",
+            "color_link1": "#383633",
             "second_link": "",
             "third_label": "",
+            "font_size4": "",
+            "color_link2": "#383633",
             "third_link": ""
           }
         }
@@ -461,7 +689,9 @@
         "be2223e4-34d7-409c-958c-b7ca987ba53e"
       ],
       "settings": {
-        "trigger": "<p>Small Groups<\/p>"
+        "trigger": "<p>Small Groups<\/p>",
+        "color_trigger": "#383633",
+        "font_size": ""
       }
     },
     "edf4e287-b6c4-451e-a507-0395d7432774": {
@@ -472,8 +702,10 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Students.jpg",
             "title": "Students",
+            "font_size": "",
             "color_title": "#383633",
             "content": "",
+            "font_size1": "",
             "color_content": "#383633"
           }
         },
@@ -482,12 +714,22 @@
           "settings": {
             "mobile_hide": false,
             "heading": "Calendars & Schedules",
+            "color_title": "#383633",
+            "font_size": "",
             "row_content": "",
+            "color_row_content": "#383633",
+            "font_size1": "",
             "first_label": "Elevate Yearly\/Weekly Calendar",
+            "font_size2": "",
+            "color_link": "#383633",
             "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Yearly%20And%20Weekly%20Calendar.pdf",
             "second_label": "Elevate Message Map",
+            "font_size3": "",
+            "color_link1": "#383633",
             "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Elevate%20Message%20Map%20Example.pdf",
             "third_label": "Next Gen Student Leadership Schedule",
+            "font_size4": "",
+            "color_link2": "#383633",
             "third_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/NGSL%20(high%20school%20summer%20internship)%20schedule.pdf"
           }
         },
@@ -496,12 +738,22 @@
           "settings": {
             "mobile_hide": false,
             "heading": "Camps & Retreats General Documents",
+            "color_title": "#383633",
+            "font_size": "",
             "row_content": "",
+            "color_row_content": "#383633",
+            "font_size1": "",
             "first_label": "Small Group Leader Training",
+            "font_size2": "",
+            "color_link": "#383633",
             "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Retreat%20Leader%20Training%20Guide%20Example%20(2).pdf",
             "second_label": "Retreat Parent Meeting Example",
+            "font_size3": "",
+            "color_link1": "#383633",
             "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Retreat%20Parent%20Meeting%20Example.pdf",
             "third_label": "Host Home Training",
+            "font_size4": "",
+            "color_link2": "#383633",
             "third_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Retreat%20Host%20Home%20Guide%20Example%20(1).pdf"
           }
         },
@@ -510,12 +762,22 @@
           "settings": {
             "mobile_hide": false,
             "heading": "Spring Retreat",
+            "color_title": "#383633",
+            "font_size": "",
             "row_content": "",
+            "color_row_content": "#383633",
+            "font_size1": "",
             "first_label": "Spring Retreat Schedule",
+            "font_size2": "",
+            "color_link": "#383633",
             "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Spring%20Retreat%20(BOTS)%20Schedule.pdf",
             "second_label": "Middle School BOTS Recap",
+            "font_size3": "",
+            "color_link1": "#383633",
             "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Middle%20School%20BOTS%202023%20Recap.pdf",
             "third_label": "High School BOTS Recap",
+            "font_size4": "",
+            "color_link2": "#383633",
             "third_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/High%20school%20BOTS%202023%20recap.pdf"
           }
         },
@@ -524,12 +786,22 @@
           "settings": {
             "mobile_hide": false,
             "heading": "Summer Camp",
+            "color_title": "#383633",
+            "font_size": "",
             "row_content": "",
+            "color_row_content": "#383633",
+            "font_size1": "",
             "first_label": "Summer Camp",
+            "font_size2": "",
+            "color_link": "#383633",
             "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Summer%20Camp%20Schedule.pdf",
             "second_label": "High School Summer Camp Recap",
+            "font_size3": "",
+            "color_link1": "#383633",
             "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/High%20School%20Camp%202023%20Recap.pdf",
             "third_label": "Middle School Summer Camp Recap",
+            "font_size4": "",
+            "color_link2": "#383633",
             "third_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Middle%20School%20Camp%202023%20Recap.pdf"
           }
         },
@@ -538,12 +810,22 @@
           "settings": {
             "mobile_hide": false,
             "heading": "Fall Retreat",
+            "color_title": "#383633",
+            "font_size": "",
             "row_content": "",
+            "color_row_content": "#383633",
+            "font_size1": "",
             "first_label": "Fall Retreat Schedule",
+            "font_size2": "",
+            "color_link": "#383633",
             "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Fall%20Retreat%20Schedule%20(1).pdf",
             "second_label": "Host Home Training",
+            "font_size3": "",
+            "color_link1": "#383633",
             "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Retreat%20Host%20Home%20Guide%20Example%20(1).pdf",
             "third_label": "Fall Retreat Recap",
+            "font_size4": "",
+            "color_link2": "#383633",
             "third_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Fall%20Retreat%202023%20Recap.pdf"
           }
         },
@@ -552,12 +834,22 @@
           "settings": {
             "mobile_hide": false,
             "heading": "Storytelling",
+            "color_title": "#383633",
+            "font_size": "",
             "row_content": "",
+            "color_row_content": "#383633",
+            "font_size1": "",
             "first_label": "Social Media Stories",
+            "font_size2": "",
+            "color_link": "#383633",
             "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Social%20Media%20Stories.pdf",
             "second_label": "Students Telling Stories",
+            "font_size3": "",
+            "color_link1": "#383633",
             "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Students%20Telling%20Stories.zip",
             "third_label": "",
+            "font_size4": "",
+            "color_link2": "#383633",
             "third_link": ""
           }
         },
@@ -566,12 +858,22 @@
           "settings": {
             "mobile_hide": false,
             "heading": "Super Series Strategy",
+            "color_title": "#383633",
+            "font_size": "",
             "row_content": "",
+            "color_row_content": "#383633",
+            "font_size1": "",
             "first_label": "Super Series Strategy",
+            "font_size2": "",
+            "color_link": "#383633",
             "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Super%20Series%20Strategy.pdf",
             "second_label": "",
+            "font_size3": "",
+            "color_link1": "#383633",
             "second_link": "",
             "third_label": "",
+            "font_size4": "",
+            "color_link2": "#383633",
             "third_link": ""
           }
         },
@@ -580,12 +882,22 @@
           "settings": {
             "mobile_hide": false,
             "heading": "Super Series Recap Stories",
+            "color_title": "#383633",
+            "font_size": "",
             "row_content": "",
+            "color_row_content": "#383633",
+            "font_size1": "",
             "first_label": "Recap Example 1",
+            "font_size2": "",
+            "color_link": "#383633",
             "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Super%20Series%20Recap%20(Example%201).pdf",
             "second_label": "Recap Example 2",
+            "font_size3": "",
+            "color_link1": "#383633",
             "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Super%20Series%20Recap%20(Example%202).pdf",
             "third_label": "Recap Example 3",
+            "font_size4": "",
+            "color_link2": "#383633",
             "third_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/Super%20Series%20Recap%20(Example%203).pdf"
           }
         },
@@ -594,12 +906,22 @@
           "settings": {
             "mobile_hide": false,
             "heading": "Additional Resources",
+            "color_title": "#383633",
+            "font_size": "",
             "row_content": "",
+            "color_row_content": "#383633",
+            "font_size1": "",
             "first_label": "New Salvation & Baptism Resource",
+            "font_size2": "",
+            "color_link": "#383633",
             "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Students%20Free%20Downloads\/NEW%20Salvation%20&%20Baptism%20Resource.pdf",
             "second_label": "",
+            "font_size3": "",
+            "color_link1": "#383633",
             "second_link": "",
             "third_label": "",
+            "font_size4": "",
+            "color_link2": "#383633",
             "third_link": ""
           }
         }
@@ -617,7 +939,9 @@
         "14b4742e-532e-4b06-8a8b-43bda6eb16c1"
       ],
       "settings": {
-        "trigger": "<p>Students<\/p>"
+        "trigger": "<p>Students<\/p>",
+        "color_trigger": "#383633",
+        "font_size": ""
       }
     },
     "0d01a383-5182-4ccb-97f3-ffd92099c951": {
@@ -628,8 +952,10 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Worship.jpg",
             "title": "Worship",
+            "font_size": "",
             "color_title": "#383633",
             "content": "",
+            "font_size1": "",
             "color_content": "#383633"
           }
         },
@@ -638,12 +964,22 @@
           "settings": {
             "mobile_hide": false,
             "heading": "Milestone Worship Dev Process",
+            "color_title": "#383633",
+            "font_size": "",
             "row_content": "",
+            "color_row_content": "#383633",
+            "font_size1": "",
             "first_label": "Worship Handbook & Dev Guide",
+            "font_size2": "",
+            "color_link": "#383633",
             "first_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Worship%20Free%20Downloads\/WorshipHandbook2023%20UPDATED%20VERSION.pdf",
             "second_label": "Worship Dev Leader Guide",
+            "font_size3": "",
+            "color_link1": "#383633",
             "second_link": "https:\/\/23904200.fs1.hubspotusercontent-na1.net\/hubfs\/23904200\/Worship%20Free%20Downloads\/DEV%20LEADER%20GUIDE%20-%202023.pdf",
             "third_label": "",
+            "font_size4": "",
+            "color_link2": "#383633",
             "third_link": ""
           }
         },
@@ -652,12 +988,22 @@
           "settings": {
             "mobile_hide": false,
             "heading": "Faithful Album",
+            "color_title": "#383633",
+            "font_size": "",
             "row_content": "",
+            "color_row_content": "#383633",
+            "font_size1": "",
             "first_label": "Faithful Album",
+            "font_size2": "",
+            "color_link": "#383633",
             "first_link": "https:\/\/cloudfiles.to\/FMZ2IYpkH69",
             "second_label": "",
+            "font_size3": "",
+            "color_link1": "#383633",
             "second_link": "",
             "third_label": "",
+            "font_size4": "",
+            "color_link2": "#383633",
             "third_link": ""
           }
         },
@@ -666,12 +1012,22 @@
           "settings": {
             "mobile_hide": false,
             "heading": "Christmas at Milestone",
+            "color_title": "#383633",
+            "font_size": "",
             "row_content": "",
+            "color_row_content": "#383633",
+            "font_size1": "",
             "first_label": "Christmas at Milestone",
+            "font_size2": "",
+            "color_link": "#383633",
             "first_link": "https:\/\/cloudfiles.to\/rdUVwPUU8ys",
             "second_label": "",
+            "font_size3": "",
+            "color_link1": "#383633",
             "second_link": "",
             "third_label": "",
+            "font_size4": "",
+            "color_link2": "#383633",
             "third_link": ""
           }
         }
@@ -683,7 +1039,9 @@
         "bb5357ae-0c58-471d-b71e-9dae0456a508"
       ],
       "settings": {
-        "trigger": "<p>Worship<\/p>"
+        "trigger": "<p>Worship<\/p>",
+        "color_trigger": "#383633",
+        "font_size": ""
       }
     }
   },

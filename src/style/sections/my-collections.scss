@@ -43,6 +43,25 @@
     }
   }
 }
+// colection option 2
+.option2{
+  .facet-filters {
+    border: 1px solid #383633;
+    border-radius: 10px;
+    padding: 15px 20px;
+}
+  .facets__form {
+    display: grid;
+    gap: 0 3.5rem;
+    grid-template-columns: 1fr !important;
+    margin-bottom: 40px;
+  }
+  .facets__wrapper {
+    justify-content: space-between;
+  }
+}
+
+
 // colection option 3
 .filter-inner {
   display: flex;

@@ -1,5 +1,5 @@
-{{ 'component-show-more.css' | asset_url | stylesheet_tag }}
-{{ 'component-visual-display.css' | asset_url | stylesheet_tag }}
+{% comment %} {{ 'component-show-more.css' | asset_url | stylesheet_tag }}
+{{ 'component-visual-display.css' | asset_url | stylesheet_tag }} {% endcomment %}
 
 {%- liquid
   assign sort_by = results.sort_by | default: results.default_sort_by
@@ -67,36 +67,50 @@
           {% endif %}
           {% comment %} end  my filter collection {% endcomment %}
 
-          {%- for filter in results.filters -%}
-            {% liquid
-              assign total_active_values = total_active_values | plus: filter.active_values.size
-              case filter.presentation
-                when 'swatch'
-                  assign has_visual_display = true
-                  assign show_more_number = 15
-                  assign visual_layout_class = 'facets-layout-grid facets-layout-grid--' | append: filter.presentation
-                else
-                  assign has_visual_display = false
-                  assign visual_layout_class = 'facets-layout-list'
-                  assign show_more_number = 10
-              endcase
-            %}
-
-            <select id="sort-by">
-              {% assign sort_by = collection.sort_by | default: collection.default_sort_by %}
-
-              {% for option in collection.sort_options %}
-                <option
-                  value="{{ option.value }}"
-                  {% if option.value == sort_by %}
-                    selected="selected"
-                  {% endif %}
-                >
-                  {{ option.name }}
-                </option>
-              {% endfor %}
-            </select>
-          {%- endfor -%}
+          <facet-filters-form class="facets small-hide">
+            <form id="FacetSortDrawerForm" class="facets__form">
+              <div class="facet-filters sorting caption small-hide">
+                <div class="facet-filters__field">
+                  <div class="select">
+                    {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
+                    <select
+                      name="sort_by"
+                      class="facet-filters__sort select__select caption-large"
+                      id="SortBy"
+                      aria-describedby="a11y-refresh-page-message"
+                    >
+                      {%- for option in results.sort_options -%}
+                        <option
+                          value="{{ option.value | escape }}"
+                          {% if option.value == sort_by %}
+                            selected="selected"
+                          {% endif %}
+                        >
+                          {{ option.name | escape }}
+                        </option>
+                      {%- endfor -%}
+                    </select>
+                    {% render 'icon-caret' %}
+                  </div>
+                </div>
+      
+                <noscript>
+                  <button type="submit" class="facets__button-no-js button button--secondary">
+                    {{ 'products.facets.sort_button' | t }}
+                  </button>
+                </noscript>
+              </div>
+      
+              {% if results.current_vendor or results.current_type %}
+                <input type="hidden" name="q" value="{{ results.current_vendor }}{{ results.current_type }}">
+              {% endif %}
+      
+              {%- if results.terms -%}
+                <input type="hidden" name="q" value="{{ results.terms | escape }}">
+                <input name="options[prefix]" type="hidden" value="last">
+              {%- endif -%}
+            </form>
+          </facet-filters-form>
         </div>
       {% endif %}
     </form>

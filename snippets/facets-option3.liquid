@@ -11,199 +11,186 @@
     assign results_url = '?q=' | append: terms | append: '&options%5Bprefix%5D=last&sort_by=' | append: sort_by
   endif
 -%}
-
-<div class="facets-container{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-  <facet-filters-form class="facets ">
-    <form
-      id="FacetFiltersForm"
-      class="filter-wrapper"
-    >
-      {%- for filter in results.filters -%}
-        {% liquid
-          assign total_active_values = total_active_values | plus: filter.active_values.size
-          case filter.presentation
-            when 'swatch'
-              assign has_visual_display = true
-              assign show_more_number = 15
-              assign visual_layout_class = 'facets-layout-grid facets-layout-grid--' | append: filter.presentation
-            else
-              assign has_visual_display = false
-              assign visual_layout_class = 'facets-layout-list'
-              assign show_more_number = 10
-          endcase
-        %}
-        {% case filter.type %}
-          {% when 'boolean', 'list' %}
-            {% comment %} start custom filter by tags {% endcomment %}
-            <div
-              id="Details-{{ forloop.index }}-{{ section.id }}"
-              class="custom-container-filter {% if filter_type == 'horizontal' %}disclosure-has-popup facets__disclosure{% else %} facets__disclosure-vertical{% endif %} js-filter"
-              data-index="{{ forloop.index }}"
-              {% if filter_type == 'vertical' and forloop.index == 1 %}
-                open
-              {% endif %}
-            >
-              <div
-                id="Facet-{{ forloop.index }}-{{ section.id }}"
-                class="custom-filter-tag parent-display"
-              >
-                <fieldset class="facets-wrap parent-wrap {% if filter_type == 'vertical' %} facets-wrap-vertical{% endif %}">
-                  {% comment %} <legend class="visually-hidden">{{ filter.label | escape }}</legend> {% endcomment %}
-                  <div class="splide" id="reviews-slider">
-                      <ul
-                        class="splide__list {{ visual_layout_class }}{% if filter_type == 'vertical' %} facets__list--vertical{% else %} facets__list{% endif %} list-unstyled no-js-hidden"
-                        role="list"
-                      >
-                        {%- liquid
-                          assign sorted_values = filter.values
-                          # Keep the selected values grouped together when operator is AND
-                          if filter.operator == 'AND'
-                            assign active_filter_values = filter.values | where: 'active', true
-                            assign inactive_filter_values = filter.values | where: 'active', false
-                            assign sorted_values = active_filter_values | concat: inactive_filter_values
-                          endif
-                        -%}
-                        {%- for value in sorted_values -%}
-                          {% liquid
-                            assign is_disabled = false
-                            if value.count == 0 and value.active == false
-                              assign is_disabled = true
-                            endif
-                          %}
-
-                          <li class="splide__slide list-menu__item facets__item{% if forloop.index > show_more_number and filter_type == 'vertical' %} show-more-item hidden{% endif %}">
-                            <label
-                              for="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
-                              class="facets__label facet-checkbox{% if is_disabled %} facet-checkbox--disabled disabled{% endif %}{% if has_visual_display %} visual-display-parent visual-display-parent--{{ filter.presentation }}{% endif %}{% if value.active %} active{% endif %}"
-                            >
-                              <input
-                                type="checkbox"
-                                name="{{ value.param_name }}"
-                                value="{{ value.value }}"
-                                id="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
-                                {% if value.active %}
-                                  checked
-                                {% endif %}
-                                {% if is_disabled %}
-                                  disabled
-                                {% endif %}
-                              >
-
-                              {% if has_visual_display %}
-                                <div class="facets__visual-display-wrapper">
-                                  {% render 'visual-display',
-                                    type: value.display.type,
-                                    value: value.display.value,
-                                    presentation: filter.presentation
-                                  %}
-                                </div>
-                              {% else %}
-
-                              {% endif %}
-                              <span class="facet-checkbox__text" aria-hidden="true">{{- value.label | escape }}</span>
-                              <span class="visually-hidden">{{- value.label | escape }} </span>
-                            </label>
-                          </li>
-                        {%- endfor -%}
-                      </ul>
-                  </div>
-                </fieldset>
-               
-                {%- if filter.values.size > show_more_number and filter_type == 'vertical' -%}
-                  <show-more-button>
-                    <button
-                      class="button-show-more link underlined-link no-js-hidden"
-                      id="Show-More-{{ forloop.index }}-{{ section.id }}"
-                      type="button"
-                    >
-                      <span class="label-show-more label-text"
-                        ><span aria-hidden="true">+ </span>{{ 'products.facets.show_more' | t -}}
-                      </span>
-                      <span class="label-show-less label-text hidden"
-                        ><span aria-hidden="true">- </span>{{ 'products.facets.show_less' | t -}}
-                      </span>
-                    </button>
-                  </show-more-button>
-                {%- endif %}
-              </div>
-            </div>
-            {% comment %} end custom filter by tags {% endcomment %}
-        {% endcase %}
-      {%- endfor -%}
-      
-      {% comment %} start collection {% endcomment %}
-      {% if enable_filtering %}
-        <div
-          id="FacetsWrapperDesktop"
-          {% if filter_type == 'horizontal' %}
-            class="facets__wrapper"
-          {% endif %}
-        >
-          {% comment %} start  my filter collection  {% endcomment %}
-          {%- if request.page_type != 'search' -%}
-            <details
-              id="Details-{{ forloop.index }}-{{ section.id }}"
-              class="filter-dropdown-style disclosure-has-popup facets__disclosure js-filter"
-              data-index="{{ forloop.index }}"
-              {% if filter_type == 'vertical' and forloop.index == 1 %}
-                open
-              {% endif %}
-            >
-              <summary class="facets__summary caption-large focus-offset">
-                <div>
-                  <span class="facets__summary-label">
-                    <span class="current-collection facets__selected no-js-hidden{% if filter.active_values.size == 0 %} hidden{% endif %}">
-                      {{- collection.title -}}
-                    </span>
-                  </span>
-                  {% render 'icon-caret' %}
-                </div>
-              </summary>
-              <div
-                id="Facet-{{ forloop.index }}-{{ section.id }}"
-                class="parent-display {% if filter_type == 'horizontal' %}facets__display{% else %}facets__display-vertical{% endif %}"
-              >
-                {%- for collection in collections -%}
-                  <span
-                    class="collection-list__item grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-                    {% if settings.animations_reveal_on_scroll %}
-                      data-cascade
-                      style="--animation-order: {{ forloop.index }};"
+<div class="filter-inner">
+  <div class="tegs-wrapper" id="reviews-slider">
+    <div class="splide__list">
+      <div class="{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+        <facet-filters-form class="facets ">
+          <form
+            id="FacetFiltersForm"
+            class="filter-wrapper"
+          >
+            {%- for filter in results.filters -%}
+              {% liquid
+                assign total_active_values = total_active_values | plus: filter.active_values.size
+                case filter.presentation
+                  when 'swatch'
+                    assign has_visual_display = true
+                    assign show_more_number = 15
+                    assign visual_layout_class = 'facets-layout-grid facets-layout-grid--' | append: filter.presentation
+                  else
+                    assign has_visual_display = false
+                    assign visual_layout_class = 'facets-layout-list'
+                    assign show_more_number = 10
+                endcase
+              %}
+              {% case filter.type %}
+                {% when 'boolean', 'list' %}
+                  {% comment %} start custom filter by tags {% endcomment %}
+                  <div
+                    id="Details-{{ forloop.index }}-{{ section.id }}"
+                    class="custom-container-filter {% if filter_type == 'horizontal' %}disclosure-has-popup facets__disclosure{% else %} facets__disclosure-vertical{% endif %} js-filter"
+                    data-index="{{ forloop.index }}"
+                    {% if filter_type == 'vertical' and forloop.index == 1 %}
+                      open
                     {% endif %}
                   >
-                    {% render 'my-custom-collections', card_collection: collection %}
-                  </span>
-                {%- endfor -%}
-              </div>
-            </details>
-          {% endif %}
-          {% comment %} end  my filter collection {% endcomment %}
-        </div>
-      {% endif %}
-      {% comment %} end collection  {% endcomment %}
-    </form>
-    <div id="nextBtn">Next</div>
-    {% comment %} remov tag  {% endcomment %}
-    <div class="active-facets active-facets-desktop">
-      {%- for filter in results.filters -%}
-        {%- for value in filter.active_values -%}
-          <facet-remove> </facet-remove>
-        {%- endfor -%}
-        {% if filter.type == 'price_range' %}
-          {%- if filter.min_value.value != null or filter.max_value.value != null -%}
-            <facet-remove> </facet-remove>
-          {%- endif -%}
-        {% endif %}
-      {%- endfor -%}
-      <facet-remove class="active-facets__button-wrapper">
-        <a href="{{ results_url }}" class="active-facets__button-remove underlined-link">
-          <span>{{ 'products.facets.clear_all' | t }}</span>
-        </a>
-      </facet-remove>
+                    <div
+                      id="Facet-{{ forloop.index }}-{{ section.id }}"
+                      class="custom-filter-tag parent-display"
+                    >
+                      <fieldset class="facets-wrap parent-wrap {% if filter_type == 'vertical' %} facets-wrap-vertical{% endif %}">
+                        <ul
+                          class="{{ visual_layout_class }}{% if filter_type == 'vertical' %} facets__list--vertical{% else %} facets__list{% endif %} list-unstyled no-js-hidden"
+                          role="list"
+                        >
+                          {%- liquid
+                            assign sorted_values = filter.values
+                            if filter.operator == 'AND'
+                              assign active_filter_values = filter.values | where: 'active', true
+                              assign inactive_filter_values = filter.values | where: 'active', false
+                              assign sorted_values = active_filter_values | concat: inactive_filter_values
+                            endif
+                          -%}
+                          {%- for value in sorted_values -%}
+                            {% liquid
+                              assign is_disabled = false
+                              if value.count == 0 and value.active == false
+                                assign is_disabled = true
+                              endif
+                            %}
+                            <li class="splide__slide list-menu__item facets__item{% if forloop.index > show_more_number and filter_type == 'vertical' %} show-more-item hidden{% endif %}">
+                              <label
+                                for="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
+                                class="facets__label facet-checkbox{% if is_disabled %} facet-checkbox--disabled disabled{% endif %}{% if has_visual_display %} visual-display-parent visual-display-parent--{{ filter.presentation }}{% endif %}{% if value.active %} active{% endif %}"
+                              >
+                                <input
+                                  type="checkbox"
+                                  name="{{ value.param_name }}"
+                                  value="{{ value.value }}"
+                                  id="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
+                                  {% if value.active %}
+                                    checked
+                                  {% endif %}
+                                  {% if is_disabled %}
+                                    disabled
+                                  {% endif %}
+                                >
+                                <span class="facet-checkbox__text" aria-hidden="true">{{- value.label | escape }}</span>
+                                <span class="visually-hidden">{{- value.label | escape }} </span>
+                              </label>
+                            </li>
+                          {%- endfor -%}
+                        </ul>
+                      </fieldset>
+                    </div>
+                  </div>
+                  {% comment %} end custom filter by tags {% endcomment %}
+              {% endcase %}
+            {%- endfor -%}
+          </form>
+        </facet-filters-form>
+      </div>
     </div>
-    {% comment %} end remove tag {% endcomment %}
-  </facet-filters-form>
+  </div>
+ 
+  {% comment %} start collection {% endcomment %}
+  {% if enable_filtering %}
+    <div
+      id="FacetsWrapperDesktop"
+      class="custom-facets__wrapper"
+    >
+      {% comment %} start  my filter collection  {% endcomment %}
+      {%- if request.page_type != 'search' -%}
+        <details
+          id="Details-{{ forloop.index }}-{{ section.id }}"
+          class="filter-dropdown-style disclosure-has-popup facets__disclosure js-filter"
+          data-index="{{ forloop.index }}"
+          {% if filter_type == 'vertical' and forloop.index == 1 %}
+            open
+          {% endif %}
+        >
+          <summary class="facets__summary caption-large focus-offset">
+            <div>
+              <span class="facets__summary-label">
+                <span class="current-collection facets__selected no-js-hidden{% if filter.active_values.size == 0 %} hidden{% endif %}">
+                  {{- collection.title -}}
+                </span>
+              </span>
+              {% render 'icon-caret' %}
+            </div>
+          </summary>
+          <div
+            id="Facet-{{ forloop.index }}-{{ section.id }}"
+            class="parent-display {% if filter_type == 'horizontal' %}facets__display{% else %}facets__display-vertical{% endif %}"
+          >
+            {%- for collection in collections -%}
+              <span
+                class="collection-list__item grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                {% if settings.animations_reveal_on_scroll %}
+                  data-cascade
+                  style="--animation-order: {{ forloop.index }};"
+                {% endif %}
+              >
+                {% render 'my-custom-collections', card_collection: collection %}
+              </span>
+            {%- endfor -%}
+          </div>
+        </details>
+      {% endif %}
+      {% comment %} end  my filter collection {% endcomment %}
+    </div>
+  {% endif %}
+  {% comment %} end collection  {% endcomment %}
 </div>
+
+<div class="page-collection_slider-button-wrapper">
+  <div id="prevBtn" class="prevbtn">
+    <div class="btn-wrapper_prevbtn">
+      <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M-5.13609e-08 8.825L3.7085 5L-3.85753e-07 1.175L1.1417 -4.99053e-08L6 5L1.1417 10L-5.13609e-08 8.825Z" fill="#383633"/>
+      </svg>
+    </div>
+  </div>
+  <div id="nextBtn" class="nextbtn">
+    <div class="btn-wrapper_nextbtn">
+      <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M-5.13609e-08 8.825L3.7085 5L-3.85753e-07 1.175L1.1417 -4.99053e-08L6 5L1.1417 10L-5.13609e-08 8.825Z" fill="#383633"/>
+      </svg>
+    </div>
+  </div>
+</div>
+{% comment %} remov tag  {% endcomment %}
+
+<div class="active-facets active-facets-desktop">
+  {%- for filter in results.filters -%}
+    {%- for value in filter.active_values -%}
+      <facet-remove> </facet-remove>
+    {%- endfor -%}
+    {% if filter.type == 'price_range' %}
+      {%- if filter.min_value.value != null or filter.max_value.value != null -%}
+        <facet-remove> </facet-remove>
+      {%- endif -%}
+    {% endif %}
+  {%- endfor -%}
+  <facet-remove class="active-facets__button-wrapper">
+    <a href="{{ results_url }}" class="active-facets__button-remove underlined-link">
+      <span>{{ 'products.facets.clear_all' | t }}</span>
+    </a>
+  </facet-remove>
+</div>
+{% comment %} end remove tag {% endcomment %}
+
 
 
 <script>
@@ -212,19 +199,56 @@
     var list = slider.querySelector('.splide__list');
     var slides = slider.querySelectorAll('.splide__slide');
     var nextBtn = document.getElementById('nextBtn');
-
+    var prevBtn = document.getElementById('prevBtn');
+  
     var slideWidth = slides[0].offsetWidth;
     var currentIndex = 0;
-
+  
     nextBtn.addEventListener('click', function () {
       currentIndex = (currentIndex + 1) % slides.length;
       updateSlider();
     });
-
+  
+    prevBtn.addEventListener('click', function () {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      updateSlider();
+    });
+  
+    let options = {
+      root: slider,
+      rootMargin: '0px',
+      threshold: 1.0,
+    };
+  
+    let observerNext = new IntersectionObserver(callbackNext, options);
+    let observerPrev = new IntersectionObserver(callbackPrev, options);
+  
+    observerNext.observe(slides[slides.length - 1]);
+    observerPrev.observe(slides[0]);
+  
+    function callbackNext(entries, observer) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          nextBtn.style.display = 'none';
+        } else {
+          nextBtn.style.display = 'block';
+        }
+      });
+    }
+  
+    function callbackPrev(entries, observer) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          prevBtn.style.display = 'none';
+        } else {
+          prevBtn.style.display = 'block';
+        }
+      });
+    }
+  
     function updateSlider() {
       var newPosition = -currentIndex * slideWidth;
       list.style.transform = 'translateX(' + newPosition + 'px)';
     }
   });
 </script>
-

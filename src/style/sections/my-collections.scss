@@ -33,9 +33,6 @@
 
 //
 
-
-
-
 .custom-list-menu__item {
   padding: 17px 25px 17px 25px;
   max-width: max-content;
@@ -44,11 +41,15 @@
   background-color: #fff;
 }
 
-// collection option 3
-.tag-filters__item{
+// colection option 3
+
+.facets-wrapper {
+  position: relative;
+}
+.tag-filters__item {
   background-color: #e2d1b8;
 }
-.tag-filters__item.active{
+.tag-filters__item.active {
   background: rgb(188, 214, 150);
 }
 
@@ -60,46 +61,109 @@
     gap: 10px;
   }
 }
-.custom-container-filter.facets__disclosure{
+.custom-container-filter.facets__disclosure {
   border: none;
-    border-radius: 0;
-    padding: 0;
-  .custom-filter-tag{
+  border-radius: 0;
+  padding: 0;
+  .custom-filter-tag {
     position: unset !important;
-    
-  }
-  #reviews-slider {
-    width: 1000px;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .splide__list {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-  
-  .splide__slide {
-    max-width: max-content;
-    box-sizing: border-box;
-  }
-  
-  #nextBtn {
-    position: absolute;
-    top: 50%;
-    right: -110px;
-    transform: translateY(-50%);
-    cursor: pointer;
   }
 }
-.facets__label.facet-checkbox.active{
+
+.facets__label.facet-checkbox.active {
   background-color: #ebe3d8;
   opacity: 0.8;
 }
 .facets__disclosure {
-   margin-right: 0px !important; 
+  margin-right: 0px !important;
 }
+
+.filter-inner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  align-items: center;
+  .custom-facets__wrapper {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .tegs-wrapper {
+    width: 72%;
+
+    box-shadow: 10px 0 10px -5px rgba(255, 255, 255, 0.8),
+      /* смещение по горизонтали, смещение по вертикали, размытие, цвет */ -10px
+        0 10px -5px rgba(255, 255, 255, 0.8);
+    /* Тень слева */
+
+    .facets-layout-list {
+      display: flex;
+      gap: 30px;
+      padding: 0;
+      .splide__slide {
+        max-width: max-content;
+        border-radius: 10px;
+        background: #fff;
+        .facets__label.facet-checkbox {
+          padding: 17px 25px;
+          .facet-checkbox__text {
+            white-space: nowrap;
+          }
+        }
+        .facets__label.facet-checkbox:hover .facet-checkbox__text {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .splide__list {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  #reviews-slider {
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+}
+.page-collection_slider-button-wrapper{
+    .nextbtn{
+      position: absolute;
+      right: 20.8%;
+      top: 20px;
+    }
+    .prevbtn{
+      position: absolute;
+      left: 15px;
+      top: 20px;
+    }
+  .btn-wrapper_nextbtn,
+  .btn-wrapper_prevbtn {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-wrapper_prevbtn{
+    svg{
+      transform: rotate(180deg);
+    }
+  }
+}
+.product-grid-container{
+  margin-top: 30px;
+}
+
+
+
+
 
 
 

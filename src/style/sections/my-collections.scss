@@ -30,141 +30,99 @@
     }
   }
 }
-
-//
-
-.custom-list-menu__item {
-  padding: 17px 25px 17px 25px;
+.parent-display.facets__display {
+  background-color: rgba(234, 233, 229, 1);
   max-width: max-content;
-  border-radius: 10px;
-  gap: 10px;
-  background-color: #fff;
+  .card__content {
+    padding: 0rem;
+    @media screen and (min-width: 750px) {
+      .card__information {
+        padding-bottom: 0.7rem;
+        padding-top: 0.7rem;
+      }
+    }
+  }
 }
-
 // colection option 3
-
-.facets-wrapper {
-  position: relative;
-}
-.tag-filters__item {
-  background-color: #e2d1b8;
-}
-.tag-filters__item.active {
-  background: rgb(188, 214, 150);
-}
-
-.filter-wrapper {
-  display: flex;
-  justify-content: space-between;
-  .tags-wrapper {
-    display: flex;
-    gap: 10px;
-  }
-}
-.custom-container-filter.facets__disclosure {
-  border: none;
-  border-radius: 0;
-  padding: 0;
-  .custom-filter-tag {
-    position: unset !important;
-  }
-}
-
-.facets__label.facet-checkbox.active {
-  background-color: #ebe3d8;
-  opacity: 0.8;
-}
-.facets__disclosure {
-  margin-right: 0px !important;
-}
-
 .filter-inner {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  height: 80px;
   align-items: center;
+  gap: 20px;
+  width: 100%;
   .custom-facets__wrapper {
     width: 20%;
     display: flex;
     justify-content: flex-end;
+    .filter-dropdown-style {
+      margin-right: 0;
+    }
   }
-  .tegs-wrapper {
-    width: 72%;
-
-    box-shadow: 10px 0 10px -5px rgba(255, 255, 255, 0.8),
-      /* смещение по горизонтали, смещение по вертикали, размытие, цвет */ -10px
-        0 10px -5px rgba(255, 255, 255, 0.8);
-    /* Тень слева */
-
-    .facets-layout-list {
-      display: flex;
-      gap: 30px;
-      padding: 0;
-      .splide__slide {
-        max-width: max-content;
-        border-radius: 10px;
-        background: #fff;
-        .facets__label.facet-checkbox {
-          padding: 17px 25px;
-          .facet-checkbox__text {
-            white-space: nowrap;
+  .scroll-trigger {
+    width: 77%;
+    .custom-container-filter {
+      border: none;
+      margin-right: 0;
+      .swiper.mySwiper {
+        .swiper-wrapper {
+          max-width: 926px;
+          height: 100%;
+          .swiper-slide.list-menu__item {
+            @include text-style-text-text-2;
+            max-width: max-content;
+            border-radius: 10px;
+            background: #fff;
+            font-size: 16px;
+            line-height: 18px;
+            text-align: center;
+            display: flex;
+            width: fit-content;
+            justify-content: center;
+            align-items: center;
+            .facets__label.facet-checkbox {
+              padding: 17px 25px;
+            }
+            .facets__label.facet-checkbox:hover .facet-checkbox__text {
+              text-decoration: none;
+            }
           }
         }
-        .facets__label.facet-checkbox:hover .facet-checkbox__text {
-          text-decoration: none;
+      }
+      .swiper-button-next::after,
+      .swiper-button-prev::after {
+        content: none;
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+          height: 10px;
+          width: 6px;
         }
+      }
+      .swiper-button-next {
+        right: -17px;
+      }
+      .swiper-button-prev {
+        left: -2px;
+
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+      .swiper-button-prev.swiper-button-disabled {
+        display: none !important;
+      }
+      .swiper-button-next.swiper-button-disabled {
+        display: none !important;
       }
     }
   }
-
-  .splide__list {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-
-  #reviews-slider {
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-  }
 }
-.page-collection_slider-button-wrapper{
-    .nextbtn{
-      position: absolute;
-      right: 20.8%;
-      top: 20px;
-    }
-    .prevbtn{
-      position: absolute;
-      left: 15px;
-      top: 20px;
-    }
-  .btn-wrapper_nextbtn,
-  .btn-wrapper_prevbtn {
-    width: 40px;
-    height: 40px;
-    background-color: #fff;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .btn-wrapper_prevbtn{
-    svg{
-      transform: rotate(180deg);
-    }
-  }
-}
-.product-grid-container{
-  margin-top: 30px;
-}
-
-
-
-
-
-
-
-

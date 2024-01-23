@@ -33,16 +33,23 @@ class FacetFiltersForm extends HTMLElement {
   static renderPage(searchParams, event, updateURLHash = true) {
     FacetFiltersForm.searchParamsPrev = searchParams;
     const sections = FacetFiltersForm.getSections();
-    const countContainer = document.getElementById('ProductCount');
-    const countContainerDesktop = document.getElementById('ProductCountDesktop');
-    const loadingSpinners = document.querySelectorAll('.facets-container .loading__spinner, facet-filters-form .loading__spinner');
-    loadingSpinners.forEach((spinner) => spinner.classList.remove('hidden'));
-    document.getElementById('ProductGridContainer').querySelector('.collection').classList.add('loading');
+    const countContainer = document.getElementById("ProductCount");
+    const countContainerDesktop = document.getElementById(
+      "ProductCountDesktop"
+    );
+    const loadingSpinners = document.querySelectorAll(
+      ".facets-container .loading__spinner, facet-filters-form .loading__spinner"
+    );
+    loadingSpinners.forEach((spinner) => spinner.classList.remove("hidden"));
+    document
+      .getElementById("ProductGridContainer")
+      .querySelector(".collection")
+      .classList.add("loading");
     if (countContainer) {
-      countContainer.classList.add('loading');
+      countContainer.classList.add("loading");
     }
     if (countContainerDesktop) {
-      countContainerDesktop.classList.add('loading');
+      countContainerDesktop.classList.add("loading");
     }
 
     sections.forEach((section) => {
@@ -55,11 +62,7 @@ class FacetFiltersForm extends HTMLElement {
     });
 
     if (updateURLHash) FacetFiltersForm.updateURLHash(searchParams);
-
-    
   }
-
-
 
   static renderSectionFromFetch(url, event) {
     fetch(url)
@@ -163,7 +166,7 @@ class FacetFiltersForm extends HTMLElement {
       }
     }
     sliderInit();
-    console.log('12333');
+    console.log("12333");
   }
 
   static renderActiveFacets(html) {
@@ -360,9 +363,7 @@ class FacetRemove extends HTMLElement {
     facetLink.addEventListener("keyup", (event) => {
       event.preventDefault(); // Add this line
       if (event.code.toUpperCase() === "SPACE") this.closeFilter(event);
-      
     });
-    
   }
 
   // closeFilter(event) {
@@ -378,75 +379,22 @@ class FacetRemove extends HTMLElement {
       document.querySelector("facet-filters-form");
     form.onActiveFilterClick(event);
   }
-  
 }
 
 customElements.define("facet-remove", FacetRemove);
 
-
-
-
-
-
-  function sliderInit (){
-
-
-    var slider = document.getElementById('reviews-slider');
-    var list = slider.querySelector('.splide__list');
-    var slides = slider.querySelectorAll('.splide__slide');
-    var nextBtn = document.getElementById('nextBtn');
-    var prevBtn = document.getElementById('prevBtn');
-  
-    var slideWidth = slides[0].offsetWidth;
-    var currentIndex = 0;
-  
-    nextBtn.addEventListener('click', function () {
-      currentIndex = (currentIndex + 1) % slides.length;
-      updateSlider();
-    });
-  
-    prevBtn.addEventListener('click', function () {
-      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-      updateSlider();
-    });
-  
-    let options = {
-      root: slider,
-      rootMargin: '0px',
-      threshold: 1.0,
-    };
-  
-    let observerNext = new IntersectionObserver(callbackNext, options);
-    let observerPrev = new IntersectionObserver(callbackPrev, options);
-  
-    observerNext.observe(slides[slides.length - 1]);
-    observerPrev.observe(slides[0]);
-  
-    function callbackNext(entries, observer) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          nextBtn.style.display = 'none';
-        } else {
-          nextBtn.style.display = 'block';
-        }
-      });
-    }
-  
-    function callbackPrev(entries, observer) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          prevBtn.style.display = 'none';
-        } else {
-          prevBtn.style.display = 'block';
-        }
-      });
-    }
-  
-    function updateSlider() {
-      var newPosition = -currentIndex * slideWidth;
-      list.style.transform = 'translateX(' + newPosition + 'px)';
-    }
-  }
-    document.addEventListener('DOMContentLoaded', function () {
-sliderInit();
+function sliderInit() {
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    freeMode: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
   });
+}
+document.addEventListener("DOMContentLoaded", function () {
+  sliderInit();
+});
+

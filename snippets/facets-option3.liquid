@@ -12,98 +12,101 @@
   endif
 -%}
 <div class="filter-inner">
-  <div class="tegs-wrapper" id="reviews-slider">
-    <div class="splide__list">
-      <div class="{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-        <facet-filters-form class="facets ">
-          <form
-            id="FacetFiltersForm"
-            class="filter-wrapper"
-          >
-            {%- for filter in results.filters -%}
-              {% liquid
-                assign total_active_values = total_active_values | plus: filter.active_values.size
-                case filter.presentation
-                  when 'swatch'
-                    assign has_visual_display = true
-                    assign show_more_number = 15
-                    assign visual_layout_class = 'facets-layout-grid facets-layout-grid--' | append: filter.presentation
-                  else
-                    assign has_visual_display = false
-                    assign visual_layout_class = 'facets-layout-list'
-                    assign show_more_number = 10
-                endcase
-              %}
-              {% case filter.type %}
-                {% when 'boolean', 'list' %}
-                  {% comment %} start custom filter by tags {% endcomment %}
-                  <div
-                    id="Details-{{ forloop.index }}-{{ section.id }}"
-                    class="custom-container-filter {% if filter_type == 'horizontal' %}disclosure-has-popup facets__disclosure{% else %} facets__disclosure-vertical{% endif %} js-filter"
-                    data-index="{{ forloop.index }}"
-                    {% if filter_type == 'vertical' and forloop.index == 1 %}
-                      open
-                    {% endif %}
-                  >
-                    <div
-                      id="Facet-{{ forloop.index }}-{{ section.id }}"
-                      class="custom-filter-tag parent-display"
+  <div class="scroll-trigger animate--fade-in">
+    <facet-filters-form class="facets">
+      <form
+        id="FacetFiltersForm"
+        class="filter-wrapper"
+      >
+        {%- for filter in results.filters -%}
+          {% liquid
+            assign total_active_values = total_active_values | plus: filter.active_values.size
+            case filter.presentation
+              when 'swatch'
+                assign has_visual_display = true
+                assign show_more_number = 15
+                assign visual_layout_class = 'facets-layout-grid facets-layout-grid--' | append: filter.presentation
+              else
+                assign has_visual_display = false
+                assign visual_layout_class = 'facets-layout-list'
+                assign show_more_number = 10
+            endcase
+          %}
+          {% case filter.type %}
+            {% when 'boolean', 'list' %}
+              {% comment %} start custom filter by tags {% endcomment %}
+              <div
+                id="Details-{{ forloop.index }}-{{ section.id }}"
+                class="custom-container-filter {% if filter_type == 'horizontal' %}disclosure-has-popup facets__disclosure{% else %} facets__disclosure-vertical{% endif %} js-filter"
+                data-index="{{ forloop.index }}"
+                {% if filter_type == 'vertical' and forloop.index == 1 %}
+                  open
+                {% endif %}
+              >
+                <div
+                  id="Facet-{{ forloop.index }}-{{ section.id }}"
+                  class="custom-filter-tag parent-display"
+                >
+                  <fieldset class="swiper mySwiper facets-wrap parent-wrap {% if filter_type == 'vertical' %} facets-wrap-vertical{% endif %}">
+                    <ul
+                      class="swiper-wrapper {{ visual_layout_class }}{% if filter_type == 'vertical' %} facets__list--vertical{% else %} facets__list{% endif %} list-unstyled no-js-hidden"
+                      role="list"
                     >
-                      <fieldset class="facets-wrap parent-wrap {% if filter_type == 'vertical' %} facets-wrap-vertical{% endif %}">
-                        <ul
-                          class="{{ visual_layout_class }}{% if filter_type == 'vertical' %} facets__list--vertical{% else %} facets__list{% endif %} list-unstyled no-js-hidden"
-                          role="list"
-                        >
-                          {%- liquid
-                            assign sorted_values = filter.values
-                            if filter.operator == 'AND'
-                              assign active_filter_values = filter.values | where: 'active', true
-                              assign inactive_filter_values = filter.values | where: 'active', false
-                              assign sorted_values = active_filter_values | concat: inactive_filter_values
-                            endif
-                          -%}
-                          {%- for value in sorted_values -%}
-                            {% liquid
-                              assign is_disabled = false
-                              if value.count == 0 and value.active == false
-                                assign is_disabled = true
-                              endif
-                            %}
-                            <li class="splide__slide list-menu__item facets__item{% if forloop.index > show_more_number and filter_type == 'vertical' %} show-more-item hidden{% endif %}">
-                              <label
-                                for="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
-                                class="facets__label facet-checkbox{% if is_disabled %} facet-checkbox--disabled disabled{% endif %}{% if has_visual_display %} visual-display-parent visual-display-parent--{{ filter.presentation }}{% endif %}{% if value.active %} active{% endif %}"
-                              >
-                                <input
-                                  type="checkbox"
-                                  name="{{ value.param_name }}"
-                                  value="{{ value.value }}"
-                                  id="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
-                                  {% if value.active %}
-                                    checked
-                                  {% endif %}
-                                  {% if is_disabled %}
-                                    disabled
-                                  {% endif %}
-                                >
-                                <span class="facet-checkbox__text" aria-hidden="true">{{- value.label | escape }}</span>
-                                <span class="visually-hidden">{{- value.label | escape }} </span>
-                              </label>
-                            </li>
-                          {%- endfor -%}
-                        </ul>
-                      </fieldset>
-                    </div>
-                  </div>
-                  {% comment %} end custom filter by tags {% endcomment %}
-              {% endcase %}
-            {%- endfor -%}
-          </form>
-        </facet-filters-form>
-      </div>
-    </div>
+                      {%- liquid
+                        assign sorted_values = filter.values
+                        if filter.operator == 'AND'
+                          assign active_filter_values = filter.values | where: 'active', true
+                          assign inactive_filter_values = filter.values | where: 'active', false
+                          assign sorted_values = active_filter_values | concat: inactive_filter_values
+                        endif
+                      -%}
+                      {%- for value in sorted_values -%}
+                        {% liquid
+                          assign is_disabled = false
+                          if value.count == 0 and value.active == false
+                            assign is_disabled = true
+                          endif
+                        %}
+                        <li class="swiper-slide list-menu__item facets__item{% if forloop.index > show_more_number and filter_type == 'vertical' %} show-more-item hidden{% endif %}">
+                          <label
+                            for="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
+                            class="facets__label facet-checkbox{% if is_disabled %} facet-checkbox--disabled disabled{% endif %}{% if has_visual_display %} visual-display-parent visual-display-parent--{{ filter.presentation }}{% endif %}{% if value.active %} active{% endif %}"
+                          >
+                            <input
+                              type="checkbox"
+                              name="{{ value.param_name }}"
+                              value="{{ value.value }}"
+                              id="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
+                              {% if value.active %}
+                                checked
+                              {% endif %}
+                              {% if is_disabled %}
+                                disabled
+                              {% endif %}
+                            >
+                            <span class="facet-checkbox__text" aria-hidden="true">{{- value.label | escape }}</span>
+                            <span class="visually-hidden">{{- value.label | escape }} </span>
+                          </label>
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                    
+                  </fieldset>
+                </div>
+                <div class="swiper-button-next"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M-5.13609e-08 8.825L3.7085 5L-3.85753e-07 1.175L1.1417 -4.99053e-08L6 5L1.1417 10L-5.13609e-08 8.825Z" fill="#383633"/>
+                </svg></div>
+                <div class="swiper-button-prev"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M-5.13609e-08 8.825L3.7085 5L-3.85753e-07 1.175L1.1417 -4.99053e-08L6 5L1.1417 10L-5.13609e-08 8.825Z" fill="#383633"/>
+                </svg></div>
+              </div>
+              {% comment %} end custom filter by tags {% endcomment %}
+          {% endcase %}
+        {%- endfor -%}
+      </form>
+    </facet-filters-form>
   </div>
- 
+
   {% comment %} start collection {% endcomment %}
   {% if enable_filtering %}
     <div
@@ -154,22 +157,24 @@
   {% comment %} end collection  {% endcomment %}
 </div>
 
-<div class="page-collection_slider-button-wrapper">
-  <div id="prevBtn" class="prevbtn">
-    <div class="btn-wrapper_prevbtn">
-      <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M-5.13609e-08 8.825L3.7085 5L-3.85753e-07 1.175L1.1417 -4.99053e-08L6 5L1.1417 10L-5.13609e-08 8.825Z" fill="#383633"/>
-      </svg>
+{% comment %}
+  <div class="page-collection_slider-button-wrapper">
+    <div id="prevBtn" class="prevbtn">
+      <div class="btn-wrapper_prevbtn">
+        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M-5.13609e-08 8.825L3.7085 5L-3.85753e-07 1.175L1.1417 -4.99053e-08L6 5L1.1417 10L-5.13609e-08 8.825Z" fill="#383633"/>
+        </svg>
+      </div>
+    </div>
+    <div id="nextBtn" class="nextbtn">
+      <div class="btn-wrapper_nextbtn">
+        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M-5.13609e-08 8.825L3.7085 5L-3.85753e-07 1.175L1.1417 -4.99053e-08L6 5L1.1417 10L-5.13609e-08 8.825Z" fill="#383633"/>
+        </svg>
+      </div>
     </div>
   </div>
-  <div id="nextBtn" class="nextbtn">
-    <div class="btn-wrapper_nextbtn">
-      <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M-5.13609e-08 8.825L3.7085 5L-3.85753e-07 1.175L1.1417 -4.99053e-08L6 5L1.1417 10L-5.13609e-08 8.825Z" fill="#383633"/>
-      </svg>
-    </div>
-  </div>
-</div>
+{% endcomment %}
 {% comment %} remov tag  {% endcomment %}
 
 <div class="active-facets active-facets-desktop">
@@ -190,7 +195,3 @@
   </facet-remove>
 </div>
 {% comment %} end remove tag {% endcomment %}
-
-
-
-

@@ -139,9 +139,9 @@
         border: none;
         margin-right: 0;
         .swiper.mySwiper {
-          width: auto;
+          // width: auto;
           .swiper-wrapper {
-            // max-width: 926px;
+           max-width: 926px;
             height: 100%;
             .swiper-slide.list-menu__item {
               @include text-style-text-text-2;

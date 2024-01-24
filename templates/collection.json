@@ -19,6 +19,8 @@
       "type": "main-collection-product-grid-option1",
       "disabled": true,
       "settings": {
+        "button_label": "All",
+        "button_link": "shopify:\/\/collections\/all",
         "products_per_page": 9,
         "columns_desktop": 4,
         "image_ratio": "adapt",
@@ -32,15 +34,18 @@
         "padding_top": 36,
         "padding_bottom": 36,
         "color_button_backgroun": "#383633",
-        "color_button_label": "#fff",
-        "hover_color_button_backgroun": "#D5CFC4",
-        "hover_color_button_label": "#fff",
+        "color_button_label": "#ffffff",
+        "hover_color_button_backgroun": "#d5cfc4",
+        "hover_color_button_label": "#ffffff",
         "color_text": "#383633"
       }
     },
     "main_collection_product_grid_option2_DTjL3m": {
       "type": "main-collection-product-grid-option2",
+      "disabled": true,
       "settings": {
+        "button_label": "All",
+        "button_link": "shopify:\/\/collections\/all",
         "products_per_page": 9,
         "columns_desktop": 4,
         "image_ratio": "adapt",
@@ -55,16 +60,17 @@
         "padding_top": 36,
         "padding_bottom": 36,
         "color_button_backgroun": "#383633",
-        "color_button_label": "#fff",
-        "hover_color_button_backgroun": "#D5CFC4",
-        "hover_color_button_label": "#fff",
+        "color_button_label": "#ffffff",
+        "hover_color_button_backgroun": "#d5cfc4",
+        "hover_color_button_label": "#ffffff",
         "color_text": "#383633"
       }
     },
     "main_collection_product_grid_option3_MYMFwF": {
       "type": "main-collection-product-grid-option3",
-      "disabled": true,
       "settings": {
+        "button_label": "ALL",
+        "button_link": "shopify:\/\/collections\/all",
         "products_per_page": 9,
         "columns_desktop": 4,
         "image_ratio": "adapt",
@@ -79,9 +85,9 @@
         "padding_top": 36,
         "padding_bottom": 36,
         "color_button_backgroun": "#383633",
-        "color_button_label": "#fff",
-        "hover_color_button_backgroun": "#D5CFC4",
-        "hover_color_button_label": "#fff",
+        "color_button_label": "#ffffff",
+        "hover_color_button_backgroun": "#d5cfc4",
+        "hover_color_button_label": "#ffffff",
         "color_text": "#383633"
       }
     }

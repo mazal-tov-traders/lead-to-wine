@@ -90,15 +90,18 @@
                         </li>
                       {%- endfor -%}
                     </ul>
-                    
                   </fieldset>
                 </div>
-                <div class="swiper-button-next"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M-5.13609e-08 8.825L3.7085 5L-3.85753e-07 1.175L1.1417 -4.99053e-08L6 5L1.1417 10L-5.13609e-08 8.825Z" fill="#383633"/>
-                </svg></div>
-                <div class="swiper-button-prev"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M-5.13609e-08 8.825L3.7085 5L-3.85753e-07 1.175L1.1417 -4.99053e-08L6 5L1.1417 10L-5.13609e-08 8.825Z" fill="#383633"/>
-                </svg></div>
+                <div class="swiper-button-next">
+                  <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M-5.13609e-08 8.825L3.7085 5L-3.85753e-07 1.175L1.1417 -4.99053e-08L6 5L1.1417 10L-5.13609e-08 8.825Z" fill="#383633"/>
+                  </svg>
+                </div>
+                <div class="swiper-button-prev">
+                  <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M-5.13609e-08 8.825L3.7085 5L-3.85753e-07 1.175L1.1417 -4.99053e-08L6 5L1.1417 10L-5.13609e-08 8.825Z" fill="#383633"/>
+                  </svg>
+                </div>
               </div>
               {% comment %} end custom filter by tags {% endcomment %}
           {% endcase %}
@@ -137,6 +140,16 @@
             id="Facet-{{ forloop.index }}-{{ section.id }}"
             class="parent-display {% if filter_type == 'horizontal' %}facets__display{% else %}facets__display-vertical{% endif %}"
           >
+            {%- if section.settings.button_label != blank -%}
+              <h3 class="wrapper_all-product">
+                <a
+                  href="{{ section.settings.button_link }}"
+                  class="all-product-in-collection"
+                >
+                  {{- section.settings.button_label | escape -}}
+                </a>
+              </h3>
+            {%- endif -%}
             {%- for collection in collections -%}
               <span
                 class="collection-list__item grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"

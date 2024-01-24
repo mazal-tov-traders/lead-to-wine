@@ -1,5 +1,7 @@
-{% comment %} {{ 'component-show-more.css' | asset_url | stylesheet_tag }}
-{{ 'component-visual-display.css' | asset_url | stylesheet_tag }} {% endcomment %}
+{% comment %}
+  {{ 'component-show-more.css' | asset_url | stylesheet_tag }}
+  {{ 'component-visual-display.css' | asset_url | stylesheet_tag }}
+{% endcomment %}
 
 {%- liquid
   assign sort_by = results.sort_by | default: results.default_sort_by
@@ -51,9 +53,19 @@
                 id="Facet-{{ forloop.index }}-{{ section.id }}"
                 class="parent-display {% if filter_type == 'horizontal' %}facets__display{% else %}facets__display-vertical{% endif %}"
               >
+                {%- if section.settings.button_label != blank -%}
+                  <h3 class="wrapper_all-product">
+                  <a
+                    href="{{ section.settings.button_link }}"
+                    class="all-product-in-collection"
+                  >
+                    {{- section.settings.button_label | escape -}}
+                  </a>
+                </h3>
+                {%- endif -%}
                 {%- for collection in collections -%}
                   <span
-                    class="collection-list__item grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                    class="collection-list__item grid__item scroll-trigger animate--slide-in"
                     {% if settings.animations_reveal_on_scroll %}
                       data-cascade
                       style="--animation-order: {{ forloop.index }};"
@@ -93,18 +105,18 @@
                     {% render 'icon-caret' %}
                   </div>
                 </div>
-      
+
                 <noscript>
                   <button type="submit" class="facets__button-no-js button button--secondary">
                     {{ 'products.facets.sort_button' | t }}
                   </button>
                 </noscript>
               </div>
-      
+
               {% if results.current_vendor or results.current_type %}
                 <input type="hidden" name="q" value="{{ results.current_vendor }}{{ results.current_type }}">
               {% endif %}
-      
+
               {%- if results.terms -%}
                 <input type="hidden" name="q" value="{{ results.terms | escape }}">
                 <input name="options[prefix]" type="hidden" value="last">

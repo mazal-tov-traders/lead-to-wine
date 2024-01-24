@@ -49,29 +49,38 @@
 {%- endstyle -%}
 {% comment %} start вывод колекций {% endcomment %}
 {{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
-  <div class="collection-inner">
-    <ul
-      class="collection-list my-collection-list page-width "
-      role="list"
-    >
-      {%- for collection in collections -%}
-        <li
-          class="collection-list__item grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-          {% if settings.animations_reveal_on_scroll %}
-            data-cascade
-            style="--animation-order: {{ forloop.index }};"
-          {% endif %}
+<div class="collection-inner option1">
+  <ul
+    class="collection-list my-collection-list page-width "
+    role="list"
+  >
+    {%- if section.settings.button_label != blank -%}
+      <h3 class="wrapper_all-product">
+        <a
+          href="{{ section.settings.button_link }}"
+          class="all-product-in-collection"
         >
-          {% render 'my-custom-collections', card_collection: collection %}
-        </li>
-      {%- endfor -%}
-    </ul>
-  </div>
+          {{- section.settings.button_label | escape -}}
+        </a>
+      </h3>
+    {%- endif -%}
+    {%- for collection in collections -%}
+      <li
+        class="collection-list__item grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+        {% if settings.animations_reveal_on_scroll %}
+          data-cascade
+          style="--animation-order: {{ forloop.index }};"
+        {% endif %}
+      >
+        {% render 'my-custom-collections', card_collection: collection %}
+      </li>
+    {%- endfor -%}
+  </ul>
+</div>
 {% comment %} end вывод колекций {% endcomment %}
 
-<div class="section-{{ section.id }}-padding gradient">
+<div class="section-{{ section.id }}-padding gradient option1">
   {%- paginate collection.products by section.settings.products_per_page -%}
-
     <div class="facets-vertical page-width">
       {{ 'component-facets.css' | asset_url | stylesheet_tag }}
       <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
@@ -97,24 +106,20 @@
             </div>
           </div>
         {%- else -%}
-          <div class="collection page-widt">
+          <div class="collection">
             <div class="loading-overlay gradient"></div>
             <ul
               id="product-grid"
               data-id="{{ section.id }}"
-              class="
-                grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
-                grid--{{ section.settings.columns_desktop }}-col-desktop products
-              "
+              class="products"
             >
               {%- for product in collection.products -%}
                 {% assign lazy_load = false %}
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
-                {% comment %}grid__item забрал у LI  {% endcomment %}
                 <li
-                  class="product {% if settings.animations_reveal_on_scroll %}scroll-trigger animate--slide-in{% endif %}"
+                  class="product"
                   {% if settings.animations_reveal_on_scroll %}
                     data-cascade
                     style="--animation-order: {{ forloop.index }};"
@@ -143,7 +148,6 @@
       </div>
     </div>
   {%- endpaginate -%}
-
 </div>
 
 {% schema %}
@@ -151,6 +155,17 @@
   "name": "Collection Option 1",
   "class": "collection-option-1",
   "settings": [
+    {
+      "type": "text",
+      "id": "button_label",
+      "default": "Button label",
+      "label": "Button label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
     {
       "type": "range",
       "id": "products_per_page",
@@ -169,7 +184,6 @@
       "default": 4,
       "label": "t:sections.main-collection-product-grid.settings.columns_desktop.label"
     },
-
 
     {
       "type": "select",
@@ -227,7 +241,7 @@
       "label": "t:sections.main-collection-product-grid.settings.enable_filtering.label",
       "info": "t:sections.main-collection-product-grid.settings.enable_filtering.info"
     },
-    
+
     {
       "type": "checkbox",
       "id": "enable_sorting",

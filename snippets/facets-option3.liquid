@@ -93,14 +93,18 @@
                   </fieldset>
                 </div>
                 <div class="swiper-button-next">
+                  <div class='svg-inner'>
                   <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M-5.13609e-08 8.825L3.7085 5L-3.85753e-07 1.175L1.1417 -4.99053e-08L6 5L1.1417 10L-5.13609e-08 8.825Z" fill="#383633"/>
                   </svg>
                 </div>
+                </div>
                 <div class="swiper-button-prev">
+                  <div class='svg-inner'>
                   <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M-5.13609e-08 8.825L3.7085 5L-3.85753e-07 1.175L1.1417 -4.99053e-08L6 5L1.1417 10L-5.13609e-08 8.825Z" fill="#383633"/>
                   </svg>
+                </div>
                 </div>
               </div>
               {% comment %} end custom filter by tags {% endcomment %}
@@ -169,26 +173,6 @@
   {% endif %}
   {% comment %} end collection  {% endcomment %}
 </div>
-
-{% comment %}
-  <div class="page-collection_slider-button-wrapper">
-    <div id="prevBtn" class="prevbtn">
-      <div class="btn-wrapper_prevbtn">
-        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M-5.13609e-08 8.825L3.7085 5L-3.85753e-07 1.175L1.1417 -4.99053e-08L6 5L1.1417 10L-5.13609e-08 8.825Z" fill="#383633"/>
-        </svg>
-      </div>
-    </div>
-    <div id="nextBtn" class="nextbtn">
-      <div class="btn-wrapper_nextbtn">
-        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M-5.13609e-08 8.825L3.7085 5L-3.85753e-07 1.175L1.1417 -4.99053e-08L6 5L1.1417 10L-5.13609e-08 8.825Z" fill="#383633"/>
-        </svg>
-      </div>
-    </div>
-  </div>
-{% endcomment %}
-{% comment %} remov tag  {% endcomment %}
 
 <div class="active-facets active-facets-desktop">
   {%- for filter in results.filters -%}

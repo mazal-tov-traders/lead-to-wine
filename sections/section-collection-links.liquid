@@ -1,0 +1,70 @@
+<section class="page-navigation">
+  <div class="page-width">
+    <ul class="page-navigation__wrapper">
+      {%- for block in section.blocks -%}
+        {% case block.type %}
+          {% when 'page-link' %}
+            {%- if block.settings.button_label != blank -%}
+              <li class="page-navigation__item">
+                <a
+                  {% if block.settings.button_link == blank %}
+                    role="link" aria-disabled="true"
+                  {% else %}
+                    href="{{ block.settings.button_link }}"
+                  {% endif %}
+                  style=" color:{{ block.settings.color_label }}; font-size:{{ block.settings.font_size }}px;"
+                  class="page-navigation__link"
+                >
+                  {{- block.settings.button_label | escape -}}
+                </a>
+              </li>
+            {%- endif -%}
+        {% endcase %}
+      {%- endfor -%}
+    </ul>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Page Navigation",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "color_label",
+      "label": "Color Label",
+      "default": "#EAE9E5"
+    },
+    {
+      "type": "text",
+      "id": "font_size",
+      "label": "Font Size Enter Number"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "page-link",
+      "name": "Page Link",
+      "limit": 8,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Page Label"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Page Navigation"
+    }
+  ]
+}
+{% endschema %}

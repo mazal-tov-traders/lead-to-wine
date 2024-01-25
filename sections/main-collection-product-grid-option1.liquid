@@ -72,7 +72,9 @@
           style="--animation-order: {{ forloop.index }};"
         {% endif %}
       >
+        {% if collection.metafields.custom.show_in_filter == true %}
         {% render 'my-custom-collections', card_collection: collection %}
+        {% endif %}
       </li>
     {%- endfor -%}
   </ul>

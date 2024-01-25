@@ -16,7 +16,7 @@
           "settings": {
             "title": "Assimilation & Growth Track",
             "font_size": "",
-            "color_title_label": "#fff"
+            "color_title_label": "#ffffff"
           }
         },
         "description_aK3wNk": {
@@ -24,7 +24,7 @@
           "settings": {
             "description": "<p><em>Lorem ipsum dolor sit amet consectetur. Praesent vel tincidunt tellus duis lacinia sapien semper. <\/em><\/p>",
             "font_size": "24",
-            "color_description_label": "#fff"
+            "color_description_label": "#ffffff"
           }
         }
       },
@@ -36,46 +36,46 @@
         "image": "shopify:\/\/shop_images\/Rectangle_4133714_1.jpg"
       }
     },
-    "section_collection_links_3aDwW8": {
-      "type": "section-collection-links",
+    "page_navigation_ktFC6L": {
+      "type": "page-navigation",
       "blocks": {
-        "page_link_FVebEr": {
-          "type": "page-link",
+        "anchor_link_zhbX9T": {
+          "type": "anchor-link",
           "settings": {
             "button_label": "Overview",
-            "button_link": ""
+            "button_link": "#overview"
           }
         },
-        "page_link_dV79gJ": {
-          "type": "page-link",
+        "anchor_link_L9c4ai": {
+          "type": "anchor-link",
           "settings": {
             "button_label": "Discovery 101",
-            "button_link": ""
+            "button_link": "#Discovery101"
           }
         },
-        "page_link_c3Tatr": {
-          "type": "page-link",
+        "anchor_link_hNXVX3": {
+          "type": "anchor-link",
           "settings": {
             "button_label": "Serve Team 201",
-            "button_link": ""
+            "button_link": "#ServeTeam201"
           }
         },
-        "page_link_MDDk9K": {
-          "type": "page-link",
+        "anchor_link_JUpTVV": {
+          "type": "anchor-link",
           "settings": {
             "button_label": "Values 301",
-            "button_link": ""
+            "button_link": "#Values301"
           }
         },
-        "page_link_KzRRwi": {
-          "type": "page-link",
+        "anchor_link_63b8kx": {
+          "type": "anchor-link",
           "settings": {
             "button_label": "Storytelling",
-            "button_link": ""
+            "button_link": "#Storytelling"
           }
         },
-        "page_link_PpHgiB": {
-          "type": "page-link",
+        "anchor_link_URV4Gp": {
+          "type": "anchor-link",
           "settings": {
             "button_label": "FAQ",
             "button_link": ""
@@ -83,15 +83,15 @@
         }
       },
       "block_order": [
-        "page_link_FVebEr",
-        "page_link_dV79gJ",
-        "page_link_c3Tatr",
-        "page_link_MDDk9K",
-        "page_link_KzRRwi",
-        "page_link_PpHgiB"
+        "anchor_link_zhbX9T",
+        "anchor_link_L9c4ai",
+        "anchor_link_hNXVX3",
+        "anchor_link_JUpTVV",
+        "anchor_link_63b8kx",
+        "anchor_link_URV4Gp"
       ],
       "settings": {
-        "color_label": "#EAE9E5",
+        "color_label": "#eae9e5",
         "font_size": ""
       }
     },
@@ -101,7 +101,7 @@
         "media_YXcFKV": {
           "type": "media",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_4133725_22b3a8f8-eb78-4c57-9db1-5ad2d99cf29d.jpg"
+            "image": "shopify:\/\/shop_images\/way-to-win.jpg"
           }
         },
         "title_3pVhJ6": {
@@ -123,6 +123,7 @@
         "link_ynqgqK": {
           "type": "link",
           "settings": {
+            "show_icon_pdf": true,
             "link_label": "Overview of the Growth Track",
             "link": "shopify:\/\/products\/miracles-campaign",
             "color_link_label": "#383633",
@@ -132,8 +133,19 @@
         "link_PnghTb": {
           "type": "link",
           "settings": {
+            "show_icon_pdf": true,
             "link_label": "Growth Track Board",
             "link": "shopify:\/\/pages\/assimilation-growth-track",
+            "color_link_label": "#383633",
+            "font_size": ""
+          }
+        },
+        "link_RfQYTr": {
+          "type": "link",
+          "settings": {
+            "show_icon_pdf": false,
+            "link_label": "People Board Shopping List",
+            "link": "shopify:\/\/products\/miracles",
             "color_link_label": "#383633",
             "font_size": ""
           }
@@ -144,19 +156,449 @@
         "title_3pVhJ6",
         "description_list_r3NhMT",
         "link_ynqgqK",
-        "link_PnghTb"
+        "link_PnghTb",
+        "link_RfQYTr"
+      ],
+      "settings": {
+        "background": "base",
+        "align_content": "left",
+        "position_image": "",
+        "id_for_anchor": "overview"
+      }
+    },
+    "image_content_jUPwXn": {
+      "type": "image-content",
+      "blocks": {
+        "media_ycad6U": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/way-to-win.jpg"
+          }
+        },
+        "title_xTLB8D": {
+          "type": "title",
+          "settings": {
+            "title": "Discovery 101",
+            "color_title_label": "#383633",
+            "font_size": ""
+          }
+        },
+        "description_list_4namh7": {
+          "type": "description-list",
+          "settings": {
+            "description-list": "<p>The first step in the Growth Track, this two hour luncheon hosted every month where our lead pastor shares the story, heart and vision of Milestone Church.<\/p>",
+            "color_list": "#383633",
+            "font_size": ""
+          }
+        },
+        "description_TntJdw": {
+          "type": "description",
+          "settings": {
+            "description": "<p>The class outline comprises of:<\/p>",
+            "color_description_label": "#4d4d4e",
+            "font_size": ""
+          }
+        },
+        "content_qwqBhh": {
+          "type": "content",
+          "settings": {
+            "content": "<ul><li>The Gospel Message<\/li><li>Our Mission (Vision, Beliefs, Values and DNA)<\/li><li>Our Values (Includes Strategies: Weekends Service, Small Groups, Growth Track and Serve Team)<\/li><li>Our Structure (how our church is structured and what it means to be a member)<\/li><\/ul>",
+            "color_content_label": "#383633",
+            "font_size": ""
+          }
+        },
+        "text_HYN874": {
+          "type": "text",
+          "settings": {
+            "text": "<em>The participants are given an opportunity to join, but it’s not required or expected for attending.<\/em>",
+            "color_Text_label": "#383633",
+            "font_size": ""
+          }
+        },
+        "link_EJRhNa": {
+          "type": "link",
+          "settings": {
+            "show_icon_pdf": true,
+            "link_label": "Membership Agreement",
+            "link": "",
+            "color_link_label": "#383633",
+            "font_size": ""
+          }
+        },
+        "link_9frUTr": {
+          "type": "link",
+          "settings": {
+            "show_icon_pdf": true,
+            "link_label": "Discovery 101 Booklet",
+            "link": "",
+            "color_link_label": "#383633",
+            "font_size": ""
+          }
+        },
+        "link_Nknyht": {
+          "type": "link",
+          "settings": {
+            "show_icon_pdf": true,
+            "link_label": "101 Connector Notes",
+            "link": "",
+            "color_link_label": "#383633",
+            "font_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "media_ycad6U",
+        "title_xTLB8D",
+        "description_list_4namh7",
+        "description_TntJdw",
+        "content_qwqBhh",
+        "text_HYN874",
+        "link_EJRhNa",
+        "link_9frUTr",
+        "link_Nknyht"
       ],
       "settings": {
         "background": "_bg-white",
         "align_content": "left",
-        "position_image": ""
+        "position_image": "_reverse",
+        "id_for_anchor": "Discovery101"
+      }
+    },
+    "image_content_7hW96X": {
+      "type": "image-content",
+      "blocks": {
+        "media_nXXjMf": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/way-to-win.jpg"
+          }
+        },
+        "title_QKwHrM": {
+          "type": "title",
+          "settings": {
+            "title": "Serve Team 201",
+            "color_title_label": "#383633",
+            "font_size": ""
+          }
+        },
+        "description_list_twyxDy": {
+          "type": "description-list",
+          "settings": {
+            "description-list": "<p>The second step in the Growth Track, this 90 minute class allows people to hear from our pastoral team, discover their unique spiritual gifts with a personal assessment, learn about the ministries they can serve with and meet the ministry leaders.<\/p>",
+            "color_list": "#383633",
+            "font_size": ""
+          }
+        },
+        "link_fxWHLA": {
+          "type": "link",
+          "settings": {
+            "show_icon_pdf": true,
+            "link_label": "Serve Team 201 Booklet",
+            "link": "",
+            "color_link_label": "#383633",
+            "font_size": ""
+          }
+        },
+        "link_JX8jwL": {
+          "type": "link",
+          "settings": {
+            "show_icon_pdf": true,
+            "link_label": "Serve Team 201 Form",
+            "link": "",
+            "color_link_label": "#383633",
+            "font_size": ""
+          }
+        },
+        "link_kYKXnD": {
+          "type": "link",
+          "settings": {
+            "show_icon_pdf": true,
+            "link_label": "Volunteer Application",
+            "link": "",
+            "color_link_label": "#383633",
+            "font_size": ""
+          }
+        },
+        "link_GrnGEj": {
+          "type": "link",
+          "settings": {
+            "show_icon_pdf": true,
+            "link_label": "201 Connector Notes",
+            "link": "",
+            "color_link_label": "#383633",
+            "font_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "media_nXXjMf",
+        "title_QKwHrM",
+        "description_list_twyxDy",
+        "link_fxWHLA",
+        "link_JX8jwL",
+        "link_kYKXnD",
+        "link_GrnGEj"
+      ],
+      "settings": {
+        "background": "base",
+        "align_content": "left",
+        "position_image": "",
+        "id_for_anchor": "ServeTeam201"
+      }
+    },
+    "image_content_XVmFHH": {
+      "type": "image-content",
+      "blocks": {
+        "media_DhXbzm": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/way-to-win.jpg"
+          }
+        },
+        "title_jaVamE": {
+          "type": "title",
+          "settings": {
+            "title": "Values 301",
+            "color_title_label": "#383633",
+            "font_size": ""
+          }
+        },
+        "description_list_qcgiCQ": {
+          "type": "description-list",
+          "settings": {
+            "description-list": "<p>his 7-week class is designed to help members connect with others, grow spiritually and learn more about the core values that form the culture of our church in one of our most engaging environments. Each week consists of a fun game, teaching time led by a pastor, and an engaging volunteer-led small group experience.<\/p>",
+            "color_list": "#383633",
+            "font_size": ""
+          }
+        },
+        "description_JBbzDD": {
+          "type": "description",
+          "settings": {
+            "description": "<p>Topics we cover:<\/p>",
+            "color_description_label": "#4d4d4e",
+            "font_size": ""
+          }
+        },
+        "content_K9a3bp": {
+          "type": "content",
+          "settings": {
+            "content": "<ul><li>Spiritual Family<\/li><li>Salvation and Water Baptism<\/li><li>Missional Living<\/li><li>The Baptism with the Holy Spirit<\/li><li>The Bible<\/li><li>Generosity<\/li><li>Development<\/li><\/ul>",
+            "color_content_label": "#383633",
+            "font_size": ""
+          }
+        },
+        "link_kepW8G": {
+          "type": "link",
+          "settings": {
+            "show_icon_pdf": true,
+            "link_label": "Values 301 Booklet",
+            "link": "",
+            "color_link_label": "#383633",
+            "font_size": ""
+          }
+        },
+        "link_gkfgAB": {
+          "type": "link",
+          "settings": {
+            "show_icon_pdf": true,
+            "link_label": "301 Next Step Card – Leader",
+            "link": "",
+            "color_link_label": "#383633",
+            "font_size": ""
+          }
+        },
+        "link_mdUDA7": {
+          "type": "link",
+          "settings": {
+            "show_icon_pdf": true,
+            "link_label": "301 Next Step Card – Participant",
+            "link": "",
+            "color_link_label": "#383633",
+            "font_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "media_DhXbzm",
+        "title_jaVamE",
+        "description_list_qcgiCQ",
+        "description_JBbzDD",
+        "content_K9a3bp",
+        "link_kepW8G",
+        "link_gkfgAB",
+        "link_mdUDA7"
+      ],
+      "settings": {
+        "background": "_bg-white",
+        "align_content": "left",
+        "position_image": "_reverse",
+        "id_for_anchor": "Values301"
+      }
+    },
+    "image_content_zyNXgE": {
+      "type": "image-content",
+      "blocks": {
+        "media_BfgcAH": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/way-to-win.jpg"
+          }
+        },
+        "title_Axpcgd": {
+          "type": "title",
+          "settings": {
+            "title": "Storytelling",
+            "color_title_label": "#383633",
+            "font_size": ""
+          }
+        },
+        "description_list_K78nrw": {
+          "type": "description-list",
+          "settings": {
+            "description-list": "<p>We equip our leaders in each Growth Track setting to connect with people and make notes on the conversations they had, and to share stories they hear along the way. We use those notes to help each person take a next step and to tailor each step to help them find relationships they can retain long after the classes are over.<\/p><p>We also use impactful stories we hear to show our church what God is doing in this area of the church and to encourage more people to engage.<\/p>",
+            "color_list": "#383633",
+            "font_size": ""
+          }
+        },
+        "link_fDc89h": {
+          "type": "link",
+          "settings": {
+            "show_icon_pdf": true,
+            "link_label": "101 Connector Notes",
+            "link": "",
+            "color_link_label": "#383633",
+            "font_size": ""
+          }
+        },
+        "link_JA8MHA": {
+          "type": "link",
+          "settings": {
+            "show_icon_pdf": true,
+            "link_label": "201 Connector Notes",
+            "link": "",
+            "color_link_label": "#383633",
+            "font_size": ""
+          }
+        },
+        "link_kXbGif": {
+          "type": "link",
+          "settings": {
+            "show_icon_pdf": true,
+            "link_label": "301 Next Step Card – Leader",
+            "link": "",
+            "color_link_label": "#383633",
+            "font_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "media_BfgcAH",
+        "title_Axpcgd",
+        "description_list_K78nrw",
+        "link_fDc89h",
+        "link_JA8MHA",
+        "link_kXbGif"
+      ],
+      "settings": {
+        "background": "base",
+        "align_content": "left",
+        "position_image": "",
+        "id_for_anchor": "Storytelling"
+      }
+    },
+    "collapsible_content_gDmaAm": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_Ebyzad": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I participate in the Hearing God series while watching online?",
+            "font_size": "",
+            "icon": "none",
+            "row_content": "<p>You sure can! We'll have group options and resources both onsite and online.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_KiNUgX": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "If I'm not ready to join a group yet, can I still participate in the Hearing God series?",
+            "font_size": "",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_HF98bK": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I purchase my book?",
+            "font_size": "",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_qcWDht": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I host a group?",
+            "font_size": "",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_6A9FEX": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "When do the groups start?",
+            "font_size": "",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_Ebyzad",
+        "collapsible_row_KiNUgX",
+        "collapsible_row_HF98bK",
+        "collapsible_row_qcWDht",
+        "collapsible_row_6A9FEX"
+      ],
+      "settings": {
+        "caption": "",
+        "font_size": "",
+        "color_caption_label": "#1D2228",
+        "heading": "Frequently Asked Questions",
+        "font_size1": "50",
+        "color_heading_label": "#1D2228",
+        "secon_class": "",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "color_question_heading_label": "#342663",
+        "color_open_question_heading_label": "#383633",
+        "color_row_content_label": "#383633",
+        "font_size2": ""
       }
     }
   },
   "order": [
     "main",
     "banner_We3bPk",
-    "section_collection_links_3aDwW8",
-    "image_content_YQktxa"
+    "page_navigation_ktFC6L",
+    "image_content_YQktxa",
+    "image_content_jUPwXn",
+    "image_content_7hW96X",
+    "image_content_XVmFHH",
+    "image_content_zyNXgE",
+    "collapsible_content_gDmaAm"
   ]
 }

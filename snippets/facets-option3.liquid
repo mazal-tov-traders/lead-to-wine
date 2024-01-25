@@ -93,18 +93,18 @@
                   </fieldset>
                 </div>
                 <div class="swiper-button-next">
-                  <div class='svg-inner'>
-                  <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M-5.13609e-08 8.825L3.7085 5L-3.85753e-07 1.175L1.1417 -4.99053e-08L6 5L1.1417 10L-5.13609e-08 8.825Z" fill="#383633"/>
-                  </svg>
-                </div>
+                  <div class="svg-inner">
+                    <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M-5.13609e-08 8.825L3.7085 5L-3.85753e-07 1.175L1.1417 -4.99053e-08L6 5L1.1417 10L-5.13609e-08 8.825Z" fill="#383633"/>
+                    </svg>
+                  </div>
                 </div>
                 <div class="swiper-button-prev">
-                  <div class='svg-inner'>
-                  <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M-5.13609e-08 8.825L3.7085 5L-3.85753e-07 1.175L1.1417 -4.99053e-08L6 5L1.1417 10L-5.13609e-08 8.825Z" fill="#383633"/>
-                  </svg>
-                </div>
+                  <div class="svg-inner">
+                    <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M-5.13609e-08 8.825L3.7085 5L-3.85753e-07 1.175L1.1417 -4.99053e-08L6 5L1.1417 10L-5.13609e-08 8.825Z" fill="#383633"/>
+                    </svg>
+                  </div>
                 </div>
               </div>
               {% comment %} end custom filter by tags {% endcomment %}
@@ -134,10 +134,10 @@
             <div>
               <span class="facets__summary-label">
                 <span class="current-collection facets__selected no-js-hidden{% if filter.active_values.size == 0 %} hidden{% endif %}">
-                  {%- if collection.title == 'Products'  -%}
+                  {%- if collection.title == 'Products' -%}
                     {{- section.settings.button_label | escape -}}
                   {% else %}
-                  {{- collection.title | escape -}}
+                    {{- collection.title | escape -}}
                   {% endif %}
                 </span>
               </span>
@@ -166,7 +166,9 @@
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
-                {% render 'my-custom-collections', card_collection: collection %}
+                {% if collection.metafields.custom.show_in_filter == true %}
+                  {% render 'my-custom-collections', card_collection: collection %}
+                {% endif %}
               </span>
             {%- endfor -%}
           </div>

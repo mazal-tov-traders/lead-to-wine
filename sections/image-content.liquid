@@ -1,4 +1,4 @@
-<section id="overview" class="image-content{{ section.settings.position_image }} image-content{{ section.settings.background }} image-content_vertical-center-align {{ section.settings.align_content }}">
+<section id="{{ section.settings.id_for_anchor }}" class="image-content{{ section.settings.position_image }} image-content{{ section.settings.background }} image-content_vertical-center-align {{ section.settings.align_content }}">
   <div class="page-width">
     <div class="image-content__wrapper">
       {% for block in section.blocks %}
@@ -26,20 +26,34 @@
               {%- endif -%}
             {% when 'description' %}
               {%- if block.settings.description != blank -%}
-                <div class="image-content__description" style=" color:{{ block.settings.color_description_label }};">
+                <div class="image-content__description" style=" color:{{ block.settings.color_description_label }}; font-size:{{ block.settings.font_size }}px;">
                   {{ block.settings.description }}
                 </div>
               {%- endif -%}
               {% when 'description-list' %}
                 {%- if block.settings.description-list != blank -%}
-                  <div class="image-content__list" style=" color:{{ block.settings.color_list }};">
+                  <div class="image-content__list" style=" color:{{ block.settings.color_list }}; font-size:{{ block.settings.font_size }}px;">
                     {{ block.settings.description-list }}
                   </div>
                 {%- endif -%}
+                {% when 'content' %}
+                {%- if block.settings.content != blank -%}
+                  <div class="image-content__ul" style=" color:{{ block.settings.color_content_label }}; font-size:{{ block.settings.font_size }}px;">
+                    {{ block.settings.content }}
+                  </div>
+                {%- endif -%}
+                {% when 'text' %}
+                  {%- if block.settings.text != blank -%}
+                    <div class="image-content__text" style=" color:{{ block.settings.color_text_label }}; font-size:{{ block.settings.font_size }}px;">
+                      {{ block.settings.text }}
+                    </div>
+                  {%- endif -%}
             {% when 'link' %}
               {%- if block.settings.link_label != blank -%}
                 <div class="image-content__wrapper-link">
+                  {% if block.settings.show_icon_pdf == true %}
                   {% render 'icon-pdf' %}
+                  {% endif %}
                   <a
                     {% if block.settings.link == blank %}
                       role="link" aria-disabled="true"
@@ -51,6 +65,9 @@
                   >
                     {{- block.settings.link_label | escape -}}
                   </a>
+                  {% if block.settings.show_icon_pdf == false %}
+                  {% render 'icon-link-arrow' %}
+                  {% endif %}
                 </div>
               {%- endif -%}
           {% endcase %}
@@ -161,6 +178,11 @@
       ],
       "default": " ",
       "label": "Position Image"
+    },
+    {
+      "type": "text",
+      "id": "id_for_anchor",
+      "label": "ID For Navigation Anchor"
     }
   ],
   "blocks": [
@@ -235,19 +257,19 @@
       ]
     },
     {
-      "type": "heading",
-      "name": "Heading",
-      "limit": 1,
+      "type": "text",
+      "name": "Text",
+      "limit": 3,
       "settings": [
         {
           "type": "inline_richtext",
-          "id": "heading",
-          "label": "Heading"
+          "id": "text",
+          "label": "Text"
         },
         {
           "type": "color",
-          "id": "color_heading_label",
-          "label": "Color Heading Label",
+          "id": "color_Text_label",
+          "label": "Color Text Label",
           "default": "#383633"
         },
         {
@@ -263,7 +285,7 @@
       "limit": 1,
       "settings": [
         {
-          "type": "inline_richtext",
+          "type": "richtext",
           "id": "content",
           "label": "Content"
         },
@@ -285,6 +307,12 @@
       "name": "Link",
       "limit": 5,
       "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_icon_pdf",
+          "default": true,
+          "label": "Icon pdf or arrow"
+        },
         {
           "type": "text",
           "id": "link_label",

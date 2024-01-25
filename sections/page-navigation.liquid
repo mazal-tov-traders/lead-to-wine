@@ -3,7 +3,7 @@
     <ul class="page-navigation__wrapper">
       {%- for block in section.blocks -%}
         {% case block.type %}
-          {% when 'page-link' %}
+          {% when 'anchor-link' %}
             {%- if block.settings.button_label != blank -%}
               <li class="page-navigation__item">
                 <a
@@ -14,6 +14,7 @@
                   {% endif %}
                   style=" color:{{ block.settings.color_label }}; font-size:{{ block.settings.font_size }}px;"
                   class="page-navigation__link"
+                  id="navigation-anchor__link"
                 >
                   {{- block.settings.button_label | escape -}}
                 </a>
@@ -44,14 +45,14 @@
   ],
   "blocks": [
     {
-      "type": "page-link",
-      "name": "Page Link",
+      "type": "anchor-link",
+      "name": "Anchor Link",
       "limit": 8,
       "settings": [
         {
           "type": "text",
           "id": "button_label",
-          "label": "Page Label"
+          "label": "Aage Label"
         },
         {
           "type": "url",

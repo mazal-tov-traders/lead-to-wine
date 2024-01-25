@@ -7,9 +7,156 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "banner_We3bPk": {
+      "type": "banner",
+      "blocks": {
+        "title_3VRajF": {
+          "type": "title",
+          "settings": {
+            "title": "Assimilation & Growth Track",
+            "font_size": "",
+            "color_title_label": "#fff"
+          }
+        },
+        "description_aK3wNk": {
+          "type": "description",
+          "settings": {
+            "description": "<p><em>Lorem ipsum dolor sit amet consectetur. Praesent vel tincidunt tellus duis lacinia sapien semper. <\/em><\/p>",
+            "font_size": "24",
+            "color_description_label": "#fff"
+          }
+        }
+      },
+      "block_order": [
+        "title_3VRajF",
+        "description_aK3wNk"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_4133714_1.jpg"
+      }
+    },
+    "section_collection_links_3aDwW8": {
+      "type": "section-collection-links",
+      "blocks": {
+        "page_link_FVebEr": {
+          "type": "page-link",
+          "settings": {
+            "button_label": "Overview",
+            "button_link": ""
+          }
+        },
+        "page_link_dV79gJ": {
+          "type": "page-link",
+          "settings": {
+            "button_label": "Discovery 101",
+            "button_link": ""
+          }
+        },
+        "page_link_c3Tatr": {
+          "type": "page-link",
+          "settings": {
+            "button_label": "Serve Team 201",
+            "button_link": ""
+          }
+        },
+        "page_link_MDDk9K": {
+          "type": "page-link",
+          "settings": {
+            "button_label": "Values 301",
+            "button_link": ""
+          }
+        },
+        "page_link_KzRRwi": {
+          "type": "page-link",
+          "settings": {
+            "button_label": "Storytelling",
+            "button_link": ""
+          }
+        },
+        "page_link_PpHgiB": {
+          "type": "page-link",
+          "settings": {
+            "button_label": "FAQ",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "page_link_FVebEr",
+        "page_link_dV79gJ",
+        "page_link_c3Tatr",
+        "page_link_MDDk9K",
+        "page_link_KzRRwi",
+        "page_link_PpHgiB"
+      ],
+      "settings": {
+        "color_label": "#EAE9E5",
+        "font_size": ""
+      }
+    },
+    "image_content_YQktxa": {
+      "type": "image-content",
+      "blocks": {
+        "media_YXcFKV": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4133725_22b3a8f8-eb78-4c57-9db1-5ad2d99cf29d.jpg"
+          }
+        },
+        "title_3pVhJ6": {
+          "type": "title",
+          "settings": {
+            "title": "Overview",
+            "color_title_label": "#383633",
+            "font_size": ""
+          }
+        },
+        "description_list_r3NhMT": {
+          "type": "description-list",
+          "settings": {
+            "description-list": "<p>A Growth Track provides a clear path to connect people to the vision and mission of your church. Each of the three classes below are designed to help people take a next step to grow in their faith, learn about the values of our church, and make friends with others who are new to our environment.<\/p>",
+            "color_list": "#383633",
+            "font_size": ""
+          }
+        },
+        "link_ynqgqK": {
+          "type": "link",
+          "settings": {
+            "link_label": "Overview of the Growth Track",
+            "link": "shopify:\/\/products\/miracles-campaign",
+            "color_link_label": "#383633",
+            "font_size": ""
+          }
+        },
+        "link_PnghTb": {
+          "type": "link",
+          "settings": {
+            "link_label": "Growth Track Board",
+            "link": "shopify:\/\/pages\/assimilation-growth-track",
+            "color_link_label": "#383633",
+            "font_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "media_YXcFKV",
+        "title_3pVhJ6",
+        "description_list_r3NhMT",
+        "link_ynqgqK",
+        "link_PnghTb"
+      ],
+      "settings": {
+        "background": "_bg-white",
+        "align_content": "left",
+        "position_image": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "banner_We3bPk",
+    "section_collection_links_3aDwW8",
+    "image_content_YQktxa"
   ]
 }

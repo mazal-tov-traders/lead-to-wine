@@ -13,12 +13,16 @@
     border-radius: 10px;
   }
   .collapsible-content__header {
-    .collapsible-content__heading {   
+    .collapsible-content__heading {
+      font-family: $font-family-Awesome-Serif;
+      font-weight: 600;
       text-align: center;
       margin-bottom: 50px;
       text-transform: uppercase;
-      @media screen and (min-width: 500px) {
+      line-height: 69px;
+      letter-spacing: 0em;
 
+      @media screen and (min-width: 500px) {
       }
     }
   }
@@ -67,6 +71,9 @@
   }
   .accordion details[open] > summary .accordion__title {
     color: var(--color-open-heading-label);
+  }
+  .accordion details[open] > summary .accordion__title {
+    font-weight: 400;
   }
 }
 .custom-collapsible {

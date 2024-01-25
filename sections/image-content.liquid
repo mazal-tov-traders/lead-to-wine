@@ -38,7 +38,7 @@
                 {%- endif -%}
                 {% when 'content' %}
                 {%- if block.settings.content != blank -%}
-                  <div class="image-content__ul" style=" color:{{ block.settings.color_content_label }}; font-size:{{ block.settings.font_size }}px;">
+                  <div class="image-content__ul image-content__ul_two-columns" style=" color:{{ block.settings.color_content_label }}; font-size:{{ block.settings.font_size }}px;">
                     {{ block.settings.content }}
                   </div>
                 {%- endif -%}
@@ -50,7 +50,7 @@
                   {%- endif -%}
             {% when 'link' %}
               {%- if block.settings.link_label != blank -%}
-                <div class="image-content__wrapper-link">
+                <div class="image-content__links">
                   {% if block.settings.show_icon_pdf == true %}
                   {% render 'icon-pdf' %}
                   {% endif %}

@@ -54,14 +54,10 @@
       flex: 1 0 0;
     }
   }
-  &__wrapper-link {
+  &__links {
     display: flex;
-    // align-items: flex-start;
     gap: 10px;
     align-items: center;
-    svg {
-      margin-top: 1px;
-    }
   }
   .title {
     text-transform: uppercase;
@@ -77,7 +73,14 @@
       font-weight: 600;
     }
   }
-
+  &__list {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    margin-bottom: 20px;
+  }
   &__sub-title {
     font-family: $font-family-Awesome-Serif;
     font-weight: 500;
@@ -117,7 +120,7 @@
     @include text-style-text-text-main;
 
     &:not(:last-child) {
-      margin-bottom: 0px;
+      margin-bottom: 25px;
     }
 
     @media ($lg) {
@@ -145,7 +148,7 @@
     }
 
     &_two-columns {
-      @media (--sm) {
+      @media ($sm) {
         columns: 2;
         gap: 40px;
       }
@@ -153,7 +156,6 @@
 
     li {
       @include text-style-text-text-main;
-
       font-weight: 400;
       padding-left: 18px;
       position: relative;

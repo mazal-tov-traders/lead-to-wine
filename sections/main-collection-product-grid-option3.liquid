@@ -205,17 +205,23 @@
   {%- endif -%}
 </div>
 
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+>
 
 {% schema %}
 {
   "name": "Collection Option 3",
   "class": "collection-option-3",
   "settings": [
+    {
+      "type": "collection_list",
+      "id": "collection_list",
+      "label": "Collections"
+    },
     {
       "type": "range",
       "id": "products_per_page",

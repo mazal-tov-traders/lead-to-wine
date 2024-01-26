@@ -14,7 +14,7 @@
   endif
 -%}
 
-<div class="facets-container{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+<div class="filter-inner facets-container{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
   <facet-filters-form class="facets">
     <form
       id="FacetFiltersForm"
@@ -27,7 +27,7 @@
       {% if enable_filtering %}
         <div
           id="FacetsWrapperDesktop"
-          class="facets__wrapper"
+          class="facets__wrapper custom-facets__wrapper"
         >
           {% comment %} start  my filter collection  {% endcomment %}
           {%- if request.page_type != 'search' -%}
@@ -67,7 +67,7 @@
                   </a>
                 </h3>
                 {%- endif -%}
-                {%- for collection in collections -%}
+                {% comment %} {%- for collection in collections -%}
                   <span
                     class="collection-list__item grid__item scroll-trigger animate--slide-in"
                     {% if settings.animations_reveal_on_scroll %}
@@ -79,7 +79,14 @@
                     {% render 'my-custom-collections', card_collection: collection %}
                     {% endif %}
                   </span>
-                {%- endfor -%}
+                {%- endfor -%} {% endcomment %}
+                {% if section.settings.collection_list != blank %}
+                  {% for custom_coll_list in section.settings.collection_list %}
+                    <a class="custom-coll-list" href="{{ custom_coll_list.url }}">
+                      <h3 class='custom-coll-list_title'>{{ custom_coll_list.title }}</h3>
+                    </a>
+                  {% endfor %}
+                {% endif %}
               </div>
             </details>
           {% endif %}

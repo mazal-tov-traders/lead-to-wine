@@ -1,11 +1,21 @@
 @import "../variables-and-mixins.scss";
 .option1 {
   .my-collection-list {
+    align-items: center;
     .wrapper_all-product {
       margin-bottom: 0px;
-      line-height: 21px;
       font-weight: 400;
       .all-product-in-collection {
+        color: #eae9e5;
+        @include text-style-text-text-3;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+    }
+    .custom-coll-list {
+      .custom-coll-list_title {
+        margin-bottom: 0px;
+        font-weight: 400;
         color: #eae9e5;
         @include text-style-text-text-3;
         text-transform: uppercase;
@@ -96,9 +106,6 @@
   .parent-display {
     .wrapper_all-product {
       margin-bottom: 0;
-      .all-product-in-collection {
-        padding: 1.3rem 1rem;
-      }
     }
   }
 }
@@ -109,9 +116,6 @@
   .parent-display {
     .wrapper_all-product {
       margin-bottom: 0;
-      .all-product-in-collection {
-        padding: 1.3rem 1rem;
-      }
     }
   }
   .filter-inner {
@@ -134,12 +138,13 @@
     .custom-facets__wrapper {
       display: flex;
       justify-content: flex-end;
-      @media screen and (min-width: 750px) {
-        .disclosure-has-popup[open] > summary + * {
-          z-index: 4;
-          right: 0 !important;
-        }
+
+      .disclosure-has-popup[open] > summary + * {
+        z-index: 4;
+        right: 0 !important;
+        padding: 0 10px;
       }
+
       .filter-dropdown-style {
         margin-right: 0;
       }
@@ -263,6 +268,13 @@
     }
   }
 }
+.option2{
+  .disclosure-has-popup[open] > summary + * {
+    z-index: 4;
+    padding: 0 10px;
+    left: 0;
+  }
+}
 .option1,
 .option2,
 .option3 {
@@ -301,17 +313,17 @@
           text-align: left;
         }
       }
-      .collection-list__item {
-        .card__heading {
-          .full-unstyled-link {
-            font-size: 16px;
+
+      .custom-coll-list {
+        .custom-coll-list_title {
+          font-size: 16px;
           font-weight: 300;
           line-height: 32px;
           letter-spacing: -0.04em;
           text-align: left;
-          }
         }
       }
     }
   }
+  
 }

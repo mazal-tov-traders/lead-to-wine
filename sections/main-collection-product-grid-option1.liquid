@@ -64,7 +64,7 @@
         </a>
       </h3>
     {%- endif -%}
-    {%- for collection in collections -%}
+    {% comment %} {%- for collection in collections -%}
       <li
         class="collection-list__item grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
         {% if settings.animations_reveal_on_scroll %}
@@ -76,7 +76,14 @@
         {% render 'my-custom-collections', card_collection: collection %}
         {% endif %}
       </li>
-    {%- endfor -%}
+    {%- endfor -%} {% endcomment %}
+    {% if section.settings.collection_list != blank %}
+      {% for custom_coll_list in section.settings.collection_list %}
+        <a class="custom-coll-list" href="{{ custom_coll_list.url }}">
+          <h3 class='custom-coll-list_title'>{{ custom_coll_list.title }}</h3>
+        </a>
+      {% endfor %}
+    {% endif %}
   </ul>
 </div>
 {% comment %} end вывод колекций {% endcomment %}
@@ -157,6 +164,11 @@
   "name": "Collection Option 1",
   "class": "collection-option-1",
   "settings": [
+    {
+      "type": "collection_list",
+      "id": "collection_list",
+      "label": "Collections"
+    },
     {
       "type": "range",
       "id": "products_per_page",

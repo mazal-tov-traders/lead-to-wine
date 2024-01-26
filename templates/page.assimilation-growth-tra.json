@@ -78,7 +78,7 @@
           "type": "anchor-link",
           "settings": {
             "button_label": "FAQ",
-            "button_link": ""
+            "button_link": "#faq"
           }
         }
       },
@@ -570,10 +570,10 @@
       "settings": {
         "caption": "",
         "font_size": "",
-        "color_caption_label": "#1D2228",
+        "color_caption_label": "#1d2228",
         "heading": "Frequently Asked Questions",
         "font_size1": "50",
-        "color_heading_label": "#1D2228",
+        "color_heading_label": "#1d2228",
         "secon_class": "",
         "heading_alignment": "center",
         "layout": "none",
@@ -586,7 +586,8 @@
         "color_question_heading_label": "#342663",
         "color_open_question_heading_label": "#383633",
         "color_row_content_label": "#383633",
-        "font_size2": ""
+        "font_size2": "",
+        "id_for_anchor": "faq"
       }
     }
   },
